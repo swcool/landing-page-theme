@@ -12,8 +12,8 @@ layout: default
 img: ipad.png
 category: Services
 title: The service title
-description: The description of this service
 ---
+The description of this service
 ```
 
 ## Demo
