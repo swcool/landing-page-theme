@@ -17,7 +17,7 @@ description: > # "Write an awesome description for your new site here.
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: none
 
 # ----------------------- #
 #   3rd Party Settings    #
