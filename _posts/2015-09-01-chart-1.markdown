@@ -1,6 +1,6 @@
 ---
 layout: default
-img: chart4.png
+img: chart1.png
 category: charts
 title: Lorem 
 description:  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.| 
