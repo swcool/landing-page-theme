@@ -1,11 +1,15 @@
 ---
 layout: default
-img: ipad.png
+img: chart1.png
 category: charts
-title: Death to the Stock Photo:<br>Special Thanks
-description:  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+title: Lorem 
+description:  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
 ---
  
   <br /> <br /> <br /> <br /> 
   <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/eqejez" style="border: 0; width: 100%; height: 500px"></iframe>
+
+  <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+
+		
 		

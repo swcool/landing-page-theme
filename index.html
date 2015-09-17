@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<br /> </br/>
 <section id="services">
 <!-- Page Content -->
 {% for post in site.posts reversed %}
@@ -19,7 +19,7 @@ layout: default
                     <div class="lead">{{ post.description }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <a href="{{ post.url }}"><img class="img-responsive" src="img/services/{{ post.img }}" alt=""></a>
+                    <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-responsive" src="img/services/{{ post.img }}" alt=""></a>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@ layout: default
                     <div class="lead">{{ post.description }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <a href="{{ post.url }}"><img class="img-responsive" src="img/services/{{ post.img }}" alt=""></a>
+                  <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-responsive" src="img/services/{{ post.img }}" alt=""></a>
                 </div>
             </div>
 
