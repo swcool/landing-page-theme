@@ -3,8 +3,8 @@ layout: default
 img: dog.png
 category: charts
 title: 3D Device Mockups<br>by PSDCovers
-description: |
+description:  Turn your 2D designs into high quality, 3Dproduct shots in seconds using free Photoshop actions by [PSDCovers](http://www.psdcovers.com/)! Visit their website to download some of their awesome, free photoshop actions!
 ---
-  Turn your 2D designs into high quality, 3D
-  product shots in seconds using free Photoshop actions by [PSDCovers](http://www.psdcovers.com/)! Visit
-  their website to download some of their awesome, free photoshop actions!
+ <br /> <br /> <br /> <br /> 
+ <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/izuqud" style="border: 0; width: 100%; height: 500px"></iframe>
+		

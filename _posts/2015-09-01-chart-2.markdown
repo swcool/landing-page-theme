@@ -2,7 +2,10 @@
 layout: default
 img: phones.png
 category: charts
-title: Google Web Fonts and<br>Font Awesome Icons
-description: |
+title: Death to the Stock Photo:<br>Special Thanks
+description:  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
 ---
-This template features the 'Lato' font, part of the [Google Web Font library](http://www.google.com/fonts), as well as [icons from Font Awesome](http://fontawesome.io).
+ 
+  <br /> <br /> <br /> <br /> 
+  <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/efylyk" style="border: 0; width: 100%; height: 500px"></iframe>
+			

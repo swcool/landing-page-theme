@@ -7,5 +7,5 @@ description:  A special thanks to [Death to the Stock Photo](http://join.deathto
 ---
  
   <br /> <br /> <br /> <br /> 
-  <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/eqejez" style="border: 0; width: 100%; height: 500px"></iframe>
+ <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/edovuh" style="border: 0; width: 100%; height: 500px"></iframe>
 		
