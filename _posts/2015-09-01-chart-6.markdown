@@ -2,11 +2,11 @@
 layout: default
 img: chart6.png
 category: charts
+sectionId: chart-six
 title: Lorem 
-description:  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+description: Dogana e veturave te reja ne baze te vendit te origjines.  
 ---
- 
-<br /> <br /> <br /> <br />
+
 <div>  
 <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/uduteb" style="border: 0; width: 100%; height: 500px"></iframe>&nbsp;</iframe></div>	
-<p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>	
+<p class="lead"> </p>	

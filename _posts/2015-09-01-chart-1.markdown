@@ -2,11 +2,11 @@
 layout: default
 img: chart1.png
 category: charts
-title: Lorem 
-description:  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.| 
+title: Grafiku I
+sectionId: chart-one
+description:  Regjistrimi i veturave ne baze te vitit te prodhimit. 
 ---
 
-<br /> <br /> <br /> <br />
 <div> 
 <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/eqejez" style="border: 0; width: 100%; height: 500px">&nbsp;</iframe></div>	
 <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
