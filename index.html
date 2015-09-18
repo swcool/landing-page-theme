@@ -20,62 +20,77 @@ $(document).ready(function () {
     });
 });
 </script>
+
+<section id="services">
+
 <div class="content-section-b">
     <section id="calculator">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Kalkulator</h2>
-                    <div class="lead"> Pershkrimi i kalkulatorit</div>
+                    <div class="lead">Pershkrimi i kalkulatorit.<br/><br/>
+                        <ul>
+                            <li><strong>Kubikazha:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                            <li><strong>Vlera:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                            <li><strong>Akciza:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                            <li><strong>Dogana:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6" >
-                <div class="form-horizontal">
-                <div class="form-group ">
-                    <label class="control-label col-xs-3"> Kubikazha: </label>
-                    <div class="col-xs-4">
-                    <input type="number" value="0" min="0" step="1" id="1" class="form-control" />
-                </div>
-                </div>
-                <div class="form-group ">
-                    <label class="control-label col-xs-3"> Vlera: </label>
-                    <div class="col-xs-4">
-                    <input type="number" value="0" min="0" step="1" id="2" class="form-control" />
-                </div>
-                </div>
-                <div class="form-group ">
-                    <label class="control-label col-xs-3"> Akciza: </label>
-                    <div class="col-xs-4">
-                    <input type="number" value="0" value="0" min="0" step="1" id="3" class="form-control"/>
-                </div>
-                </div>
-                <div class="form-group ">
-                    <label class="control-label col-xs-3"> Dogana: </label>
-                    <div class="col-xs-4">
-                    <input type="number" value="0" min="0" step="1" id="4" class="form-control" />
-                </div>
-                </div>
-                <div class="form-group ">
-                    <label class="control-label col-xs-3"> TVSH: </label>
-                    <div class="col-xs-4">
-                    <input type="number" min="0" step="1" id="6" disabled="true" class="form-control" />
-                    <input type="hidden" name="value_of_tvsh" value="0.18" id="5"/>
-                </div>
-                </div>
-                <div class="form-group">
-                <div class="col-xs-5 col-lg-offset-3" >
-                <button class="btn btn_s total"> Llogarit totalin</button>
-                </div>
-                </div>
-                <br />
-                <div class="form-group ">
-                    <label class="control-label col-xs-3"> Totali: </label>
-                    <div class="col-xs-4">
-                    <input type="number" id="7" disabled="true" class="form-control" />
-                </div>
-                </div>
-                </div>
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6 col-lg-offset-1">
+                  <div class="form-horizontal">
+                        <br/><br/><br/><br/><br/>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3"> Kubikazha: </label>
+                            <div class="col-xs-4">
+                                <input type="number" value="0" min="0" step="1" id="1" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3"> Vlera: </label>
+                            <div class="col-xs-4">
+                                <input type="number" value="0" min="0" step="1" id="2" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3"> Akciza: </label>
+                            <div class="col-xs-4">
+                             <input type="number" value="0" value="0" min="0" step="1" id="3" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3"> Dogana: </label>
+                            <div class="col-xs-4">
+                                <input type="number" value="0" min="0" step="1" id="4" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-5 col-lg-offset-3" >
+                                <button class="btn btn_s total"> Llogarit totalin</button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3"> TVSH: </label>
+                            <div class="col-xs-4">
+                                <input type="number" min="0" step="1" id="6" disabled="true" class="form-control" />
+                                <input type="hidden" name="value_of_tvsh" value="0.18" id="5"/>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3"> Totali: </label>
+                            <div class="col-xs-4">
+                                <input type="number" id="7" disabled="true" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -84,8 +99,6 @@ $(document).ready(function () {
     </section>
 </div>
 
-        
-<section id="services">
 <!-- Page Content -->
 {% for post in site.posts reversed %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
