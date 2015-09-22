@@ -22,7 +22,6 @@ $(document).ready(function () {
             var date1 = new Date($('#data_sot').val());
             var date2 = new Date($('#data_prodhimit').val());
             var vitet = date1.getYear() - date2.getYear();
-            var muajt = date1.getMonth() - date2.getMonth();
 
             var gjej_akcizen;
             if( kubikazha <=  2000){   
@@ -105,7 +104,8 @@ $(document).ready(function () {
                     break;
                 }
             }
-            if( kubikazha > 3000){  switch (true) {
+            if( kubikazha > 3000){  
+                switch (true) {
                 case (vitet == 0) : 
                     gjej_akcizen = 800; 
                         break;
@@ -147,9 +147,7 @@ $(document).ready(function () {
             $("#akciza").val(gjej_akcizen);
             var tvsh = (vlera + gjej_akcizen + dogana) * 0.18;
             $("#tvsh").val(tvsh);
-            $('#total').val(vlera + gjej_akcizen + dogana + tvsh)
-
-            
+            $('#total').val(vlera + gjej_akcizen + dogana + tvsh)          
             })
     });
 
@@ -210,7 +208,7 @@ $(document).ready(function () {
                         </div>
                         <div class="form-group">
                             <div class="col-xs-5 col-lg-offset-5" >
-                                <button class="btn btn_s total"> Llogarit </button>
+                                <button class="btn orange total"> Llogarit </button>
                             </div>
                         </div>
                         <br />
