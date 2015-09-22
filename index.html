@@ -4,23 +4,153 @@ layout: default
 <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-    var today = new Date();
-    $('#data_sot').attr('value', today);
     $("#veture_re").click(function () {
         $('#data_prodhimit').attr("disabled", $(this).is(":checked"));
-        $('#data_prodhimit').val('');
+        document.getElementById('data_prodhimit').valueAsDate = new Date();
     });
     $(function () {
+    // var today = new Date();
+    // $('#data_sot').attr('value', today);
+        document.getElementById('data_sot').valueAsDate = new Date();
         $(".total").on("click", function(e){
             e.preventDefault();
-            var vlera   = +$("#vlera").val(); 
-            var akciza   = +$("#vlera").val();             
-            var dogana = vlera*0.1;
-            var tvsh = (vlera + akciza +dogana) * 0.18;
-
+            var vlera   = +$("#vlera").val();
+            var kubikazha = +$("#kubikazha").val();
+            var dogana  = vlera*0.1;
             $("#dogana").val(dogana);
+
+            var date1 = new Date($('#data_sot').val());
+            var date2 = new Date($('#data_prodhimit').val());
+            var vitet = date1.getYear() - date2.getYear();
+            var muajt = date1.getMonth() - date2.getMonth();
+
+            var gjej_akcizen;
+            if( kubikazha <=  2000){   
+                switch (true) {
+                case (vitet == 0) :  
+                    gjej_akcizen = 0;    
+                    break;
+                case (vitet == 8) :  
+                    gjej_akcizen = 400;  
+                    break;
+                case (vitet == 9) :  
+                    gjej_akcizen = 600;  
+                    break;
+                case (vitet == 10):  
+                    gjej_akcizen = 700;  
+                    break;
+                case (vitet == 11):  
+                    gjej_akcizen = 800;  
+                    break;
+                case (vitet == 12): 
+                    gjej_akcizen = 900; 
+                    break;
+                case (vitet == 13):  
+                    gjej_akcizen = 1000; 
+                    break;
+                case (vitet == 14):  
+                    gjej_akcizen = 1100; 
+                    break;
+                case (vitet == 15):  
+                    gjej_akcizen = 1200; 
+                    break;
+                case (vitet == 16):  
+                    gjej_akcizen = 1300; 
+                    break;
+                case (vitet >= 17):  
+                    gjej_akcizen = 1500; 
+                    break;
+                default: 
+                    gjej_akcizen = 0; 
+                    break;
+                }
+            }
+            if (kubikazha  > 2000  &&  kubikazha < 3001){   
+                switch (true) {
+                case (vitet == 0) :  
+                    gjej_akcizen = 300;  
+                    break;
+                case (vitet == 8) :  
+                    gjej_akcizen = 400;  
+                    break;
+                case (vitet == 9) :  
+                    gjej_akcizen = 600;  
+                    break;
+                case (vitet == 10): 
+                    gjej_akcizen = 800;  
+                    break;
+                case (vitet == 11): 
+                    gjej_akcizen = 1000; 
+                    break;
+                case (vitet == 12):  
+                    gjej_akcizen = 1200; 
+                    break;
+                case (vitet == 13):  
+                    gjej_akcizen = 1400; 
+                    break;
+                case (vitet == 14):  
+                    gjej_akcizen = 1600; 
+                    break;
+                case (vitet == 15):  
+                    gjej_akcizen = 1800; 
+                    break;
+                case (vitet == 16):  
+                    gjej_akcizen = 2000; 
+                    break;
+                case (vitet >= 17):  
+                    gjej_akcizen = 2200; 
+                    break;
+                default: 
+                    gjej_akcizen = 0; 
+                    break;
+                }
+            }
+            if( kubikazha > 3000){  switch (true) {
+                case (vitet == 0) : 
+                    gjej_akcizen = 800; 
+                        break;
+                case (vitet == 8) : 
+                    gjej_akcizen = 1000; 
+                        break;
+                case (vitet == 9) : 
+                    gjej_akcizen = 1500;
+                        break;
+                case (vitet == 10): 
+                    gjej_akcizen = 1800;
+                        break;
+                case (vitet == 11): 
+                    gjej_akcizen = 2100;
+                        break;
+                case (vitet == 12): 
+                    gjej_akcizen = 2400;
+                        break;
+                case (vitet == 13): 
+                    gjej_akcizen = 2700;
+                        break;
+                case (vitet == 14): 
+                    gjej_akcizen = 3000;
+                        break;
+                case (vitet == 15): 
+                    gjej_akcizen = 3300;
+                        break;
+                case (vitet == 16): 
+                    gjej_akcizen = 3600;
+                        break;
+                case (vitet >= 17): 
+                    gjej_akcizen = 3333;
+                        break;
+                default: 
+                    gjej_akcizen = 0; 
+                        break;
+                }
+            }
+            $("#akciza").val(gjej_akcizen);
+            var tvsh = (vlera + gjej_akcizen + dogana) * 0.18;
             $("#tvsh").val(tvsh);
-        })
+            $('#total').val(vlera + gjej_akcizen + dogana + tvsh)
+
+            
+            })
     });
 
 });
@@ -48,64 +178,64 @@ $(document).ready(function () {
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6 col-sm-6 col-lg-offset-1">
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6  ">
                   <div class="form-horizontal">
                         <br/><br/><br/><br/><br/>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> Data sot : </label>
+                            <label class="control-label col-xs-5"> Data sot : </label>
                             <div class="col-xs-5">
-                            <input type="date" id="data_sot" disabled="true" class="form-control" />
+                            <input type="date" id="data_sot" disabled="true"  class="form-control" />
                         </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3">Data e prodhimit:</label>
+                            <label class="control-label col-xs-5">Data e prodhimit:</label>
                             <div class="col-xs-5">
                                 <input type="date" id="data_prodhimit" class="form-control"/>
                                 <fieldset id="checkArray">
-                                    <input type="checkbox" id="veture_re" value=" "/> Veture e re
+                                    <input type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
                                 </fieldset>
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> Kubikazha: </label>
+                            <label class="control-label col-xs-5"> Kubikazha: </label>
                             <div class="col-xs-4">
                                 <input type="number" value="0" min="0" step="1" id="kubikazha" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> Vlera: </label>
+                            <label class="control-label col-xs-5"> Vlera: </label>
                             <div class="col-xs-4">
                                 <input type="number" value="0" min="0" step="1" id="vlera" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-xs-5 col-lg-offset-3" >
+                            <div class="col-xs-5 col-lg-offset-5" >
                                 <button class="btn btn_s total"> Llogarit </button>
                             </div>
                         </div>
                         <br />
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> Akciza: </label>
+                            <label class="control-label col-xs-5"> Akciza: </label>
                             <div class="col-xs-4">
                              <input type="number" value="0" disabled="true" id="akciza" class="form-control"/>
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> Dogana: </label>
+                            <label class="control-label col-xs-5"> Dogana: </label>
                             <div class="col-xs-4">
                                 <input type="number" value="0" disabled="true" id="dogana" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> TVSH: </label>
+                            <label class="control-label col-xs-5"> TVSH: </label>
                             <div class="col-xs-4">
-                                <input type="number" min="0" id="tvsh" disabled="true" class="form-control" />
+                                <input type="number" min="0"  value="0" id="tvsh" disabled="true" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-3"> Totali: </label>
+                            <label class="control-label col-xs-5"> Totali: </label>
                             <div class="col-xs-4">
-                                <input type="number" id="total" disabled="true" class="form-control" />
+                                <input type="number"  value="0" id="total" disabled="true" class="form-control" />
                             </div>
                         </div>
                     </div>
