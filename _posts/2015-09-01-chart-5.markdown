@@ -4,7 +4,7 @@ img: chart5.png
 category: charts
 sectionId: chart-five
 title: Grafiku V 
-description:  <p class="justify"><a href="charts/chart-1.html">Ky grafikon </a> paraqet regjistrimin e veturave ne baze te vendit dhe llojit te motorit.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+description:  <p class="justify"><a href="charts/chart-5.html">Ky grafikon </a> paraqet regjistrimin e veturave ne baze te vendit dhe llojit te motorit.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 ---
  
 <div> 
