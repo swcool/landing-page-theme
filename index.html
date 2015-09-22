@@ -4,25 +4,29 @@ layout: default
 <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
+    var today = new Date();
+    $('#data_sot').attr('value', today);
+    $("#veture_re").click(function () {
+        $('#data_prodhimit').attr("disabled", $(this).is(":checked"));
+        $('#data_prodhimit').val('');
+    });
     $(function () {
         $(".total").on("click", function(e){
             e.preventDefault();
-            var two   = +$("#2").val(); 
-            var three = +$("#3").val();
-            var four  = +$("#4").val();
-            var five  = +$("#5").val(); 
-            var sum1 =  two + three + four;
-            var tvsh = sum1*five;
-            document.getElementById('6').value = tvsh  
-            var sum =two + three + four + tvsh;
-            document.getElementById('7').value = sum    
+            var vlera   = +$("#vlera").val(); 
+            var akciza   = +$("#vlera").val();             
+            var dogana = vlera*0.1;
+            var tvsh = (vlera + akciza +dogana) * 0.18;
+
+            $("#dogana").val(dogana);
+            $("#tvsh").val(tvsh);
         })
     });
+
 });
 </script>
 
 <section id="services">
-
 <div class="content-section-b">
     <section id="calculator">
         <div class="container">
@@ -48,46 +52,60 @@ $(document).ready(function () {
                   <div class="form-horizontal">
                         <br/><br/><br/><br/><br/>
                         <div class="form-group ">
+                            <label class="control-label col-xs-3"> Data sot : </label>
+                            <div class="col-xs-5">
+                            <input type="date" id="data_sot" disabled="true" class="form-control" />
+                        </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-3">Data e prodhimit:</label>
+                            <div class="col-xs-5">
+                                <input type="date" id="data_prodhimit" class="form-control"/>
+                                <fieldset id="checkArray">
+                                    <input type="checkbox" id="veture_re" value=" "/> Veture e re
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group ">
                             <label class="control-label col-xs-3"> Kubikazha: </label>
                             <div class="col-xs-4">
-                                <input type="number" value="0" min="0" step="1" id="1" class="form-control" />
+                                <input type="number" value="0" min="0" step="1" id="kubikazha" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-3"> Vlera: </label>
                             <div class="col-xs-4">
-                                <input type="number" value="0" min="0" step="1" id="2" class="form-control" />
+                                <input type="number" value="0" min="0" step="1" id="vlera" class="form-control" />
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-xs-5 col-lg-offset-3" >
+                                <button class="btn btn_s total"> Llogarit </button>
+                            </div>
+                        </div>
+                        <br />
                         <div class="form-group ">
                             <label class="control-label col-xs-3"> Akciza: </label>
                             <div class="col-xs-4">
-                             <input type="number" value="0" value="0" min="0" step="1" id="3" class="form-control"/>
+                             <input type="number" value="0" disabled="true" id="akciza" class="form-control"/>
                             </div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-3"> Dogana: </label>
                             <div class="col-xs-4">
-                                <input type="number" value="0" min="0" step="1" id="4" class="form-control" />
+                                <input type="number" value="0" disabled="true" id="dogana" class="form-control" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-xs-5 col-lg-offset-3" >
-                                <button class="btn btn_s total"> Llogarit totalin</button>
-                            </div>
-                        </div>
-                        <br />
                         <div class="form-group ">
                             <label class="control-label col-xs-3"> TVSH: </label>
                             <div class="col-xs-4">
-                                <input type="number" min="0" step="1" id="6" disabled="true" class="form-control" />
-                                <input type="hidden" name="value_of_tvsh" value="0.18" id="5"/>
+                                <input type="number" min="0" id="tvsh" disabled="true" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-3"> Totali: </label>
                             <div class="col-xs-4">
-                                <input type="number" id="7" disabled="true" class="form-control" />
+                                <input type="number" id="total" disabled="true" class="form-control" />
                             </div>
                         </div>
                     </div>
