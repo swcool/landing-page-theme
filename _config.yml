@@ -6,7 +6,7 @@ url: http://yoursite.com
 title: GAP
 email: your-email@domain.com
 author: Open Data Kosovo / Instituti GAP
-description: > Kjo faqe p&euml;rmban vizualizime t&euml; t&euml; dh&euml;nave dhe kalkulator p&euml;r llogaritjen e dogan&euml;s s&euml; veturave.
+description:  Kjo faqe p&euml;rmban vizualizime t&euml; t&euml; dh&euml;nave dhe kalkulator p&euml;r llogaritjen e dogan&euml;s s&euml; veturave.
 baseurl: /veturat
 # ----------------------- #
 #    Jekyll & Plugins     #
