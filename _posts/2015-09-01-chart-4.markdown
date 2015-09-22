@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_post
 img: chart4.png
 category: charts
 sectionId: chart-four

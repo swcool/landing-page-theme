@@ -155,8 +155,8 @@ $(document).ready(function () {
 </script>
 
 <section id="services">
-<div class="content-section-b">
     <section id="calculator">
+    <div class="content-section-b">
         <div class="container">
 
             <div class="row">
@@ -177,7 +177,7 @@ $(document).ready(function () {
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6 col-sm-6  ">
-                  <div class="form-horizontal" align="center">
+                  <div class="form-horizontal">
                         <br/><br/><br/><br/><br/>
                         <div class="form-group ">
                             <label class="control-label col-xs-5"> Data sot : </label>
@@ -189,10 +189,8 @@ $(document).ready(function () {
                             <label class="control-label col-xs-5">Data e prodhimit:</label>
                             <div class="col-xs-5">
                                 <input type="date" id="data_prodhimit" class="form-control"/>
-                            </div>
-                            <div class="col-xs-5 col-lg-offset-4">
                                 <fieldset id="checkArray">
-                                    <input  type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
+                                    <input type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
                                 </fieldset>
                             </div>
                         </div>
@@ -209,8 +207,9 @@ $(document).ready(function () {
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-xs-5 col-lg-offset-5" >
-                                <button class="btn orange total"> Llogarit </button>
+                            <label class="control-label col-xs-5"> </label>
+                            <div class="col-xs-5 col-lg-offset-5 ">
+                                <button class="btn orange total center-block"> Llogarit </button>
                             </div>
                         </div>
                         <br />
@@ -251,8 +250,8 @@ $(document).ready(function () {
 {% for post in site.posts reversed %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
-    <div class="content-section-a">
     <section id="{{ post.sectionId }}">
+    <div class="content-section-a">
         <div class="container">
 
             <div class="row">
@@ -274,9 +273,8 @@ $(document).ready(function () {
     </div>
     <!-- /.content-section-a -->
     {% else %}
-
-    <div class="content-section-b">
     <section id="{{ post.sectionId }}">
+    <div class="content-section-b">
         <div class="container">
 
             <div class="row">

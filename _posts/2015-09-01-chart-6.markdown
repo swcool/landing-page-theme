@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_post
 img: chart6.png
 category: charts
 sectionId: chart-six
