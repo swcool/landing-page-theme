@@ -9,6 +9,8 @@ $(document).ready(function () {
         document.getElementById('data_prodhimit').valueAsDate = new Date();
     });
     $(function () {
+    // var today = new Date();
+    // $('#data_sot').attr('value', today);
         document.getElementById('data_sot').valueAsDate = new Date();
         $(".total").on("click", function(e){
             e.preventDefault();
@@ -20,15 +22,14 @@ $(document).ready(function () {
             var date1 = new Date($('#data_sot').val());
             var date2 = new Date($('#data_prodhimit').val());
             var vitet = date1.getYear() - date2.getYear();
-            
-            $('#viti').val(data);
+
             var gjej_akcizen;
             if( kubikazha <=  2000){   
                 switch (true) {
                 case (vitet == 0) :  
                     gjej_akcizen = 0;    
                     break;
-                case (vitet > 0 && vitet < 9):  
+                case (vitet > 0 && vitet < 9) :  
                     gjej_akcizen = 400;  
                     break;
                 case (vitet == 9) :  
@@ -55,7 +56,7 @@ $(document).ready(function () {
                 case (vitet == 16):  
                     gjej_akcizen = 1300; 
                     break;
-                case (vitet >= 17):  
+                case (vitet > 16):  
                     gjej_akcizen = 1500; 
                     break;
                 default: 
@@ -68,7 +69,7 @@ $(document).ready(function () {
                 case (vitet == 0) :  
                     gjej_akcizen = 300;  
                     break;
-                case (vitet > 0 && vitet <9) :  
+                case (vitet > 0 && vitet < 9) :  
                     gjej_akcizen = 400;  
                     break;
                 case (vitet == 9) :  
@@ -95,7 +96,7 @@ $(document).ready(function () {
                 case (vitet == 16):  
                     gjej_akcizen = 2000; 
                     break;
-                case (vitet >= 17):  
+                case (vitet > 16):  
                     gjej_akcizen = 2200; 
                     break;
                 default: 
@@ -107,40 +108,40 @@ $(document).ready(function () {
                 switch (true) {
                 case (vitet == 0) : 
                     gjej_akcizen = 800; 
-                    break;
-                case (vitet > 0 && vitet <8 ) : 
+                        break;
+                case (vitet > 0 && vitet < 9) : 
                     gjej_akcizen = 1000; 
-                    break;
+                        break;
                 case (vitet == 9) : 
                     gjej_akcizen = 1500;
-                    break;
+                        break;
                 case (vitet == 10): 
                     gjej_akcizen = 1800;
-                    break;
+                        break;
                 case (vitet == 11): 
                     gjej_akcizen = 2100;
-                    break;
+                        break;
                 case (vitet == 12): 
                     gjej_akcizen = 2400;
-                    break;
+                        break;
                 case (vitet == 13): 
                     gjej_akcizen = 2700;
-                    break;
+                        break;
                 case (vitet == 14): 
                     gjej_akcizen = 3000;
-                    break;
+                        break;
                 case (vitet == 15): 
                     gjej_akcizen = 3300;
-                    break;
+                        break;
                 case (vitet == 16): 
                     gjej_akcizen = 3600;
-                    break;
-                case (vitet >= 17): 
+                        break;
+                case (vitet > 16): 
                     gjej_akcizen = 3900;
-                    break;
+                        break;
                 default: 
                     gjej_akcizen = 0; 
-                    break;
+                        break;
                 }
             }
             $("#akciza").val(gjej_akcizen);
