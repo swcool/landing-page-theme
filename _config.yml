@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
+url: http://alexlib.github.io
+title: Alex Liberzon landing page
+email: alexlib at tau dot ac dot il
+author: Alex Liberzon
 description: > # "Write an awesome description for your new site here. 
   You can edit this line in _config.yml. It will appear in your document 
   head meta (for Google search results) and in your feed.xml site 
@@ -25,8 +25,8 @@ permalink: pretty
 
 social:
   - title: twitter
-    url: https://twitter.com/SBootstrap
+    url: https://twitter.com/alexlib
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/alexlib
   - title: linkedin
     url: 
