@@ -10,15 +10,14 @@ $(document).ready(function () {
         document.getElementById('data_prodhimit').valueAsDate = new Date();
     });
     $(function () {
-        document.getElementById('data_sot').valueAsDate = new Date();
         $(".total").on("click", function(e){
             e.preventDefault();
             var vlera   = +$("#vlera").val();
             var kubikazha = +$("#kubikazha").val();
-            var dogana  = vlera*0.1;
-            $("#dogana").val(dogana);
+            var tatimi  = vlera*0.1;
+            $("#tatimi").val(tatimi);
 
-            var date1 = new Date($('#data_sot').val());
+            var date1 = new Date();
             var date2 = new Date($('#data_prodhimit').val());
             var vitet = date1.getYear() - date2.getYear();
 
@@ -144,9 +143,11 @@ $(document).ready(function () {
                 }
             }
             $("#akciza").val(gjej_akcizen);
-            var tvsh = (vlera + gjej_akcizen + dogana) * 0.18;
+            var tvsh = (vlera + gjej_akcizen + tatimi) * 0.18;
             $("#tvsh").val(tvsh);
-            $('#total').val(vlera + gjej_akcizen + dogana + tvsh)          
+            var dogana = gjej_akcizen + tatimi + tvsh
+            $("#dogana").val( dogana );            
+            $('#total').val(vlera + dogana )          
             })
     });
 
@@ -171,7 +172,7 @@ $(document).ready(function () {
 
                             <li><strong>Akciza:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 
-                            <li><strong>Dogana:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                            <li><strong>tatimi:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                         </ul>
                     </div>
                 </div>
@@ -179,32 +180,36 @@ $(document).ready(function () {
                   <div class="form-horizontal">
                         <br/><br/><br/><br/><br/>
                         <div class="form-group ">
-                            <label class="control-label col-xs-5"> Data sot : </label>
+                            <label class="control-label col-xs-5">Data e prodhimit :</label>
                             <div class="col-xs-5">
-                            <input type="date" id="data_sot" disabled="true"  class="form-control" />
-                        </div>
-                        </div>
-                        <div class="form-group ">
-                            <label class="control-label col-xs-5">Data e prodhimit:</label>
-                            <div class="col-xs-5">
-                                <input type="date" id="data_prodhimit" class="form-control"/>
+                                <input type="date" class="form-control" id="data_prodhimit" />
                                 <fieldset id="checkArray">
                                     <input type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
                                 </fieldset>
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-5"> Kubikazha: </label>
-                            <div class="col-xs-5">
-                                <input type="number" value="0" min="0" step="1" id="kubikazha" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <label class="control-label col-xs-5"> Vlera: </label>
+                            <label class="control-label col-xs-5"> Vlera e vetures : </label>
                             <div class="col-xs-5">
                                 <input type="number" value="0" min="0" step="1" id="vlera" class="form-control" />
                             </div>
                         </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5"> Kubikazha : </label>
+                            <div class="col-xs-5">
+                                <input type="number" value="0" min="0" step="1" id="kubikazha" class="form-control" /> 
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                        <div class="col-xs-12 col-sm-push-2"> 
+                            <label class="align-tex  "> 
+                            <p><ul>
+                            <li>0-2000 cmm</li>
+                            <li>2001-3000 cmm</li> 
+                            <li>mbi 3000 cmm</li>
+                            </ul></p>
+                            </label>
+                            </div>
                         <div class="form-group">
                             <label class="control-label col-xs-5"> </label>
                             <div class="col-xs-5 col-lg-offset-5 ">
@@ -213,27 +218,33 @@ $(document).ready(function () {
                         </div>
                         <br />
                         <div class="form-group ">
-                            <label class="control-label col-xs-5"> Akciza: </label>
+                            <label class="control-label col-xs-5"> Akciza : </label>
                             <div class="col-xs-5">
                              <input type="number" value="0" disabled="true" id="akciza" class="form-control"/>
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label class="control-label col-xs-5"> Dogana: </label>
+                            <label class="control-label col-xs-5"> Tatimi ne import : </label>
                             <div class="col-xs-5">
-                                <input type="number" value="0" disabled="true" id="dogana" class="form-control" />
+                                <input type="number" value="0" disabled="true" id="tatimi" class="form-control" />
                             </div>
                         </div>
-                        <div class="form-group ">
-                            <label class="control-label col-xs-5"> TVSH: </label>
+                       <div class="form-group ">
+                            <label class="control-label col-xs-5"> TVSH : </label>
                             <div class="col-xs-5">
                                 <input type="number" min="0"  value="0" id="tvsh" disabled="true" class="form-control" />
                             </div>
                         </div>
-                        <div class="form-group ">
-                            <label class="control-label col-xs-5"> Totali: </label>
+                         <div class="form-group ">
+                            <label class="control-label col-xs-5 orange-text"> Dogana : </label>
                             <div class="col-xs-5">
-                                <input type="number"  value="0" id="total" disabled="true" class="form-control" />
+                                <input type="number" value="0" disabled="true" id="dogana" class="form-control orange-border" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5 orange-text"> Totali ( Vetura + Dogana ) : </label>
+                            <div class="col-xs-5">
+                                <input type="number"  value="0" id="total" disabled="true" class="form-control orange-border" />
                             </div>
                         </div>
                     </div>
