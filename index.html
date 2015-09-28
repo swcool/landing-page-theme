@@ -4,7 +4,7 @@ layout: default
 
 <section id="services">
 <!-- Page Content -->
-{% for post in site.posts reversed %}
+{% for post in site.posts reversed | sort_by: "post.date" %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <section id="{{ post.sectionId }}">
