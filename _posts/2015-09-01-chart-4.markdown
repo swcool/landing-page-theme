@@ -2,7 +2,7 @@
 layout: default_post
 img: chart4.png
 category: charts
-sectionId: chart-four
+sectionId: regjistrimi-i-veturave-ne-baze-te-firmes
 title: Grafiku IV 
 description:  <p class="justify"><a href="charts/chart-4.html">Ky grafikon </a> paraqet regjistrimin e veturave ne baze te firmes.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 ---

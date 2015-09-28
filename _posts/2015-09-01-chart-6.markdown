@@ -2,7 +2,7 @@
 layout: default_post
 img: chart6.png
 category: charts
-sectionId: chart-six
+sectionId: dogana-e-veturave-te-reja-ne-baze-te-vendit-te-origjines
 title: Grafiku VI 
 description: <p class="justify"><a href="charts/chart-6.html">Ky grafikon </a> paraqet doganen e veturave te reja ne baze te vendit te origjines.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
 ---
