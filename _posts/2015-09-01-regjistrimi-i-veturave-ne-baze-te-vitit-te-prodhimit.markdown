@@ -11,7 +11,6 @@ published: true
 
 
 <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/eqejez" style="border: 0; width: 100%; height: 500px">&nbsp;</iframe>
-<div align="center"><a  class="btn orange" href="{{ site.baseurl }}/excel_files/te_dhenat_e_grafikave.xlsx"> Shkarko </a> Te dhenat ne formatin excel.</div>
 >**[Shkarko]({{ site.baseurl }}/excel_files/te_dhenat_e_grafikave.xlsx "Te dhenat ne formatin excel.")**
 
 
