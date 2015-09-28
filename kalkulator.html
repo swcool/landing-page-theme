@@ -1,0 +1,258 @@
+---
+layout: default_post
+---
+
+<script src="{{ site.baseurl }}/js/jquery-1.11.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#veture_re").on("change",function () {
+        $('#data_prodhimit').attr("disabled", $(this).is(":checked"));
+        document.getElementById('data_prodhimit').valueAsDate = new Date();
+    });
+    $(function () {
+        $(".total").on("click", function(e){
+            e.preventDefault();
+            var vlera   = +$("#vlera").val();
+            var kubikazha = +$("#kubikazha").val();
+            var tatimi  = vlera*0.1;
+            $("#tatimi").val(tatimi);
+
+            var date1 = new Date();
+            var date2 = new Date($('#data_prodhimit').val());
+            var vitet = date1.getYear() - date2.getYear();
+
+            var gjej_akcizen;
+            if( kubikazha <=  2000){   
+                switch (true) {
+                case (vitet == 0) :  
+                    gjej_akcizen = 0;    
+                    break;
+                case (vitet > 0 && vitet < 9) :  
+                    gjej_akcizen = 400;  
+                    break;
+                case (vitet == 9) :  
+                    gjej_akcizen = 600;  
+                    break;
+                case (vitet == 10):  
+                    gjej_akcizen = 700;  
+                    break;
+                case (vitet == 11):  
+                    gjej_akcizen = 800;  
+                    break;
+                case (vitet == 12): 
+                    gjej_akcizen = 900; 
+                    break;
+                case (vitet == 13):  
+                    gjej_akcizen = 1000; 
+                    break;
+                case (vitet == 14):  
+                    gjej_akcizen = 1100; 
+                    break;
+                case (vitet == 15):  
+                    gjej_akcizen = 1200; 
+                    break;
+                case (vitet == 16):  
+                    gjej_akcizen = 1300; 
+                    break;
+                case (vitet > 16):  
+                    gjej_akcizen = 1500; 
+                    break;
+                default: 
+                    gjej_akcizen = 0; 
+                    break;
+                }
+            }
+            if (kubikazha  > 2000  &&  kubikazha < 3001){   
+                switch (true) {
+                case (vitet == 0) :  
+                    gjej_akcizen = 400;  
+                    break;
+                case (vitet > 0 && vitet < 9) :  
+                    gjej_akcizen = 400;  
+                    break;
+                case (vitet == 9) :  
+                    gjej_akcizen = 600;  
+                    break;
+                case (vitet == 10): 
+                    gjej_akcizen = 800;  
+                    break;
+                case (vitet == 11): 
+                    gjej_akcizen = 1000; 
+                    break;
+                case (vitet == 12):  
+                    gjej_akcizen = 1200; 
+                    break;
+                case (vitet == 13):  
+                    gjej_akcizen = 1400; 
+                    break;
+                case (vitet == 14):  
+                    gjej_akcizen = 1600; 
+                    break;
+                case (vitet == 15):  
+                    gjej_akcizen = 1800; 
+                    break;
+                case (vitet == 16):  
+                    gjej_akcizen = 2000; 
+                    break;
+                case (vitet > 16):  
+                    gjej_akcizen = 2200; 
+                    break;
+                default: 
+                    gjej_akcizen = 0; 
+                    break;
+                }
+            }
+            if( kubikazha > 3000){  
+                switch (true) {
+                case (vitet == 0) : 
+                    gjej_akcizen = 1000; 
+                        break;
+                case (vitet > 0 && vitet < 9) : 
+                    gjej_akcizen = 1000; 
+                        break;
+                case (vitet == 9) : 
+                    gjej_akcizen = 1500;
+                        break;
+                case (vitet == 10): 
+                    gjej_akcizen = 1800;
+                        break;
+                case (vitet == 11): 
+                    gjej_akcizen = 2100;
+                        break;
+                case (vitet == 12): 
+                    gjej_akcizen = 2400;
+                        break;
+                case (vitet == 13): 
+                    gjej_akcizen = 2700;
+                        break;
+                case (vitet == 14): 
+                    gjej_akcizen = 3000;
+                        break;
+                case (vitet == 15): 
+                    gjej_akcizen = 3300;
+                        break;
+                case (vitet == 16): 
+                    gjej_akcizen = 3600;
+                        break;
+                case (vitet > 16): 
+                    gjej_akcizen = 3900;
+                        break;
+                default: 
+                    gjej_akcizen = 0; 
+                        break;
+                }
+            }
+            $("#akciza").val(gjej_akcizen);
+            var tvsh = (vlera + gjej_akcizen + tatimi) * 0.18;
+            $("#tvsh").val(tvsh);
+            var dogana = gjej_akcizen + tatimi + tvsh
+            $("#dogana").val( dogana );            
+            $('#total').val(vlera + dogana )          
+            })
+    });
+
+});
+</script>
+
+<section id="services">
+    <section id="kalkulator">
+    <div class="content-section-b">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Kalkulator</h2>
+                    <div class="lead">Pershkrimi i kalkulatorit.<br/><br/>
+                        <ul class="justify">
+                            <li><strong>Kubikazha:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                            <li><strong>Vlera:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                            <li><strong>Akciza:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                            <li><strong>tatimi:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6 col-sm-6  ">
+                  <div class="form-horizontal">
+                        <br/><br/><br/><br/><br/>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5">Data e prodhimit :</label>
+                            <div class="col-xs-5">
+                                <input type="date" class="form-control" id="data_prodhimit" />
+                                <fieldset id="checkArray">
+                                    <input type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5"> Vlera e vetures : </label>
+                            <div class="col-xs-5">
+                                <input type="number" value="0" min="0" step="1" id="vlera" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5"> Kubikazha : </label>
+                            <div class="col-xs-5">
+                                <input type="number" value="0" min="0" step="1" id="kubikazha" class="form-control" /> 
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                        <div class="col-xs-12 col-sm-push-2"> 
+                            <label class="align-tex  "> 
+                            <p><ul>
+                            <li>0-2000 cmm</li>
+                            <li>2001-3000 cmm</li> 
+                            <li>mbi 3000 cmm</li>
+                            </ul></p>
+                            </label>
+                            </div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-5"> </label>
+                            <div class="col-xs-5 col-lg-offset-5 ">
+                                <button class="btn orange total center-block"> Llogarit </button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5"> Akciza : </label>
+                            <div class="col-xs-5">
+                             <input type="number" value="0" disabled="true" id="akciza" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5"> Tatimi ne import : </label>
+                            <div class="col-xs-5">
+                                <input type="number" value="0" disabled="true" id="tatimi" class="form-control" />
+                            </div>
+                        </div>
+                       <div class="form-group ">
+                            <label class="control-label col-xs-5"> TVSH : </label>
+                            <div class="col-xs-5">
+                                <input type="number" min="0"  value="0" id="tvsh" disabled="true" class="form-control" />
+                            </div>
+                        </div>
+                         <div class="form-group ">
+                            <label class="control-label col-xs-5 orange-text"> Dogana : </label>
+                            <div class="col-xs-5">
+                                <input type="number" value="0" disabled="true" id="dogana" class="form-control orange-border" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label col-xs-5 orange-text"> Totali ( Vetura + Dogana ) : </label>
+                            <div class="col-xs-5">
+                                <input type="number"  value="0" id="total" disabled="true" class="form-control orange-border" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+</div>
+</section>
