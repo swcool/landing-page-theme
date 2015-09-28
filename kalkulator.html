@@ -1,13 +1,16 @@
 ---
 layout: default_post
 ---
-
 <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-    $("#veture_re").on("change",function () {
-        $('#data_prodhimit').attr("disabled", $(this).is(":checked"));
-        document.getElementById('data_prodhimit').valueAsDate = new Date();
+    $('#veture_re').on("change",function () {
+        if($('#veture_re').is(':checked') == true){
+            $('#data_prodhimit').prop('disabled', true);
+            document.getElementById('data_prodhimit').valueAsDate = new Date();}
+        else {
+            $('#data_prodhimit').prop('disabled', false);
+            $("#data_prodhimit").val('');}
     });
     $(function () {
         $(".total").on("click", function(e){
@@ -20,11 +23,13 @@ $(document).ready(function () {
             var date1 = new Date();
             var date2 = new Date($('#data_prodhimit').val());
             var vitet = date1.getYear() - date2.getYear();
-
+            if($('#veture_re').is(':checked') == true){
+                vitet = 'veture_re';
+            }
             var gjej_akcizen;
             if( kubikazha <=  2000){   
                 switch (true) {
-                case (vitet == 0) :  
+                case (vitet == 400) :  
                     gjej_akcizen = 0;    
                     break;
                 case (vitet > 0 && vitet < 9) :  
@@ -56,6 +61,9 @@ $(document).ready(function () {
                     break;
                 case (vitet > 16):  
                     gjej_akcizen = 1500; 
+                    break;
+                case (vitet == 'veture_re'):  
+                    gjej_akcizen = 0; 
                     break;
                 default: 
                     gjej_akcizen = 0; 
@@ -97,6 +105,9 @@ $(document).ready(function () {
                 case (vitet > 16):  
                     gjej_akcizen = 2200; 
                     break;
+                case (vitet == 'veture_re'):  
+                    gjej_akcizen = 300; 
+                    break;
                 default: 
                     gjej_akcizen = 0; 
                     break;
@@ -137,6 +148,9 @@ $(document).ready(function () {
                 case (vitet > 16): 
                     gjej_akcizen = 3900;
                         break;
+                case (vitet == 'veture_re'):  
+                    gjej_akcizen = 800; 
+                    break;
                 default: 
                     gjej_akcizen = 0; 
                         break;
