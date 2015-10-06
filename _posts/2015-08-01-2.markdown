@@ -1,7 +1,7 @@
 ---
 layout: default_post
 video: 1.webm
-videoId: 1
+videoId: vjetersia
 category: info
 title: Vjetersia 2
 sectionId: video1

@@ -9,7 +9,8 @@ $(document).ready(function () {
     $('#veture_re').on("change",function () {
         if($('#veture_re').is(':checked') == true){
             $('#viti').prop('disabled', true);
-            $("#viti").val('2015');}
+            var viti_tash = new Date().getFullYear();
+            $("#viti").val(viti_tash);}
         else {
             $('#viti').prop('disabled', false);}
     });
@@ -25,7 +26,7 @@ $(document).ready(function () {
             var tatimi  = vlera*0.1;
             $("#tatimi").val(tatimi);
 
-            var date1 = 2015;
+            var date1 = new Date().getFullYear();
             var date2 = +$("#viti").val();
             var vitet = date1 - date2;
             if($('#veture_re').is(':checked') == true){
