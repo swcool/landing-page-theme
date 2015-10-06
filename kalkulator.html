@@ -2,34 +2,39 @@
 layout: default_post
 ---
 <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"></script>
+<script src="{{ site.baseurl }}/css/landing-page.css"></script>
 <script type="text/javascript">
 $(document).ready(function () {
+
     $('#veture_re').on("change",function () {
         if($('#veture_re').is(':checked') == true){
-            $('#data_prodhimit').prop('disabled', true);
-            document.getElementById('data_prodhimit').valueAsDate = new Date();}
+            $('#viti').prop('disabled', true);
+            $("#viti").val('2015');}
         else {
-            $('#data_prodhimit').prop('disabled', false);
-            $("#data_prodhimit").val('');}
+            $('#viti').prop('disabled', false);}
     });
+    for (i = new Date().getFullYear(); i > 1900; i--)
+    {
+        $('#viti').append($('<option />').val(i).html(i));
+    }
+
     $(function () {
-        $(".total").on("click", function(e){
-            e.preventDefault();
+        $('#viti , #kubikazha , #vlera').on('input',function() {
             var vlera   = +$("#vlera").val();
-            var kubikazha = +$("#kubikazha").val();
+            var kubikazha = $("#kubikazha").val();
             var tatimi  = vlera*0.1;
             $("#tatimi").val(tatimi);
 
-            var date1 = new Date();
-            var date2 = new Date($('#data_prodhimit').val());
-            var vitet = date1.getYear() - date2.getYear();
+            var date1 = 2015;
+            var date2 = +$("#viti").val();
+            var vitet = date1 - date2;
             if($('#veture_re').is(':checked') == true){
                 vitet = 'veture_re';
             }
             var gjej_akcizen;
-            if( kubikazha <=  2000){   
+            if( kubikazha ==  0){   
                 switch (true) {
-                case (vitet == 400) :  
+                case (vitet == 0) :  
                     gjej_akcizen = 0;    
                     break;
                 case (vitet > 0 && vitet < 9) :  
@@ -70,7 +75,7 @@ $(document).ready(function () {
                     break;
                 }
             }
-            if (kubikazha  > 2000  &&  kubikazha < 3001){   
+            if (kubikazha  == 1){   
                 switch (true) {
                 case (vitet == 0) :  
                     gjej_akcizen = 400;  
@@ -113,7 +118,7 @@ $(document).ready(function () {
                     break;
                 }
             }
-            if( kubikazha > 3000){  
+            if( kubikazha == 2){  
                 switch (true) {
                 case (vitet == 0) : 
                     gjej_akcizen = 1000; 
@@ -164,7 +169,6 @@ $(document).ready(function () {
             $('#total').val(vlera + dogana )          
             })
     });
-
 });
 </script>
 
@@ -174,23 +178,15 @@ $(document).ready(function () {
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <div class="col-lg-4 col-lg-offset-2 col-sm-push-5  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Kalkulator</h2>
                     <div class="lead">
                         <ul class="justify">
-                            <li><strong>Kubikazha:</strong>
-                            <ul>
-                            <li>0 - 2000 cmm</li>
-                            <li>2001 - 3000 cmm</li> 
-                            <li>mbi 3000 cmm</li>
-                            </ul>
-                            </li>
-                            
-                            <li><strong>Vlera e vetures:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                            <li><strong>Viti :</strong>  Për të kalkuluar vjetërsinë e veturës, zgjedhni vitin kur është regjistruar vetura për herë të parë.</li> <br/>
 
-                            <li><strong>Akciza:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                            <li><strong>Vlera e veturës :</strong> përcaktohet sipas katalogut të Doganave të Kosovës ose sipas çmimit të blerjes në vendin e origjinës.</li>
 
                         </ul>
                     </div>
@@ -199,60 +195,68 @@ $(document).ready(function () {
                   <div class="form-horizontal">
                         
                         <div class="form-group ">
-                            <label class="control-label col-xs-5">Data e prodhimit :</label>
+                            <label class="control-label col-xs-5">Viti :</label>
                             <div class="col-xs-5">
-                                <input type="date" class="form-control" id="data_prodhimit" />
-                                    <input type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
+                                 <select name="viti" id="viti"  class="form-control"></select>
+                                <input type="checkbox" id="veture_re" name="veture_re" value=" "/> Veture e re
                             </div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-5"> Vlera e vetures : </label>
                             <div class="col-xs-5">
-                                <input type="number" value="0" min="0" step="1" id="vlera" class="form-control" />
+                            <span class="input-symbol-euro">
+                                <input type="number" value="0" min="0" step="1" class="form-control" id='vlera' />
+                            </span>
                             </div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-5"> Kubikazha : </label>
                             <div class="col-xs-5">
-                                <input type="number" value="0" min="0" step="1" id="kubikazha" class="form-control" /> 
+                                <select id="kubikazha" class="form-control">
+                                    <option value="0">0 - 2000 cmm</option>
+                                    <option value="1">2001 - 3000 cmm</option>
+                                    <option value="2">mbi 3000 cmm</option>
+                                  </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-xs-5"> </label>
-                            <div class="col-xs-5 col-lg-offset-5 ">
-                                <button class="btn orange total center-block"> Llogarit </button>
-                            </div>
+                            <label class="control-label col-xs-9" align="center"> -------------------- </label>
                         </div>
                         <br />
                         <div class="form-group ">
                             <label class="control-label col-xs-5"> Akciza : </label>
                             <div class="col-xs-5">
-                             <input type="number" value="0" disabled="true" id="akciza" class="form-control"/>
-                            </div>
+                            <span class="input-symbol-euro">
+                                <input type="number" value="0" min="0" step="1" class="form-control" disabled="true" id="akciza" />
+                            </span></div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-5"> Tatimi ne import : </label>
                             <div class="col-xs-5">
+                            <span class="input-symbol-euro">
                                 <input type="number" value="0" disabled="true" id="tatimi" class="form-control" />
-                            </div>
+                            </span></div>
                         </div>
                        <div class="form-group ">
                             <label class="control-label col-xs-5"> TVSH : </label>
                             <div class="col-xs-5">
+                            <span class="input-symbol-euro">
                                 <input type="number" min="0"  value="0" id="tvsh" disabled="true" class="form-control" />
-                            </div>
+                            </span></div>
                         </div>
                          <div class="form-group ">
                             <label class="control-label col-xs-5 orange-text"> Dogana : </label>
                             <div class="col-xs-5">
+                            <span class="input-symbol-euro">
                                 <input type="number" value="0" disabled="true" id="dogana" class="form-control orange-border" />
-                            </div>
+                            </span></div>
                         </div>
                         <div class="form-group ">
                             <label class="control-label col-xs-5 orange-text"> Totali ( Vetura + Dogana ) : </label>
                             <div class="col-xs-5">
+                            <span class="input-symbol-euro">
                                 <input type="number"  value="0" id="total" disabled="true" class="form-control orange-border" />
-                            </div>
+                            </span></div>
                         </div>
                     </div>
                 </div>

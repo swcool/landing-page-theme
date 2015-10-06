@@ -1,0 +1,10 @@
+---
+layout: default_post
+video: 1.webm
+videoId: 1
+category: info
+title: Vjetersia 2
+sectionId: video1
+description: "Vjetersia 22"
+published: true
+---

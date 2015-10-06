@@ -1,0 +1,43 @@
+.gifv-player {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+    .gifv-player-overlay:after {
+        content: "GIF";
+        text-align: center;
+        font-size: 36px;
+        line-height: 70px;
+        letter-spacing: 2px;
+        color: #fff;
+
+        background: rgba(0, 0, 0, .85);
+        border: 2px solid;
+        border-radius: 8px;
+
+        width: 116px;
+        height: 66px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -34px 0 0 -60px;
+
+    }
+    .gifv-player-playing .gifv-player-overlay {
+        display: none;
+    }
+
+    .gifv-player img {
+        position: relative;
+        float: left;
+    }
+    .gifv-player-playing video {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .gifv-player video {
+        height: 100%;
+        position: absolute;
+    }

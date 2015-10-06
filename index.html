@@ -5,14 +5,15 @@ layout: default
 <section id="services">
 <!-- Page Content -->
 {% for post in site.posts reversed | sort_by: "post.date" %}
+{% if post.category contains 'grafika' %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
-    <section id="{{ post.sectionId }}">
+    <section id="{{ post.sectionId }}" height="100%">
     <div class="content-section-a">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-6" >
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">{{ post.title }}</h2>
@@ -52,6 +53,7 @@ layout: default
     </div>
     <!-- /.content-section-b -->
     {% endif %}
+{% endif %}
 {% endfor %}
 </section>
 
