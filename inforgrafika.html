@@ -1,9 +1,375 @@
 ---
 layout: default_post
 ---
-<link rel="stylesheet" href="gifv-player.css" type="text/css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<section class="content">
+<!DOCTYPE html>
+<html lang="en">
 
-</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">  
+    <style type="text/css">
+        .gifv-player {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ site.baseurl }}/videot/gifv-player.css" type="text/css" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/videot/gifv-player.js"></script>
+    <script>   
+    $(document).ready(function() {
+        player = new GifvPlayer();
+        playvideo('.divone');
 
+        jQuery("a").click(function() {
+        var id = jQuery(this).attr("id");
+        switch (true) {
+        case (id == 'info1') :  
+            $("body").css('background-color', '#ebb614' );
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+'#right-'+id ).show(); 
+            playvideo('.divone');  
+            break;
+        case (id == 'info2'):
+            $("body").css('background-color', '#acb7a8' );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divtwo');  
+            break;
+        case (id == 'info3'):
+            $("body").css('background-color', '#4f795b' );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divthree'); 
+            break;
+        case (id == 'info4') : 
+            $("body").css('background-color', '#7f7a6e' ); 
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+'#right-'+id ).show(); 
+            playvideo('.divfour');   
+            break;
+        case (id == 'info5'):
+            $("body").css('background-color', ' #4a87a2' );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divfive'); 
+            break;
+        case (id == 'info6'):
+            $("body").css('background-color', '#121929' );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            playvideo('.divsix');  
+            break;
+        case (id == 'info7'):
+            $("body").css('background-color', '#1b5367' );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divseven'); 
+            break;
+        case (id == 'info8'):
+            $("body").css('background-color', ' #13192e' );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            playvideo('.diveight');  
+            break;
+        }
+         });
+        $("#next").click(function(){
+            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                div2vis = $(".right-div .info-right-div").filter(':visible');
+            var id = jQuery(this).attr("id");
+            if (div1vis.next().length > 0 && div2vis.next().length > 0) {
+                var nextid = div1vis.next().attr("id");
+                changebackground(nextid);
+                div1vis.next().show().prev().hide();
+                div2vis.next().show().prev().hide();
+            }
+         });
+        $("#prev").click(function(){
+            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                div2vis = $(".right-div .info-right-div").filter(':visible');
+            if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
+                var previd = div1vis.prev().attr("id");
+                changebackground(previd);
+                div1vis.prev().show().next().hide();
+                div2vis.prev().show().next().hide();
+            }
+           
+        });
+   
+    });
+    function playvideo(videoDivID) { 
+        $(videoDivID).find('video').show();
+        $(videoDivID).find('video')[0].play();  
+    }
+    function changebackground(divid) {   
+        console.log(divid);   
+        if(divid = '#left-info1'){ $("body").css('background-color', '#ebb614');} 
+        if(divid = '#left-info2'){ $("body").css('background-color', '#acb7a8');} 
+        if(divid = '#left-info3'){ $("body").css('background-color', '#4f795b');} 
+        if(divid = '#left-info4'){ $("body").css('background-color', '#7f7a6e');} 
+        if(divid = '#left-info5'){ $("body").css('background-color', '#4a87a2');} 
+        if(divid = '#left-info6'){ $("body").css('background-color', '#121929');} 
+        if(divid = '#left-info7'){ $("body").css('background-color', '#1b5367');} 
+        if(divid = '#left-info8'){ $("body").css('background-color', '#13192e');}
+    }
+    </script>
+</head>
+
+<body>
+<div class="content" id="content">               
+    <div class="container">                          
+        <div class="col-md-5 padding-right left-div">
+            <div class="left-content info-left-div" id="left-info1" style="display:block;">
+               <h1>TITULLI 1</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divone">
+                    <video preload="none"  width="446" height="252">
+                        <source type="video/webm" src="videot/vjetersia.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>  
+            </div>
+            <div class="left-content info-left-div" id="left-info2" style="display: none;">
+                <h1>TITULLI 2</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divtwo">
+                    <video preload="none" loop="loop" width="446" height="252">
+                        <source type="video/webm" src="videot/02.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info3" style="display: none;">
+                <h1>TITULLI 3</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divthree">
+                    <video preload="none" width="446" height="252">
+                        <source type="video/webm" src="videot/03.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info4" style="display: none;">
+                <h1>TITULLI 4</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divfour">
+                    <video preload="none" loop="loop" width="446" height="252">
+                        <source type="video/webm" src="videot/04.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info5" style="display: none;">
+                <h1>TITULLI 5</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divfive">
+                    <video preload="none" width="446" height="252">
+                        <source type="video/webm" src="videot/05.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info6" style="display: none;">
+                <h1>TITULLI 6</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divsix">
+                    <video preload="none" width="446" height="252">
+                        <source type="video/webm" src="videot/06.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info7" style="display: none;">
+                <h1>TITULLI 7</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player divseven">
+                    <video preload="none" width="446" height="252">
+                        <source type="video/webm" src="videot/07.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info8" style="display: none;">
+                <h1>TITULLI 8</h1>
+                <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
+                <div class="gifv-player diveight">
+                    <video preload="none" width="446" height="252">
+                        <source type="video/webm" src="videot/08.webm" />
+                    </video>
+                    <img src="img/foto_video/vjetersia.png" width="446" height="252" alt="Vjetersia" />
+                </div>   
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>   
+            </div>
+        </div>
+         <div class="col-md-2">
+            <div class="middle-content">
+                <hr class="vertical-line-top">
+                <div class="prev">
+                    <a href="#" id="prev1">
+                    <img src="img/clock.png"   >
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#1" id="info1">
+                    <img src="img/clock.png" >
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#2"  id="info2">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#3"  id="info3">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#4"  id="info4">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#5" id="info5">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#6" id="info6">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#7" id="info7">
+                    <img src="img/clock.png">
+                    </a>
+                </div>            
+                <div class="icon">
+                    <a href="#8" id="info8">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <div class="next" >
+                    <a href="#" id="next1">
+                    <img src="img/clock.png">
+                    </a>
+                </div>
+                <hr class="vertical-line-bottom">
+            </div>
+        </div>
+        <div class="col-md-5 padding-right right-div">
+            <div class="right-content info-right-div" id="right-info1" style="display:block;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info2" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info3" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info4" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info5" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info6" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info7" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div>  
+            <div class="right-content info-right-div" id="right-info8" style="display: none;">
+                <h3>Titulli 2</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
+                <img src=" "    width="350" height="272" alt=" Fotoja mungon " />
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Lorem ipsum dolor sit amet</h4>
+                </div>
+            </div> 
+
+        </div> 
+
+    </div>
+</div>
+<div class="footer">
+    <div class="col-md-3 nopadding">
+        <img src="img/gap-logo.png" class="img-responsive">
+    </div>
+    <div class="col-md-4">
+        <div class="">
+            <h3>EKONOMIA E VETURAVE</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+            <h5>Analizimi i politikave qeveritare për importin, regjistrimin dhe kontrollimin e automjeteve</h5>
+    </div>
+    <div class=" col-md-2 social nopadding">
+        <div class="fb">
+            <a href="#"><img src="img/fb.png"></a>
+        </div>
+        <div class="twitter">
+            <a href="#"><img src="img/twitter.png"></a>
+        </div>
+    </div> 
+    
+</div> 
+
+
+</body>
+</html>

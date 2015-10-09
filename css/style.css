@@ -1,0 +1,199 @@
+
+body{
+    background-color: #ebb614;
+}
+@font-face{
+    font-family:'Titling Gothic FB';
+    src:  url('fonts/TitlingGothicFBCondBold.otf'),
+    url('fonts/TitlingGothicFBNormalLight.otf');
+}
+@font-face{
+    font-family:'avenir next lt pro';
+    src:  url('fonts/AVENIRNEXTLTPRO-IT.OTF');
+}
+/*-------------------------Contenti---------------------------*/
+.content .left-content{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.content .right-content{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.content .left-content h1{
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'Titling Gothic FB';
+}
+.content .left-content h3{
+    color: #EAEAEA;
+    height: 65px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'avenir next lt pro';
+}
+.content .left-content h4{
+    color: #EAEAEA;
+    height: 65px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'avenir next lt pro';
+}
+.content .right-content h3{
+    color: #fff;
+    font-family: 'avenir next lt pro';
+    font-weight: bold;
+}
+.content .right-content h4{
+    color: #EAEAEA;
+    height: 65px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family:'avenir next lt pro';
+}
+.content .padding-right{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.content .burimi{
+    height: 30px;
+}
+.content .burimi h4{
+    text-align: right;
+    margin-top: 76px;
+}
+.vertical-line-top{
+    height: 100px;
+    width: 2px;
+    background-color: #B5B5B5;
+    margin-top: 0px;
+}
+.vertical-line-bottom{
+    height: 100px;
+    width: 2px;
+    background-color: #B5B5B5;
+    margin-bottom: 0px;
+}
+.content .middle-content{
+    text-align: center;
+}
+.content .middle-content .prev{
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+.content .middle-content .icon{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.content .middle-content .next{
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+/*--------------------------Footer-----------------------------*/
+.footer{
+    min-height: 70px;
+    background-color: #fff;
+}
+.footer .nopadding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer .economy{
+    background-color: #f0efee;
+}
+.footer  h2{
+    color: #888782;
+    font-family: 'Titling Gothic FB';
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.footer  h4{
+    color: #888782;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 19px;
+}
+.footer .padding-left{
+    padding-left: 65px;
+    padding-right: 0;
+}
+.footer .social .fb{
+    background-color: #4d67a3;
+    float: left;
+    min-width: 50%;
+    height: 70px;
+    text-align: center;
+}
+.footer .social .twitter{
+    background-color: #25a7df;
+    float: right;
+    min-width: 50%;
+    height: 70px;
+    text-align: center;
+}
+.footer .social .fb img{
+    margin-top: 15px;
+}
+.footer .social .twitter img{
+    margin-top: 15px;
+}
+/*---------------------------Media-screen-------------------------*/
+@media(max-width: 330px){
+    .content .left-content h3{
+    margin-bottom: 25px;
+    font-size: 18px;
+   }
+}
+@media(max-width: 497px){
+    .content .right-content h4{
+    margin-bottom: 47px;
+    }
+}
+@media(max-width: 497px){
+    .content .right-content h4{
+    margin-bottom: 115px;
+    }
+}
+@media(max-width: 404px){
+    .content .burimi h4{
+    margin-top: 150px;
+}
+}
+@media(max-width: 340px){
+    .content .burimi h4{
+    margin-top: 225px;
+    }
+}
+@media(max-width:1204px){
+    .footer  h2{
+    font-size: 25px;
+    margin-left: 14px;
+    }
+}
+@media(max-width:1204px){
+    .footer  h4{
+    margin-top: 10px;
+    }
+}
+@media(max-width:991px){
+    .footer  h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+}
+@media(max-width:768px){
+    .footer  h4{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    }
+}
+@media(max-width:991px){
+    .footer .padding-left{
+    padding-left: 0px;
+    }
+}
