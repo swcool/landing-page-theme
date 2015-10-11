@@ -28,49 +28,49 @@ layout: default_post
         var id = jQuery(this).attr("id");
         switch (true) {
         case (id == 'info1') :  
-            $("body").css('background-color', '#ebb614' );
+            changebackground('left-'+id);
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+'#right-'+id ).show(); 
             playvideo('.divone');  
             break;
         case (id == 'info2'):
-            $("body").css('background-color', '#acb7a8' );  
+            changebackground('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show(); 
             playvideo('.divtwo');  
             break;
         case (id == 'info3'):
-            $("body").css('background-color', '#4f795b' );  
+            changebackground('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show(); 
             playvideo('.divthree'); 
             break;
         case (id == 'info4') : 
-            $("body").css('background-color', '#7f7a6e' ); 
+            changebackground('left-'+id); 
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+'#right-'+id ).show(); 
             playvideo('.divfour');   
             break;
         case (id == 'info5'):
-            $("body").css('background-color', ' #4a87a2' );  
+            changebackground('left-'+id );  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show(); 
             playvideo('.divfive'); 
             break;
         case (id == 'info6'):
-            $("body").css('background-color', '#121929' );  
+            changebackground('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show();
             playvideo('.divsix');  
             break;
         case (id == 'info7'):
-            $("body").css('background-color', '#1b5367' );  
+            changebackground('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show(); 
             playvideo('.divseven'); 
             break;
         case (id == 'info8'):
-            $("body").css('background-color', ' #13192e' );  
+            changebackground('left-'+id );  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show();
             playvideo('.diveight');  
@@ -83,11 +83,9 @@ layout: default_post
                 div1vis.next().show().prev().hide();
                 div2vis.next().show().prev().hide();
                 var nextid = div1vis.next().attr("id");
-                console.log(nextid);
                 changebackground(nextid);
                 var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
                 playvideo('.'+playId);
-                console.log(playId);
             }
             break;
         case(id == 'prev'):
@@ -97,11 +95,9 @@ layout: default_post
                 div1vis.prev().show().next().hide();
                 div2vis.prev().show().next().hide();
                 var previd = div1vis.prev().attr("id");
-                console.log(previd);
                 changebackground(previd);
                 var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
                 playvideo('.'+playId);
-                console.log(playId);
             }
             break;
         };
