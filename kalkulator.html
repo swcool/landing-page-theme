@@ -9,16 +9,16 @@ $(document).ready(function () {
     $('#veture_re').on("change",function () {
         if($('#veture_re').is(':checked') == true){
             $('#viti').prop('disabled', true);
-            var viti_tash = new Date().getFullYear();
-            $("#viti").val(viti_tash);}
+            $("#viti").val('');}
         else {
-            $('#viti').prop('disabled', false);}
+            $('#viti').prop('disabled', false);
+            $("#viti").val('Zgjedh vitin');}
     });
-    for (i = new Date().getFullYear(); i > 1900; i--)
+    $('#viti').append('<option>Zgjedh vitin</option>');
+    for (i = new Date().getFullYear() - 1; i > 1900; i--)
     {
         $('#viti').append($('<option />').val(i).html(i));
     }
-
     $(function () {
         $('#viti , #kubikazha , #vlera').on('input',function() {
             var vlera   = +$("#vlera").val();
