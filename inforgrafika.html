@@ -24,7 +24,6 @@ layout: default_post
     $(document).ready(function() {
         player = new GifvPlayer();
         playvideo('.divone');
-
         jQuery("a").click(function() {
         var id = jQuery(this).attr("id");
         switch (true) {
@@ -76,46 +75,51 @@ layout: default_post
             $('#left-'+id+", "+ '#right-'+id ).show();
             playvideo('.diveight');  
             break;
-        }
-         });
-        $("#next").click(function(){
+        case(id == 'next'):
             var div1vis = $(".left-div .info-left-div").filter(':visible'), 
                 div2vis = $(".right-div .info-right-div").filter(':visible');
             var id = jQuery(this).attr("id");
             if (div1vis.next().length > 0 && div2vis.next().length > 0) {
-                var nextid = div1vis.next().attr("id");
-                changebackground(nextid);
                 div1vis.next().show().prev().hide();
                 div2vis.next().show().prev().hide();
+                var nextid = div1vis.next().attr("id");
+                console.log(nextid);
+                changebackground(nextid);
+                var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
+                playvideo('.'+playId);
+                console.log(playId);
             }
-         });
-        $("#prev").click(function(){
+            break;
+        case(id == 'prev'):
             var div1vis = $(".left-div .info-left-div").filter(':visible'), 
                 div2vis = $(".right-div .info-right-div").filter(':visible');
             if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
-                var previd = div1vis.prev().attr("id");
-                changebackground(previd);
                 div1vis.prev().show().next().hide();
                 div2vis.prev().show().next().hide();
+                var previd = div1vis.prev().attr("id");
+                console.log(previd);
+                changebackground(previd);
+                var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
+                playvideo('.'+playId);
+                console.log(playId);
             }
-           
-        });
-   
+            break;
+        };
+   }); 
     });
     function playvideo(videoDivID) { 
         $(videoDivID).find('video').show();
         $(videoDivID).find('video')[0].play();  
     }
     function changebackground(divid) {   
-        console.log(divid);   
-        if(divid = '#left-info1'){ $("body").css('background-color', '#ebb614');} 
-        if(divid = '#left-info2'){ $("body").css('background-color', '#acb7a8');} 
-        if(divid = '#left-info3'){ $("body").css('background-color', '#4f795b');} 
-        if(divid = '#left-info4'){ $("body").css('background-color', '#7f7a6e');} 
-        if(divid = '#left-info5'){ $("body").css('background-color', '#4a87a2');} 
-        if(divid = '#left-info6'){ $("body").css('background-color', '#121929');} 
-        if(divid = '#left-info7'){ $("body").css('background-color', '#1b5367');} 
-        if(divid = '#left-info8'){ $("body").css('background-color', '#13192e');}
+    if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
+    if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
+    if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
+    if (divid == 'left-info4') { $("body").css('background-color', '#7f7a6e'); } 
+    if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
+    if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
+    if (divid == 'left-info7') { $("body").css('background-color', '#1b5367'); } 
+    if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
     }
     </script>
 </head>
@@ -123,11 +127,11 @@ layout: default_post
 <body>
 <div class="content" id="content">               
     <div class="container">                          
-        <div class="col-md-5 padding-right left-div">
+        <div class="col-md-5 padding-right left-div" id="left-div">
             <div class="left-content info-left-div" id="left-info1" style="display:block;">
                <h1>TITULLI 1</h1>
                 <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
-                <div class="gifv-player divone">
+                <div class="gifv-player divone" id="divone">
                     <video preload="none"  width="446" height="252">
                         <source type="video/webm" src="videot/vjetersia.webm" />
                     </video>
@@ -138,7 +142,7 @@ layout: default_post
             <div class="left-content info-left-div" id="left-info2" style="display: none;">
                 <h1>TITULLI 2</h1>
                 <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
-                <div class="gifv-player divtwo">
+                <div class="gifv-player divtwo" id="divtwo">
                     <video preload="none" loop="loop" width="446" height="252">
                         <source type="video/webm" src="videot/02.webm" />
                     </video>
@@ -171,7 +175,7 @@ layout: default_post
             <div class="left-content info-left-div" id="left-info5" style="display: none;">
                 <h1>TITULLI 5</h1>
                 <h3>Nentitulli ose teksti shpjegues jo me shume se dy rreshta</h3>
-                <div class="gifv-player divfive">
+                <div class="gifv-player divfive ">
                     <video preload="none" width="446" height="252">
                         <source type="video/webm" src="videot/05.webm" />
                     </video>
@@ -216,11 +220,11 @@ layout: default_post
          <div class="col-md-2">
             <div class="middle-content">
                 <hr class="vertical-line-top">
-                <!-- <div class="prev">
-                    <a href="#" id="prev1">
+                <div class="prev">
+                    <a href="#" id="prev">
                     <img src="img/icon-01.png"   >
                     </a>
-                </div> -->
+                </div>
                 <div class="icon">
                     <a href="#1" id="info1">
                     <img src="img/icon-02.png" >
@@ -261,15 +265,15 @@ layout: default_post
                     <img src="img/icon-09.png">
                     </a>
                 </div>
-                <!-- <div class="next" >
-                    <a href="#" id="next1">
+                <div class="next" >
+                    <a href="#" id="next">
                     <img src="img/icon-10.png">
                     </a>
-                </div> -->
+                </div>
                 <hr class="vertical-line-bottom">
             </div>
         </div>
-        <div class="col-md-5 padding-right right-div">
+        <div class="col-md-5 padding-right right-div" id="right-div">
             <div class="right-content info-right-div" id="right-info1" style="display:block;">
                 <h3>Titulli 2</h3>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h4>
