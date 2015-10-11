@@ -5,11 +5,11 @@ body{
 @font-face{
     font-family:'Titling Gothic FB';
     src:  url('fonts/TitlingGothicFBCondBold.otf'),
-    url('css/fonts/TitlingGothicFBNormalLight.otf');
+    url('fonts/TitlingGothicFBNormalLight.otf');
 }
 @font-face{
     font-family:'avenir next lt pro';
-    src:  url('css/fonts/AVENIRNEXTLTPRO-IT.OTF');
+    src:  url('fonts/AVENIRNEXTLTPRO-IT.OTF');
 }
 /*-------------------------Contenti---------------------------*/
 .content .left-content{
