@@ -26,95 +26,116 @@ published: true
         jQuery("a").click(function() {
         var id = jQuery(this).attr("id");
         switch (true) {
-            case (id == 'info1') :  
-                changebackground('left-'+id);
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+'#right-'+id ).show(); 
-                playvideo('.divone');  
-                break;
-            case (id == 'info2'):
-                changebackground('left-'+id);  
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show(); 
-                playvideo('.divtwo');  
-                break;
-            case (id == 'info3'):
-                changebackground('left-'+id);  
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show(); 
-                playvideo('.divthree'); 
-                break;
-            case (id == 'info4') : 
-                changebackground('left-'+id); 
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+'#right-'+id ).show(); 
-                playvideo('.divfour');   
-                break;
-            case (id == 'info5'):
-                changebackground('left-'+id );  
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show(); 
-                playvideo('.divfive'); 
-                break;
-            case (id == 'info6'):
-                changebackground('left-'+id);  
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show();
-                playvideo('.divsix');  
-                break;
-            case (id == 'info7'):
-                changebackground('left-'+id);  
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show(); 
-                playvideo('.divseven'); 
-                break;
-            case (id == 'info8'):
-                changebackground('left-'+id );  
-                $(".info-right-div, .info-left-div").hide();
-                $('#left-'+id+", "+ '#right-'+id ).show();
-                playvideo('.diveight');  
-                break;
-            case(id == 'next'):
-                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
-                    div2vis = $(".right-div .info-right-div").filter(':visible');
-                var id = jQuery(this).attr("id");
-                if (div1vis.next().length > 0 && div2vis.next().length > 0) {
-                    div1vis.next().show().prev().hide();
-                    div2vis.next().show().prev().hide();
-                    var nextid = div1vis.next().attr("id");
-                    changebackground(nextid);
-                    var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
-                    playvideo('.'+playId);
-                }
-                break;
-            case(id == 'prev'):
-                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
-                    div2vis = $(".right-div .info-right-div").filter(':visible');
-                if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
-                    div1vis.prev().show().next().hide();
-                    div2vis.prev().show().next().hide();
-                    var previd = div1vis.prev().attr("id");
-                    changebackground(previd);
-                    var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
-                    playvideo('.'+playId);
-                }
-                break;
-            };
-        });
-        swapC()
-    }); 
-    
-    function swapC() {
-        $('.infografika').each(function (ind, elem) {
-            window.setTimeout(function () { 
-                $(elem).click();
-            }, 20000 * ind);
-        });
-    }
-
+        case (id == 'info1') :  
+            changebackground('left-'+id);
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+'#right-'+id ).show(); 
+            playvideo('.divone');  
+            changeicon('left-'+id);
+            break;
+        case (id == 'info2'):
+            changebackground('left-'+id); 
+            changeicon('left-'+id); 
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            $('#info2 img').attr('src',('img/active-02.png')); 
+            playvideo('.divtwo');  
+            break;
+        case (id == 'info3'):
+            changebackground('left-'+id);  
+            changeicon('left-'+id);
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            $('#info2 img').attr('src',('img/active-02.png'));  
+            playvideo('.divthree'); 
+            break;
+        case (id == 'info4') : 
+            changebackground('left-'+id);
+            changeicon('left-'+id); 
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+'#right-'+id ).show(); 
+            playvideo('.divfour');   
+            break;
+        case (id == 'info5'):
+            changebackground('left-'+id );
+            changeicon('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divfive'); 
+            break;
+        case (id == 'info6'):
+            changebackground('left-'+id);
+            changeicon('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            playvideo('.divsix');  
+            break;
+        case (id == 'info7'):
+            changebackground('left-'+id); 
+            changeicon('left-'+id); 
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divseven'); 
+            break;
+        case (id == 'info8'):
+            changebackground('left-'+id );
+            changeicon('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            playvideo('.diveight');  
+            break;
+        case(id == 'next'):
+            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                div2vis = $(".right-div .info-right-div").filter(':visible');
+            var id = jQuery(this).attr("id");
+            if (div1vis.next().length > 0 && div2vis.next().length > 0) {
+                div1vis.next().show().prev().hide();
+                div2vis.next().show().prev().hide();
+                var nextid = div1vis.next().attr("id");
+                changebackground(nextid);
+                changeicon(nextid);
+                var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
+                playvideo('.'+playId);
+            }
+            break;
+        case(id == 'prev'):
+            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                div2vis = $(".right-div .info-right-div").filter(':visible');
+            if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
+                div1vis.prev().show().next().hide();
+                div2vis.prev().show().next().hide();
+                var previd = div1vis.prev().attr("id");
+                changebackground(previd);
+                changeicon(previd);
+                var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
+                playvideo('.'+playId);
+            }
+            break;
+        };
+   }); 
+    });
     function playvideo(videoDivID) { 
         $(videoDivID).find('video').show();
         $(videoDivID).find('video')[0].play();  
+    }
+    function changeicon(divid) {   
+    if (divid == 'left-info1') { $('#info1 img').attr('src',('img/active-01.png')); }
+    // if (divid != 'left-info1') { $('#info1 img').attr('src',('img/icon-01.png')); } 
+    if (divid == 'left-info2') { $('#info2 img').attr('src',('img/active-02.png')); } 
+    // if (divid != 'left-info2') { $('#info1 img').attr('src',('img/icon-02.png')); }
+    if (divid == 'left-info3') { $('#info3 img').attr('src',('img/active-03.png')); } 
+    // if (divid != 'left-info3') { $('#info1 img').attr('src',('img/icon-03.png')); }
+    if (divid == 'left-info4') { $('#info4 img').attr('src',('img/active-04.png')); } 
+    // if (divid != 'left-info4') { $('#info1 img').attr('src',('img/icon-04.png')); }
+    if (divid == 'left-info5') { $('#info5 img').attr('src',('img/active-05.png')); } 
+    // if (divid != 'left-info5') { $('#info1 img').attr('src',('img/icon-05.png')); }
+    if (divid == 'left-info6') { $('#info6 img').attr('src',('img/active-06.png')); } 
+    // if (divid != 'left-info6') { $('#info1 img').attr('src',('img/icon-06.png')); }
+    if (divid == 'left-info7') { $('#info7 img').attr('src',('img/active-07.png')); } 
+    // if (divid != 'left-info7') { $('#info1 img').attr('src',('img/icon-07.png')); }
+    if (divid == 'left-info8') { $('#info8 img').attr('src',('img/active-08.png')); } 
+    // if (divid != 'left-info8') { $('#info1 img').attr('src',('img/icon-08.png')); }
+    
     }
     function changebackground(divid) {   
     if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
@@ -136,11 +157,11 @@ published: true
             <div class="left-content info-left-div" id="left-info1" style="display:block;">
               <h2 style='color:#fff; font-weight:bold'>Vjetërsia e Veturave</h2>
                 <h3>Vjetërsia mesatare e veturave të regjistruara në Kosovë në vitin 2014</h3>
-                <div class="gifv-player divone">
+                <div class="gifv-player divone" >
                     <video preload="none" class="img-responsive"  width="446" height="252">
                         <source type="video/webm" src="videot/01.webm" />
                     </video>
-                    <img src="img/foto_video/1.png" width="446" height="252" alt="Vjetersia" class="img-responsive"  />
+                    <img src="img/foto_video/1.png" width="446" height="252" alt="Vjetersia" id="gif" class="img-responsive"  />
                 </div>   
                 <h4>Mesatarja e vjetërsisë së veturave që qarkullojnë në Kosovë është 18 vite, apo 10 vite më shumë se sa mesatarja e veturave që qarkullojnë brenda Bashkimit Evropian.</h4>  
             </div>
@@ -172,7 +193,7 @@ published: true
                     </video>
                     <img src="img/foto_video/4.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>   
-                <h4>Djegia e një kilogrami benzinë jep 2.9 kilogram CO2, kurse e njëjta sasi e dizelit jep 3.1 kg CO2. Kosova importon rreth 500 milionë litra karburante në vit, rrjedhimisht djegia e karburanteve prodhojnë rreth 1.5 milion ton CO2 në vit. Me futjen e veturave të vjetra pa dyshim që  niveli i ndotjes do të rritet edhe më shumë.</h4>   
+                <h4>Djegia e një kilogrami benzinë jep 2.9 kilogram CO₂, kurse e njëjta sasi e dizelit jep 3.1 kg CO₂. Kosova importon rreth 500 milionë litra karburante në vit, rrjedhimisht djegia e karburanteve prodhojnë rreth 1.5 milion ton CO₂ në vit. Me futjen e veturave të vjetra pa dyshim që  niveli i ndotjes do të rritet edhe më shumë.</h4>   
             </div>
             <div class="left-content info-left-div" id="left-info5" style="display: none;">
                 <h2 style='color:#fff; font-weight:bold'>Marka e Automjeteve</h2>
@@ -225,43 +246,43 @@ published: true
                     <img src="img/icon-01.png"   >
                     </a>
                 </div>
-                <div class="icon">
-                    <a href="{{ site.baseurl }}#1" class="infografika" id="info1">
+                <div class="icon gif">
+                    <a href="{{ site.baseurl }}#1" id="info1">
                     <img src="img/icon-02.png" >
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#2" class="infografika"  id="info2">
+                    <a href="{{ site.baseurl }}#2"  id="info2">
                     <img src="img/icon-03.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#3" class="infografika"  id="info3">
+                    <a href="{{ site.baseurl }}#3"  id="info3">
                     <img src="img/icon-04.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#4" class="infografika"  id="info4">
+                    <a href="{{ site.baseurl }}#4"  id="info4">
                     <img src="img/icon-05.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#5" class="infografika" id="info5">
+                    <a href="{{ site.baseurl }}#5" id="info5">
                     <img src="img/icon-06.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#6" class="infografika" id="info6">
+                    <a href="{{ site.baseurl }}#6" id="info6">
                     <img src="img/icon-07.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#7" class="infografika" id="info7">
+                    <a href="{{ site.baseurl }}#7" id="info7">
                     <img src="img/icon-08.png">
                     </a>
                 </div>            
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#8" class="infografika" id="info8">
+                    <a href="{{ site.baseurl }}#8" id="info8">
                     <img src="img/icon-09.png">
                     </a>
                 </div>
@@ -293,7 +314,7 @@ published: true
                 <h4>Në total, në dy vitet e para pas implementimit të vendimit, të hyrat doganore nga veturat janë rritur për rreth 27.5 milion euro.</h4>
             </div>
             <div class="right-content info-right-div" id="right-info4" style="display: none;">
-                <h3>Emetimi i ndotësve të ambientit si funksion i moshës së veturës.</h3>
+                <h3>Emertimi i ndotësve të ambientit si funksion i moshës së veturës.</h3>
                 <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/etowec" style="margin-left: -70px; border: 0; width: 490px; height: 400px"></iframe class="img-responsive">
                 <h4>Të dhënat në grafin e mësipërm dëshmojnë për një marrëdhënie direkte në mes të moshës së veturës dhe sasisë së ndotjes.  Rritje e dukshme e emetimeve vërehet kryesisht për vetura që janë më të vjetra se 15 vjet.</h4>
             </div>
@@ -330,4 +351,7 @@ published: true
 
     </div>
 </div>
+
+
+
 </body>
