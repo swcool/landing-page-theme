@@ -1,6 +1,6 @@
 ---
 layout: default_post
-img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/edovuh' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/edovuh' style='background-color: #f8f8f8; border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 sectionId: "importi-i-veturave-te-perdorura"
 title: Grafiku V
@@ -16,5 +16,5 @@ published: true
 
 
 
-<iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/edovuh" style="border: 0; width: 100%; height: 500px">&nbsp;</iframe>
+<iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/edovuh" style="background-color: #f8f8f8; border: 0; width: 100%; height: 500px">&nbsp;</iframe>
 >**[Shkarko te dhenat ne formatin excel.]({{ site.baseurl }}/all_files/te_dhenat_e_grafikave.xlsx)**
