@@ -3,7 +3,7 @@ layout: default_post
 img: chart4.png
 category: grafika
 sectionId: "regjistrimi-i-veturave-ne-baze-te-firmes"
-title: Grafiku IV
+title: Grafiku III
 description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-firmes.html\">Ky grafikon </a>paraqet regjistrimin e veturave në bazë të firmes.<br><br> Burimi: Ministria e Punëve të Brendshme"
 published: true
 ---
