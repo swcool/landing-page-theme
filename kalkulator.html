@@ -15,7 +15,7 @@ $(document).ready(function () {
             $("#viti").val('Zgjedh vitin');}
     });
     $('#viti').append('<option>Zgjedh vitin</option>');
-    for (i = new Date().getFullYear() - 1; i > 1900; i--)
+    for (i = new Date().getFullYear(); i > 1900; i--)
     {
         $('#viti').append($('<option />').val(i).html(i));
     }

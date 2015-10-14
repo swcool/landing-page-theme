@@ -4,14 +4,9 @@ img: chart4.png
 category: grafika
 sectionId: "regjistrimi-i-veturave-ne-baze-te-firmes"
 title: Grafiku IV
-description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-firmes.html\">Ky grafikon </a>paraqet regjistrimin e veturave ne baze te firmes.<br><br> Burimi: Ministria e Punëve të Brendshme"
+description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-firmes.html\">Ky grafikon </a>paraqet regjistrimin e veturave në bazë të firmes.<br><br> Burimi: Ministria e Punëve të Brendshme"
 published: true
 ---
-
-
-
-
-
 
 
 

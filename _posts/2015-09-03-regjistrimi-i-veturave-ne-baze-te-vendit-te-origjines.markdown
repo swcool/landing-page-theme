@@ -4,7 +4,7 @@ img: chart3.png
 category: grafika
 sectionId: "regjistrimi-i-veturave-ne-baze-te-vendit-te-origjines"
 title: Grafiku III
-description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-vendit-te-origjines.html\">Ky grafikon </a>paraqet regjistrimin e  veturave në baze të komunës.<br><br>Burimi: Ministria e Punëve të Brendshme."
+description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-vendit-te-origjines.html\">Ky grafikon </a>paraqet regjistrimin e veturave të reja në bazë të vendit të origjinës.<br><br>Burimi: Ministria e Punëve të Brendshme."
 published: true
 ---
 
