@@ -1,6 +1,6 @@
 ---
 layout: default_post
-img: chart4.png
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/igixym' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 sectionId: "regjistrimi-i-veturave-ne-baze-te-firmes"
 title: Grafiku III

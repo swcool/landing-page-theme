@@ -1,6 +1,6 @@
 ---
 layout: default_post
-img: chart1.png
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/eqejez' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 title: Grafiku I
 sectionId: "regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit"

@@ -1,6 +1,7 @@
 ---
 layout: default_post
-img: chart6.png
+layout: default_post
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/uduteb' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 sectionId: "te-hyrat-doganore-nga-veturat"
 title: Grafiku VI

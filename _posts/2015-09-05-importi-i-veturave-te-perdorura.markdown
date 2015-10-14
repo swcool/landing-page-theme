@@ -1,6 +1,6 @@
 ---
 layout: default_post
-img: chart5.png
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/edovuh' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 sectionId: "importi-i-veturave-te-perdorura"
 title: Grafiku V

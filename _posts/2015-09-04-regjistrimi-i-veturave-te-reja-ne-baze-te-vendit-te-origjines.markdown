@@ -1,6 +1,6 @@
 ---
 layout: default_post
-img: chart3.png
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/izuqud' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 sectionId: "regjistrimi-i-veturave-te-reja-ne-baze-te-vendit-te-origjines"
 title: Grafiku IV

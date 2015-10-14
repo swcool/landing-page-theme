@@ -13,12 +13,12 @@ body{
 }
 /*-------------------------Contenti---------------------------*/
 .content .left-content{
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .content .right-content{
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .content .left-content h1{
     color: #fff;
@@ -67,30 +67,30 @@ body{
     margin-top: 76px;
 }
 .vertical-line-top{
-    height: 100px;
+    height: 70px;
     width: 2px;
-    background-color: #B5B5B5;
+    background-color: #FFF;
     margin-top: 0px;
 }
 .vertical-line-bottom{
-    height: 100px;
+    height: 80px;
     width: 2px;
-    background-color: #B5B5B5;
-    margin-bottom: 0px;
+    background-color: #FFF;
+    margin-bottom: 5px;
 }
 .content .middle-content{
     text-align: center;
 }
 .content .middle-content .prev{
     margin-bottom: 50px;
-    margin-top: 35px;
+    margin-top: 5px;
 }
 .content .middle-content .icon{
     margin-bottom: 15px;
     margin-top: 15px;
 }
 .content .middle-content .next{
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     margin-top: 50px;
 }
 /*--------------------------Footer-----------------------------*/

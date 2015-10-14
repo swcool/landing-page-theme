@@ -1,6 +1,6 @@
 ---
 layout: default_post
-img: chart2.png
+img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/efylyk' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 sectionId: "regjistrimi-i-veturave-ne-baze-te-komunave"
 title: Grafiku II
