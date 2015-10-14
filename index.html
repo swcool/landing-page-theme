@@ -1,59 +1,347 @@
 ---
-layout: default
+layout: default_post
+published: true
 ---
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">  
+    <style type="text/css">
+        .gifv-player {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ site.baseurl }}/videot/gifv-player.css" type="text/css" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/videot/gifv-player.js"></script>
+    <script>   
+    $(document).ready(function() {
+        player = new GifvPlayer();
+        playvideo('.divone');
+        jQuery("a").click(function() {
+        var id = jQuery(this).attr("id");
+        switch (true) {
+        case (id == 'info1') :  
+            changebackground('left-'+id);
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+'#right-'+id ).show(); 
+            playvideo('.divone');  
+            break;
+        case (id == 'info2'):
+            changebackground('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divtwo');  
+            break;
+        case (id == 'info3'):
+            changebackground('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divthree'); 
+            break;
+        case (id == 'info4') : 
+            changebackground('left-'+id); 
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+'#right-'+id ).show(); 
+            playvideo('.divfour');   
+            break;
+        case (id == 'info5'):
+            changebackground('left-'+id );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divfive'); 
+            break;
+        case (id == 'info6'):
+            changebackground('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            playvideo('.divsix');  
+            break;
+        case (id == 'info7'):
+            changebackground('left-'+id);  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show(); 
+            playvideo('.divseven'); 
+            break;
+        case (id == 'info8'):
+            changebackground('left-'+id );  
+            $(".info-right-div, .info-left-div").hide();
+            $('#left-'+id+", "+ '#right-'+id ).show();
+            playvideo('.diveight');  
+            break;
+        case(id == 'next'):
+            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                div2vis = $(".right-div .info-right-div").filter(':visible');
+            var id = jQuery(this).attr("id");
+            if (div1vis.next().length > 0 && div2vis.next().length > 0) {
+                div1vis.next().show().prev().hide();
+                div2vis.next().show().prev().hide();
+                var nextid = div1vis.next().attr("id");
+                changebackground(nextid);
+                var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
+                playvideo('.'+playId);
+            }
+            break;
+        case(id == 'prev'):
+            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                div2vis = $(".right-div .info-right-div").filter(':visible');
+            if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
+                div1vis.prev().show().next().hide();
+                div2vis.prev().show().next().hide();
+                var previd = div1vis.prev().attr("id");
+                changebackground(previd);
+                var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
+                playvideo('.'+playId);
+            }
+            break;
+        };
+   }); 
+    });
+    function playvideo(videoDivID) { 
+        $(videoDivID).find('video').show();
+        $(videoDivID).find('video')[0].play();  
+    }
+    function changebackground(divid) {   
+    if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
+    if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
+    if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
+    if (divid == 'left-info4') { $("body").css('background-color', '#7f7a6e'); } 
+    if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
+    if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
+    if (divid == 'left-info7') { $("body").css('background-color', '#1b5367'); } 
+    if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
+    }
+    </script>
+</head>
 
-<section id="services">
-<!-- Page Content -->
-{% for post in site.posts reversed | sort_by: "post.date" %}
-{% if post.category contains 'grafika' %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
-    <section id="{{ post.sectionId }}" height="100%">
-    <div class="content-section-a">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6" >
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="lead"><p class="justify">{{ post.description }} </p></div>
+<body>
+<div class="content" id="content">               
+    <div class="container">                          
+        <div class="col-md-5 padding-right left-div" id="left-div">
+            <div class="left-content info-left-div" id="left-info1" style="display:block;">
+              <h2 style='color:#fff; font-weight:bold'>Vjetërsia e Veturave</h2>
+                <h3>Vjetërsia mesatare e veturave të regjistruara në Kosovë në vitin 2014</h3>
+                <div class="gifv-player divone">
+                    <video preload="none" class="img-responsive"  width="446" height="252">
+                        <source type="video/webm" src="videot/vjetersia.webm" />
+                    </video>
+                    <img src="img/foto_video/1.png" width="446" height="252" alt="Vjetersia" class="img-responsive"  />
+                </div>   
+                <h4>Mesatarja e vjetërsisë së veturave që qarkullojnë në Kosovë është 18 vite, apo 10 vite më shumë se sa mesatarja e veturave që qarkullojnë brenda Bashkimit Evropian.</h4>  
+            </div>
+            <div class="left-content info-left-div" id="left-info2" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Importi i Veturave</h2>
+                <div class="gifv-player divtwo" id="divtwo">
+                    <video preload="none" class="img-responsive" loop="loop" width="446" height="252">
+                        <source type="video/webm" src="videot/02.webm" />
+                    </video>
+                    <img src="img/foto_video/2.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
+                </div>   
+                <h4>Në vitin 2014 për çdo veturë të re të importuar, janë importuar  16 vetura të përdorura.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info3" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Të hyrat doganore nga vetura</h2>
+                <div class="gifv-player divthree">
+                    <video preload="none" class="img-responsive" width="446" height="252">
+                        <source type="video/webm" src="videot/03.webm" />
+                    </video>
+                    <img src="img/foto_video/3.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
+                </div>   
+                <h4>Brenda dy viteve nga hyrja e vendimit në fuqi, Qeveria e Kosovës ka mbledhur rreth 21.8 milionë euro më shumë të hyra doganore nga veturat e përdorura, ndërsa rreth 3.2 milionë euro më shumë në vit nga veturat e reja.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info4" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Ndotja e ambientit</h2>
+                <div class="gifv-player divfour">
+                    <video preload="none" class="img-responsive" loop="loop" width="446" height="252" >
+                        <source type="video/webm" src="videot/04.webm" />
+                    </video>
+                    <img src="img/foto_video/4.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
+                </div>   
+                <h4>Djegia e një kilogrami benzinë jep 2.9 kilogram CO2, kurse e njëjta sasi e dizelit jep 3.1 kg CO2. Kosova importon rreth 500 milionë litra karburante në vit, rrjedhimisht djegia e karburanteve prodhojnë rreth 1.5 milion ton CO2 në vit. Me futjen e veturave të vjetra pa dyshim që  niveli i ndotjes do të rritet edhe më shumë.</h4>   
+            </div>
+            <div class="left-content info-left-div" id="left-info5" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Marka e Automjeteve</h2>
+                <div class="gifv-player divfive ">
+                    <video preload="none" class="img-responsive" width="446" height="252">
+                        <source type="video/webm" src="videot/05.webm" />
+                    </video>
+                    <img src="img/foto_video/5.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-responsive" src="img/services/{{ post.img }}" alt=""></a>
+              <h4>Burimi: Ministria e Punëve të Brendshme</h4>
+            </div>
+            <div class="left-content info-left-div" id="left-info6" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Vendi i origjinës</h2>
+                <h3>Vendi i origjinës të veturave të reja 2010-2014</h3>
+                <div class="gifv-player divsix">
+                    <video preload="none" class="img-responsive" width="446" height="252">
+                        <source type="video/webm" src="videot/06.webm" />
+                    </video>
+                    <img src="img/foto_video/6.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
+                </div>
+              <h4>Burimi: Dogana  e Kosovës</h4>
+            </div>
+            <div class="left-content info-left-div" id="left-info7" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Komunat</h2>
+                <h3>Regjistrimi i veturave sipas regjioneve</h3>
+                <div class="gifv-player divseven">
+                    <video preload="none" class="img-responsive" width="446" height="252">
+                        <source type="video/webm" src="videot/07.webm" />
+                    </video>
+                    <img src="img/foto_video/7.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
+                </div>
+              <h4>Burimi: Ministria e Punëve të Brendshme</h4>
+            </div>
+            <div class="left-content info-left-div" id="left-info8" style="display: none;">
+                <h2 style='color:#fff; font-weight:bold'>Lloji i Motorit</h2>
+                <h3>Importi i veturave të reja sipas llojit të motorrit 2010-2014</h3>
+                <div class="gifv-player diveight">
+                    <video preload="none" class="img-responsive" width="446" height="252">
+                        <source type="video/webm" src="videot/08.webm" />
+                    </video>
+                    <img src="img/foto_video/8.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
+                </div>  
+            </div>
+        </div>
+         <div class="col-md-2">
+            <div class="middle-content">
+                <hr class="vertical-line-top">
+                <div class="prev">
+                    <a href="#" id="prev">
+                    <img src="img/icon-01.png"   >
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#1" id="info1">
+                    <img src="img/icon-02.png" >
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#2"  id="info2">
+                    <img src="img/icon-03.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#3"  id="info3">
+                    <img src="img/icon-04.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#4"  id="info4">
+                    <img src="img/icon-05.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#5" id="info5">
+                    <img src="img/icon-06.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#6" id="info6">
+                    <img src="img/icon-07.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#7" id="info7">
+                    <img src="img/icon-08.png">
+                    </a>
+                </div>            
+                <div class="icon">
+                    <a href="{{ site.baseurl }}#8" id="info8">
+                    <img src="img/icon-09.png">
+                    </a>
+                </div>
+                <div class="next" >
+                    <a href="#" id="next">
+                    <img src="img/icon-10.png">
+                    </a>
+                </div>
+                <hr class="vertical-line-bottom">
+            </div>
+        </div>
+        <div class="col-md-5 padding-right right-div" id="right-div">
+            <div class="right-content info-right-div" id="right-info1" style="display:block;">
+              <h3>Mesatarja e vjetërsise së veturave të regjistruara në Kosovë 2010-2014</h3>
+              <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/akuqef" style="margin-left: -30px; border: 0; width: 420px; height: 400px"></iframe>
+                <h4>Rritjes së mesatares të vjetërsisë së veturave në masë të madhe i ka kontribuar vendimi i qeverisë i vitit 2011 për lejimin e importit të veturave të përdorura deri në 13 vite, nga 8 sa kishte qenë më herët.</h4>
+            </div>
+            <div class="right-content info-right-div" id="right-info2" style="display: none;">
+                <h3>Trendi i importit të veturave</h3>
+              <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/itohef" style="margin-left: -30px; border: 0; width: 420px; height: 400px"></iframe>
+                <h4>Në qershor të vitit 2011, Qeveria e Kosovës zgjati kufirin  për importimin  e veturave të përdorura nga 8 në 13 vite. Nga grafi i mësipërm shohim se vendimi ka krijuar incentiva për importim të veturave të përdorura në Kosovë.</h4>
+                <div class="burimi">
+                    <h4>Burimi: Dogana e Kosovës</h4>
                 </div>
             </div>
-
-        </div>
-    </section>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    {% else %}
-    <section id="{{ post.sectionId }}">
-    <div class="content-section-b">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="lead"><p class="justify">{{ post.description }}</p></div>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-responsive" src="img/services/{{ post.img }}" alt=""></a>
+            <div class="right-content info-right-div" id="right-info3" style="display: none;">
+                <h3>Struktura e të hyrave doganore nga veturat</h3>
+                <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/ipokor/7" style="margin-left: -60px; border: 0; width: 500px; height: 400px"></iframe>
+                <h4>Në total, në dy vitet e para pas implementimit të vendimit, të hyrat doganore nga veturat janë rritur për rreth 27.5 milion euro.</h4>
+            </div>
+            <div class="right-content info-right-div" id="right-info4" style="display: none;">
+                <h3>Emetimi i ndotësve të ambientit si funksion i moshës së veturës.</h3>
+                <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/etowec" style="margin-left: -70px; border: 0; width: 490px; height: 400px"></iframe>
+                <h4>Të dhënat në grafin e mësipërm dëshmojnë për një marrëdhënie direkte në mes të moshës së veturës dhe sasisë së ndotjes.  Rritje e dukshme e emetimeve vërehet kryesisht për vetura që janë më të vjetra se 15 vjet.</h4>
+            </div>
+            <div class="right-content info-right-div" id="right-info5" style="display: none;">
+                <h3>Marka e Automjeteve</h3>
+                <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/uqagoj" style="margin-left: -50px; border: 0; width: 460px; height: 400px"></iframe>
+                <div class="burimi">
+                    <h4>Burimi: Ministria e Punëve të Brendshme</h4>
                 </div>
             </div>
+            <div class="right-content info-right-div" id="right-info6" style="display: none;">
+                <h3>Vendi i origjinës së veturave të përdorura</h3>
+                <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/itelyc" style="margin-left: -50px; border: 0; width: 460px; height: 400px"></iframe>
+                <div class="burimi">
+                    <h4>Burimi: Dogana  e Kosovës</h4>
+                </div>
+            </div>
+            <div class="right-content info-right-div" id="right-info7" style="display: none;">
+                <h3>Veturat e regjistruara sipas komunës</h3>
+                <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/oneqel" style="margin-left: -50px; border: 0; width: 460px; height: 400px"></iframe>
+                <div class="burimi">
+                    <h4>Burimi: Ministria e Punëve të Brendshme</h4>
+                </div>
+            </div>  
+            <div class="right-content info-right-div" id="right-info8" style="display: none;">
+                <h3>Importi i veturave të përdorura sipas llojit të motorit</h3>
+                <iframe class="highcharts-iframe" src="//cloud.highcharts.com/embed/uxacon" style="margin-left: -50px; border: 0; width: 490px; height: 400px"></iframe>
+                <div class="burimi">
+                    <h4>Burimi: Dogana e Kosovës</h4>
+                </div>
+            </div> 
 
-        </div>
-        <!-- /.container -->
-    </section>
+        </div> 
+
     </div>
-    <!-- /.content-section-b -->
-    {% endif %}
-{% endif %}
-{% endfor %}
-</section>
+</div>
+<div class="footer">
+    <div class="col-md-3 nopadding">
+        <img src="img/gap-logo.png" class="img-responsive">
+    </div>
+    <div class="col-md-4">
+        <div class="">
+            <h3>EKONOMIA E VETURAVE</h3>
+        </div>
+    </div>
+    <div class="col-md-3">
+            <h5>Analizimi i politikave qeveritare për importin, regjistrimin dhe kontrollimin e automjeteve</h5>
+    </div>
+    <div class=" col-md-2 social nopadding">
+        <div class="fb">
+            <a href="https://www.facebook.com/institutigap"><img src="img/fb.png"></a>
+        </div>
+        <div class="twitter">
+            <a href="https://twitter.com/institutigap"><img src="img/twitter.png"></a>
+        </div>
+    </div> 
+    
+</div> 
 
+
+</body>
