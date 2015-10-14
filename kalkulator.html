@@ -164,10 +164,10 @@ $(document).ready(function () {
             }
             $("#akciza").val(gjej_akcizen);
             var tvsh = (vlera + gjej_akcizen + tatimi) * 0.18;
-            $("#tvsh").val(tvsh);
+            $("#tvsh").val(tvsh.toFixed(2));
             var dogana = gjej_akcizen + tatimi + tvsh
-            $("#dogana").val( dogana );            
-            $('#total').val(vlera + dogana )          
+            $("#dogana").val( dogana.toFixed(2) );            
+            $('#total').val((vlera + dogana).toFixed(2) )          
             })
     });
 });
