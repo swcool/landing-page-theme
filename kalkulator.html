@@ -1,6 +1,3 @@
----
-layout: default_post
----
 <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"></script>
 <script src="{{ site.baseurl }}/css/landing-page.css"></script>
 <script type="text/javascript">
@@ -24,7 +21,7 @@ $(document).ready(function () {
             var vlera   = +$("#vlera").val();
             var kubikazha = $("#kubikazha").val();
             var tatimi  = vlera*0.1;
-            $("#tatimi").val(tatimi);
+            $("#tatimi").val(Math.round(tatimi));
 
             var date1 = new Date().getFullYear();
             var date2 = +$("#viti").val();
@@ -164,10 +161,10 @@ $(document).ready(function () {
             }
             $("#akciza").val(gjej_akcizen);
             var tvsh = (vlera + gjej_akcizen + tatimi) * 0.18;
-            $("#tvsh").val(tvsh.toFixed(2));
+            $("#tvsh").val(Math.round(tvsh));
             var dogana = gjej_akcizen + tatimi + tvsh
-            $("#dogana").val( dogana.toFixed(2) );            
-            $('#total').val((vlera + dogana).toFixed(2) )          
+            $("#dogana").val( Math.round(dogana) );            
+            $('#total').val(Math.round((vlera + dogana)) )          
             })
     });
 });
