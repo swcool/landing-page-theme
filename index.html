@@ -21,6 +21,7 @@ published: true
     <script src="{{ site.baseurl }}/videot/gifv-player.js"></script>
     <script>   
     $(document).ready(function() {
+        $("a").tooltip();
         url_fixes = {
             "left-info1": "vjetersia-e-veturave",
             "left-info2": "importi-i-veturave",
@@ -49,7 +50,8 @@ published: true
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show();
             $('#info2 img').attr('src',('img/active-02.png')); 
-            playvideo('.divtwo');  
+            playvideo('.divtwo');
+            $('a').attr("class", "tooltip2");
             break;
         case (id == 'info3'):
             changebackground('left-'+id);  
@@ -57,6 +59,7 @@ published: true
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show();
             $('#info2 img').attr('src',('img/active-02.png'));  
+            $('a').attr("class", "tooltip3");
             playvideo('.divthree'); 
             break;
         case (id == 'info4') : 
@@ -64,35 +67,40 @@ published: true
             changeicon('left-'+id); 
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+'#right-'+id ).show(); 
-            playvideo('.divfour');   
+            playvideo('.divfour');
+            $('a').attr("class", "tooltip4");
             break;
         case (id == 'info5'):
             changebackground('left-'+id );
             changeicon('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show(); 
-            playvideo('.divfive'); 
+            playvideo('.divfive');
+            $('a').attr("class", "tooltip2");
             break;
         case (id == 'info6'):
             changebackground('left-'+id);
             changeicon('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show();
-            playvideo('.divsix');  
+            playvideo('.divsix');
+            $('a').attr("class", "tooltip6");
             break;
         case (id == 'info7'):
             changebackground('left-'+id); 
             changeicon('left-'+id); 
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show(); 
-            playvideo('.divseven'); 
+            playvideo('.divseven');
+            $('a').attr("class", "tooltip7");
             break;
         case (id == 'info8'):
             changebackground('left-'+id );
             changeicon('left-'+id);  
             $(".info-right-div, .info-left-div").hide();
             $('#left-'+id+", "+ '#right-'+id ).show();
-            playvideo('.diveight');  
+            playvideo('.diveight');
+            $('a').attr("class", "tooltip8");
             break;
         case(id == 'next'):
             var div1vis = $(".left-div .info-left-div").filter(':visible'), 
@@ -107,6 +115,8 @@ published: true
                 window.location.href = "#" + url_fixes[nextid];
                 var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
                 playvideo('.'+playId);
+                next_id_number = nextid.slice(-1)
+                $('a').attr("class", "tooltip" + next_id_number);
             }
             break;
         case(id == 'prev'):
@@ -122,6 +132,8 @@ published: true
                 window.location.href = "#" + url_fixes[previd];
                 var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
                 playvideo('.'+playId);
+                prev_id_number = previd.slice(-1)
+                $('a').attr("class", "tooltip" + prev_id_number);
             }
             break;
         };
@@ -161,6 +173,65 @@ published: true
     if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
     }
     </script>
+
+    <style type="text/css">
+        .red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .red-tooltip + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #EBB614;
+            background-color: #fff;
+            color: #EBB614;
+        },
+        .tooltip2 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip2 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #ACB7A8;
+            background-color: #fff;
+            color: #ACB7A8;
+        },
+        .tooltip3 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip3 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #4F795B;
+            background-color: #fff;
+            color: #4F795B;
+        },
+        .tooltip4 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip4 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #B9B6AE;
+            background-color: #fff;
+            color: #B9B6AE;
+        },
+        .tooltip5 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip5 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #4A87A2;
+            background-color: #fff;
+            color: #4A87A2;
+        },
+        .tooltip6 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip6 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #121929;
+            background-color: #fff;
+            color: #121929;
+        },
+        .tooltip7 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip7 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #01637A;
+            background-color: #fff;
+            color: #01637A;
+        },
+        .tooltip8 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip8 + .tooltip > .tooltip-inner { 
+            font-size: 16px;
+            border: 2px solid #13192E;
+            background-color: #fff;
+            color: #13192E;
+        }
+    </style>
 </head>
 
 <body>
@@ -189,7 +260,7 @@ published: true
                 <h4>Në vitin 2014 për çdo veturë të re të importuar, janë importuar  16 vetura të përdorura.</h4>   
             </div>
             <div class="left-content info-left-div" id="left-info3" style="display: none;">
-                <h2 style='color:#fff; font-weight:bold'>Të hyrat doganore nga vetura</h2>
+                <h2 style='color:#fff; font-weight:bold'>Të hyrat doganore nga veturat</h2>
                 <div class="gifv-player divthree">
                     <video preload="none" class="img-responsive" width="446" height="252">
                         <source type="video/webm" src="videot/te_hyrat_doganore.webm" />
@@ -256,46 +327,46 @@ published: true
                 <hr class="vertical-line-top">
                 <div class="prev">
                     <a style="cursor:pointer;" id="prev">
-                    <img src="img/icon-01.png"   >
+                    <img src="img/icon-01.png">
                     </a>
                 </div>
                 <div class="icon gif">
-                    <a href="{{ site.baseurl }}#vjetersia-e-veturave" id="info1">
+                    <a href="{{ site.baseurl }}#vjetersia-e-veturave" id="info1" data-toggle="tooltip" class="red-tooltip" title="Vjetërsia e Veturave" data-placement="top" >
                     <img src="img/icon-02.png" >
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#importi-i-veturave"  id="info2">
+                    <a href="{{ site.baseurl }}#importi-i-veturave"  id="info2" data-toggle="tooltip" class="red-tooltip" title="Importi i Veturave" data-placement="top" >
                     <img src="img/icon-03.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#te-hyrat-doganore"  id="info3">
+                    <a href="{{ site.baseurl }}#te-hyrat-doganore"  id="info3" data-toggle="tooltip" class="red-tooltip" title="Të hyrat doganore nga veturat" data-placement="top" >
                     <img src="img/icon-04.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#ndotja-e-ambientit"  id="info4">
+                    <a href="{{ site.baseurl }}#ndotja-e-ambientit"  id="info4" data-toggle="tooltip" class="red-tooltip" title="Ndotja e ambientit" data-placement="top" >
                     <img src="img/icon-05.png">
                     </a>
                 </div>
-                <div class="icon">
-                    <a href="{{ site.baseurl }}#marka-e-automjeteve" id="info5">
+                <div class="icon"> 
+                    <a href="{{ site.baseurl }}#marka-e-automjeteve" id="info5" data-toggle="tooltip" class="red-tooltip" title="Marka e Automjeteve" data-placement="top" >
                     <img src="img/icon-06.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#vendi-i-origjines" id="info6">
+                    <a href="{{ site.baseurl }}#vendi-i-origjines" id="info6" data-toggle="tooltip" class="red-tooltip" title="Vendi i origjinës" data-placement="top" >
                     <img src="img/icon-07.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#regjistrimi-sipas-regjioneve" id="info7">
+                    <a href="{{ site.baseurl }}#regjistrimi-sipas-regjioneve" id="info7" data-toggle="tooltip" class="red-tooltip" title="Regjistrimi i veturave sipas regjioneve" data-placement="top">
                     <img src="img/icon-08.png">
                     </a>
                 </div>            
-                <div class="icon">
-                    <a href="{{ site.baseurl }}#lloji-i-motorit" id="info8">
+                <div class="icon"> 
+                    <a href="{{ site.baseurl }}#lloji-i-motorit" id="info8" data-toggle="tooltip" class="red-tooltip" title="Lloji i Motorit" data-placement="top" >
                     <img src="img/icon-09.png">
                     </a>
                 </div>
