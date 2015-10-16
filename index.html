@@ -58,8 +58,7 @@ published: true
             changebackground('left-'+id);  
             changeicon('left-'+id);
             $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            $('#info2 img').attr('src',('img/active-02.png'));  
+            $('#left-'+id+", "+ '#right-'+id ).show();  
             $('a').attr("class", "tooltip3");
             playvideo('.divthree'); 
             break;
@@ -145,23 +144,67 @@ published: true
         $(videoDivID).find('video')[0].play();  
     }
     function changeicon(divid) {   
-    if (divid == 'left-info1') { $('#info1 img').attr('src',('img/active-01.png')); }
-    // if (divid != 'left-info1') { $('#info1 img').attr('src',('img/icon-01.png')); } 
-    if (divid == 'left-info2') { $('#info2 img').attr('src',('img/active-02.png')); } 
-    // if (divid != 'left-info2') { $('#info1 img').attr('src',('img/icon-02.png')); }
-    if (divid == 'left-info3') { $('#info3 img').attr('src',('img/active-03.png')); } 
-    // if (divid != 'left-info3') { $('#info1 img').attr('src',('img/icon-03.png')); }
-    if (divid == 'left-info4') { $('#info4 img').attr('src',('img/active-04.png')); } 
-    // if (divid != 'left-info4') { $('#info1 img').attr('src',('img/icon-04.png')); }
-    if (divid == 'left-info5') { $('#info5 img').attr('src',('img/active-05.png')); } 
-    // if (divid != 'left-info5') { $('#info1 img').attr('src',('img/icon-05.png')); }
-    if (divid == 'left-info6') { $('#info6 img').attr('src',('img/active-06.png')); } 
-    // if (divid != 'left-info6') { $('#info1 img').attr('src',('img/icon-06.png')); }
-    if (divid == 'left-info7') { $('#info7 img').attr('src',('img/active-07.png')); } 
-    // if (divid != 'left-info7') { $('#info1 img').attr('src',('img/icon-07.png')); }
-    if (divid == 'left-info8') { $('#info8 img').attr('src',('img/active-08.png')); } 
-    // if (divid != 'left-info8') { $('#info1 img').attr('src',('img/icon-08.png')); }
-    
+    if (divid == 'left-info1') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info1 img').attr('src',('img/active-01.png')); 
+    }
+    if (divid == 'left-info2') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info2 img').attr('src',('img/active-02.png')); 
+    }
+    if (divid == 'left-info4') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info4 img').attr('src',('img/active-04.png')); 
+    }
+    if (divid == 'left-info5') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info5 img').attr('src',('img/active-05.png')); 
+    }
+    if (divid == 'left-info6') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info6 img').attr('src',('img/active-06.png')); 
+        return false;
+    }
+    if (divid == 'left-info7') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info7 img').attr('src',('img/active-07.png')); 
+        return false;
+    }
+    if (divid == 'left-info8') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info8 img').attr('src',('img/active-08.png')); 
+        return false;
+    }
+    if (divid == 'left-info3') { 
+        for (i=1; i<9; i++) {
+            var id = i+1;
+            $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info3 img').attr('src',('img/active-03.png')); 
+        return false;
+    }
+ 
     }
     function changebackground(divid) {   
     if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
@@ -245,6 +288,7 @@ published: true
                 <div class="gifv-player divone" >
                     <video preload="none" class="img-responsive"  width="446" height="252">
                         <source type="video/webm" src="videot/vjetersia_veturave.webm" />
+                        <source type="video/mp4" src="videot/vjetersia_veturave.mp4" />
                     </video>
                     <img src="img/foto-video/1.png" width="446" height="252" alt="Vjetersia" id="gif" class="img-responsive"  />
                 </div>   
@@ -255,6 +299,7 @@ published: true
                 <div class="gifv-player divtwo" id="divtwo">
                     <video preload="none" class="img-responsive" loop="loop" width="446" height="252">
                         <source type="video/webm" src="videot/importi_veturave.webm" />
+                         <source type="video/mp4" src="videot/importi_veturave.mp4" />
                     </video>
                     <img src="img/foto-video/2.png" width="446" height="252" alt="Importi" class="img-responsive" />
                 </div>   
@@ -265,6 +310,7 @@ published: true
                 <div class="gifv-player divthree">
                     <video preload="none" class="img-responsive" width="446" height="252">
                         <source type="video/webm" src="videot/te_hyrat_doganore.webm" />
+                        <source type="video/mp4" src="videot/te_hyrat_doganore.mp4" />
                     </video>
                     <img src="img/foto-video/3.png" width="446" height="252" alt="Te hyrat" class="img-responsive" />
                 </div>   
@@ -275,6 +321,7 @@ published: true
                 <div class="gifv-player divfour">
                     <video preload="none" class="img-responsive" loop="loop" width="446" height="252" >
                         <source type="video/webm" src="videot/ndotja_e_ambientit.webm" />
+                        <source type="video/mp4" src="videot/ndotja_e_ambientit.mp4" />
                     </video>
                     <img src="img/foto-video/4.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>   
@@ -285,6 +332,7 @@ published: true
                 <div class="gifv-player divfive ">
                     <video preload="none" class="img-responsive" width="446" height="252">
                         <source type="video/webm" src="videot/marka_e_automjeteve.webm" />
+                        <source type="video/mp4" src="videot/marka_e_automjeteve.mp4" />
                     </video>
                     <img src="img/foto-video/5.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>
@@ -296,6 +344,7 @@ published: true
                 <div class="gifv-player divsix">
                     <video preload="none" class="img-responsive" width="446" height="252">
                         <source type="video/webm" src="videot/vendi_i_origjines.webm" />
+                        <source type="video/mp4" src="videot/vendi_i_origjines.mp4" />
                     </video>
                     <img src="img/foto-video/6.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>
@@ -307,6 +356,7 @@ published: true
                 <div class="gifv-player divseven">
                     <video preload="none" class="img-responsive" width="446" height="252">
                         <source type="video/webm" src="videot/regjistrimi_sipas_regjioneve.webm" />
+                        <source type="video/mp4" src="videot/regjistrimi_sipas_regjioneve.mp4" />
                     </video>
                     <img src="img/foto-video/7.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>
@@ -318,6 +368,7 @@ published: true
                 <div class="gifv-player diveight">
                     <video preload="none" class="img-responsive" width="446" height="252">
                         <source type="video/webm" src="videot/lloji_i_motorit.webm" />
+                        <source type="video/mp4" src="videot/lloji_i_motorit.mp4" />
                     </video>
                     <img src="img/foto-video/8.png" width="446" height="252" alt="Vjetersia" class="img-responsive" />
                 </div>  

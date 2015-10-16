@@ -1,24 +1,14 @@
-
 body{
     background-color: #ebb614;
 }
-@font-face{
-    font-family:'Titling Gothic FB';
-    src:  url('fonts/TitlingGothicFBCondBold.otf'),
-    url('fonts/TitlingGothicFBNormalLight.otf');
-}
-@font-face{
-    font-family:'avenir next lt pro';
-    src:  url('fonts/AVENIRNEXTLTPRO-IT.OTF');
-}
-/*-------------------------Contenti---------------------------*/
+
 .content .left-content{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 .content .right-content{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 .content .left-content h1{
     color: #fff;
@@ -67,33 +57,32 @@ body{
     margin-top: 76px;
 }
 .vertical-line-top{
-    height: 40px;
+    height: 100px;
     width: 2px;
-    background-color: #FFF;
+    background-color: #B5B5B5;
     margin-top: 0px;
 }
 .vertical-line-bottom{
-    height: 50px;
+    height: 100px;
     width: 2px;
-    background-color: #FFF;
-    margin-bottom: 5px;
+    background-color: #B5B5B5;
+    margin-bottom: 0px;
 }
 .content .middle-content{
     text-align: center;
 }
 .content .middle-content .prev{
     margin-bottom: 50px;
-    margin-top: 5px;
+    margin-top: 35px;
 }
 .content .middle-content .icon{
     margin-bottom: 15px;
     margin-top: 15px;
 }
 .content .middle-content .next{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     margin-top: 50px;
 }
-/*--------------------------Footer-----------------------------*/
 .footer{
     min-height: 70px;
     background-color: #fff;
@@ -142,13 +131,40 @@ body{
 .footer .social .twitter img{
     margin-top: 15px;
 }
-/*---------------------------Media-screen-------------------------*/
-@media(max-width: 330px){
+/*-------------------------------------*/
+@media (max-width: 950px){
+    .icon{float: left; margin-left: 20px;}
+    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+}
+
+@media (max-width: 1000px){
+    .icon{float: left; margin-left: 35px;}
+    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+}
+
+@media (max-width: 400px){
+    .icon{float: left; margin-left: 10px;}
+    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+}
+@media (max-width: 300px){
+    .icon{float: left; margin-left: 5px;}
+    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+}
+@media (max-width: 700px){
+    .icon{float: left; margin-left: 15px;}
+    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+}
+
+@media(max-width: 400px){
     .content .left-content h3{
     margin-bottom: 25px;
     font-size: 18px;
    }
 }
+@media (max-width: 600px){
+    .middle-content, {float: left;}       
+}
+
 @media(max-width: 497px){
     .content .right-content h4{
     margin-bottom: 47px;
@@ -196,32 +212,4 @@ body{
     .footer .padding-left{
     padding-left: 0px;
     }
-}
-@media only screen and (min-width: 600px) {
-    .col-s-12 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
 }
