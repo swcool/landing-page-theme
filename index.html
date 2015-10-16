@@ -20,6 +20,20 @@ published: true
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/videot/gifv-player.js"></script>
     <script>   
+    function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    }
     $(document).ready(function() {
         $("a").tooltip();
         url_fixes = {
@@ -35,110 +49,134 @@ published: true
         player = new GifvPlayer();
         playvideo('.divone');
         jQuery("a").click(function() {
-        var id = jQuery(this).attr("id");
-        switch (true) {
-        case (id == 'info1') :  
-            changebackground('left-'+id);
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+'#right-'+id ).show(); 
-            playvideo('.divone');  
-            changeicon('left-'+id);
-            $('a').attr("class", "red-tooltip");
-            break;
-        case (id == 'info2'):
-            changebackground('left-'+id); 
-            changeicon('left-'+id); 
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            $('#info2 img').attr('src',('img/active-02.png')); 
-            playvideo('.divtwo');
-            $('a').attr("class", "tooltip2");
-            break;
-        case (id == 'info3'):
-            changebackground('left-'+id);  
-            changeicon('left-'+id);
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();  
-            $('a').attr("class", "tooltip3");
-            playvideo('.divthree'); 
-            break;
-        case (id == 'info4') : 
-            changebackground('left-'+id);
-            changeicon('left-'+id); 
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+'#right-'+id ).show(); 
-            playvideo('.divfour');
-            $('a').attr("class", "tooltip4");
-            break;
-        case (id == 'info5'):
-            changebackground('left-'+id );
-            changeicon('left-'+id);  
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show(); 
-            playvideo('.divfive');
-            $('a').attr("class", "tooltip2");
-            break;
-        case (id == 'info6'):
-            changebackground('left-'+id);
-            changeicon('left-'+id);  
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            playvideo('.divsix');
-            $('a').attr("class", "tooltip6");
-            break;
-        case (id == 'info7'):
-            changebackground('left-'+id); 
-            changeicon('left-'+id); 
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show(); 
-            playvideo('.divseven');
-            $('a').attr("class", "tooltip7");
-            break;
-        case (id == 'info8'):
-            changebackground('left-'+id );
-            changeicon('left-'+id);  
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            playvideo('.diveight');
-            $('a').attr("class", "tooltip8");
-            break;
-        case(id == 'next'):
-            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
-                div2vis = $(".right-div .info-right-div").filter(':visible');
             var id = jQuery(this).attr("id");
-            if (div1vis.next().length > 0 && div2vis.next().length > 0) {
-                div1vis.next().show().prev().hide();
-                div2vis.next().show().prev().hide();
-                var nextid = div1vis.next().attr("id");
-                changebackground(nextid);
-                changeicon(nextid);
-                window.location.href = "#" + url_fixes[nextid];
-                var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
-                playvideo('.'+playId);
-                next_id_number = nextid.slice(-1)
-                $('a').attr("class", "tooltip" + next_id_number);
+            switch (true) {
+            case (id == 'info1') :  
+                changebackground('left-'+id);
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+'#right-'+id ).show(); 
+                playvideo('.divone');  
+                changeicon('left-'+id);
+                $('a').attr("class", "red-tooltip infografika");
+                break;
+            case (id == 'info2'):
+                changebackground('left-'+id); 
+                changeicon('left-'+id); 
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();
+                $('#info2 img').attr('src',('img/active-02.png')); 
+                playvideo('.divtwo');
+                $('a').attr("class", "tooltip2 infografika");
+                break;
+            case (id == 'info3'):
+                changebackground('left-'+id);  
+                changeicon('left-'+id);
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();  
+                $('a').attr("class", "tooltip3 infografika");
+                playvideo('.divthree'); 
+                break;
+            case (id == 'info4') : 
+                changebackground('left-'+id);
+                changeicon('left-'+id); 
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+'#right-'+id ).show(); 
+                playvideo('.divfour');
+                $('a').attr("class", "tooltip4 infografika");
+                break;
+            case (id == 'info5'):
+                changebackground('left-'+id );
+                changeicon('left-'+id);  
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show(); 
+                playvideo('.divfive');
+                $('a').attr("class", "tooltip5 infografika");
+                break;
+            case (id == 'info6'):
+                changebackground('left-'+id);
+                changeicon('left-'+id);  
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();
+                playvideo('.divsix');
+                $('a').attr("class", "tooltip6 infografika");
+                break;
+            case (id == 'info7'):
+                changebackground('left-'+id); 
+                changeicon('left-'+id); 
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show(); 
+                playvideo('.divseven');
+                $('a').attr("class", "tooltip7");
+                break;
+            case (id == 'info8'):
+                changebackground('left-'+id );
+                changeicon('left-'+id);  
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();
+                playvideo('.diveight');
+                $('a').attr("class", "tooltip8");
+                break;
+            case(id == 'next'):
+                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                    div2vis = $(".right-div .info-right-div").filter(':visible');
+                var id = jQuery(this).attr("id");
+                if (div1vis.next().length > 0 && div2vis.next().length > 0) {
+                    div1vis.next().show().prev().hide();
+                    div2vis.next().show().prev().hide();
+                    var nextid = div1vis.next().attr("id");
+                    changebackground(nextid);
+                    changeicon(nextid);
+                    window.location.href = "#" + url_fixes[nextid];
+                    var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
+                    playvideo('.'+playId);
+                    next_id_number = nextid.slice(-1)
+                    $('a').attr("class", "tooltip" + next_id_number);
+                }
+                break;
+            case(id == 'prev'):
+                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                    div2vis = $(".right-div .info-right-div").filter(':visible');
+                if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
+                    div1vis.prev().show().next().hide();
+                    div2vis.prev().show().next().hide();
+                    var previd = div1vis.prev().attr("id");
+                    var prev_href = div1vis.prev().attr("href");
+                    changebackground(previd);
+                    changeicon(previd);
+                    window.location.href = "#" + url_fixes[previd];
+                    var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
+                    playvideo('.'+playId);
+                    prev_id_number = previd.slice(-1)
+                    $('a').attr("class", "tooltip" + prev_id_number);
+                }
+                break;
+            };
+        }); 
+
+        var loop = getUrlParameter('loop');
+        if (loop != undefined){
+            if (loop != 0){
+                swapC(loop, url_fixes);
             }
-            break;
-        case(id == 'prev'):
-            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
-                div2vis = $(".right-div .info-right-div").filter(':visible');
-            if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
-                div1vis.prev().show().next().hide();
-                div2vis.prev().show().next().hide();
-                var previd = div1vis.prev().attr("id");
-                var prev_href = div1vis.prev().attr("href");
-                changebackground(previd);
-                changeicon(previd);
-                window.location.href = "#" + url_fixes[previd];
-                var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
-                playvideo('.'+playId);
-                prev_id_number = previd.slice(-1)
-                $('a').attr("class", "tooltip" + prev_id_number);
-            }
-            break;
-        };
-   }); 
+        }
+        console.log(loop);
     });
+    
+    function swapC(loop, url_fixes) {
+        $('.infografika').each(function (ind, elem) {
+            window.setTimeout(function () {
+                $(elem).click();
+                id = $(elem).attr('id');
+                id_number = id.slice(-1)
+                // changeicon('left-' + id); 
+                // $(".info-right-div, .info-left-div").hide();
+                // $('#left-' + id + ", " + '#right-' + id ).show(); 
+                // playvideo('.div' + url_fixes[id]);
+                $(elem).attr("class", "tooltip"+ id_number + " infografika");
+            }, (loop * 1000) * ind);
+        });
+    }
+
     function playvideo(videoDivID) { 
         $(videoDivID).find('video').show();
         $(videoDivID).find('video')[0].play();  
@@ -207,68 +245,68 @@ published: true
  
     }
     function changebackground(divid) {   
-    if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
-    if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
-    if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
-    if (divid == 'left-info4') { $("body").css('background-color', '#b9b6ae'); } 
-    if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
-    if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
-    if (divid == 'left-info7') { $("body").css('background-color', '#01637A'); } 
-    if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
+        if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
+        if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
+        if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
+        if (divid == 'left-info4') { $("body").css('background-color', '#b9b6ae'); } 
+        if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
+        if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
+        if (divid == 'left-info7') { $("body").css('background-color', '#01637A'); } 
+        if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
     }
     </script>
 
     <style type="text/css">
-        .red-tooltip + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .red-tooltip + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .red-tooltip + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #EBB614;
             background-color: #fff;
             color: #EBB614;
         },
-        .tooltip2 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip2 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip2 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #ACB7A8;
             background-color: #fff;
             color: #ACB7A8;
         },
-        .tooltip3 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip3 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip3 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #4F795B;
             background-color: #fff;
             color: #4F795B;
         },
-        .tooltip4 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip4 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip4 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #B9B6AE;
             background-color: #fff;
             color: #B9B6AE;
         },
-        .tooltip5 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip5 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip5 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #4A87A2;
             background-color: #fff;
             color: #4A87A2;
         },
-        .tooltip6 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip6 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip6 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #121929;
             background-color: #fff;
             color: #121929;
         },
-        .tooltip7 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip7 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip7 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #01637A;
             background-color: #fff;
             color: #01637A;
         },
-        .tooltip8 + .tooltip > .tooltip-arrow { border-bottom-color: #f00; }
+        .tooltip8 + .tooltip.top > .tooltip-arrow { border-top-color: #FFF;}
         .tooltip8 + .tooltip > .tooltip-inner { 
             font-size: 16px;
             border: 2px solid #13192E;
@@ -383,42 +421,42 @@ published: true
                     </a>
                 </div>
                 <div class="icon gif">
-                    <a href="{{ site.baseurl }}#vjetersia-e-veturave" id="info1" data-toggle="tooltip" class="red-tooltip" title="Vjetërsia e Veturave" data-placement="top" >
+                    <a href="{{ site.baseurl }}#vjetersia-e-veturave" id="info1" data-toggle="tooltip" class="red-tooltip infografika" title="Vjetërsia e Veturave" data-placement="top" >
                     <img src="img/icon-02.png" >
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#importi-i-veturave"  id="info2" data-toggle="tooltip" class="red-tooltip" title="Importi i Veturave" data-placement="top" >
+                    <a href="{{ site.baseurl }}#importi-i-veturave"  id="info2" data-toggle="tooltip" class="red-tooltip infografika" title="Importi i Veturave" data-placement="top" >
                     <img src="img/icon-03.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#te-hyrat-doganore"  id="info3" data-toggle="tooltip" class="red-tooltip" title="Të hyrat doganore nga veturat" data-placement="top" >
+                    <a href="{{ site.baseurl }}#te-hyrat-doganore"  id="info3" data-toggle="tooltip" class="red-tooltip infografika" title="Të hyrat doganore nga veturat" data-placement="top" >
                     <img src="img/icon-04.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#ndotja-e-ambientit"  id="info4" data-toggle="tooltip" class="red-tooltip" title="Ndotja e ambientit" data-placement="top" >
+                    <a href="{{ site.baseurl }}#ndotja-e-ambientit"  id="info4" data-toggle="tooltip" class="red-tooltip infografika" title="Ndotja e ambientit" data-placement="top" >
                     <img src="img/icon-05.png">
                     </a>
                 </div>
                 <div class="icon"> 
-                    <a href="{{ site.baseurl }}#marka-e-automjeteve" id="info5" data-toggle="tooltip" class="red-tooltip" title="Marka e Automjeteve" data-placement="top" >
+                    <a href="{{ site.baseurl }}#marka-e-automjeteve" id="info5" data-toggle="tooltip" class="red-tooltip infografika" title="Marka e Automjeteve" data-placement="top" >
                     <img src="img/icon-06.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#vendi-i-origjines" id="info6" data-toggle="tooltip" class="red-tooltip" title="Vendi i origjinës" data-placement="top" >
+                    <a href="{{ site.baseurl }}#vendi-i-origjines" id="info6" data-toggle="tooltip" class="red-tooltip infografika" title="Vendi i origjinës" data-placement="top" >
                     <img src="img/icon-07.png">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="{{ site.baseurl }}#regjistrimi-sipas-regjioneve" id="info7" data-toggle="tooltip" class="red-tooltip" title="Regjistrimi i veturave sipas regjioneve" data-placement="top">
+                    <a href="{{ site.baseurl }}#regjistrimi-sipas-regjioneve" id="info7" data-toggle="tooltip" class="red-tooltip infografika" title="Regjistrimi i veturave sipas regjioneve" data-placement="top">
                     <img src="img/icon-08.png">
                     </a>
                 </div>            
                 <div class="icon"> 
-                    <a href="{{ site.baseurl }}#lloji-i-motorit" id="info8" data-toggle="tooltip" class="red-tooltip" title="Lloji i Motorit" data-placement="top" >
+                    <a href="{{ site.baseurl }}#lloji-i-motorit" id="info8" data-toggle="tooltip" class="red-tooltip infografika" title="Lloji i Motorit" data-placement="top" >
                     <img src="img/icon-09.png">
                     </a>
                 </div>

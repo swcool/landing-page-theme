@@ -3,11 +3,11 @@ body{
 }
 
 .content .left-content{
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 80px;
 }
 .content .right-content{
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 80px;
 }
 .content .left-content h1{
@@ -57,30 +57,30 @@ body{
     margin-top: 76px;
 }
 .vertical-line-top{
-    height: 100px;
+    height: 50px;
     width: 2px;
     background-color: #B5B5B5;
     margin-top: 0px;
 }
 .vertical-line-bottom{
-    height: 100px;
+    height: 50px;
     width: 2px;
     background-color: #B5B5B5;
-    margin-bottom: 0px;
+    margin-bottom: -5px;
 }
 .content .middle-content{
     text-align: center;
 }
 .content .middle-content .prev{
     margin-bottom: 50px;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 .content .middle-content .icon{
     margin-bottom: 15px;
     margin-top: 15px;
 }
 .content .middle-content .next{
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     margin-top: 50px;
 }
 .footer{
