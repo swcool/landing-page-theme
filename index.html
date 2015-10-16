@@ -20,6 +20,20 @@ published: true
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/videot/gifv-player.js"></script>
     <script>   
+    function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    }
     $(document).ready(function() {
         $("a").tooltip();
         url_fixes = {
@@ -35,110 +49,114 @@ published: true
         player = new GifvPlayer();
         playvideo('.divone');
         jQuery("a").click(function() {
-        var id = jQuery(this).attr("id");
-        switch (true) {
-        case (id == 'info1') :  
-            changebackground('left-'+id);
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+'#right-'+id ).show(); 
-            playvideo('.divone');  
-            changeicon('left-'+id);
-            $('a').attr("class", "red-tooltip");
-            break;
-        case (id == 'info2'):
-            changebackground('left-'+id); 
-            changeicon('left-'+id); 
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            $('#info2 img').attr('src',('img/active-02.png')); 
-            playvideo('.divtwo');
-            $('a').attr("class", "tooltip2");
-            break;
-        case (id == 'info3'):
-            changebackground('left-'+id);  
-            changeicon('left-'+id);
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();  
-            $('a').attr("class", "tooltip3");
-            playvideo('.divthree'); 
-            break;
-        case (id == 'info4') : 
-            changebackground('left-'+id);
-            changeicon('left-'+id); 
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+'#right-'+id ).show(); 
-            playvideo('.divfour');
-            $('a').attr("class", "tooltip4");
-            break;
-        case (id == 'info5'):
-            changebackground('left-'+id );
-            changeicon('left-'+id);  
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show(); 
-            playvideo('.divfive');
-            $('a').attr("class", "tooltip2");
-            break;
-        case (id == 'info6'):
-            changebackground('left-'+id);
-            changeicon('left-'+id);  
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            playvideo('.divsix');
-            $('a').attr("class", "tooltip6");
-            break;
-        case (id == 'info7'):
-            changebackground('left-'+id); 
-            changeicon('left-'+id); 
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show(); 
-            playvideo('.divseven');
-            $('a').attr("class", "tooltip7");
-            break;
-        case (id == 'info8'):
-            changebackground('left-'+id );
-            changeicon('left-'+id);  
-            $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            playvideo('.diveight');
-            $('a').attr("class", "tooltip8");
-            break;
-        case(id == 'next'):
-            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
-                div2vis = $(".right-div .info-right-div").filter(':visible');
             var id = jQuery(this).attr("id");
-            if (div1vis.next().length > 0 && div2vis.next().length > 0) {
-                div1vis.next().show().prev().hide();
-                div2vis.next().show().prev().hide();
-                var nextid = div1vis.next().attr("id");
-                changebackground(nextid);
-                changeicon(nextid);
-                window.location.href = "#" + url_fixes[nextid];
-                var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
-                playvideo('.'+playId);
-                next_id_number = nextid.slice(-1)
-                $('a').attr("class", "tooltip" + next_id_number);
-            }
-            break;
-        case(id == 'prev'):
-            var div1vis = $(".left-div .info-left-div").filter(':visible'), 
-                div2vis = $(".right-div .info-right-div").filter(':visible');
-            if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
-                div1vis.prev().show().next().hide();
-                div2vis.prev().show().next().hide();
-                var previd = div1vis.prev().attr("id");
-                var prev_href = div1vis.prev().attr("href");
-                changebackground(previd);
-                changeicon(previd);
-                window.location.href = "#" + url_fixes[previd];
-                var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
-                playvideo('.'+playId);
-                prev_id_number = previd.slice(-1)
-                $('a').attr("class", "tooltip" + prev_id_number);
-            }
-            break;
-        };
-   }); 
+            switch (true) {
+            case (id == 'info1') :  
+                changebackground('left-'+id);
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+'#right-'+id ).show(); 
+                playvideo('.divone');  
+                changeicon('left-'+id);
+                $('a').attr("class", "red-tooltip");
+                break;
+            case (id == 'info2'):
+                changebackground('left-'+id); 
+                changeicon('left-'+id); 
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();
+                $('#info2 img').attr('src',('img/active-02.png')); 
+                playvideo('.divtwo');
+                $('a').attr("class", "tooltip2");
+                break;
+            case (id == 'info3'):
+                changebackground('left-'+id);  
+                changeicon('left-'+id);
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();  
+                $('a').attr("class", "tooltip3");
+                playvideo('.divthree'); 
+                break;
+            case (id == 'info4') : 
+                changebackground('left-'+id);
+                changeicon('left-'+id); 
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+'#right-'+id ).show(); 
+                playvideo('.divfour');
+                $('a').attr("class", "tooltip4");
+                break;
+            case (id == 'info5'):
+                changebackground('left-'+id );
+                changeicon('left-'+id);  
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show(); 
+                playvideo('.divfive');
+                $('a').attr("class", "tooltip2");
+                break;
+            case (id == 'info6'):
+                changebackground('left-'+id);
+                changeicon('left-'+id);  
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();
+                playvideo('.divsix');
+                $('a').attr("class", "tooltip6");
+                break;
+            case (id == 'info7'):
+                changebackground('left-'+id); 
+                changeicon('left-'+id); 
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show(); 
+                playvideo('.divseven');
+                $('a').attr("class", "tooltip7");
+                break;
+            case (id == 'info8'):
+                changebackground('left-'+id );
+                changeicon('left-'+id);  
+                $(".info-right-div, .info-left-div").hide();
+                $('#left-'+id+", "+ '#right-'+id ).show();
+                playvideo('.diveight');
+                $('a').attr("class", "tooltip8");
+                break;
+            case(id == 'next'):
+                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                    div2vis = $(".right-div .info-right-div").filter(':visible');
+                var id = jQuery(this).attr("id");
+                if (div1vis.next().length > 0 && div2vis.next().length > 0) {
+                    div1vis.next().show().prev().hide();
+                    div2vis.next().show().prev().hide();
+                    var nextid = div1vis.next().attr("id");
+                    changebackground(nextid);
+                    changeicon(nextid);
+                    window.location.href = "#" + url_fixes[nextid];
+                    var playId = $("#" + nextid + " .gifv-player")[0].classList[1]; 
+                    playvideo('.'+playId);
+                    next_id_number = nextid.slice(-1)
+                    $('a').attr("class", "tooltip" + next_id_number);
+                }
+                break;
+            case(id == 'prev'):
+                var div1vis = $(".left-div .info-left-div").filter(':visible'), 
+                    div2vis = $(".right-div .info-right-div").filter(':visible');
+                if (div1vis.prev().length > 0  && div2vis.prev().length > 0) {
+                    div1vis.prev().show().next().hide();
+                    div2vis.prev().show().next().hide();
+                    var previd = div1vis.prev().attr("id");
+                    var prev_href = div1vis.prev().attr("href");
+                    changebackground(previd);
+                    changeicon(previd);
+                    window.location.href = "#" + url_fixes[previd];
+                    var playId = $("#" + previd + " .gifv-player")[0].classList[1]; 
+                    playvideo('.'+playId);
+                    prev_id_number = previd.slice(-1)
+                    $('a').attr("class", "tooltip" + prev_id_number);
+                }
+                break;
+            };
+        }); 
+
+        var loop = getUrlParameter('loop');
+        console.log(loop);
     });
+
     function playvideo(videoDivID) { 
         $(videoDivID).find('video').show();
         $(videoDivID).find('video')[0].play();  
@@ -207,14 +225,14 @@ published: true
  
     }
     function changebackground(divid) {   
-    if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
-    if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
-    if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
-    if (divid == 'left-info4') { $("body").css('background-color', '#b9b6ae'); } 
-    if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
-    if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
-    if (divid == 'left-info7') { $("body").css('background-color', '#01637A'); } 
-    if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
+        if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
+        if (divid == 'left-info2') { $("body").css('background-color', '#acb7a8'); } 
+        if (divid == 'left-info3') { $("body").css('background-color', '#4f795b'); } 
+        if (divid == 'left-info4') { $("body").css('background-color', '#b9b6ae'); } 
+        if (divid == 'left-info5') { $("body").css('background-color', '#4a87a2'); } 
+        if (divid == 'left-info6') { $("body").css('background-color', '#121929'); } 
+        if (divid == 'left-info7') { $("body").css('background-color', '#01637A'); } 
+        if (divid == 'left-info8') { $("body").css('background-color', '#13192e'); } 
     }
     </script>
 
