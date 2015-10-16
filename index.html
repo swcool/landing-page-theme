@@ -25,15 +25,35 @@ published: true
         sURLVariables = sPageURL.split('&'),
         sParameterName,
         i;
-
         for (i = 0; i < sURLVariables.length; i++) {
             sParameterName = sURLVariables[i].split('=');
-
             if (sParameterName[0] === sParam) {
                 return sParameterName[1] === undefined ? true : sParameterName[1];
             }
         }
     }
+
+    function number_to_string(number) {
+        number = number.toString()
+        if (number == "1"){
+            return "one"
+        } else if (number == "2"){
+            return "two"
+        } else if (number == "3"){
+            return "three"
+        } else if (number == "4"){
+            return "four"
+        } else if (number == "5"){
+            return "five"
+        } else if (number == "6"){
+            return "six"
+        } else if (number == "7"){
+            return "seven"
+        } else if (number == "8"){
+            return "eight"
+        }
+    }
+
     $(document).ready(function() {
         $("a").tooltip();
         $('.infografika').click(function(event) {
@@ -41,7 +61,6 @@ published: true
             $("#next").empty();
             $('#next').append("<img src='img/icon-10.png'>")
         });
-
         url_fixes = {
             "left-info1": "vjetersia-e-veturave",
             "left-info2": "importi-i-veturave",
@@ -51,7 +70,16 @@ published: true
             "left-info6": "vendi-i-origjines",
             "left-info7": "regjistrimi-sipas-regjioneve",
             "left-info8": "lloji-i-motorit",
+            "vjetersia-e-veturave": "left-info1",
+            "importi-i-veturave": "left-info2",
+            "te-hyrat-doganore": "left-info3",
+            "ndotja-e-ambientit": "left-info4",
+            "marka-e-automjeteve": "left-info5",
+            "vendi-i-origjines": "left-info6",
+            "regjistrimi-sipas-regjioneve": "left-info7",
+            "lloji-i-motorit": "left-info8",
         }
+
         player = new GifvPlayer();
         playvideo('.divone');
         jQuery("a").click(function() {
@@ -158,13 +186,21 @@ published: true
                 break;
             };
         }); 
-
         var loop = getUrlParameter('loop');
         if (loop != undefined){
             if (loop != 0){
                 swapC(loop, url_fixes);
             }
         }
+        curr_url = window.location.href;
+        if (!(curr_url.indexOf('#') === -1)){
+            index_start = curr_url.indexOf('#') + 1
+            title = curr_url.substring(index_start, curr_url.length)
+            id = url_fixes[title]
+            title_id = id.substring(id.indexOf('-') + 1, id.length)
+            $("#" + title_id).click();
+        }
+
     });
     
     function swapC(loop, url_fixes) {
@@ -181,7 +217,6 @@ published: true
             }, (loop * 1000) * ind);
         });
     }
-
     function playvideo(videoDivID) { 
         $(videoDivID).find('video').show();
         $(videoDivID).find('video')[0].play();  
