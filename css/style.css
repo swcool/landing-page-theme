@@ -57,16 +57,16 @@ body{
     margin-top: 76px;
 }
 .vertical-line-top{
-    height: 50px;
+    height: 70px;
     width: 2px;
-    background-color: #B5B5B5;
-    margin-top: 0px;
+    background-color: #FFF;
+    margin-top: -2px;
 }
 .vertical-line-bottom{
-    height: 50px;
+    height: 70px;
     width: 2px;
-    background-color: #B5B5B5;
-    margin-bottom: -5px;
+    background-color: #FFF;
+    margin-bottom: 5px;
 }
 .content .middle-content{
     text-align: center;
