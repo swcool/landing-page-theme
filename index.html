@@ -58,8 +58,7 @@ published: true
             changebackground('left-'+id);  
             changeicon('left-'+id);
             $(".info-right-div, .info-left-div").hide();
-            $('#left-'+id+", "+ '#right-'+id ).show();
-            $('#info2 img').attr('src',('img/active-02.png'));  
+            $('#left-'+id+", "+ '#right-'+id ).show();  
             $('a').attr("class", "tooltip3");
             playvideo('.divthree'); 
             break;
@@ -145,23 +144,67 @@ published: true
         $(videoDivID).find('video')[0].play();  
     }
     function changeicon(divid) {   
-    if (divid == 'left-info1') { $('#info1 img').attr('src',('img/active-01.png')); }
-    // if (divid != 'left-info1') { $('#info1 img').attr('src',('img/icon-01.png')); } 
-    if (divid == 'left-info2') { $('#info2 img').attr('src',('img/active-02.png')); } 
-    // if (divid != 'left-info2') { $('#info1 img').attr('src',('img/icon-02.png')); }
-    if (divid == 'left-info3') { $('#info3 img').attr('src',('img/active-03.png')); } 
-    // if (divid != 'left-info3') { $('#info1 img').attr('src',('img/icon-03.png')); }
-    if (divid == 'left-info4') { $('#info4 img').attr('src',('img/active-04.png')); } 
-    // if (divid != 'left-info4') { $('#info1 img').attr('src',('img/icon-04.png')); }
-    if (divid == 'left-info5') { $('#info5 img').attr('src',('img/active-05.png')); } 
-    // if (divid != 'left-info5') { $('#info1 img').attr('src',('img/icon-05.png')); }
-    if (divid == 'left-info6') { $('#info6 img').attr('src',('img/active-06.png')); } 
-    // if (divid != 'left-info6') { $('#info1 img').attr('src',('img/icon-06.png')); }
-    if (divid == 'left-info7') { $('#info7 img').attr('src',('img/active-07.png')); } 
-    // if (divid != 'left-info7') { $('#info1 img').attr('src',('img/icon-07.png')); }
-    if (divid == 'left-info8') { $('#info8 img').attr('src',('img/active-08.png')); } 
-    // if (divid != 'left-info8') { $('#info1 img').attr('src',('img/icon-08.png')); }
-    
+    if (divid == 'left-info1') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info1 img').attr('src',('img/active-01.png')); 
+    }
+    if (divid == 'left-info2') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info2 img').attr('src',('img/active-02.png')); 
+    }
+    if (divid == 'left-info4') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info4 img').attr('src',('img/active-04.png')); 
+    }
+    if (divid == 'left-info5') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info5 img').attr('src',('img/active-05.png')); 
+    }
+    if (divid == 'left-info6') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info6 img').attr('src',('img/active-06.png')); 
+        return false;
+    }
+    if (divid == 'left-info7') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info7 img').attr('src',('img/active-07.png')); 
+        return false;
+    }
+    if (divid == 'left-info8') { 
+        for (i=1; i<9; i++) {
+        var id = i+1;
+        $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info8 img').attr('src',('img/active-08.png')); 
+        return false;
+    }
+    if (divid == 'left-info3') { 
+        for (i=1; i<9; i++) {
+            var id = i+1;
+            $('#info'+i+' img').attr('src',('img/icon-0'+id+'.png')); 
+        }
+        $('#info3 img').attr('src',('img/active-03.png')); 
+        return false;
+    }
+ 
     }
     function changebackground(divid) {   
     if (divid == 'left-info1') { $("body").css('background-color', '#ebb614'); } 
