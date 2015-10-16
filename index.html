@@ -36,6 +36,12 @@ published: true
     }
     $(document).ready(function() {
         $("a").tooltip();
+        $('.infografika').click(function(event) {
+            "<img src='img/icon_once.gif' style='height:53px; width:53px;'>"
+            $("#next").empty();
+            $('#next').append("<img src='img/icon-10.png'>")
+        });
+
         url_fixes = {
             "left-info1": "vjetersia-e-veturave",
             "left-info2": "importi-i-veturave",
@@ -159,7 +165,6 @@ published: true
                 swapC(loop, url_fixes);
             }
         }
-        console.log(loop);
     });
     
     function swapC(loop, url_fixes) {
@@ -462,7 +467,7 @@ published: true
                 </div>
                 <div class="next" >
                     <a style="cursor:pointer;" id="next">
-                    <img src="img/icon-10.png">
+                    <img src="img/icon_once.gif" style="height:50px; width:50px; margin-top: -10px;">
                     </a>
                 </div>
                 <hr class="vertical-line-bottom">
