@@ -144,14 +144,14 @@ body{
 
 
 @media (max-width: 500px){
-    .icon{float: left; margin-left: 3px; padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
+    .icon{float: left; margin-left: 1px; padding-bottom: 15px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
 }
 
-@media (max-width: 700px){
+/*@media (max-width: 700px){
     .icon{float: left; margin-left: 15px; padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
-}
+}*/
 
 @media(max-width: 400px){
     .content .left-content h3{
