@@ -144,7 +144,7 @@ body{
 
 
 @media (max-width: 500px){
-    .icon{float: left; margin-left: 1px; padding-bottom: 20px; padding-top: 20px}
+    .icon{float: left; margin-left: 1px; padding-bottom: 15px; padding-top: px}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
 }
 
@@ -211,3 +211,4 @@ body{
     padding-left: 0px;
     }
 }
+
