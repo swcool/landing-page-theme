@@ -75,15 +75,12 @@ body{
     margin-bottom: 50px;
     margin-top: 15px;
 }
-.content .middle-content .icon1{
+.content .middle-content .icon{
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.content .middle-content .icon2{
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
+
 .content .middle-content .next{
     margin-bottom: 15px;
     margin-top: 50px;
@@ -137,27 +134,12 @@ body{
     margin-top: 15px;
 }
 /*-------------------------------------*/
-@media (max-width: 950px){
-    .icon1{float: left; margin-left: 20px;  padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
-    .icon2{float: left; margin-left: 20px;  padding-bottom: 15px;margin-bottom: 47px; margin-bottom: 5px;}
+@media screen and (max-width: 767px) {
+    .content .middle-content .icon{float: left;width: 25%;text-align: center;margin-top: 5px;margin-bottom: 5px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
-}
-/*
-@media (max-width: 1000px){
-    .icon{float: left; margin-left: 35px; padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
-    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+    .content .right-content h3{margin-top: 150px;}
 }
 
-
-@media (max-width: 500px){
-    .icon{float: left; margin-left: 1px; padding-bottom: 15px; padding-top: px}
-    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
-}
-*/
-/*@media (max-width: 700px){
-    .icon{float: left; margin-left: 15px; padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
-    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
-}*/
 
 @media(max-width: 400px){
     .content .left-content h3{
@@ -172,11 +154,13 @@ body{
 @media(max-width: 497px){
     .content .right-content h4{
     margin-bottom: 47px;
+    margin-top: 20px;
     }
 }
 @media(max-width: 497px){
     .content .right-content h4{
     margin-bottom: 115px;
+    margin-top: 20px;
     }
 }
 @media(max-width: 404px){
