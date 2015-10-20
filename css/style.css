@@ -75,7 +75,12 @@ body{
     margin-bottom: 50px;
     margin-top: 15px;
 }
-.content .middle-content .icon{
+.content .middle-content .icon1{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.content .middle-content .icon2{
     margin-bottom: 15px;
     margin-top: 15px;
 }
@@ -133,10 +138,11 @@ body{
 }
 /*-------------------------------------*/
 @media (max-width: 950px){
-    .icon{float: left; margin-left: 20px;  padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
+    .icon1{float: left; margin-left: 20px;  padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
+    .icon2{float: left; margin-left: 20px;  padding-bottom: 15px;margin-bottom: 47px; margin-bottom: 5px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
 }
-
+/*
 @media (max-width: 1000px){
     .icon{float: left; margin-left: 35px; padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
@@ -147,7 +153,7 @@ body{
     .icon{float: left; margin-left: 1px; padding-bottom: 15px; padding-top: px}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
 }
-
+*/
 /*@media (max-width: 700px){
     .icon{float: left; margin-left: 15px; padding-bottom: 15px;margin-top: 5px; margin-bottom: 5px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
