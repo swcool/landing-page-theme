@@ -40,7 +40,7 @@ body{
 .content .right-content h4{
     color: #EAEAEA;
     height: 65px;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-bottom: 25px;
     font-size: 16px;
     font-family:'avenir next lt pro';
@@ -135,9 +135,10 @@ body{
 }
 /*-------------------------------------*/
 @media screen and (max-width: 767px) {
-    .content .middle-content .icon{float: left;width: 25%;text-align: center;margin-top: 5px;margin-bottom: 5px;}
+    .content .middle-content .icon{float: left;width: 25%;text-align: center;margin-top: 9px;margin-bottom: 9px;}
     .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
-    .content .right-content h3{margin-top: 150px;}
+    .content .right-content h3{ margin-top: 150px; }
+    .content .right-content h4{ margin-top: 30px; } 
 }
 
 

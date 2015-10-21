@@ -3,6 +3,7 @@ layout: default_post
 img: "<iframe class='highcharts-iframe' src='//cloud.highcharts.com/embed/eqejez' style='border: 0; width: 100%; height: 400px'>&nbsp;</iframe>"
 category: grafika
 title: Grafiku I
+sharefb: <div data-href="http://veturat.institutigap.org/grafika/regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit.html" data-layout="button"><i class="fa fa-facebook"></i></div> 
 sectionId: "regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit"
 description: "<a href=\"grafika/regjistrimi-i-veturave-ne-baze-te-vitit-te-prodhimit.html\">Ky grafikon </a> paraqet regjistrimin e veturave në bazë të vitit të prodhimit.<br><br> Burimi: Ministria e Punëve të Brendshme"
 published: true
