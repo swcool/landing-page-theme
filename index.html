@@ -57,7 +57,9 @@ published: true
         $('.infografika').click(function(event) {
             "<img src='img/icon_once.gif' style='height:53px; width:53px;'>"
             $("#next").empty();
-            $('#next').append("<img src='img/icon-10.png'>")
+            $('#next').append("<img src='img/icon-10.png'>");
+            $('#tooltipdiv').hide();
+            $('#prevdiv').show();
         });
         url_fixes = {
             "left-info1": "vjetersia-e-veturave",
@@ -301,6 +303,7 @@ published: true
             background-color: #fff;
             color: #EBB614;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip2 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip2 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -308,6 +311,7 @@ published: true
             background-color: #fff;
             color: #ACB7A8;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip3 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip3 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -315,6 +319,7 @@ published: true
             background-color: #fff;
             color: #4F795B;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip4 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip4 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -322,6 +327,7 @@ published: true
             background-color: #fff;
             color: #B9B6AE;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip5 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip5 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -329,6 +335,7 @@ published: true
             background-color: #fff;
             color: #4A87A2;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip6 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip6 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -336,6 +343,7 @@ published: true
             background-color: #fff;
             color: #121929;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip7 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip7 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -343,6 +351,7 @@ published: true
             background-color: #fff;
             color: #01637A;
         },
+        .tooltip-arrow{ border-top-color: #fff; color:#fff;}
         .tooltip8 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
         .tooltip8 + .tooltip > .tooltip-inner { 
             font-size: 16px;
@@ -452,7 +461,12 @@ published: true
          <div class="col-md-2">
             <div class="middle-content"> 
                 <hr class="vertical-line-top">
-                <div class="prev">
+                 <div class="prev" id="tooltipdiv" >
+                    <a>
+                    <img src="img/tooltip.png">
+                    </a>
+                </div>
+                 <div class="prev" id="prevdiv" style="display:none;">
                     <a style="cursor:pointer;" id="prev">
                     <img src="img/icon-01.png">
                     </a>
