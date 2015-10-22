@@ -16,13 +16,6 @@ title: The service title
 The description of this service
 ```
 
-## Demo
-View this jekyll theme in action [here](https://swcool.github.io/landing-page-theme)
-
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/swcool/landing-page-theme/master/img/screenshot.png)
-
-===
 
 For more Jekyll details, read [documentation](http://jekyllrb.com/).
 This Jekyll theme used [Freelancer Jekyll theme](https://github.com/jeromelachaud/freelancer-theme/) as reference.

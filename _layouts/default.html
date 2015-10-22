@@ -4,9 +4,9 @@
 
 	<body>
 		{% include header.html %}
-		{% include about.html %}
-		{% include page_content.html %}
-		{% include contact.html %}
+		<div style="padding-top:60px">
+			{{ content }}
+		</div>
 		{% include footer.html %}
 		{% include js.html %}
 	</body>

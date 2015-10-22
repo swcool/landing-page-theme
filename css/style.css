@@ -1,0 +1,270 @@
+body{
+    background-color: #ebb614;
+}
+
+.content .left-content{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.content .right-content{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.content .left-content h1{
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'Titling Gothic FB';
+}
+.content .left-content h3{
+    color: #EAEAEA;
+    height: 65px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-family: 'avenir next lt pro';
+}
+.content .left-content h4{
+    color: #EAEAEA;
+    height: 65px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'avenir next lt pro';
+}
+.content .right-content h3{
+    color: #fff;
+    font-family: 'avenir next lt pro';
+    font-weight: bold;
+}
+.content .right-content h4{
+    color: #EAEAEA;
+    height: 65px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family:'avenir next lt pro';
+}
+.content .padding-right{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.content .burimi{
+    height: 30px;
+}
+.content .burimi h4{
+    text-align: right;
+    margin-top: 76px;
+}
+.vertical-line-top{
+    height: 70px;
+    width: 2px;
+    background-color: #FFF;
+    margin-top: -2px;
+}
+.vertical-line-bottom{
+    height: 70px;
+    width: 2px;
+    background-color: #FFF;
+    margin-bottom: 5px;
+}
+.content .middle-content{
+    text-align: center;
+}
+.content .middle-content .prev{
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+.content .middle-content .icon{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.content .middle-content .next{
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.footer{
+    min-height: 70px;
+    background-color: #fff;
+}
+.footer .nopadding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer .economy{
+    background-color: #f0efee;
+}
+.footer  h2{
+    color: #888782;
+    font-family: 'Titling Gothic FB';
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.footer  h4{
+    color: #888782;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 19px;
+}
+.footer .padding-left{
+    padding-left: 65px;
+    padding-right: 0;
+}
+.footer .social .fb{
+    background-color: #4d67a3;
+    float: left;
+    min-width: 50%;
+    height: 70px;
+    text-align: center;
+}
+.footer .social .twitter{
+    background-color: #25a7df;
+    float: right;
+    min-width: 50%;
+    height: 70px;
+    text-align: center;
+}
+.footer .social .fb img{
+    margin-top: 15px;
+}
+.footer .social .twitter img{
+    margin-top: 15px;
+}
+/*-------------------------------------*/
+@media screen and (max-width: 767px) {
+    .content .middle-content .icon{float: left;width: 25%;text-align: center;margin-top: 9px;margin-bottom: 9px;}
+    .vertical-line-bottom, .vertical-line-top , .next, .prev {display:none;} 
+    .content .right-content h3{ margin-top: 150px; }
+    .content .left-content h4{ margin-bottom: 130px; } 
+}
+
+
+@media(max-width: 400px){
+    .content .left-content h3{
+    margin-bottom: 25px;
+    font-size: 18px;
+   }
+}
+@media (max-width: 600px){
+    .middle-content, {float: left;}       
+}
+
+@media(max-width: 497px){
+    .content .right-content h4{
+    margin-bottom: 47px;
+    margin-top: 20px;
+    }
+}
+@media(max-width: 497px){
+    .content .right-content h4{
+    margin-bottom: 115px;
+    margin-top: 20px;
+    }
+}
+@media(max-width: 404px){
+    .content .burimi h4{
+    margin-top: 150px;
+}
+}
+@media(max-width: 340px){
+    .content .burimi h4{
+    margin-top: 225px;
+    }
+}
+@media(max-width:1204px){
+    .footer  h2{
+    font-size: 25px;
+    margin-left: 14px;
+    }
+}
+@media(max-width:1204px){
+    .footer  h4{
+    margin-top: 10px;
+    }
+}
+@media(max-width:991px){
+    .footer  h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+}
+@media(max-width:768px){
+    .footer  h4{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    }
+}
+@media(max-width:991px){
+    .footer .padding-left{
+    padding-left: 0px;
+    }
+}
+
+
+.red-tooltip { border-top-color: #fff;}
+.red-tooltip + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.red-tooltip + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #EBB614;
+    background-color: #fff;
+    color: #EBB614;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip2 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip2 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #ACB7A8;
+    background-color: #fff;
+    color: #ACB7A8;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip3 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip3 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #4F795B;
+    background-color: #fff;
+    color: #4F795B;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip4 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip4 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #B9B6AE;
+    background-color: #fff;
+    color: #B9B6AE;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip5 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip5 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #4A87A2;
+    background-color: #fff;
+    color: #4A87A2;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip6 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip6 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #121929;
+    background-color: #fff;
+    color: #121929;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip7 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip7 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #01637A;
+    background-color: #fff;
+    color: #01637A;
+},
+.tooltip-arrow{ border-top-color: #fff; color:#fff;}
+.tooltip8 + .tooltip.top > .tooltip-arrow { border-top-color: #fff;}
+.tooltip8 + .tooltip > .tooltip-inner { 
+    font-size: 16px;
+    border: 2px solid #13192E;
+    background-color: #fff;
+    color: #13192E;
+}

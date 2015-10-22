@@ -89,7 +89,7 @@ h6 {
 }
 
 .content-section-a {
-    padding: 50px 0;
+    padding: 50px 0 30px 0px ;
     background-color: #f8f8f8;
 }
 
@@ -164,3 +164,21 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+ .input-symbol-euro {
+     position: relative;
+     display: inline-block;
+     width: 100%;
+ }
+ .input-symbol-euro input {
+     padding-right: 40px;
+     width: 100%;
+ }
+ .input-symbol-euro:after {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     margin: auto;
+     content:"€";
+     right: 20px;
+ }
