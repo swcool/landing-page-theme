@@ -1,6 +1,6 @@
 <section id="services">
 <!-- Page Content -->
-{% for post in site.posts reversed %}
+{% for post in site.categories["Services"] reversed %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="content-section-a">
