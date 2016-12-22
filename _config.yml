@@ -3,14 +3,14 @@
 # ----------------------- #
 
 url: http://easyupdater.tk
-title: Your Awesome Site
+title: EasyUpdater
 email: your-email@domain.com
-author: Your Name
+author: Lukas Weisel
 description: > # "Write an awesome description for your new site here. 
   You can edit this line in _config.yml. It will appear in your document 
   head meta (for Google search results) and in your feed.xml site 
   description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
+copyright: 'Copyright &copy; 2016 L. Weisel. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 # ----------------------- #
@@ -18,8 +18,8 @@ credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme cr
 # ----------------------- #
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+markdown:
+permalink:
 
 # ----------------------- #
 #   3rd Party Settings    #
