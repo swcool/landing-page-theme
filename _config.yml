@@ -27,8 +27,10 @@ permalink: pretty
 
 social:
   - title: twitter
-    url: https:www.google.com
+    url: https://www.google.com
   - title: github
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
-    url: 
+    url:
+  - title: facebook
+    url: http://www.facebook.com
