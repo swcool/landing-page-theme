@@ -26,11 +26,9 @@ permalink:
 # ----------------------- #
 
 social:
-  - title: twitter
-    url: http://google.com/
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url:
+    url: https://github.com/gitlucky96/easyUpdater
+  - title: download
+    url: https://github.com/zoul/Finch/archive/master.zip
   - title: facebook
     url: http://www.facebook.com
