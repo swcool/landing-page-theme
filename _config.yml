@@ -28,9 +28,9 @@ permalink:
 social:
   - title: github
     url: https://github.com/gitlucky96/easyUpdater
-  - title: download source
+  - title: source
     url: https://github.com/zoul/Finch/archive/master.zip
   - title: download
     url: http://easyupdater.bplaced.net
-  - title: facebook
-    url: http://www.facebook.com
+  #- title: facebook
+  #  url: http://www.facebook.com
