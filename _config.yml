@@ -26,11 +26,11 @@ permalink:
 # ----------------------- #
 
 social:
-  - title: github
-    url: https://github.com/gitlucky96/easyUpdater
-  - title: source
-    url: https://github.com/zoul/Finch/archive/master.zip
   - title: download
     url: http://easyupdater.bplaced.net
+  - title: github
+    url: https://github.com/gitlucky96/easyUpdater
+#  - title: source
+#    url: https://github.com/zoul/Finch/archive/master.zip
   #- title: facebook
   #  url: http://www.facebook.com
