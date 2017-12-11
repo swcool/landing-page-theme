@@ -1,8 +1,10 @@
 ---
 layout: default
-img: phones.png
+img: rokuyou.jpg
 category: Services
-title: Google Web Fonts and<br>Font Awesome Icons
+title: Profundizando en la cultura japonesa
 description: |
 ---
-This template features the 'Lato' font, part of the [Google Web Font library](http://www.google.com/fonts), as well as [icons from Font Awesome](http://fontawesome.io).
+Koyomito te enseña a entender y decir la fecha en japonés, pero no se limita al día del mes y de la semana. Algunos calendarios japoneses incluyen el _rokuyō_ para cada día, una clasificación tradicional de los días en seis tipos.
+
+El _rokuyō_ se sigue usando para elegir cosas como el día en que celebrar una boda, y es una curiosa ventana a la tradición y la sociedad japonesas.

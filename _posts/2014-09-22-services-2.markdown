@@ -1,10 +1,8 @@
 ---
 layout: default
-img: dog.png
+img: fecha.jpg
 category: Services
-title: 3D Device Mockups<br>by PSDCovers
+title: Información detallada en tu idioma
 description: |
 ---
-  Turn your 2D designs into high quality, 3D
-  product shots in seconds using free Photoshop actions by [PSDCovers](http://www.psdcovers.com/)! Visit
-  their website to download some of their awesome, free photoshop actions!
+Toca cualquiera de las partes de la fecha para abrir una pantalla con todo lo que necesitas saber sobre ese tema, esta vez en castellano. También podrás escuchar la pronunciación de cada palabra, grabada por una hablante japonesa nativa.

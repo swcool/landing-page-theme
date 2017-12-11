@@ -2,16 +2,16 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
+url: https://apps.alecrem.com/koyomito
+title: Koyomito
+email: ale@alecrem.com
+author: Alejandro Cremades
 description: > # "Write an awesome description for your new site here. 
   You can edit this line in _config.yml. It will appear in your document 
   head meta (for Google search results) and in your feed.xml site 
   description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+copyright: 'Copyright &copy; 2017 Alejandro Cremades. Todos los derechos reservados.'
+credits: 'Envía correo electrónico a Alejandro desde su sitio web <a href="https://alecrem.com/">Alecrem</a>.'
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -27,8 +27,10 @@ permalink: pretty
 
 social:
   - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url: 
+    url: https://twitter.com/karawapo
+  - title: instagram
+    url: https://www.instagram.com/karawapo/
+  - title: youtube
+    url: https://www.youtube.com/karawapo
+  - title: facebook
+    url: https://www.facebook.com/alecrem

@@ -1,8 +1,10 @@
 ---
 layout: default
-img: ipad.png
+img: home.jpg
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
+title: Un calendario muy japonés
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+Cada día verás la fecha separada en varias partes, escrita solamente en japonés. Aunque no sepas nada de japonés, pronto te familiarizarás con los _kanji_ (ideogramas) que salen más a menudo.
+
+Por ejemplo ¿ves el botón en la parte de arriba que tiene el número 29? Ese es el año, expresado en la era japonesa. No se usa siempre, pero es algo fácil de entender y no es difícil acostumbrarse viéndolo todos los días.

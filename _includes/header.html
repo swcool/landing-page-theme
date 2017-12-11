@@ -13,15 +13,15 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">  
+            <ul class="nav navbar-nav navbar-right">
             	<li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>            
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#about">App</a>
                 </li>
+                <!-- <li>
+                    <a class="page-scroll" href="#services">Contenido</a>
+                </li> -->
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -44,9 +44,9 @@
 						<hr class="intro-divider">
 						<ul class="list-inline intro-social-buttons">
 							{% for social in site.social %}
-							<li>
-								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
-							</li>
+							<!-- <li>
+								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name"></span></a>
+							</li> -->
 							{% endfor %}
 						</ul>
 					</div>
