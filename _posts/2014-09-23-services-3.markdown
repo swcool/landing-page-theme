@@ -8,3 +8,7 @@ description: |
 Koyomito te enseña a entender y decir la fecha en japonés, pero no se limita al día del mes y de la semana. Algunos calendarios japoneses incluyen el _rokuyō_ para cada día, una clasificación tradicional de los días en seis tipos.
 
 El _rokuyō_ se sigue usando para elegir cosas como el día en que celebrar una boda, y es una curiosa ventana a la tradición y la sociedad japonesas.
+
+### Política de privacidad
+
+Koyomito necesita tu permiso para usar el sistema de sonido de tu terminal Android. Se solicitan permisos para grabar audio y para detectar el estado del teléfono, pero Koyomito en nigún caso grabará ni enviará el sonido de tu micrófono a ninguna parte.
