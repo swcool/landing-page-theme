@@ -1,10 +1,10 @@
 ---
 layout: default
-img: home.jpg
+img: home.png
 category: Services
 title: Un calendario muy japonés
 description: |
 ---
 Cada día verás la fecha separada en varias partes, escrita solamente en japonés. Aunque no sepas nada de japonés, pronto te familiarizarás con los _kanji_ (ideogramas) que salen más a menudo.
 
-Por ejemplo ¿ves el botón en la parte de arriba que tiene el número 29? Ese es el año, expresado en la era japonesa. No se usa siempre, pero es algo fácil de entender y no es difícil acostumbrarse viéndolo todos los días.
+Por ejemplo ¿ves el botón en la parte de arriba que tiene el número 30? Ese es el año, expresado en la era japonesa. No se usa siempre, pero es algo fácil de entender y no es difícil acostumbrarse viéndolo todos los días.
