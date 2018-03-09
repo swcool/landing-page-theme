@@ -8,3 +8,5 @@ description: |
 Koyomito te enseña a entender y decir la fecha en japonés, pero no se limita al día del mes y de la semana. Algunos calendarios japoneses incluyen el _rokuyō_ para cada día, una clasificación tradicional de los días en seis tipos.
 
 El _rokuyō_ se sigue usando para elegir cosas como el día en que celebrar una boda, y es una curiosa ventana a la tradición y la sociedad japonesas.
+
+También encontrarás información extra en días festivos y otros días especiales.
