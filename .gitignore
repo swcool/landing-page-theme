@@ -1,4 +1,6 @@
 _site
 .DS_Store
-src/**/*.css
+*.log
+
 node_modules
+src/**/*.css
