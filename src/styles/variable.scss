@@ -1,0 +1,33 @@
+/* Color
+ * ======================================================================== */
+$color--primary: tomato;
+
+/* Media queries
+ * ======================================================================== */
+@mixin screen--sm {
+  // Small devices (landscape phones, 576px and up)
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin screen--md {
+  // Medium devices (tablets, 768px and up)
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen--lg {
+  // Large devices (desktops, 992px and up)
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin screen--xl {
+  // Extra large devices (large desktops, 1200px and up)
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
