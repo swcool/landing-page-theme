@@ -3,11 +3,11 @@
 .app {
   padding: 0 20px;
 
-  .app__title {
+  .app__title--center {
     text-align: center;
   }
 
-  .app__title.app__main-title {
+  .app__title--center.app__main-title {
     color: $color--primary;
   }
 
