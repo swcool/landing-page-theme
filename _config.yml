@@ -1,0 +1,30 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: https://iplayground.io
+title: iPlayground
+email: admin@iplayground.io
+author: iPlayground.io
+description: > # "Write an awesome description for your new site here. 
+  iPlayground.io
+copyright: 'Copyright &copy; 2018 John Lin. All Rights Reserved.'
+credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: twitter
+    url: https://twitter.com/iplaygroundio
+  - title: github
+    url: https://github.com/iplayground
