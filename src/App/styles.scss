@@ -3,23 +3,31 @@
 .app {
   padding: 0 20px;
 
-  .app__title--center {
-    text-align: center;
-  }
-
-  .app__title--center.app__main-title {
-    color: $color--primary;
+  .app__iplayground-logo {
+    width: 100%;
   }
 
   .app__submit {
     display: block;
-    margin: 3.5rem 0;
-    padding: 1rem;
+    margin-top: 5rem;
+    padding: 1.25rem;
     text-align: center;
     text-decoration: none;
     border-radius: 3px;
     color: white;
     background-color: $color--primary;
+  }
+
+  .app__sponsor-logo {
+    width: 50%;
+  }
+
+  .app__section {
+    padding: 2rem 0;
+  }
+
+  .app__title--center {
+    text-align: center;
   }
 
   hr {
@@ -34,6 +42,10 @@
       margin-left: auto;
       margin-right: auto;
       width: 300px;
+    }
+
+    .app__sponsor-logo {
+      width: 25%;
     }
   }
 
