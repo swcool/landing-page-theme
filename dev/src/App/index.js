@@ -131,14 +131,17 @@ export default class App extends PureComponent {
       imgURL: require('../images/logo_swift_taipei.png'),
       link: 'https://www.meetup.com/Swift-Taipei-User-Group/',
       alt: 'Swift Taipei'
-    },
+    }
+  ];
+
+  assists = [
     {
       id: _.uniqueId(),
       imgURL: require('../images/logo_swift_girls.png'),
       link: 'https://www.facebook.com/groups/1260405513988915/',
       alt: 'Swift Girls'
     }
-  ];
+  ]
 
   onClickSpeaker = () => {
     this.setState({ showModal: true });
@@ -176,6 +179,14 @@ export default class App extends PureComponent {
   );
 
   renderSponsors = _.map(this.sponors, ({ id, imgURL, link, alt }) => (
+    <div key={id} className="app__sponsor">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+      </a>
+    </div>
+  ));
+
+  renderAssists = _.map(this.assists, ({ id, imgURL, link, alt }) => (
     <div key={id} className="app__sponsor">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <img className="app__sponsor-logo" src={imgURL} alt={alt} />
@@ -264,6 +275,10 @@ export default class App extends PureComponent {
           <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors}
+          </div>
+          <div className="app__section">
+            <h1 className="app__title">Co-organiser</h1>
+            {this.renderAssists}
           </div>
         </div>
         <Modal
