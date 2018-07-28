@@ -113,6 +113,45 @@ export default class App extends PureComponent {
     }
   ];
 
+  staff = [
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/protrait_test.jpeg'),
+      alt: '',
+      name: 'Welly',
+      position: 'React Developer',
+      intro:
+        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/protrait_test.jpeg'),
+      alt: '',
+      name: 'Welly',
+      position: 'React Developer',
+      intro:
+        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/protrait_test.jpeg'),
+      alt: '',
+      name: 'Welly',
+      position: 'React Developer',
+      intro:
+        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/protrait_test.jpeg'),
+      alt: '',
+      name: 'Welly',
+      position: 'React Developer',
+      intro:
+        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
+    }
+  ];
+
   sponors = [
     {
       id: _.uniqueId(),
@@ -134,7 +173,7 @@ export default class App extends PureComponent {
     }
   ];
 
-  assists = [
+  coOrganisers = [
     {
       id: _.uniqueId(),
       imgURL: require('../images/logo_swift_girls.png'),
@@ -178,6 +217,19 @@ export default class App extends PureComponent {
     )
   );
 
+  renderStaff = _.map(
+    this.staff,
+    ({ id, imgURL, alt, name, position }) => (
+      <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
+        <img className="app__speaker-img" src={imgURL} alt={alt} />
+        <p className="app__speaker-name">
+          <strong>{name}</strong>
+        </p>
+        <p className="app__speaker-position">{position}</p>
+      </div>
+    )
+  );
+
   renderSponsors = _.map(this.sponors, ({ id, imgURL, link, alt }) => (
     <div key={id} className="app__sponsor">
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -186,7 +238,7 @@ export default class App extends PureComponent {
     </div>
   ));
 
-  renderAssists = _.map(this.assists, ({ id, imgURL, link, alt }) => (
+  renderCoOrganisers = _.map(this.coOrganisers, ({ id, imgURL, link, alt }) => (
     <div key={id} className="app__sponsor">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <img className="app__sponsor-logo" src={imgURL} alt={alt} />
@@ -273,12 +325,16 @@ export default class App extends PureComponent {
             {this.renderSpeakers}
           </div>
           <div className="app__section">
+            <h1 className="app__title">Staff</h1>
+            {this.renderStaff}
+          </div>
+          <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors}
           </div>
           <div className="app__section">
             <h1 className="app__title">Co-organiser</h1>
-            {this.renderAssists}
+            {this.renderCoOrganisers}
           </div>
         </div>
         <Modal
