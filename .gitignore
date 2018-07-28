@@ -1,2 +1,5 @@
 _site
 .DS_Store
+
+dev/node_modules
+dev/build
