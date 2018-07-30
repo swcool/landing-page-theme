@@ -152,7 +152,9 @@ export default class App extends PureComponent {
     }
   ];
 
-  sponors = [
+  sponors = [];
+
+  coOrganisers = [
     {
       id: _.uniqueId(),
       imgURL: require('../images/logo_cocoaheads_taipei.png'),
@@ -170,10 +172,7 @@ export default class App extends PureComponent {
       imgURL: require('../images/logo_swift_taipei.png'),
       link: 'https://www.meetup.com/Swift-Taipei-User-Group/',
       alt: 'Swift Taipei'
-    }
-  ];
-
-  coOrganisers = [
+    },
     {
       id: _.uniqueId(),
       imgURL: require('../images/logo_swift_girls.png'),
@@ -283,7 +282,7 @@ export default class App extends PureComponent {
               allowFullScreen
             />
           </div>
-          <div className="app__section">
+          {/* <div className="app__section">
             <h1 className="app__title">Schedule</h1>
             <div className="app__sechdule-tab">
               <button
@@ -331,9 +330,9 @@ export default class App extends PureComponent {
           <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors}
-          </div>
+          </div> */}
           <div className="app__section">
-            <h1 className="app__title">Co-organiser</h1>
+            <h1 className="app__title">Co-organisers</h1>
             {this.renderCoOrganisers}
           </div>
         </div>
