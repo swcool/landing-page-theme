@@ -203,7 +203,7 @@ export default class App extends PureComponent {
       )
     );
 
-  renderSpeakers = _.map(
+  renderSpeakers = () => _.map(
     this.speakers,
     ({ id, imgURL, alt, name, position }) => (
       <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
@@ -216,7 +216,7 @@ export default class App extends PureComponent {
     )
   );
 
-  renderStaff = _.map(
+  renderStaff = () => _.map(
     this.staff,
     ({ id, imgURL, alt, name, position }) => (
       <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
@@ -229,7 +229,7 @@ export default class App extends PureComponent {
     )
   );
 
-  renderSponsors = _.map(this.sponors, ({ id, imgURL, link, alt }) => (
+  renderSponsors = () => _.map(this.sponors, ({ id, imgURL, link, alt }) => (
     <div key={id} className="app__sponsor">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <img className="app__sponsor-logo" src={imgURL} alt={alt} />
@@ -237,7 +237,7 @@ export default class App extends PureComponent {
     </div>
   ));
 
-  renderCoOrganisers = _.map(this.coOrganisers, ({ id, imgURL, link, alt }) => (
+  renderCoOrganisers = () => _.map(this.coOrganisers, ({ id, imgURL, link, alt }) => (
     <div key={id} className="app__sponsor">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <img className="app__sponsor-logo" src={imgURL} alt={alt} />
@@ -282,7 +282,7 @@ export default class App extends PureComponent {
               allowFullScreen
             />
           </div>
-          {/* <div className="app__section">
+          <div className="app__section">
             <h1 className="app__title">Schedule</h1>
             <div className="app__sechdule-tab">
               <button
@@ -321,19 +321,19 @@ export default class App extends PureComponent {
           </div>
           <div className="app__section">
             <h1 className="app__title">Speakers</h1>
-            {this.renderSpeakers}
+            {this.renderSpeakers()}
           </div>
           <div className="app__section">
             <h1 className="app__title">Staff</h1>
-            {this.renderStaff}
+            {this.renderStaff()}
           </div>
           <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
-            {this.renderSponsors}
-          </div> */}
+            {this.renderSponsors()}
+          </div>
           <div className="app__section">
             <h1 className="app__title">Co-organisers</h1>
-            {this.renderCoOrganisers}
+            {this.renderCoOrganisers()}
           </div>
         </div>
         <Modal
