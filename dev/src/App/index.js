@@ -1,9 +1,11 @@
 import React, { PureComponent } from 'react';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 import _ from 'lodash';
 
 import Modal from '../components/Modal';
 import ModalContent from '../components/ModalContent';
 import TableRow from '../components/TableRow';
+
 
 import './styles.css';
 
@@ -247,6 +249,7 @@ export default class App extends PureComponent {
 
   render() {
     const { whichDay } = this.state;
+    const mailChimpURL = "https://iplayground.us17.list-manage.com/subscribe/post?u=61bc80c5d8118e451c9a5ac80&amp;id=b804a3d8e0" ;
 
     return (
       <div className="app">
@@ -264,6 +267,10 @@ export default class App extends PureComponent {
               都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
               iPlayground 並且認識更多同好。
             </p>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <strong> 訂閱最新通知 </strong>
+            <MailchimpSubscribe url={mailChimpURL} />
+            </div>
             <a
               className="app__submit"
               href="https://cfp.iplayground.io/events/iplayground_2018"
