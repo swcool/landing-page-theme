@@ -282,6 +282,7 @@ export default class App extends PureComponent {
               allowFullScreen
             />
           </div>
+          {/* disable for now
           <div className="app__section">
             <h1 className="app__title">Schedule</h1>
             <div className="app__sechdule-tab">
@@ -331,6 +332,7 @@ export default class App extends PureComponent {
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
           </div>
+         */}
           <div className="app__section">
             <h1 className="app__title">Co-organisers</h1>
             {this.renderCoOrganisers()}
