@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import _ from 'lodash';
 
 import Modal from '../components/Modal';
 import ModalContent from '../components/ModalContent';
 import TableRow from '../components/TableRow';
-
 
 import './styles.css';
 
@@ -154,7 +153,14 @@ export default class App extends PureComponent {
     }
   ];
 
-  sponors = [];
+  sponors = [
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/logo_esun.png'),
+      link: 'https://www.esunbank.com.tw/',
+      alt: 'Esun Bank'
+    }
+  ];
 
   coOrganisers = [
     {
@@ -181,7 +187,7 @@ export default class App extends PureComponent {
       link: 'https://www.facebook.com/groups/1260405513988915/',
       alt: 'Swift Girls'
     }
-  ]
+  ];
 
   onClickSpeaker = () => {
     this.setState({ showModal: true });
@@ -205,9 +211,8 @@ export default class App extends PureComponent {
       )
     );
 
-  renderSpeakers = () => _.map(
-    this.speakers,
-    ({ id, imgURL, alt, name, position }) => (
+  renderSpeakers = () =>
+    _.map(this.speakers, ({ id, imgURL, alt, name, position }) => (
       <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
         <img className="app__speaker-img" src={imgURL} alt={alt} />
         <p className="app__speaker-name">
@@ -215,12 +220,10 @@ export default class App extends PureComponent {
         </p>
         <p className="app__speaker-position">{position}</p>
       </div>
-    )
-  );
+    ));
 
-  renderStaff = () => _.map(
-    this.staff,
-    ({ id, imgURL, alt, name, position }) => (
+  renderStaff = () =>
+    _.map(this.staff, ({ id, imgURL, alt, name, position }) => (
       <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
         <img className="app__speaker-img" src={imgURL} alt={alt} />
         <p className="app__speaker-name">
@@ -228,28 +231,30 @@ export default class App extends PureComponent {
         </p>
         <p className="app__speaker-position">{position}</p>
       </div>
-    )
-  );
+    ));
 
-  renderSponsors = () => _.map(this.sponors, ({ id, imgURL, link, alt }) => (
-    <div key={id} className="app__sponsor">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img className="app__sponsor-logo" src={imgURL} alt={alt} />
-      </a>
-    </div>
-  ));
+  renderSponsors = () =>
+    _.map(this.sponors, ({ id, imgURL, link, alt }) => (
+      <div key={id} className="app__sponsor">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+        </a>
+      </div>
+    ));
 
-  renderCoOrganisers = () => _.map(this.coOrganisers, ({ id, imgURL, link, alt }) => (
-    <div key={id} className="app__sponsor">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img className="app__sponsor-logo" src={imgURL} alt={alt} />
-      </a>
-    </div>
-  ));
+  renderCoOrganisers = () =>
+    _.map(this.coOrganisers, ({ id, imgURL, link, alt }) => (
+      <div key={id} className="app__sponsor">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+        </a>
+      </div>
+    ));
 
   render() {
     const { whichDay } = this.state;
-    const mailChimpURL = "https://iplayground.us17.list-manage.com/subscribe/post?u=61bc80c5d8118e451c9a5ac80&amp;id=b804a3d8e0" ;
+    const mailChimpURL =
+      'https://iplayground.us17.list-manage.com/subscribe/post?u=61bc80c5d8118e451c9a5ac80&amp;id=b804a3d8e0';
 
     return (
       <div className="app">
@@ -267,9 +272,9 @@ export default class App extends PureComponent {
               都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
               iPlayground 並且認識更多同好。
             </p>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
-            <strong> 訂閱最新通知 </strong>
-            <MailchimpSubscribe url={mailChimpURL} />
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <strong> 訂閱最新通知 </strong>
+              <MailchimpSubscribe url={mailChimpURL} />
             </div>
             <a
               className="app__submit"
@@ -334,12 +339,11 @@ export default class App extends PureComponent {
           <div className="app__section">
             <h1 className="app__title">Staff</h1>
             {this.renderStaff()}
-          </div>
+          </div> */}
           <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
           </div>
-         */}
           <div className="app__section">
             <h1 className="app__title">Co-organisers</h1>
             {this.renderCoOrganisers()}
