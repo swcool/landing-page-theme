@@ -339,11 +339,11 @@ export default class App extends PureComponent {
           <div className="app__section">
             <h1 className="app__title">Staff</h1>
             {this.renderStaff()}
-          </div> */}
+          </div>
           <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
-          </div>
+          </div> */}
           <div className="app__section">
             <h1 className="app__title">Co-organisers</h1>
             {this.renderCoOrganisers()}
