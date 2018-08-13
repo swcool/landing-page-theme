@@ -304,6 +304,16 @@ export default class App extends PureComponent {
               src="https://www.google.com/maps/embed/v1/place?q=%E5%8F%B0%E5%A4%A7%E7%AE%A1%E7%90%86%E5%AD%B8%E9%99%A2&key=AIzaSyBIrI6CGIsBb7W9s5hvIXoZrsWG1J0ek1k"
               allowFullScreen
             />
+            <h2 className="app__title">活動緣起</h2>
+            <p>
+            自從蘋果發表 iPhone 以來，iOS 開發就是業界重要的題⽬。國外有無數的地區型開發者研討會，甚⾄有跨國巡迴式的專⾨組織。但是以往在台灣地區舉辦的開發者研討會中，iOS 只是其中一個配⾓。
+            </p>
+            <p>
+            2017.9，台灣有一群⼯程師去東京參加 iOSDC（<a href="https://iosdc.jp/2017/" target="_blank" >https://iosdc.jp/2017/</a>），看到⽇本當地開發社群的蓬勃活力，兼具深度、廣度的諸多講題及趣味的舉辦⽅式，其中有許多台灣社群可以學習之處。
+            </p>
+            <p>
+            我們意識到開發社群有強烈的需求，決定在台北辦⼀場 iOS 開發專⾨的研討會。
+            </p>
           </div>
           {/* disable for now
           <div className="app__section">
