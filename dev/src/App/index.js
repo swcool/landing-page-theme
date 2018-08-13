@@ -136,7 +136,7 @@ export default class App extends PureComponent {
       {
           "id": _.uniqueId(),
           "name": 'ethanhuang13',
-          "imgURL": "https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=80",
+          "imgURL": "https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=200",
           "position": "iOS/tvOS Developer @ CATCHPLAY",
       },
       {
@@ -224,7 +224,7 @@ export default class App extends PureComponent {
 
   renderSpeakers = () =>
     _.map(this.speakers, ({ id, imgURL, alt, name, position }) => (
-      <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
+      <div key={id} className="app__speaker" >
         <img className="app__speaker-img" src={imgURL} alt={alt} />
         <p className="app__speaker-name">
           <strong>{name}</strong>
@@ -235,7 +235,7 @@ export default class App extends PureComponent {
 
   renderStaff = () =>
     _.map(this.staff, ({ id, imgURL, alt, name, position }) => (
-      <div key={id} className="app__speaker" onClick={this.onClickSpeaker}>
+      <div key={id} className="app__speaker">
         <img className="app__speaker-img" src={imgURL} alt={alt} />
         <p className="app__speaker-name">
           <strong>{name}</strong>
