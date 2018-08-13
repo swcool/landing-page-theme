@@ -115,42 +115,53 @@ export default class App extends PureComponent {
   ];
 
   staff = [
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    }
+      {
+          "id": _.uniqueId(),
+          "name": 'Hokila',
+          "imgURL": "https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg",
+          "position": "iOS Evangelist / Trello Lover/ Father",
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'Hanyu Chen',
+          imgURL: require('../images/tGm55idg.png'),
+          "position": "iOS Developer",
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'John Lin',
+          "imgURL": "https://avatars3.githubusercontent.com/u/529248?s=460&v=4",
+          "position": "Swift Taipei Orgainzier",
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'ethanhuang13',
+          "imgURL": "https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=80",
+          "position": "iOS/tvOS Developer @ CATCHPLAY",
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'Hao Lee',
+          "imgURL": "https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200",
+          "position": "Junior Software Engineer at DYLAN-TEK CO., LTD.",
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'Welly',
+          "position": "F2E at KKStream",
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'Joe Chen',
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'Superbil',
+      },
+      {
+          "id": _.uniqueId(),
+          "name": 'Hanpo',
+      }
   ];
 
   sponors = [
@@ -337,13 +348,13 @@ export default class App extends PureComponent {
             {this.renderSpeakers()}
           </div>
           <div className="app__section">
-            <h1 className="app__title">Staff</h1>
-            {this.renderStaff()}
-          </div>
-          <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
           </div> */}
+        <div className="app__section">
+            <h1 className="app__title">Staff</h1>
+            {this.renderStaff()}
+        </div>
           <div className="app__section">
             <h1 className="app__title">Co-organisers</h1>
             {this.renderCoOrganisers()}
