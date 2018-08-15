@@ -290,15 +290,23 @@ export default class App extends PureComponent {
           />
           <div className="app__section">
             <h1 className="app__title">10/20 - 10/21 @ 台大管理學院</h1>
+            <a
+              className="app__submit"
+        href="https://iplayground.kktix.cc/events/iplayground2018"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <strong>立刻購票</strong>
+            </a>
             <p>
-              iPlayground 是在台北舉辦的 Apple 軟體開發相關的研討會，名字來自於
-              Xcode 內建的開發工具 Playground，我們希望開發者、設計師、QA、PM
-              都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
-              iPlayground 並且認識更多同好。
+            iPlayground 是在台北舉辦的 Apple 軟體開發相關的研討會，名字來自於
+            Xcode 內建的開發工具 Playground，我們希望開發者、設計師、QA、PM
+            都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
+            iPlayground 並且認識更多同好。
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <strong> 訂閱最新通知 </strong>
-              <MailchimpSubscribe url={mailChimpURL} />
+            <strong> 訂閱最新通知 </strong>
+            <MailchimpSubscribe url={mailChimpURL} />
             </div>
             <a
               className="app__submit"
