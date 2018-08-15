@@ -1,10 +1,14 @@
 {
   "main.css": "static/css/main.0a76f41c.css",
   "main.css.map": "static/css/main.0a76f41c.css.map",
-  "main.js": "static/js/main.f7c642eb.js",
-  "main.js.map": "static/js/main.f7c642eb.js.map",
+  "main.js": "static/js/main.d617b40a.js",
+  "main.js.map": "static/js/main.d617b40a.js.map",
+  "static/media/10636419_10203880244832112_3086301521967770082_o.jpg": "static/media/10636419_10203880244832112_3086301521967770082_o.d2cf47ff.jpg",
+  "static/media/14362711_1443783055638586_3924866533217962148_o.jpg": "static/media/14362711_1443783055638586_3924866533217962148_o.e5215d5b.jpg",
+  "static/media/Hanpo_Avatar.jpg": "static/media/Hanpo_Avatar.d3631d5e.jpg",
   "static/media/logo_cocoaheads_taipei.png": "static/media/logo_cocoaheads_taipei.04bde3ff.png",
   "static/media/logo_esun.png": "static/media/logo_esun.1d0c2ada.png",
   "static/media/logo_iplayground.png": "static/media/logo_iplayground.85a323f9.png",
-  "static/media/logo_swift_girls.png": "static/media/logo_swift_girls.e221c42c.png"
+  "static/media/logo_swift_girls.png": "static/media/logo_swift_girls.e221c42c.png",
+  "static/media/meme.png": "static/media/meme.705091af.png"
 }

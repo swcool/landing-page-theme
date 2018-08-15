@@ -148,20 +148,33 @@ export default class App extends PureComponent {
       {
           "id": _.uniqueId(),
           "name": 'Welly',
+          'imgURL': require("../images/meme.png"),
           "position": "F2E at KKStream",
       },
       {
           "id": _.uniqueId(),
+          'imgURL': require("../images/10636419_10203880244832112_3086301521967770082_o.jpg"),
           "name": 'Joe Chen',
+          "position": "Software Engineer",
       },
       {
           "id": _.uniqueId(),
-          "name": 'Superbil',
-      },
-      {
-          "id": _.uniqueId(),
+          'imgURL': require("../images/Hanpo_Avatar.jpg"),
           "name": 'Hanpo',
-      }
+          "position": "UI Design Engineer at KeyXentic",
+      },
+      {
+          "id": _.uniqueId(),
+          'imgURL': "https://avatars1.githubusercontent.com/u/59567?s=460&v=4",
+          "name": 'Superbil',
+          "position": "Software Freelance",
+      },
+      {
+          "id": _.uniqueId(),
+          'imgURL': require("../images/14362711_1443783055638586_3924866533217962148_o.jpg"),
+          "name": "Dada",
+          "position": "iOS Developer at KKBOX",
+      },
   ];
 
   sponors = [
