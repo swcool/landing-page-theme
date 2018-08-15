@@ -131,13 +131,13 @@ export default class App extends PureComponent {
           "id": _.uniqueId(),
           "name": 'John Lin',
           "imgURL": "https://avatars3.githubusercontent.com/u/529248?s=460&v=4",
-          "position": "Swift Taipei Orgainzier",
+          "position": "Swift Taipei Organzier",
       },
       {
           "id": _.uniqueId(),
           "name": 'ethanhuang13',
           "imgURL": "https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=200",
-          "position": "iOS/tvOS Developer @ CATCHPLAY",
+          "position": "iOS Dev @ CATCHPLAY",
       },
       {
           "id": _.uniqueId(),
@@ -387,7 +387,7 @@ export default class App extends PureComponent {
             {this.renderStaff()}
         </div>
           <div className="app__section">
-            <h1 className="app__title">Co-organisers</h1>
+            <h1 className="app__title">Co-organizers</h1>
             {this.renderCoOrganisers()}
           </div>
         </div>
