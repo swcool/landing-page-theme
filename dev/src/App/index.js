@@ -336,6 +336,14 @@ export default class App extends PureComponent {
             >
               <strong>2018 議程募集中</strong>
             </a>
+            <a
+                className="app__submit"
+                href="https://cfp.iplayground.io/events/iplayground_2018_lightning_talk"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+            <strong>2018 lightning talk募集中</strong>
+            </a>
             <iframe
               title="location"
               width="100%"
