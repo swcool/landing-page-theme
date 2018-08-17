@@ -120,63 +120,73 @@ export default class App extends PureComponent {
       name: 'Hokila',
       imgURL:
         'https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg',
-      position: 'iOS Evangelist / Trello Lover/ Father'
+      position: 'iOS Evangelist / Trello Lover/ Father',
+      SNS: 'https://www.facebook.com/profile.php?id=100002142768087'
     },
     {
       id: _.uniqueId(),
       name: 'Hanyu Chen',
       imgURL: require('../images/tGm55idg.png'),
-      position: 'iOS Developer'
+      position: 'iOS Developer',
+      SNS: 'https://www.facebook.com/hanyu.chen.518'
     },
     {
       id: _.uniqueId(),
       name: 'John Lin',
       imgURL: 'https://avatars3.githubusercontent.com/u/529248?s=460&v=4',
-      position: 'Swift Taipei Organzier'
+      position: 'Swift Taipei Organzier',
+      SNS: '#'
     },
     {
       id: _.uniqueId(),
       name: 'ethanhuang13',
       imgURL:
         'https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=200',
-      position: 'iOS Dev @ CATCHPLAY'
+      position: 'iOS Dev @ CATCHPLAY',
+      SNS: 'https://twitter.com/ethanhuang13'
     },
     {
       id: _.uniqueId(),
       name: 'Hao Lee',
       imgURL:
         'https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200',
-      position: 'Junior Software Engineer at DYLAN-TEK CO., LTD.'
+      position: 'Junior Software Engineer at DYLAN-TEK CO., LTD.',
+      SNS: 'https://twitter.com/twhaolee'
     },
     {
       id: _.uniqueId(),
       name: 'Welly',
       imgURL: require('../images/meme.png'),
-      position: 'F2E at KKStream'
+      position: 'F2E at KKStream',
+      SNS: 'https://github.com/WellyShen'
     },
     {
       id: _.uniqueId(),
       imgURL: require('../images/10636419_10203880244832112_3086301521967770082_o.jpg'),
       name: 'Joe Chen',
-      position: 'Software Engineer'
+      position: 'Software Engineer',
+      SNS: '#'
     },
     {
       id: _.uniqueId(),
       imgURL: require('../images/Hanpo_Avatar.jpg'),
       name: 'Hanpo',
-      position: 'UI Design Engineer at KeyXentic'
+      position: 'UI Design Engineer at KeyXentic',
+      SNS: 'https://www.facebook.com/hanpo.tw'
     },
     {
       id: _.uniqueId(),
       imgURL: 'https://avatars1.githubusercontent.com/u/59567?s=460&v=4',
       name: 'Superbil',
-      position: 'Software Freelance'
+      position: 'Software Freelance',
+      SNS: 'https://twitter.com/superbil'
     },
     {
       id: _.uniqueId(),
       imgURL: require('../images/14362711_1443783055638586_3924866533217962148_o.jpg'),
       name: 'Dada',
-      position: 'iOS Developer at KKBOX'
+      position: 'iOS Developer at KKBOX',
+      SNS: 'https://twitter.com/nalydadad'
     }
   ];
 
@@ -255,14 +265,16 @@ export default class App extends PureComponent {
     ));
 
   renderStaff = () =>
-    _.map(this.staff, ({ id, imgURL, alt, name, position }) => (
-      <div key={id} className="app__speaker">
-        <img className="app__speaker-img" src={imgURL} alt={alt} />
-        <p className="app__speaker-name">
-          <strong>{name}</strong>
-        </p>
-        <p className="app__speaker-position">{position}</p>
-      </div>
+    _.map(this.staff, ({ id, imgURL, alt, name, position, SNS }) => (
+      <a href={SNS} target="_blank">
+        <div key={id} className="app__speaker">
+          <img className="app__speaker-img" src={imgURL} alt={alt} />
+          <p className="app__speaker-name">
+            <strong>{name}</strong>
+          </p>
+          <p className="app__speaker-position">{position}</p>
+        </div>
+      </a>
     ));
 
   renderSponsors = () =>

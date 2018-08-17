@@ -54,7 +54,8 @@
       margin-bottom: 0;
       color: dodgerblue; }
     .app .app__speaker .app__speaker-position {
-      margin-top: 0; }
+      margin-top: 0;
+      color: black; }
   .app .app__sponsor {
     text-align: center; }
     .app .app__sponsor .app__sponsor-logo {
