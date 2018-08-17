@@ -115,66 +115,69 @@ export default class App extends PureComponent {
   ];
 
   staff = [
-      {
-          "id": _.uniqueId(),
-          "name": 'Hokila',
-          "imgURL": "https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg",
-          "position": "iOS Evangelist / Trello Lover/ Father",
-      },
-      {
-          "id": _.uniqueId(),
-          "name": 'Hanyu Chen',
-          imgURL: require('../images/tGm55idg.png'),
-          "position": "iOS Developer",
-      },
-      {
-          "id": _.uniqueId(),
-          "name": 'John Lin',
-          "imgURL": "https://avatars3.githubusercontent.com/u/529248?s=460&v=4",
-          "position": "Swift Taipei Organzier",
-      },
-      {
-          "id": _.uniqueId(),
-          "name": 'ethanhuang13',
-          "imgURL": "https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=200",
-          "position": "iOS Dev @ CATCHPLAY",
-      },
-      {
-          "id": _.uniqueId(),
-          "name": 'Hao Lee',
-          "imgURL": "https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200",
-          "position": "Junior Software Engineer at DYLAN-TEK CO., LTD.",
-      },
-      {
-          "id": _.uniqueId(),
-          "name": 'Welly',
-          'imgURL': require("../images/meme.png"),
-          "position": "F2E at KKStream",
-      },
-      {
-          "id": _.uniqueId(),
-          'imgURL': require("../images/10636419_10203880244832112_3086301521967770082_o.jpg"),
-          "name": 'Joe Chen',
-          "position": "Software Engineer",
-      },
-      {
-          "id": _.uniqueId(),
-          'imgURL': require("../images/Hanpo_Avatar.jpg"),
-          "name": 'Hanpo',
-          "position": "UI Design Engineer at KeyXentic",
-      },
-      {
-          "id": _.uniqueId(),
-          'imgURL': "https://avatars1.githubusercontent.com/u/59567?s=460&v=4",
-          "name": 'Superbil',
-          "position": "Software Freelance",
-      },
-      {
-          "id": _.uniqueId(),
-          'imgURL': require("../images/14362711_1443783055638586_3924866533217962148_o.jpg"),
-          "name": "Dada",
-          "position": "iOS Developer at KKBOX",
-      },
+    {
+      id: _.uniqueId(),
+      name: 'Hokila',
+      imgURL:
+        'https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg',
+      position: 'iOS Evangelist / Trello Lover/ Father'
+    },
+    {
+      id: _.uniqueId(),
+      name: 'Hanyu Chen',
+      imgURL: require('../images/tGm55idg.png'),
+      position: 'iOS Developer'
+    },
+    {
+      id: _.uniqueId(),
+      name: 'John Lin',
+      imgURL: 'https://avatars3.githubusercontent.com/u/529248?s=460&v=4',
+      position: 'Swift Taipei Organzier'
+    },
+    {
+      id: _.uniqueId(),
+      name: 'ethanhuang13',
+      imgURL:
+        'https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=200',
+      position: 'iOS Dev @ CATCHPLAY'
+    },
+    {
+      id: _.uniqueId(),
+      name: 'Hao Lee',
+      imgURL:
+        'https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200',
+      position: 'Junior Software Engineer at DYLAN-TEK CO., LTD.'
+    },
+    {
+      id: _.uniqueId(),
+      name: 'Welly',
+      imgURL: require('../images/meme.png'),
+      position: 'F2E at KKStream'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/10636419_10203880244832112_3086301521967770082_o.jpg'),
+      name: 'Joe Chen',
+      position: 'Software Engineer'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/Hanpo_Avatar.jpg'),
+      name: 'Hanpo',
+      position: 'UI Design Engineer at KeyXentic'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: 'https://avatars1.githubusercontent.com/u/59567?s=460&v=4',
+      name: 'Superbil',
+      position: 'Software Freelance'
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require('../images/14362711_1443783055638586_3924866533217962148_o.jpg'),
+      name: 'Dada',
+      position: 'iOS Developer at KKBOX'
+    }
   ];
 
   sponors = [
@@ -237,8 +240,13 @@ export default class App extends PureComponent {
 
   renderSpeakers = () =>
     _.map(this.speakers, ({ id, imgURL, alt, name, position }) => (
-      <div key={id} className="app__speaker" >
-        <img className="app__speaker-img" src={imgURL} alt={alt} />
+      <div key={id} className="app__speaker">
+        <img
+          className="app__speaker-img"
+          onClick={this.onClickSpeaker}
+          src={imgURL}
+          alt={alt}
+        />
         <p className="app__speaker-name">
           <strong>{name}</strong>
         </p>
@@ -292,21 +300,21 @@ export default class App extends PureComponent {
             <h1 className="app__title">10/20 - 10/21 @ 台大管理學院</h1>
             <a
               className="app__submit"
-        href="https://iplayground.kktix.cc/events/iplayground2018"
+              href="https://iplayground.kktix.cc/events/iplayground2018"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <strong>立刻購票</strong>
+              <strong>立刻購票</strong>
             </a>
             <p>
-            iPlayground 是在台北舉辦的 Apple 軟體開發相關的研討會，名字來自於
-            Xcode 內建的開發工具 Playground，我們希望開發者、設計師、QA、PM
-            都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
-            iPlayground 並且認識更多同好。
+              iPlayground 是在台北舉辦的 Apple 軟體開發相關的研討會，名字來自於
+              Xcode 內建的開發工具 Playground，我們希望開發者、設計師、QA、PM
+              都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
+              iPlayground 並且認識更多同好。
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <strong> 訂閱最新通知 </strong>
-            <MailchimpSubscribe url={mailChimpURL} />
+              <strong> 訂閱最新通知 </strong>
+              <MailchimpSubscribe url={mailChimpURL} />
             </div>
             <a
               className="app__submit"
@@ -327,13 +335,21 @@ export default class App extends PureComponent {
             />
             <h2 className="app__title">活動緣起</h2>
             <p>
-            自從蘋果發表 iPhone 以來，iOS 開發就是業界重要的題⽬。國外有無數的地區型開發者研討會，甚⾄有跨國巡迴式的專⾨組織。但是以往在台灣地區舉辦的開發者研討會中，iOS 只是其中一個配⾓。
+              自從蘋果發表 iPhone 以來，iOS
+              開發就是業界重要的題⽬。國外有無數的地區型開發者研討會，甚⾄有跨國巡迴式的專⾨組織。但是以往在台灣地區舉辦的開發者研討會中，iOS
+              只是其中一個配⾓。
             </p>
             <p>
-            2017.9，台灣有一群⼯程師去東京參加 iOSDC（<a href="https://iosdc.jp/2017/" target="_blank" >https://iosdc.jp/2017/</a>），看到⽇本當地開發社群的蓬勃活力，兼具深度、廣度的諸多講題及趣味的舉辦⽅式，其中有許多台灣社群可以學習之處。
+              2017.9，台灣有一群⼯程師去東京參加 iOSDC（<a
+                href="https://iosdc.jp/2017/"
+                target="_blank"
+              >
+                https://iosdc.jp/2017/
+              </a>），看到⽇本當地開發社群的蓬勃活力，兼具深度、廣度的諸多講題及趣味的舉辦⽅式，其中有許多台灣社群可以學習之處。
             </p>
             <p>
-            我們意識到開發社群有強烈的需求，決定在台北辦⼀場 iOS 開發專⾨的研討會。
+              我們意識到開發社群有強烈的需求，決定在台北辦⼀場 iOS
+              開發專⾨的研討會。
             </p>
           </div>
           {/* disable for now
@@ -382,10 +398,10 @@ export default class App extends PureComponent {
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
           </div> */}
-        <div className="app__section">
+          <div className="app__section">
             <h1 className="app__title">Staff</h1>
             {this.renderStaff()}
-        </div>
+          </div>
           <div className="app__section">
             <h1 className="app__title">Co-organizers</h1>
             {this.renderCoOrganisers()}
