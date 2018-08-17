@@ -72,6 +72,8 @@
     height: 1px;
     border: 0;
     border-top: 1px solid lightgray; }
+  .app a {
+    text-decoration: none; }
   @media screen and (min-width: 768px) {
     .app .app__submit {
       margin-left: auto;
