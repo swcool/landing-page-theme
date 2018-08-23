@@ -88,7 +88,7 @@ export default class App extends PureComponent {
           id: _.uniqueId(),
           name: 'John Lin',
           imgURL: 'https://avatars3.githubusercontent.com/u/529248?s=460&v=4',
-          position: 'Swift Taipei Organzier',
+          position: 'Swift Taipei Organizer',
           intro:
           'Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover.'
       },
@@ -115,7 +115,7 @@ export default class App extends PureComponent {
       id: _.uniqueId(),
       name: 'John Lin',
       imgURL: 'https://avatars3.githubusercontent.com/u/529248?s=460&v=4',
-      position: 'Swift Taipei Organzier',
+      position: 'Swift Taipei Organizer',
       SNS: 'https://twitter.com/johnlinvc'
     },
     {
