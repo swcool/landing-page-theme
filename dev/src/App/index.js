@@ -11,14 +11,6 @@ import './styles.css';
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: 'day_1' };
 
-  modalContentData = {
-    imgURL: require('../images/protrait_test.jpeg'),
-    alt: '',
-    name: 'Welly',
-    position: 'React Developer',
-    intro:
-      'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-  };
 
   sechdule = {
     day_1: [
@@ -76,43 +68,32 @@ export default class App extends PureComponent {
   };
 
   speakers = [
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require('../images/protrait_test.jpeg'),
-      alt: '',
-      name: 'Welly',
-      position: 'React Developer',
-      intro:
-        'This is intro This is intro This is intro This is intro This is intro This is intro This is intro.'
-    }
+      {
+          id: _.uniqueId(),
+          imgURL: 'https://pbs.twimg.com/profile_images/2904865970/141f9a79f4c6fafd0c645e8609e3d295_400x400.jpeg',
+          alt: '',
+          name: 'Zonble',
+          position: 'iOS Manager at KKBOX',
+          intro: 'zonble，從 2005 年開始寫 Objective-C，從 2008 年 iPhone SDK 釋出的第一天開始就開始投入 iOS 開發，長期在 KKBOX 任職以及參與台北 Cocoa-heads 活動，在網路上發佈電子書《KKBOX iOS 開發基本教材》。才華與美貌兼具，智慧與善良並重，人間大愛的體現，心智年齡從來沒有超過十四歲的中二工程師。'
+      },
+      {
+          id: _.uniqueId(),
+          name: '藍永倫',
+          imgURL: 'https://pbs.twimg.com/profile_images/614453401192038400/pvulZ6Qb_400x400.png',
+          position: 'Cocoaheads Taipei發起人',
+          intro:
+          ' 現任職於博智雲端科技用python寫web app，下班後的身份是台灣城市單車聯盟理事、Cocoaheads Taipei發起人、業餘macOS/iOS開發者。 上一個生涯目標是推廣熱愛的蘋果，已達成。接下來的生涯目標是推廣熱愛的單車多元文化，用單車來改變城市。 曾主辦「沈默的騎行」呼籲重視交通安全，以及「台北裸騎」。 '
+      },
+      {
+          id: _.uniqueId(),
+          name: 'John Lin',
+          imgURL: 'https://avatars3.githubusercontent.com/u/529248?s=460&v=4',
+          position: 'Swift Taipei Organzier',
+          intro:
+          'Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover.'
+      },
   ];
+  modalContentData = this.speakers[0];
 
   staff = [
     {
@@ -135,7 +116,7 @@ export default class App extends PureComponent {
       name: 'John Lin',
       imgURL: 'https://avatars3.githubusercontent.com/u/529248?s=460&v=4',
       position: 'Swift Taipei Organzier',
-      SNS: '#'
+      SNS: 'https://twitter.com/johnlinvc'
     },
     {
       id: _.uniqueId(),
@@ -226,8 +207,9 @@ export default class App extends PureComponent {
     }
   ];
 
-  onClickSpeaker = () => {
-    this.setState({ showModal: true });
+  onClickSpeaker = (id) => {
+      this.modalContentData = _.find(this.speakers, {"id": id});
+      this.setState({showModal: true});
   };
 
   onCloseRequest = () => {
@@ -253,7 +235,7 @@ export default class App extends PureComponent {
       <div key={id} className="app__speaker">
         <img
           className="app__speaker-img"
-          onClick={this.onClickSpeaker}
+        onClick={() => this.onClickSpeaker(id)}
           src={imgURL}
           alt={alt}
         />
@@ -411,13 +393,13 @@ export default class App extends PureComponent {
             </table>
           </div>
           <div className="app__section">
-            <h1 className="app__title">Speakers</h1>
-            {this.renderSpeakers()}
-          </div>
-          <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
           </div> */}
+        <div className="app__section">
+            <h1 className="app__title">Speakers</h1>
+            {this.renderSpeakers()}
+        </div>
           <div className="app__section">
             <h1 className="app__title">Staff</h1>
             {this.renderStaff()}
