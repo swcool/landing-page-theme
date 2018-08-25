@@ -131,7 +131,7 @@ export default class App extends PureComponent {
       name: 'Hao Lee',
       imgURL:
         'https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200',
-      position: 'Junior Software Engineer at DYLAN-TEK CO., LTD.',
+      position: 'Software Engineer at DYLAN-TEK CO., LTD.',
       SNS: 'https://twitter.com/twhaolee'
     },
     {
