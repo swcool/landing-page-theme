@@ -17,13 +17,25 @@ export default class App extends PureComponent {
       {
         id: _.uniqueId(),
         start: "9:00",
+        end: "9:30",
+        rest: "報到"
+      },
+      {
+        id: _.uniqueId(),
+        start: "9:30",
         end: "10:00",
-        rest: "Sign in day 1"
+        rest: "Opening + 工商"
       },
       {
         id: _.uniqueId(),
         start: "10:00",
-        end: "11:00",
+        end: "10:40",
+        rest: "Keynote"
+      },
+      {
+        id: _.uniqueId(),
+        start: "10:50",
+        end: "11:20",
         talks: [
           {
             id: _.uniqueId(),
@@ -41,7 +53,7 @@ export default class App extends PureComponent {
       },
       {
         id: _.uniqueId(),
-        start: "11:00",
+        start: "11:30",
         end: "12:00",
         talks: [
           {
@@ -57,19 +69,115 @@ export default class App extends PureComponent {
             description: "Here is day 1 topic description."
           }
         ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "13:00",
+        end: "13:30",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "13:35",
+        end: "14:05",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "14:10",
+        end: "14:40",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "14:45",
+        end: "15:15",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          }
+        ]
+      }
+      ,
+      {
+        id: _.uniqueId(),
+        start: "15:20",
+        end: "15:50",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 1",
+            presenter: "Name day 1",
+            description: "Here is day 1 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "16:00",
+        end: "17:00",
+        rest: "Lighting Talk"
       }
     ],
     day_2: [
       {
         id: _.uniqueId(),
-        start: "9:00",
-        end: "10:00",
-        rest: "Sign in day 2"
-      },
-      {
-        id: _.uniqueId(),
-        start: "10:00",
-        end: "11:00",
+        start: "9:10",
+        end: "9:40",
         talks: [
           {
             id: _.uniqueId(),
@@ -87,7 +195,64 @@ export default class App extends PureComponent {
       },
       {
         id: _.uniqueId(),
-        start: "11:00",
+        start: "9:45",
+        end: "10:15",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 2",
+            presenter: "Name day 2",
+            description: "Here is day 2 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 2",
+            presenter: "Name day 2",
+            description: "Here is day 2 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "10:20",
+        end: "10:50",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 2",
+            presenter: "Name day 2",
+            description: "Here is day 2 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 2",
+            presenter: "Name day 2",
+            description: "Here is day 2 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "10:55",
+        end: "11:25",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 2",
+            presenter: "Name day 2",
+            description: "Here is day 2 topic description."
+          },
+          {
+            id: _.uniqueId(),
+            topic: "Topic day 2",
+            presenter: "Name day 2",
+            description: "Here is day 2 topic description."
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "11:30",
         end: "12:00",
         talks: [
           {
