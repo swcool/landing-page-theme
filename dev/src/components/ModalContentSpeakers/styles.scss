@@ -1,32 +1,32 @@
 @import '../../styles/variable.scss';
 
-.modal-content {
+.modal-content-speakers {
   position: relative;
   padding: 30px;
   padding-top: 50px;
   text-align: center;
   background-color: $color--bg;
 
-  .modal-content__img {
+  .modal-content-speakers__img {
     width: 70%;
     border-radius: 50%;
   }
 
-  .modal-content__name {
+  .modal-content-speakers__name {
     margin: 0;
     font-size: 2.5rem;
     color: $color--secondary;
   }
 
-  .modal-content__position {
+  .modal-content-speakers__position {
     color: $color--gray;
   }
 
-  .modal-content__intro {
+  .modal-content-speakers__intro {
     text-align: left;
   }
 
-  .modal-content__close-btn {
+  .modal-content-speakers__close-btn {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -61,15 +61,15 @@
     text-align: left;
     display: flex;
 
-    .modal-content__img-section {
+    .modal-content-speakers__img-section {
       flex: 3;
 
-      .modal-content__img {
+      .modal-content-speakers__img {
         width: 85%;
       }
     }
 
-    .modal-content__txt-section {
+    .modal-content-speakers__txt-section {
       flex: 7;
     }
   }

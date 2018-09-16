@@ -1,5 +1,11 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .table-talk span {
   display: block; }
 
 .table-talk .table-talk__topic {
-  font-weight: bold; }
+  color: dodgerblue;
+  font-weight: bold;
+  cursor: pointer; }

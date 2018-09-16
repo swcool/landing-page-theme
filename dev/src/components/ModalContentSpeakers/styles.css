@@ -2,24 +2,24 @@
  * ======================================================================== */
 /* Media queries
  * ======================================================================== */
-.modal-content {
+.modal-content-speakers {
   position: relative;
   padding: 30px;
   padding-top: 50px;
   text-align: center;
   background-color: white; }
-  .modal-content .modal-content__img {
+  .modal-content-speakers .modal-content-speakers__img {
     width: 70%;
     border-radius: 50%; }
-  .modal-content .modal-content__name {
+  .modal-content-speakers .modal-content-speakers__name {
     margin: 0;
     font-size: 2.5rem;
     color: dodgerblue; }
-  .modal-content .modal-content__position {
+  .modal-content-speakers .modal-content-speakers__position {
     color: gray; }
-  .modal-content .modal-content__intro {
+  .modal-content-speakers .modal-content-speakers__intro {
     text-align: left; }
-  .modal-content .modal-content__close-btn {
+  .modal-content-speakers .modal-content-speakers__close-btn {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -27,26 +27,26 @@
     height: 32px;
     opacity: 0.3;
     cursor: pointer; }
-    .modal-content .modal-content__close-btn:hover {
+    .modal-content-speakers .modal-content-speakers__close-btn:hover {
       opacity: 1; }
-    .modal-content .modal-content__close-btn::before, .modal-content .modal-content__close-btn::after {
+    .modal-content-speakers .modal-content-speakers__close-btn::before, .modal-content-speakers .modal-content-speakers__close-btn::after {
       position: absolute;
       left: 15px;
       content: ' ';
       height: 33px;
       width: 2px;
       background-color: #333; }
-    .modal-content .modal-content__close-btn::before {
+    .modal-content-speakers .modal-content-speakers__close-btn::before {
       transform: rotate(45deg); }
-    .modal-content .modal-content__close-btn::after {
+    .modal-content-speakers .modal-content-speakers__close-btn::after {
       transform: rotate(-45deg); }
   @media screen and (min-width: 768px) {
-    .modal-content {
+    .modal-content-speakers {
       text-align: left;
       display: flex; }
-      .modal-content .modal-content__img-section {
+      .modal-content-speakers .modal-content-speakers__img-section {
         flex: 3; }
-        .modal-content .modal-content__img-section .modal-content__img {
+        .modal-content-speakers .modal-content-speakers__img-section .modal-content-speakers__img {
           width: 85%; }
-      .modal-content .modal-content__txt-section {
+      .modal-content-speakers .modal-content-speakers__txt-section {
         flex: 7; } }
