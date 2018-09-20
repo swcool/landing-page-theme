@@ -1,4 +1,8 @@
-@import '../styles/variable.scss';
+@import "../styles/variable.scss";
+
+html {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+}
 
 .app {
   padding: 0 20px;
@@ -40,7 +44,7 @@
   .app__table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba($color--primary, 0.25);
+    background-color: rgba(240, 187, 64, 0.33);
 
     &,
     th,

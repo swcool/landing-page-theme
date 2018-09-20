@@ -2,6 +2,9 @@
  * ======================================================================== */
 /* Media queries
  * ======================================================================== */
+html {
+  font-family: -apple-system, Helvetica, Arial, sans-serif; }
+
 .app {
   padding: 0 20px; }
   .app .app__iplayground-logo {
@@ -31,7 +34,7 @@
   .app .app__table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(255, 99, 71, 0.25); }
+    background-color: rgba(240, 187, 64, 0.33); }
     .app .app__table,
     .app .app__table th,
     .app .app__table td {
