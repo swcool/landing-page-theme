@@ -1,13 +1,15 @@
-import React, { PureComponent } from "react";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-import _ from "lodash";
+import React, { PureComponent } from 'react';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import _ from 'lodash';
+import { SocialIcon } from 'react-social-icons';
 
 import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
 import TableRow from "../components/TableRow";
 
-import "./styles.css";
+
+import './styles.css';
 
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: "day_1" };
@@ -592,6 +594,11 @@ export default class App extends PureComponent {
             >
               <strong>立刻購票</strong>
             </a>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <SocialIcon url="https://twitter.com/theiPlayground" style={{margin: 10 }}/>
+            <SocialIcon url="https://www.facebook.com/theiPlayground/" style={{margin: 10 }}/>
+            <SocialIcon url="https://mastodon.technology/@iplayground" style={{margin: 10 }}/>
+            </div>
             <p>
               iPlayground 是在台北舉辦的 Apple 軟體開發相關的研討會，名字來自於
               Xcode 內建的開發工具 Playground，我們希望開發者、設計師、QA、PM
