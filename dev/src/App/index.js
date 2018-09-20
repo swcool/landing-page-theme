@@ -18,19 +18,27 @@ export default class App extends PureComponent {
         id: _.uniqueId(),
         start: "9:00",
         end: "9:30",
-        rest: "報到"
+        rest: "報到 (地點: 共同軌)"
       },
       {
         id: _.uniqueId(),
         start: "9:30",
         end: "10:00",
-        rest: "Opening + 工商"
+        rest: "開場 (地點: 共同軌)"
       },
       {
         id: _.uniqueId(),
         start: "10:00",
         end: "10:40",
-        rest: "Keynote"
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "那些年被蘋果 ban 掉的 API",
+            presenter: "zonble",
+            description: "介紹 iOS 的 API 歷史"
+          },
+          {}
+        ]
       },
       {
         id: _.uniqueId(),
@@ -39,15 +47,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "掀起 Swift 的小裙子",
+            presenter: "Pofat",
+            description: "讓我們一起開始看透 Swift 的內在"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "Siri Shortcut 的 OTT 應用",
+            presenter: "Mars",
+            description: "介紹 SiriKit / 介紹 Siri Shortcut / 如何應用到 OTT app / 開發經驗分享"
           }
         ]
       },
@@ -58,15 +66,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "Scripting in Swift",
+            presenter: "Marcus Wu",
+            description: "在Apple 大力推廣Swift 的時代，Swift 不只能用於iOS App 之上，更可以幫助工程師撰寫CLI 工具來加速工作流程。本議程將會分享如何透過Swift 撰寫Linux 可執行檔，並透過Homebrew 發布讓世界各地的人方便安裝使用。"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "如何使用 Dependency Injection 提高 iOS App 的可測試性",
+            presenter: "Elvis Lin",
+            description: "在大型專案的開發中，很容易把程式碼變得複雜、臃腫、難以維護。在本演講中，會說明什麼是可測試性，以及當你套用 MVVM 之後，你應該要如何使用 dependency injection 讓程式的可測試性更好。最後會用手動注入、Swinject 與 Cleanse 說明實務上要如何撰寫。"
           }
         ]
       },
@@ -77,15 +85,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "從 0 到 1 的距離，我與 tvOS 的邂逅",
+            presenter: "徐嘉駿 Toby Hsu",
+            description: "分享 Apple TV App 的開發與使用者體驗設計的愛恨情仇。 究竟，iOS 與 tvOS 差在哪裡，Mobile 跟 TV 上又有什麼不一樣呢？ 讓我們繼續看下去⋯⋯🤔"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "Swift 與 ObjC：當我們同在一起其痛苦無比",
+            presenter: "Tina Chang",
+            description: "專案混用 Swift 與 Objective-C 時遇到的雷與對應解決方法"
           }
         ]
       },
@@ -96,15 +104,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "IoT Debugging",
+            presenter: "Su PingChen",
+            description: "使用 OSLog 在 iOS framework 開發以及除錯。在 iOS 該如何開發 IoT 服務，以及該如何除錯。當問題提升到跨平台層級時，該如何釐清。"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "RxSwift with MVVM",
+            presenter: "Steve Sun",
+            description: "RxSwift is a framework that gives iOS devs a reactive approach and it makes it easy to program dynamic apps that respond to data changes and user events. It fits one of the design pattern MVVM very well because all the business logics can be done in the view model and bind to the UI components in view controllers. RxSwift also provides RxTest framework that gives us the ability to test our code."
           }
         ]
       },
@@ -115,15 +123,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "Test Code、Test UI、Test EveryThing !!!",
+            presenter: "AKI YU",
+            description: "如果你有如下的疑問，那麼可能在這個議程裡，你將可以更進一步獲得了解這些問題的本質: 與PM或是非技術人員溝通需求有困難？ / 什麼是行為趨動開發(BDD)、什麼是實例化需求(SBE)? / 書上寫的單元測試，看起來都很簡單，但實務上又下不了手 / 什麼是測試趨動開發(TDD) / Coverage 100% 是不是代表程式品質很好？ / 談測試的品質 / 誰來寫 UI Test ? / 工程師 --- iOS UI Testing Bundle / QA --- Appium、calabash / 有沒有不會寫程式 又不懂 XCode 的人用的UI測試程式？ / 用Mac APP做一個測試機器人吧"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "從RESTful API到GraphQL",
+            presenter: "丁沛堯",
+            description: "什麼是GraphQL？ 為什麼要用GraphQL？ ~~因為Facebook的大大們在用啊~~ RESTful不好嗎？ ~~對，RESTful不好~~。 在這個talk中會跟大家介紹GraphQL、如何在iOS系統應用GraphQL，然後聊聊我在產品中實際採用GraphQL後的辛酸血淚史，以及GraphQL的優缺點。"
           }
         ]
       },
@@ -134,15 +142,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "iOS 逆向工程、越獄 Tweak 開發與雜談",
+            presenter: "Gary niL",
+            description: "iOS 越獄（Jailbreak）是獲取 iOS 設備的 Root 權限的一個技術。 通過一些越獄工具可以完成越獄前不可能進行的動作，例如安裝 App Store 以外未經過簽名的 Apps、修改 SpringBoard 安裝主題、運行 Tweak 或 Shell 程式。對於開發者來說，越獄後的設備就能夠 hook 進 iOS 系統中所有的 class，來更改或控制一些 iDevice 的內建功能。而越獄社群中也有類似 App Store 的生態，開發者們透過 theos 開發工具開發 tweak 並上架到 Cydia Store 中提供給使用者安裝使用，這些 Tweak 都依賴一個叫 Cydia Substrate 的動態連結函式庫，它的主要功能是提供方法 hook 某個 App，修改程式碼或替換其中的 method 實作。 在本次的主題中，將會簡單介紹如何開發一個簡易的 iOS Tweak，並將這個 Tweak 部署到 iOS 設備上: 工具，環境介紹 / Hello World 一個簡單的 Tweak / Tweak 部署 / Tweak 可以做什麼？"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "英國iOS Developer開發經驗",
+            presenter: "Allen Wang",
+            description: "英國工程師的薪水，稅制，福利；用的技術，團隊。"
           }
         ]
       }
@@ -154,15 +162,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "Swift 也能訓練 Machine Learning 模型？Create ML 實戰",
+            presenter: "張景隆",
+            description: "Introducing Create ML / Define your GOAL / Data pre-processing / Find the best model (Training & Evaluating) / Make it real on the iPhone"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 1",
-            presenter: "Name day 1",
-            description: "Here is day 1 topic description."
+            topic: "用 Moya 模擬後端 API 回應, 與後端同步開發新功能",
+            presenter: "Sung-Sheng Tsai",
+            description: "在後端 API 開發完成之前，App 工程師難道只能癡癡的等待嗎？答案當然是 NO! 使用 Moya 來實作 mock server, 不必再等待後端 API 實作完成，你也可以同時開發專案所需的新功能！"
           }
         ]
       },
@@ -170,7 +178,7 @@ export default class App extends PureComponent {
         id: _.uniqueId(),
         start: "16:00",
         end: "17:00",
-        rest: "Lighting Talk"
+        rest: "Lighting Talk (地點: 共同軌)"
       }
     ],
     day_2: [
@@ -181,15 +189,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "struct Drift : Bicycle, Swift",
+            presenter: "藍永倫",
+            description: "利用Swift和腳踏車，自幹一套類似Zwift的遊戲。"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "Refactor:從MVC到Redux",
+            presenter: "Jeff Lin",
+            description: "MVC是大家在App開發所熟知的Design Pattern。近年廣受Web使用的Redux架構一樣也可以應用在iOS App開發上。我們將用一個簡單的範例，把原先的MVC轉換成Redux，並探討什麼元件可以獨立起來。"
           }
         ]
       },
@@ -200,15 +208,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "給 iOS 初心者的求職策略",
+            presenter: "Enid Tian",
+            description: "近年隨著 Apple 推出親切友善的 Swift 語言，吸引不少程式新手或轉職者投入 iOS 開發領域，但新手如何才能達到業界標準、找到心目中理想的工作呢？本場分享將以 AppWorks School 與業界合作的經驗，分享新手該建立起哪些核心觀念、技能，才能成為廣受業界青睞的工程師。"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "Life of A Cell",
+            presenter: "John Lin",
+            description: "講解 CollectionView 的生命週期"
           }
         ]
       },
@@ -219,15 +227,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "APP Girls創辦人教你如何跨越程式高牆-開發經驗與自學經驗分享",
+            presenter: "鄭雅方",
+            description: "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵女生也可以寫程式，靠自己的力量做自己想要做的事情！"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "看 iOS App 裸奔吧",
+            presenter: "TinXie-易致",
+            description: "講解 iOS app 應用 不再是無堅不摧的堡壘 透過簡單的 逆向技術 來對 某款 app 進行 廣告遮蔽 並重新打包簽名 安裝至 沒越獄的 iphone 正常運行"
           }
         ]
       },
@@ -238,15 +246,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "Design Patterns in XCUITest",
+            presenter: "Vivian Liu",
+            description: "如何使用 Design Pattern 來改善 XCUITest 的可維護性與擴充性。以及在測試涵蓋率增加後，如何減少測試時間並保持測試穩定性。如果你只能選一場 Talk 聽，這絕對不會是你想錯過的那場，我們將不保留的公開箇中秘訣。"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "Core Animation vs. SpriteKit",
+            presenter: "Luke Wu 伍智瑋",
+            description: "在 iOS 裡提到動畫效果，Core Animaton 是最常用被使用的。但 Apple 其實在 2D 動畫還有出了一套叫做 SpriteKit 的 Framework。這次就一些複雜動畫場景，就 Core Animation 與 SpriteKit 的實作與效能，做一些比較與分析。"
           }
         ]
       },
@@ -257,15 +265,15 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "How to make BDD possible in XCUITest",
+            presenter: "Jersey Su",
+            description: "現今軟體發佈週期越來越短，但軟體的品質一直是我們面臨最大的挑戰，在 iOS 上有沒有什麼方法, 能夠讓品質提升了. BDD 是一個實踐的方法, 透過實例化需求釐清問題, 且變成可執行化的文件, 本次分享實作 XCUITest 在 BDD 上面的實踐及經驗談, 希望各位聽眾們藉此能有更多的收穫。"
           },
           {
             id: _.uniqueId(),
-            topic: "Topic day 2",
-            presenter: "Name day 2",
-            description: "Here is day 2 topic description."
+            topic: "Dirty Code 凋零的程式碼",
+            presenter: "Jason",
+            description: "聽過Jungle Pattern嗎？覺得 WTF/min 不夠高嗎？寫code 寫的心平氣和渾身舒暢？那你一定要來聽聽Dirty Code 凋零的程式碼。"
           }
         ]
       }
@@ -300,7 +308,7 @@ export default class App extends PureComponent {
       intro:
         "Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover."
     },
-    {
+    /* {
       id: _.uniqueId(),
       name: "張景隆",
       imgURL: require("../images/protrait_test.jpeg"),
@@ -368,7 +376,7 @@ export default class App extends PureComponent {
       position: "SQA @ KKBOX",
       intro:
         "Hi 我是 Vivian ，目前任職於 KKBOX，是 KKBOX Application 的 Software Quality Assurance。主要負責的領域是 KKBOX iOS Application Automation，採用的測試框架為 XCUITest。一路以來收穫了不少能讓 XCUITest 穩定度及速度提升的技巧，並且成功讓我們的 Flaky rate 降到現在的 1.37%。誠心希望這場分享能夠讓大家有所收穫。"
-    }
+    } */
   ];
 
   staff = [
@@ -668,17 +676,17 @@ export default class App extends PureComponent {
               <tbody>
                 <tr className="app__table-header">
                   <th />
-                  <th>Room A</th>
-                  <th>Room B</th>
+                  <th>正大會議廳</th>
+                  <th>B101</th>
                 </tr>
                 {this.renderTableRow()}
               </tbody>
             </table>
           </div>
-          <div className="app__section">
+          {/* <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
-          </div>
+          </div> */}
           <div className="app__section">
             <h1 className="app__title">Speakers</h1>
             {this.renderSpeakers()}

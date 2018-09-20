@@ -2,10 +2,11 @@
  * ======================================================================== */
 /* Media queries
  * ======================================================================== */
-.table-talk span {
-  display: block; }
-
-.table-talk .table-talk__topic {
-  color: dodgerblue;
-  font-weight: bold;
-  cursor: pointer; }
+.table-talk {
+  width: 45%; }
+  .table-talk span {
+    display: block; }
+  .table-talk .table-talk__topic {
+    color: dodgerblue;
+    font-weight: bold;
+    cursor: pointer; }
