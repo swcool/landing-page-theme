@@ -332,11 +332,10 @@ export default class App extends PureComponent {
       topic: "Life of A Cell",
       abstract: "講解 CollectionView 的生命週期"
     },
-    /*
     {
       id: _.uniqueId(),
       name: "張景隆",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/chang.jpg"),
       position: "",
       intro:
         "CWMoney 開發者, i統一發票 開發者, 台大 HackNTU - iOS 課程講師, 東海大學 教學卓越計畫 講師, 教育部開放式課程-程式開發講師, 東山高中 CS50 講師, MOPCON 2014 講者, CodeData 作者, iOS Dev Club 講者 & 核心成員, 參加蘋果官方主辦 2013年 Tech Talk, 麥克自由聚(Apple, Mac, iOS 相關) 講者",
@@ -347,14 +346,14 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "Jersey Su",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/jersey.jpg"),
       position: "",
       intro: "我是哲西, 熱愛軟體測試. 出沒於 Test Corner 社群."
     },
     {
       id: _.uniqueId(),
       name: "Enid Tian",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/enid.jpg"),
       position: "",
       intro:
         "She joined AppWorks as an intern in 2011 and stayed on as Analyst after graduation. Enid received her B.A. in Finance from National Taiwan University, with “minors” in AIESEC and Ballroom Dancing Club."
@@ -362,7 +361,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "鄭雅方",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/fan.png"),
       position: "",
       intro: "APP Girls 創辦人.",
       topic: "APP Girls創辦人教你如何跨越程式高牆-開發經驗與自學經驗分享",
@@ -372,7 +371,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "David Lin",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/default_portrait.png"),
       position: "",
       intro:
         "自由工作者，目前替代役 online 中。對程式架構、自動化有濃厚興趣，喜歡爬山、攝影、宅在家追劇。"
@@ -380,7 +379,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "Tina Chang",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/tina.jpg"),
       position: "",
       intro:
         "Swift 語言趨近穩定的現在，大多數公司開發新專案沒意外都會選擇 Swift，但對於歷史悠久的龐大專案，其程式碼沒有這麼容易通通轉成 Swift，混用，就是個不得已但必需的方案，而我任職的公司就屬於後者，希望能透過分享和大家交流經驗 :)"
@@ -388,7 +387,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "徐嘉駿 Toby Hsu",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/Toby.jpg"),
       position: "",
       intro:
         "原本我是個 iOS 開發者，但過去這一年多半的時間都在開發 tvOS，我想我可以分享的是我原本以為 iOS 可以跟 tvOS 和平相處，沒想到他們意外地在某些小地方鬧彆扭的愛情故事。",
@@ -399,7 +398,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "AKI YU",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/aki.jpg"),
       position: "",
       intro: "iOS @ Taipei 傳教士",
       topic: "Test Code、Test UI、Test EveryThing !!!",
@@ -409,12 +408,11 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "Vivian Liu",
-      imgURL: require("../images/protrait_test.jpeg"),
+      imgURL: require("../images/vivian.jpg"),
       position: "",
       intro:
         "Hi 我是 Vivian ，目前任職於 KKBOX，是 KKBOX Application 的 Software Quality Assurance。主要負責的領域是 KKBOX iOS Application Automation，採用的測試框架為 XCUITest。一路以來收穫了不少能讓 XCUITest 穩定度及速度提升的技巧，並且成功讓我們的 Flaky rate 降到現在的 1.37%。誠心希望這場分享能夠讓大家有所收穫。"
     }
-    */
   ];
 
   staff = [
