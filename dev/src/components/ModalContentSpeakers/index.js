@@ -11,11 +11,7 @@ export default ({ imgURL, alt, name, position, intro, topic, abstract, onClickCl
     <div className="modal-content-speakers__txt-section">
       <p className="modal-content-speakers__name"><strong>{name}</strong></p>
       <p className="modal-content-speakers__position">{position}</p>
-      <p className="text-left"><strong>簡介:</strong></p>
-      <p className="text-left">{intro}</p>
-      <br />
-      {topic && <p className="text-left"><strong>議程介紹: {topic}</strong></p>}
-      {abstract && <p className="text-left">{abstract}</p>}
+      <p className="modal-content-speakers__intro">{intro}</p>
     </div>
   </div>
 );

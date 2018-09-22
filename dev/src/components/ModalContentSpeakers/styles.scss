@@ -7,10 +7,6 @@
   text-align: center;
   background-color: $color--bg;
 
-  .text-left {
-    text-align: left;
-  }
-
   .modal-content-speakers__img {
     width: 70%;
     border-radius: 50%;
@@ -24,6 +20,10 @@
 
   .modal-content-speakers__position {
     color: $color--gray;
+  }
+
+  .modal-content-speakers__intro {
+    text-align: left;
   }
 
   .modal-content-speakers__close-btn {

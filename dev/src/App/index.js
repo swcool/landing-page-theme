@@ -309,9 +309,7 @@ export default class App extends PureComponent {
       name: "Zonble",
       position: "",
       intro:
-        "zonble，從 2005 年開始寫 Objective-C，從 2008 年 iPhone SDK 釋出的第一天開始就開始投入 iOS 開發，長期在 KKBOX 任職以及參與台北 Cocoa-heads 活動，在網路上發佈電子書《KKBOX iOS 開發基本教材》。才華與美貌兼具，智慧與善良並重，人間大愛的體現，心智年齡從來沒有超過十四歲的中二工程師。",
-      topic: "那些年被蘋果 ban 掉的 API",
-      abstract: "介紹 iOS 的 API 歷史"
+        "zonble，從 2005 年開始寫 Objective-C，從 2008 年 iPhone SDK 釋出的第一天開始就開始投入 iOS 開發，長期在 KKBOX 任職以及參與台北 Cocoa-heads 活動，在網路上發佈電子書《KKBOX iOS 開發基本教材》。才華與美貌兼具，智慧與善良並重，人間大愛的體現，心智年齡從來沒有超過十四歲的中二工程師。"
     },
     {
       id: _.uniqueId(),
@@ -328,9 +326,7 @@ export default class App extends PureComponent {
       imgURL: "https://avatars3.githubusercontent.com/u/529248?s=460&v=4",
       position: "",
       intro:
-        "Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover.",
-      topic: "Life of A Cell",
-      abstract: "講解 CollectionView 的生命週期"
+        "Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover."
     },
     {
       id: _.uniqueId(),
@@ -338,10 +334,7 @@ export default class App extends PureComponent {
       imgURL: require("../images/chang.jpg"),
       position: "",
       intro:
-        "CWMoney 開發者, i統一發票 開發者, 台大 HackNTU - iOS 課程講師, 東海大學 教學卓越計畫 講師, 教育部開放式課程-程式開發講師, 東山高中 CS50 講師, MOPCON 2014 講者, CodeData 作者, iOS Dev Club 講者 & 核心成員, 參加蘋果官方主辦 2013年 Tech Talk, 麥克自由聚(Apple, Mac, iOS 相關) 講者",
-      topic: "Swift 也能訓練 Machine Learning 模型？Create ML 實戰",
-      abstract:
-        "Introducing Create ML / Define your GOAL / Data pre-processing / Find the best model (Training & Evaluating) / Make it real on the iPhone"
+        "CWMoney 開發者, i統一發票 開發者, 台大 HackNTU - iOS 課程講師, 東海大學 教學卓越計畫 講師, 教育部開放式課程-程式開發講師, 東山高中 CS50 講師, MOPCON 2014 講者, CodeData 作者, iOS Dev Club 講者 & 核心成員, 參加蘋果官方主辦 2013年 Tech Talk, 麥克自由聚(Apple, Mac, iOS 相關) 講者"
     },
     {
       id: _.uniqueId(),
@@ -363,10 +356,7 @@ export default class App extends PureComponent {
       name: "鄭雅方",
       imgURL: require("../images/fan.png"),
       position: "",
-      intro: "APP Girls 創辦人.",
-      topic: "APP Girls創辦人教你如何跨越程式高牆-開發經驗與自學經驗分享",
-      abstract:
-        "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵女生也可以寫程式，靠自己的力量做自己想要做的事情！"
+      intro: "APP Girls 創辦人."
     },
     {
       id: _.uniqueId(),
@@ -390,20 +380,14 @@ export default class App extends PureComponent {
       imgURL: require("../images/Toby.jpg"),
       position: "",
       intro:
-        "原本我是個 iOS 開發者，但過去這一年多半的時間都在開發 tvOS，我想我可以分享的是我原本以為 iOS 可以跟 tvOS 和平相處，沒想到他們意外地在某些小地方鬧彆扭的愛情故事。",
-      topic: "從 0 到 1 的距離，我與 tvOS 的邂逅",
-      abstract:
-        "分享 Apple TV App 的開發與使用者體驗設計的愛恨情仇。 究竟，iOS 與 tvOS 差在哪裡，Mobile 跟 TV 上又有什麼不一樣呢？ 讓我們繼續看下去⋯⋯🤔"
+        "原本我是個 iOS 開發者，但過去這一年多半的時間都在開發 tvOS，我想我可以分享的是我原本以為 iOS 可以跟 tvOS 和平相處，沒想到他們意外地在某些小地方鬧彆扭的愛情故事。"
     },
     {
       id: _.uniqueId(),
       name: "AKI YU",
       imgURL: require("../images/aki.jpg"),
       position: "",
-      intro: "iOS @ Taipei 傳教士",
-      topic: "Test Code、Test UI、Test EveryThing !!!",
-      abstract:
-        "如果你有如下的疑問，那麼可能在這個議程裡，你將可以更進一步獲得了解這些問題的本質: 與PM或是非技術人員溝通需求有困難？ / 什麼是行為趨動開發(BDD)、什麼是實例化需求(SBE)? / 書上寫的單元測試，看起來都很簡單，但實務上又下不了手 / 什麼是測試趨動開發(TDD) / Coverage 100% 是不是代表程式品質很好？ / 談測試的品質 / 誰來寫 UI Test ? / 工程師 --- iOS UI Testing Bundle / QA --- Appium、calabash / 有沒有不會寫程式 又不懂 XCode 的人用的UI測試程式？ / 用Mac APP做一個測試機器人吧"
+      intro: "iOS @ Taipei 傳教士"
     },
     {
       id: _.uniqueId(),
