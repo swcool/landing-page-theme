@@ -8,6 +8,8 @@
   padding-top: 50px;
   text-align: center;
   background-color: white; }
+  .modal-content-speakers .text-left {
+    text-align: left; }
   .modal-content-speakers .modal-content-speakers__img {
     width: 70%;
     border-radius: 50%; }
@@ -17,8 +19,6 @@
     color: dodgerblue; }
   .modal-content-speakers .modal-content-speakers__position {
     color: gray; }
-  .modal-content-speakers .modal-content-speakers__intro {
-    text-align: left; }
   .modal-content-speakers .modal-content-speakers__close-btn {
     position: absolute;
     right: 10px;
