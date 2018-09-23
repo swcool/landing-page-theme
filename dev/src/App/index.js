@@ -318,7 +318,7 @@ export default class App extends PureComponent {
         "https://pbs.twimg.com/profile_images/614453401192038400/pvulZ6Qb_400x400.png",
       position: "",
       intro:
-        " 現任職於博智雲端科技用python寫web app，下班後的身份是台灣城市單車聯盟理事、Cocoaheads Taipei發起人、業餘macOS/iOS開發者。 上一個生涯目標是推廣熱愛的蘋果，已達成。接下來的生涯目標是推廣熱愛的單車多元文化，用單車來改變城市。 曾主辦「沈默的騎行」呼籲重視交通安全，以及「台北裸騎」。 "
+        "現任職於博智雲端科技用python寫web app，下班後的身份是台灣城市單車聯盟理事、Cocoaheads Taipei發起人、業餘macOS/iOS開發者。 上一個生涯目標是推廣熱愛的蘋果，已達成。接下來的生涯目標是推廣熱愛的單車多元文化，用單車來改變城市。 曾主辦「沈默的騎行」呼籲重視交通安全，以及「台北裸騎」。"
     },
     {
       id: _.uniqueId(),
@@ -334,14 +334,15 @@ export default class App extends PureComponent {
       imgURL: require("../images/chang.jpg"),
       position: "",
       intro:
-        "CWMoney 開發者, i統一發票 開發者, 台大 HackNTU - iOS 課程講師, 東海大學 教學卓越計畫 講師, 教育部開放式課程-程式開發講師, 東山高中 CS50 講師, MOPCON 2014 講者, CodeData 作者, iOS Dev Club 講者 & 核心成員, 參加蘋果官方主辦 2013年 Tech Talk, 麥克自由聚(Apple, Mac, iOS 相關) 講者"
+        "CWMoney 開發者 i統一發票 開發者 台大 HackNTU - iOS 課程講師 東海大學 教學卓越計畫 講師 教育部開放式課程-程式開發講師 東山高中 CS50 講師 MOPCON 2014 講者 CodeData 作者 iOS Dev Club 講者 & 核心成員 參加蘋果官方主辦 2013年 Tech Talk 麥克自由聚(Apple, Mac, iOS 相關) 講者"
     },
     {
       id: _.uniqueId(),
       name: "Jersey Su",
       imgURL: require("../images/jersey.jpg"),
       position: "",
-      intro: "我是哲西, 熱愛軟體測試. 出沒於 Test Corner 社群."
+      intro:
+        "我是哲西, 熱愛軟體測試. 出沒於 Test Corner 社群. Test Corner #1, #2 工作人員 Test Corner #4, #16 講者 Test Corner #17 主辦 Mopcon 2017 講者"
     },
     {
       id: _.uniqueId(),
@@ -349,7 +350,7 @@ export default class App extends PureComponent {
       imgURL: require("../images/enid.jpg"),
       position: "",
       intro:
-        "She joined AppWorks as an intern in 2011 and stayed on as Analyst after graduation. Enid received her B.A. in Finance from National Taiwan University, with “minors” in AIESEC and Ballroom Dancing Club."
+        "Enid is the Head of AppWorks School, where she helps young people acquire the necessary programming skills as well as computational thinking mindset to start a career in Internet Companies. She joined AppWorks as an intern in 2011 and stayed on as Analyst after graduation. Enid received her B.A. in Finance from National Taiwan University, with “minors” in AIESEC and Ballroom Dancing Club."
     },
     {
       id: _.uniqueId(),
@@ -380,7 +381,7 @@ export default class App extends PureComponent {
       imgURL: require("../images/Toby.jpg"),
       position: "",
       intro:
-        "原本我是個 iOS 開發者，但過去這一年多半的時間都在開發 tvOS，我想我可以分享的是我原本以為 iOS 可以跟 tvOS 和平相處，沒想到他們意外地在某些小地方鬧彆扭的愛情故事。"
+        "畢業於政治大學數位內容碩士學位學程，興趣為人機互動介面與使用者經驗研究，自稱為非典型工程師。目前為 CATCHPLAY 的 tvOS / iOS 工程師。"
     },
     {
       id: _.uniqueId(),
@@ -396,6 +397,78 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "Hi 我是 Vivian ，目前任職於 KKBOX，是 KKBOX Application 的 Software Quality Assurance。主要負責的領域是 KKBOX iOS Application Automation，採用的測試框架為 XCUITest。一路以來收穫了不少能讓 XCUITest 穩定度及速度提升的技巧，並且成功讓我們的 Flaky rate 降到現在的 1.37%。誠心希望這場分享能夠讓大家有所收穫。"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Luke Wu 伍智瑋",
+      imgURL: require("../images/luke.jpg"),
+      position: "",
+      intro:
+        "半路出家的 iOS developer，最近也玩一點 Flutter。目前在 AppWorks School 擔任 iOS Instructor."
+    },
+    {
+      id: _.uniqueId(),
+      name: "Jason",
+      imgURL: require("../images/default_portrait.png"),
+      position: "",
+      intro:
+        "程式愛好者，windows 開發一年多，iOS 開發三年。希望可以跟大家交流。"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Gary niL",
+      imgURL: require("../images/default_portrait.png"),
+      position: "",
+      intro: "garynil.tw"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Su PingChen",
+      imgURL: require("../images/pingchen.jpg"),
+      position: "",
+      intro: "LINE Fukuoka iOS Engineer"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Marcus Wu",
+      imgURL: require("../images/marcus.jpg"),
+      position: "",
+      intro: "Golface 資深iOS 工程師，擁有iOS 四年開發經歷，擅長使用Objective-C 與Swift 進行開發，致力於提升軟體品質。熱愛挑戰、學習新知。貢獻、開發數個開源專案。 備註：投稿時任職於TrueTel，將於九月初轉職。"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Jeff Lin",
+      imgURL: require("../images/jeff.jpg"),
+      position: "",
+      intro: "Oath資深iOS App工程師"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Mars",
+      imgURL: require("../images/mars.jpg"),
+      position: "",
+      intro: "我是 CHOCO TV 的前端開發經理 Mars，有六年的 iOS app 開發經驗"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Elvis Lin",
+      imgURL: require("../images/elvis.jpg"),
+      position: "",
+      intro: "行動應用軟體工程師，目前從事 Android, iOS 與 React Native 的開發。目標是將Unit Testing, CI 與 CD 推廣到工程團隊日常的開發中。"
+    },
+    {
+      id: _.uniqueId(),
+      name: "丁沛堯",
+      imgURL: require("../images/ting.jpg"),
+      position: "",
+      intro: "丁沛堯, iCHEF Senior Developer, 愛貓, 最近的興趣是做戴牙套也可以吃的料理"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Pofat",
+      imgURL: require("../images/pofat.jpg"),
+      position: "",
+      intro: "邊緣系肥宅，喜好從頭到尾都自己動手重造輪子，無論是產品開發或程式設計。其它技能是拉花與社會觀察，曾經認真運動過。"
     }
   ];
 
