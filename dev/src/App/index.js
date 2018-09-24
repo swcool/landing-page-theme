@@ -361,14 +361,6 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      name: "David Lin",
-      imgURL: require("../images/default_portrait.png"),
-      position: "",
-      intro:
-        "自由工作者，目前替代役 online 中。對程式架構、自動化有濃厚興趣，喜歡爬山、攝影、宅在家追劇。"
-    },
-    {
-      id: _.uniqueId(),
       name: "Tina Chang",
       imgURL: require("../images/tina.jpg"),
       position: "",
@@ -433,7 +425,7 @@ export default class App extends PureComponent {
       name: "Marcus Wu",
       imgURL: require("../images/marcus.jpg"),
       position: "",
-      intro: "Golface 資深iOS 工程師，擁有iOS 四年開發經歷，擅長使用Objective-C 與Swift 進行開發，致力於提升軟體品質。熱愛挑戰、學習新知。貢獻、開發數個開源專案。 備註：投稿時任職於TrueTel，將於九月初轉職。"
+      intro: "Golface 資深iOS 工程師，擁有iOS 四年開發經歷，擅長使用Objective-C 與Swift 進行開發，致力於提升軟體品質。熱愛挑戰、學習新知。貢獻、開發數個開源專案。"
     },
     {
       id: _.uniqueId(),
@@ -469,6 +461,20 @@ export default class App extends PureComponent {
       imgURL: require("../images/pofat.jpg"),
       position: "",
       intro: "邊緣系肥宅，喜好從頭到尾都自己動手重造輪子，無論是產品開發或程式設計。其它技能是拉花與社會觀察，曾經認真運動過。"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Allen Wang",
+      imgURL: require("../images/default_portrait.png"),
+      position: "",
+      intro: ""
+    },
+    {
+      id: _.uniqueId(),
+      name: "TinXie-易致",
+      imgURL: require("../images/default_portrait.png"),
+      position: "",
+      intro: ""
     }
   ];
 
