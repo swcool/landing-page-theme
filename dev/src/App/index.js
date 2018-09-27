@@ -117,10 +117,10 @@ export default class App extends PureComponent {
           },
           {
             id: _.uniqueId(),
-            topic: "RxSwift with MVVM",
-            presenter: "Steve Sun",
+            topic: "iOS 逆向工程、越獄 Tweak 開發與雜談",
+            presenter: "Gary niL",
             description:
-              "RxSwift is a framework that gives iOS devs a reactive approach and it makes it easy to program dynamic apps that respond to data changes and user events. It fits one of the design pattern MVVM very well because all the business logics can be done in the view model and bind to the UI components in view controllers. RxSwift also provides RxTest framework that gives us the ability to test our code."
+              "iOS 越獄（Jailbreak）是獲取 iOS 設備的 Root 權限的一個技術。 通過一些越獄工具可以完成越獄前不可能進行的動作，例如安裝 App Store 以外未經過簽名的 Apps、修改 SpringBoard 安裝主題、運行 Tweak 或 Shell 程式。對於開發者來說，越獄後的設備就能夠 hook 進 iOS 系統中所有的 class，來更改或控制一些 iDevice 的內建功能。而越獄社群中也有類似 App Store 的生態，開發者們透過 theos 開發工具開發 tweak 並上架到 Cydia Store 中提供給使用者安裝使用，這些 Tweak 都依賴一個叫 Cydia Substrate 的動態連結函式庫，它的主要功能是提供方法 hook 某個 App，修改程式碼或替換其中的 method 實作。 在本次的主題中，將會簡單介紹如何開發一個簡易的 iOS Tweak，並將這個 Tweak 部署到 iOS 設備上: 工具，環境介紹 / Hello World 一個簡單的 Tweak / Tweak 部署 / Tweak 可以做什麼？"
           }
         ]
       },
@@ -152,10 +152,10 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "iOS 逆向工程、越獄 Tweak 開發與雜談",
-            presenter: "Gary niL",
+            topic: "WWDC18 Core ML 相關 Sessions 濃縮呈現",
+            presenter: "Marvin Lin",
             description:
-              "iOS 越獄（Jailbreak）是獲取 iOS 設備的 Root 權限的一個技術。 通過一些越獄工具可以完成越獄前不可能進行的動作，例如安裝 App Store 以外未經過簽名的 Apps、修改 SpringBoard 安裝主題、運行 Tweak 或 Shell 程式。對於開發者來說，越獄後的設備就能夠 hook 進 iOS 系統中所有的 class，來更改或控制一些 iDevice 的內建功能。而越獄社群中也有類似 App Store 的生態，開發者們透過 theos 開發工具開發 tweak 並上架到 Cydia Store 中提供給使用者安裝使用，這些 Tweak 都依賴一個叫 Cydia Substrate 的動態連結函式庫，它的主要功能是提供方法 hook 某個 App，修改程式碼或替換其中的 method 實作。 在本次的主題中，將會簡單介紹如何開發一個簡易的 iOS Tweak，並將這個 Tweak 部署到 iOS 設備上: 工具，環境介紹 / Hello World 一個簡單的 Tweak / Tweak 部署 / Tweak 可以做什麼？"
+              "將 WWDC18 中，把 Core ML 設為主題的 sessions 重點濃縮成一個 talk。這些 Sessions 主要有下列幾點，輸出 ML 模組的 Create ML， Core ML 中新加入的功能 (WWDC18 這花了兩個 sessions 的時間)，自然語言的 framework，Vision framework 中的目標追綜，Core ML 中的機器視覺功能。"
           },
           {
             id: _.uniqueId(),
@@ -241,17 +241,17 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "APP Girls創辦人教你如何跨越程式高牆-開發經驗與自學經驗分享",
-            presenter: "鄭雅方",
+            topic: "給 iOS 初心者的求職策略",
+            presenter: "Enid Tian",
             description:
-              "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵女生也可以寫程式，靠自己的力量做自己想要做的事情！"
+              "近年隨著 Apple 推出親切友善的 Swift 語言，吸引不少程式新手或轉職者投入 iOS 開發領域，但新手如何才能達到業界標準、找到心目中理想的工作呢？本場分享將以 AppWorks School 與業界合作的經驗，分享新手該建立起哪些核心觀念、技能，才能成為廣受業界青睞的工程師。"
           },
           {
             id: _.uniqueId(),
-            topic: "看 iOS App 裸奔吧",
-            presenter: "TinXie-易致",
+            topic: "Core Animation vs. SpriteKit",
+            presenter: "Luke Wu 伍智瑋",
             description:
-              "講解 iOS app 應用 不再是無堅不摧的堡壘 透過簡單的 逆向技術 來對 某款 app 進行 廣告遮蔽 並重新打包簽名 安裝至 沒越獄的 iphone 正常運行"
+              "在 iOS 裡提到動畫效果，Core Animaton 是最常用被使用的。但 Apple 其實在 2D 動畫還有出了一套叫做 SpriteKit 的 Framework。這次就一些複雜動畫場景，就 Core Animation 與 SpriteKit 的實作與效能，做一些比較與分析。"
           }
         ]
       },
@@ -269,10 +269,10 @@ export default class App extends PureComponent {
           },
           {
             id: _.uniqueId(),
-            topic: "Core Animation vs. SpriteKit",
-            presenter: "Luke Wu 伍智瑋",
+            topic: "APP Girls創辦人教你如何跨越程式高牆-開發經驗與自學經驗分享",
+            presenter: "鄭雅方",
             description:
-              "在 iOS 裡提到動畫效果，Core Animaton 是最常用被使用的。但 Apple 其實在 2D 動畫還有出了一套叫做 SpriteKit 的 Framework。這次就一些複雜動畫場景，就 Core Animation 與 SpriteKit 的實作與效能，做一些比較與分析。"
+              "分享APP Girls創辦, 開發經驗, 職涯經驗以及自學經驗等等，歸納出任何自學的重要元素與方法，並鼓勵女生也可以寫程式，靠自己的力量做自己想要做的事情！"
           }
         ]
       },
@@ -425,7 +425,8 @@ export default class App extends PureComponent {
       name: "Marcus Wu",
       imgURL: require("../images/marcus.jpg"),
       position: "",
-      intro: "Golface 資深iOS 工程師，擁有iOS 四年開發經歷，擅長使用Objective-C 與Swift 進行開發，致力於提升軟體品質。熱愛挑戰、學習新知。貢獻、開發數個開源專案。"
+      intro:
+        "Golface 資深iOS 工程師，擁有iOS 四年開發經歷，擅長使用Objective-C 與Swift 進行開發，致力於提升軟體品質。熱愛挑戰、學習新知。貢獻、開發數個開源專案。"
     },
     {
       id: _.uniqueId(),
@@ -446,21 +447,24 @@ export default class App extends PureComponent {
       name: "Elvis Lin",
       imgURL: require("../images/elvis.jpg"),
       position: "",
-      intro: "行動應用軟體工程師，目前從事 Android, iOS 與 React Native 的開發。目標是將Unit Testing, CI 與 CD 推廣到工程團隊日常的開發中。"
+      intro:
+        "行動應用軟體工程師，目前從事 Android, iOS 與 React Native 的開發。目標是將Unit Testing, CI 與 CD 推廣到工程團隊日常的開發中。"
     },
     {
       id: _.uniqueId(),
       name: "丁沛堯",
       imgURL: require("../images/ting.jpg"),
       position: "",
-      intro: "丁沛堯, iCHEF Senior Developer, 愛貓, 最近的興趣是做戴牙套也可以吃的料理"
+      intro:
+        "丁沛堯, iCHEF Senior Developer, 愛貓, 最近的興趣是做戴牙套也可以吃的料理"
     },
     {
       id: _.uniqueId(),
       name: "Pofat",
       imgURL: require("../images/pofat.jpg"),
       position: "",
-      intro: "邊緣系肥宅，喜好從頭到尾都自己動手重造輪子，無論是產品開發或程式設計。其它技能是拉花與社會觀察，曾經認真運動過。"
+      intro:
+        "邊緣系肥宅，喜好從頭到尾都自己動手重造輪子，無論是產品開發或程式設計。其它技能是拉花與社會觀察，曾經認真運動過。"
     },
     {
       id: _.uniqueId(),
