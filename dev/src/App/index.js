@@ -19,13 +19,13 @@ export default class App extends PureComponent {
         id: _.uniqueId(),
         start: "9:00",
         end: "9:30",
-        rest: "報到 (地點: 共同軌)"
+        rest: "報到 (地點: 正大會議廳)"
       },
       {
         id: _.uniqueId(),
         start: "9:30",
         end: "10:00",
-        rest: "開場 (地點: 共同軌)"
+        rest: "開場 (地點: 正大會議廳)"
       },
       {
         id: _.uniqueId(),
@@ -75,12 +75,18 @@ export default class App extends PureComponent {
           },
           {
             id: _.uniqueId(),
-            topic: "如何使用 Dependency Injection 提高 iOS App 的可測試性",
-            presenter: "Elvis Lin",
+            topic: "Dirty Code 凋零的程式碼",
+            presenter: "Jason",
             description:
-              "在大型專案的開發中，很容易把程式碼變得複雜、臃腫、難以維護。在本演講中，會說明什麼是可測試性，以及當你套用 MVVM 之後，你應該要如何使用 dependency injection 讓程式的可測試性更好。最後會用手動注入、Swinject 與 Cleanse 說明實務上要如何撰寫。"
+              "聽過Jungle Pattern嗎？覺得 WTF/min 不夠高嗎？寫code 寫的心平氣和渾身舒暢？那你一定要來聽聽Dirty Code 凋零的程式碼。"
           }
         ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "12:00",
+        end: "13:00",
+        rest: "午餐 (地點: B101)"
       },
       {
         id: _.uniqueId(),
@@ -159,9 +165,9 @@ export default class App extends PureComponent {
           },
           {
             id: _.uniqueId(),
-            topic: "英國iOS Developer開發經驗",
-            presenter: "Allen Wang",
-            description: "英國工程師的薪水，稅制，福利；用的技術，團隊。"
+            topic: "Life of A Cell",
+            presenter: "John Lin",
+            description: "講解 CollectionView 的生命週期"
           }
         ]
       },
@@ -179,34 +185,6 @@ export default class App extends PureComponent {
           },
           {
             id: _.uniqueId(),
-            topic: "用 Moya 模擬後端 API 回應, 與後端同步開發新功能",
-            presenter: "Sung-Sheng Tsai",
-            description:
-              "在後端 API 開發完成之前，App 工程師難道只能癡癡的等待嗎？答案當然是 NO! 使用 Moya 來實作 mock server, 不必再等待後端 API 實作完成，你也可以同時開發專案所需的新功能！"
-          }
-        ]
-      },
-      {
-        id: _.uniqueId(),
-        start: "16:00",
-        end: "17:00",
-        rest: "Lighting Talk (地點: 共同軌)"
-      }
-    ],
-    day_2: [
-      {
-        id: _.uniqueId(),
-        start: "9:10",
-        end: "9:40",
-        talks: [
-          {
-            id: _.uniqueId(),
-            topic: "struct Drift : Bicycle, Swift",
-            presenter: "藍永倫",
-            description: "利用Swift和腳踏車，自幹一套類似Zwift的遊戲。"
-          },
-          {
-            id: _.uniqueId(),
             topic: "Refactor:從MVC到Redux",
             presenter: "Jeff Lin",
             description:
@@ -216,22 +194,30 @@ export default class App extends PureComponent {
       },
       {
         id: _.uniqueId(),
-        start: "9:45",
-        end: "10:15",
+        start: "16:00",
+        end: "17:00",
+        rest: "Lighting Talk (地點: 正大會議廳)"
+      }
+    ],
+    day_2: [
+      {
+        id: _.uniqueId(),
+        start: "9:00",
+        end: "9:30",
+        rest: "開場 (地點: 正大會議廳)"
+      },
+      {
+        id: _.uniqueId(),
+        start: "9:30",
+        end: "10:10",
         talks: [
           {
             id: _.uniqueId(),
-            topic: "給 iOS 初心者的求職策略",
-            presenter: "Enid Tian",
-            description:
-              "近年隨著 Apple 推出親切友善的 Swift 語言，吸引不少程式新手或轉職者投入 iOS 開發領域，但新手如何才能達到業界標準、找到心目中理想的工作呢？本場分享將以 AppWorks School 與業界合作的經驗，分享新手該建立起哪些核心觀念、技能，才能成為廣受業界青睞的工程師。"
+            topic: "struct Drift : Bicycle, Swift",
+            presenter: "藍永倫",
+            description: "利用Swift和腳踏車，自幹一套類似Zwift的遊戲。"
           },
-          {
-            id: _.uniqueId(),
-            topic: "Life of A Cell",
-            presenter: "John Lin",
-            description: "講解 CollectionView 的生命週期"
-          }
+          {}
         ]
       },
       {
@@ -290,10 +276,10 @@ export default class App extends PureComponent {
           },
           {
             id: _.uniqueId(),
-            topic: "Dirty Code 凋零的程式碼",
-            presenter: "Jason",
+            topic: "如何使用 Dependency Injection 提高 iOS App 的可測試性",
+            presenter: "Elvis Lin",
             description:
-              "聽過Jungle Pattern嗎？覺得 WTF/min 不夠高嗎？寫code 寫的心平氣和渾身舒暢？那你一定要來聽聽Dirty Code 凋零的程式碼。"
+              "在大型專案的開發中，很容易把程式碼變得複雜、臃腫、難以維護。在本演講中，會說明什麼是可測試性，以及當你套用 MVVM 之後，你應該要如何使用 dependency injection 讓程式的可測試性更好。最後會用手動注入、Swinject 與 Cleanse 說明實務上要如何撰寫。"
           }
         ]
       }
@@ -370,7 +356,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "徐嘉駿 Toby Hsu",
-      imgURL: require("../images/Toby.jpg"),
+      imgURL: require("../images/toby.jpg"),
       position: "",
       intro:
         "畢業於政治大學數位內容碩士學位學程，興趣為人機互動介面與使用者經驗研究，自稱為非典型工程師。目前為 CATCHPLAY 的 tvOS / iOS 工程師。"
@@ -401,7 +387,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "Jason",
-      imgURL: require("../images/default_portrait.png"),
+      imgURL: require("../images/jason.jpeg"),
       position: "",
       intro:
         "程式愛好者，windows 開發一年多，iOS 開發三年。希望可以跟大家交流。"
@@ -468,17 +454,10 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      name: "Allen Wang",
-      imgURL: require("../images/default_portrait.png"),
+      name: "Marvin Lin",
+      imgURL: require("../images/marvin.jpg"),
       position: "",
-      intro: ""
-    },
-    {
-      id: _.uniqueId(),
-      name: "TinXie-易致",
-      imgURL: require("../images/default_portrait.png"),
-      position: "",
-      intro: ""
+      intro: "iOS 工程師，從 Swift 開始學，但現在專案使用的是 Obj-C"
     }
   ];
 
