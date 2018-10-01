@@ -395,7 +395,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       name: "Gary niL",
-      imgURL: require("../images/default_portrait.png"),
+      imgURL: require("../images/gary.jpeg"),
       position: "",
       intro: "garynil.tw"
     },
