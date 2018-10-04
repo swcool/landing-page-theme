@@ -326,7 +326,7 @@ export default class App extends PureComponent {
       name: "Allen Wang",
       imgURL: require("../images/allen.jpg"),
       position: "",
-      intro: ""
+      intro: "4年經驗的mobile app工程師，經歷過公司IPO，10來個人的前端技術團隊和Team Leader經驗。目前在英國新創擔任iOS developer。"
     },
     {
       id: _.uniqueId(),
