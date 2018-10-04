@@ -540,9 +540,33 @@ export default class App extends PureComponent {
   sponors = [
     {
       id: _.uniqueId(),
-      imgURL: require("../images/logo_esun.png"),
+      imgURL: require("../images/logo_dcard.png"),
+      link: "https://www.dcard.tw/",
+      alt: "Dcard"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require("../images/logo_esun.jpg"),
       link: "https://www.esunbank.com.tw/",
       alt: "Esun Bank"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require("../images/logo_pic-collage.png"),
+      link: "https://cardinalblue.com/",
+      alt: "Cardinal Blue"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require("../images/logo_ichef.jpeg"),
+      link: "https://www.ichefpos.com/zh-tw",
+      alt: "iChef"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require("../images/logo_cp.jpg"),
+      link: "https://www.catchplay.com/tw",
+      alt: "Catch Play"
     }
   ];
 
@@ -779,10 +803,10 @@ export default class App extends PureComponent {
               </tbody>
             </table>
           </div>
-          {/* <div className="app__section">
+          <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
             {this.renderSponsors()}
-          </div> */}
+          </div>
           <div className="app__section">
             <h1 className="app__title">Speakers</h1>
             {this.renderSpeakers()}
