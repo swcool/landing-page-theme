@@ -269,10 +269,9 @@ export default class App extends PureComponent {
         talks: [
           {
             id: _.uniqueId(),
-            topic: "How to make BDD possible in XCUITest",
-            presenter: "Jersey Su",
-            description:
-              "現今軟體發佈週期越來越短，但軟體的品質一直是我們面臨最大的挑戰，在 iOS 上有沒有什麼方法, 能夠讓品質提升了. BDD 是一個實踐的方法, 透過實例化需求釐清問題, 且變成可執行化的文件, 本次分享實作 XCUITest 在 BDD 上面的實踐及經驗談, 希望各位聽眾們藉此能有更多的收穫。"
+            topic: "英國iOS Developer開發經驗",
+            presenter: "Allen Wang",
+            description: "英國工程師的薪水，稅制，福利；用的技術，團隊。"
           },
           {
             id: _.uniqueId(),
@@ -324,11 +323,10 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      name: "Jersey Su",
-      imgURL: require("../images/jersey.jpg"),
+      name: "Allen Wang",
+      imgURL: require("../images/allen.jpg"),
       position: "",
-      intro:
-        "我是哲西, 熱愛軟體測試. 出沒於 Test Corner 社群. Test Corner #1, #2 工作人員 Test Corner #4, #16 講者 Test Corner #17 主辦 Mopcon 2017 講者"
+      intro: ""
     },
     {
       id: _.uniqueId(),
