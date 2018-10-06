@@ -281,6 +281,12 @@ export default class App extends PureComponent {
               "在大型專案的開發中，很容易把程式碼變得複雜、臃腫、難以維護。在本演講中，會說明什麼是可測試性，以及當你套用 MVVM 之後，你應該要如何使用 dependency injection 讓程式的可測試性更好。最後會用手動注入、Swinject 與 Cleanse 說明實務上要如何撰寫。"
           }
         ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "13:00",
+        end: "17:00",
+        rest: "Party (地點: 後台咖啡)"
       }
     ]
   };
