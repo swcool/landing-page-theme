@@ -196,7 +196,7 @@ export default class App extends PureComponent {
         id: _.uniqueId(),
         start: "16:00",
         end: "17:00",
-        rest: "Lighting Talk (地點: 正大會議廳)"
+        rest: "Lightning Talk (地點: 正大會議廳)"
       }
     ],
     day_2: [
@@ -326,7 +326,8 @@ export default class App extends PureComponent {
       name: "Allen Wang",
       imgURL: require("../images/allen.jpg"),
       position: "",
-      intro: "4年經驗的mobile app工程師，經歷過公司IPO，10來個人的前端技術團隊和Team Leader經驗。目前在英國新創擔任iOS developer。"
+      intro:
+        "4年經驗的mobile app工程師，經歷過公司IPO，10來個人的前端技術團隊和Team Leader經驗。目前在英國新創擔任iOS developer。"
     },
     {
       id: _.uniqueId(),
@@ -540,31 +541,43 @@ export default class App extends PureComponent {
       id: _.uniqueId(),
       imgURL: require("../images/logo_dcard.png"),
       link: "https://www.dcard.tw/",
-      alt: "Dcard"
+      alt: "Dcard",
+      degree: "黃金贊助"
     },
     {
       id: _.uniqueId(),
       imgURL: require("../images/logo_esun.jpg"),
       link: "https://www.esunbank.com.tw/",
-      alt: "Esun Bank"
+      alt: "Esun Bank",
+      degree: "黃金贊助"
     },
     {
       id: _.uniqueId(),
       imgURL: require("../images/logo_pic-collage.png"),
       link: "https://cardinalblue.com/",
-      alt: "Cardinal Blue"
+      alt: "Cardinal Blue",
+      degree: "白銀贊助"
     },
     {
       id: _.uniqueId(),
       imgURL: require("../images/logo_ichef.jpeg"),
       link: "https://www.ichefpos.com/zh-tw",
-      alt: "iChef"
+      alt: "iChef",
+      degree: "白銀贊助"
     },
     {
       id: _.uniqueId(),
       imgURL: require("../images/logo_cp.jpg"),
       link: "https://www.catchplay.com/tw",
-      alt: "Catch Play"
+      alt: "Catch Play",
+      degree: "青銅贊助"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL: require("../images/logo_keyxentic.png"),
+      link: "https://www.keyxentic.com/",
+      alt: "KeyXentic",
+      degree: "青銅贊助"
     }
   ];
 
@@ -656,10 +669,11 @@ export default class App extends PureComponent {
     ));
 
   renderSponsors = () =>
-    _.map(this.sponors, ({ id, imgURL, link, alt }) => (
+    _.map(this.sponors, ({ id, imgURL, link, alt, degree }) => (
       <div key={id} className="app__sponsor">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+          <div className="app__sponsor-degree">{degree}</div>
         </a>
       </div>
     ));
@@ -722,19 +736,23 @@ export default class App extends PureComponent {
             </div>
             <a
               className="app__submit"
-              href="https://cfp.iplayground.io/events/iplayground_2018"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>2018 議程募集中</strong>
-            </a>
-            <a
-              className="app__submit"
               href="https://cfp.iplayground.io/events/iplayground_2018_lightning_talk"
               target="_blank"
               rel="noopener noreferrer"
             >
               <strong>2018 lightning talk募集中</strong>
+            </a>
+            <h2 className="app__title">Party 資訊</h2>
+            <p>時間： 10/21（日）13:00 ～ 17:00</p>
+            <p>地點：後台咖啡（台北市大安區羅斯福路四段1號台大綜合體育館</p>
+            <p>登記時間：10/05（五） 09:00 ～ 10/11（四）24:00</p>
+            <a
+              className="app__submit"
+              href="https://iplayground.kktix.cc/events/iplayground2018-officialparty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>立即報名</strong>
             </a>
             <iframe
               title="location"
@@ -757,7 +775,7 @@ export default class App extends PureComponent {
                 target="_blank"
               >
                 https://iosdc.jp/2017/
-              </a>），看到⽇本當地開發社群的蓬勃活力，兼具深度、廣度的諸多講題及趣味的舉辦⽅式，其中有許多台灣社群可以學習之處。
+              </a>），看到⽇本當地開發社群的蓬勃活力，兼具深度、廣度的諸多講題及趣味的舉辦⽅式，其中有許多台灣社群可以學習之處。
             </p>
             <p>
               我們意識到開發社群有強烈的需求，決定在台北辦⼀場 iOS

@@ -65,6 +65,8 @@ html {
       width: 80%;
       max-width: 325px;
       margin-top: 2rem; }
+    .app .app__sponsor .app__sponsor-degree {
+      color: #000; }
   .app .app__section {
     padding: 2.5rem 0; }
   .app .app__title {
