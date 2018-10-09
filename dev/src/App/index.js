@@ -587,6 +587,39 @@ export default class App extends PureComponent {
     }
   ];
 
+  partyEvents = [
+    {
+      id: _.uniqueId(),
+        start: "13:00",
+        end: "13:40",
+        rest: "用餐時間"
+    },
+    {
+      id: _.uniqueId(),
+        start: "13:40",
+        end: "14:40",
+        rest: "PANEL 1"
+    },
+    {
+      id: _.uniqueId(),
+        start: "14:40",
+        end: "15:00",
+        rest: "中場休息"
+    },
+    {
+      id: _.uniqueId(),
+        start: "15:00",
+        end: "16:00",
+        rest: "PANEL 2"
+    },
+    {
+      id: _.uniqueId(),
+        start: "16:00",
+        end: "17:00",
+        rest: "自由時間"
+    },
+  ]
+
   coOrganisers = [
     {
       id: _.uniqueId(),
@@ -660,6 +693,19 @@ export default class App extends PureComponent {
         <p className="app__speaker-position">{position}</p>
       </div>
     ));
+
+  renderPartyEventRow = () =>
+    _.map(
+      this.partyEvents,
+      ({ id, start, end, rest }) => (
+        <TableRow
+          key={id}
+          start={start}
+          end={end}
+          rest = {rest || null}
+        />
+      )
+    );
 
   renderStaff = () =>
     _.map(this.staff, ({ id, imgURL, alt, name, position, SNS }) => (
@@ -748,18 +794,7 @@ export default class App extends PureComponent {
             >
               <strong>2018 lightning talk募集中</strong>
             </a>
-            <h2 className="app__title">Party 資訊</h2>
-            <p>時間： 10/21（日）13:00 ～ 17:00</p>
-            <p>地點：後台咖啡（台北市大安區羅斯福路四段1號台大綜合體育館</p>
-            <p>登記時間：10/05（五） 09:00 ～ 10/11（四）24:00</p>
-            <a
-              className="app__submit"
-              href="https://iplayground.kktix.cc/events/iplayground2018-officialparty"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>立即報名</strong>
-            </a>
+            
             <iframe
               title="location"
               width="100%"
@@ -824,6 +859,43 @@ export default class App extends PureComponent {
                 {this.renderTableRow()}
               </tbody>
             </table>
+          </div>
+          <div className="app__section">
+            <h1 className="app__title">Official Party</h1>
+            <p>將於活動第二天 <b>10/21（日）13:00 ～ 17:00</b> 於 <b>後台咖啡（台北市大安區羅斯福路四段1號台大綜合體育館)</b> 舉行，屆時將舉辦兩場 <b>Panel Discussion</b>，邀請業界有名的資深主管與談。</p>
+            <p><b>PANEL 1 議題: "內部管理"、"開發流程"、"職涯建議"</b>，講者如下(以下依照名字排序):</p>
+            <ul>
+              <li>Oath Sr. Manager: Anistar</li>
+              <li>玉山銀行 Mobile Application Team Lead: 賴俊安</li>
+              <li>17 Media Sr. Director: Racing Wang</li>
+              <li>iCHEF CTO: Spencer</li>
+            </ul>
+            <p><b>PANEL 2 議題: "產品設計"、"產業生態"、"職涯建議"</b>，講者如下(以下依照名字排序):</p>
+            <ul>
+              <li>iOS@Taipei 創辦人: Aki</li>
+              <li>Cardinal Blue: YY</li>
+              <li>KKBOX Sr. Manager: Zonble </li>
+            </ul>
+                                  
+
+            <table className="app__table">
+              <tbody>
+                <tr className="app__table-header">
+                  <th>time</th>
+                  <th>event</th>
+                </tr>
+                {this.renderPartyEventRow()}
+              </tbody>
+            </table>
+
+            <a
+              className="app__submit"
+              href="https://iplayground.kktix.cc/events/iplayground2018-officialparty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>立即報名</strong>
+            </a>
           </div>
           <div className="app__section">
             <h1 className="app__title">Sponsors</h1>
