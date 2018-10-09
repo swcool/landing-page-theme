@@ -863,18 +863,18 @@ export default class App extends PureComponent {
           <div className="app__section">
             <h1 className="app__title">Official Party</h1>
             <p>將於活動第二天 <b>10/21（日）13:00 ～ 17:00</b> 於 <b>後台咖啡（台北市大安區羅斯福路四段1號台大綜合體育館)</b> 舉行，屆時將舉辦兩場 <b>Panel Discussion</b>，邀請業界有名的資深主管與談。</p>
-            <p><b>PANEL 1 議題: “內部管理”、“開發流程”、“職涯建議”</b>，講者如下(以下依照名字排序):</p>
+            <p><b>PANEL 1 議題: "內部管理"、"開發流程"、"職涯建議"</b>，講者如下(以下依照名字排序):</p>
             <ul>
-              <li>Oath Senior Engineer Manager: Anistar</li>
+              <li>Oath Sr. Manager: Anistar</li>
               <li>玉山銀行 Mobile Application Team Lead: 賴俊安</li>
               <li>17 Media Sr. Director: Racing Wang</li>
-              <li>iChef CTO: Spencer</li>
+              <li>iCHEF CTO: Spencer</li>
             </ul>
-            <p><b>PANEL 2 議題: 產品設計、產業生態、職涯建議</b>，講者如下(以下依照名字排序):</p>
+            <p><b>PANEL 2 議題: "產品設計"、"產業生態"、"職涯建議"</b>，講者如下(以下依照名字排序):</p>
             <ul>
               <li>iOS@Taipei 創辦人: Aki</li>
               <li>Cardinal Blue: YY</li>
-              <li>KKBOX Sr. Manager: zonble </li>
+              <li>KKBOX Sr. Manager: Zonble </li>
             </ul>
                                   
 
