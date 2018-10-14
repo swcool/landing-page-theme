@@ -24,12 +24,12 @@ export default class App extends PureComponent {
       {
         id: _.uniqueId(),
         start: "9:30",
-        end: "10:00",
+        end: "9:50",
         rest: "開場 (地點: 正大會議廳)"
       },
       {
         id: _.uniqueId(),
-        start: "10:00",
+        start: "9:50",
         end: "10:40",
         talks: [
           {
@@ -203,12 +203,12 @@ export default class App extends PureComponent {
       {
         id: _.uniqueId(),
         start: "9:00",
-        end: "9:30",
+        end: "9:20",
         rest: "開場 (地點: 正大會議廳)"
       },
       {
         id: _.uniqueId(),
-        start: "9:30",
+        start: "9:20",
         end: "10:10",
         talks: [
           {
