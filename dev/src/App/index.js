@@ -579,11 +579,18 @@ export default class App extends PureComponent {
       degree: "青銅贊助"
     },
     {
+        id: _.uniqueId(),
+        imgURL: require("../images/logo_keyxentic.png"),
+        link: "https://www.keyxentic.com/",
+        alt: "KeyXentic",
+        degree: "青銅贊助"
+    },
+    {
       id: _.uniqueId(),
-      imgURL: require("../images/logo_keyxentic.png"),
-      link: "https://www.keyxentic.com/",
-      alt: "KeyXentic",
-      degree: "青銅贊助"
+      imgURL: require("../images/logo_5xruby.tw.png"),
+      link: "https://5xruby.tw/",
+      alt: "5xRuby",
+      degree: "設備贊助"
     }
   ];
 
