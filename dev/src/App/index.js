@@ -544,17 +544,17 @@ export default class App extends PureComponent {
 
   sponors = [
     {
+        id: _.uniqueId(),
+        imgURL: require("../images/logo_esun.jpg"),
+        link: "https://www.esunbank.com.tw/",
+        alt: "Esun Bank",
+        degree: "黃金贊助"
+    },
+    {
       id: _.uniqueId(),
       imgURL: require("../images/logo_dcard.png"),
       link: "https://www.dcard.tw/",
       alt: "Dcard",
-      degree: "黃金贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_esun.jpg"),
-      link: "https://www.esunbank.com.tw/",
-      alt: "Esun Bank",
       degree: "黃金贊助"
     },
     {
