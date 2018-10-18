@@ -808,7 +808,7 @@ export default class App extends PureComponent {
               height="450"
               frameBorder="0"
               style={{ border: 0 }}
-              src="https://www.google.com/maps/embed/v1/place?q=%E5%8F%B0%E5%A4%A7%E7%AE%A1%E7%90%86%E5%AD%B8%E9%99%A2&key=AIzaSyBIrI6CGIsBb7W9s5hvIXoZrsWG1J0ek1k"
+              src="https://www.google.com/maps/embed/v1/place?q=%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8+NTU+Global+MBA&key=AIzaSyBIrI6CGIsBb7W9s5hvIXoZrsWG1J0ek1k"
               allowFullScreen
             />
             <h2 className="app__title">活動緣起</h2>
