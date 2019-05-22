@@ -760,7 +760,7 @@ export default class App extends PureComponent {
             alt="iPlayground"
           />
           <div className="app__section">
-            <h1 className="app__title">10/20 - 10/21 @ 台大管理學院</h1>
+            <h1 className="app__title">2018 10/20 - 10/21 @ 台大管理學院</h1>
             <a
               className="app__submit"
               href="https://iplayground.kktix.cc/events/iplayground2018"
