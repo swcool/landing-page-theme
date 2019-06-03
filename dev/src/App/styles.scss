@@ -4,12 +4,49 @@ html {
   font-family: -apple-system, Helvetica, Arial, sans-serif;
 }
 
-.app {
-  padding: 0 20px;
+.app-fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .app__iplayground-logo {
-    width: 100%;
+.logo-container-fullscreen {
+  width: 100%;
+  background: linear-gradient(350.91deg, #A9C2FF 28.55%, #517CFF 89.13%);
+
+  .logo-container {
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo-info {
+    margin-right: 7pt;
+
+    font-size: 48px;
+    line-height: 56px;
+    text-align: right;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.app__container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .app__submit {
     display: block;
@@ -102,11 +139,25 @@ html {
 
   .app__section {
     padding: 2.5rem 0;
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #333333;
+    }
   }
 
   .app__title {
     margin-bottom: 2.5rem;
     text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #517CFF;
   }
 
   hr {
@@ -147,9 +198,6 @@ html {
   }
 
   @include screen--lg {
-    display: flex;
-    justify-content: center;
-
     .app__container {
       max-width: 960px;
     }

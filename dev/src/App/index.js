@@ -752,15 +752,33 @@ export default class App extends PureComponent {
       "https://iplayground.us17.list-manage.com/subscribe/post?u=61bc80c5d8118e451c9a5ac80&amp;id=b804a3d8e0";
 
     return (
-      <div className="app">
+      <div className="app-fullscreen">
+        <div className="logo-container-fullscreen">
+          <div className="logo-container">
+            <img
+              className="logo"
+              src={require("../images/logo_iplayground.png")}
+              alt="iPlayground"
+            />
+            <p className="logo-info">
+              📍 台大博雅館
+              <br/>
+              9/21-9/22
+            </p>
+          </div>
+        </div>
         <div className="app__container">
-          <img
-            className="app__iplayground-logo"
-            src={require("../images/logo_iplayground.png")}
-            alt="iPlayground"
-          />
           <div className="app__section">
-            <h1 className="app__title">2018 10/20 - 10/21 @ 台大管理學院</h1>
+            <h2 className="app__title">關於 iPlayground</h2>
+            <p>
+              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場廣深度兼具又有趣的的 iOS 研討會。
+            </p>
+            <p>
+              2018年10月，有實戰技巧、初心者攻略、hard core 議題以及各式八卦政治學的 iPlaygrouond 華麗登場。
+            </p>
+            <p>
+              2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
+            </p>
             <a
               className="app__submit"
               href="https://iplayground.kktix.cc/events/iplayground2018"
@@ -811,24 +829,6 @@ export default class App extends PureComponent {
               src="https://www.google.com/maps/embed/v1/place?q=%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8+NTU+Global+MBA&key=AIzaSyBIrI6CGIsBb7W9s5hvIXoZrsWG1J0ek1k"
               allowFullScreen
             />
-            <h2 className="app__title">活動緣起</h2>
-            <p>
-              自從蘋果發表 iPhone 以來，iOS
-              開發就是業界重要的題⽬。國外有無數的地區型開發者研討會，甚⾄有跨國巡迴式的專⾨組織。但是以往在台灣地區舉辦的開發者研討會中，iOS
-              只是其中一個配⾓。
-            </p>
-            <p>
-              2017.9，台灣有一群⼯程師去東京參加 iOSDC（<a
-                href="https://iosdc.jp/2017/"
-                target="_blank"
-              >
-                https://iosdc.jp/2017/
-              </a>），看到⽇本當地開發社群的蓬勃活力，兼具深度、廣度的諸多講題及趣味的舉辦⽅式，其中有許多台灣社群可以學習之處。
-            </p>
-            <p>
-              我們意識到開發社群有強烈的需求，決定在台北辦⼀場 iOS
-              開發專⾨的研討會。
-            </p>
           </div>
           <div className="app__section">
             <h1 className="app__title">Schedule</h1>
