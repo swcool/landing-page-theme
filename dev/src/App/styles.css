@@ -104,6 +104,10 @@ html {
       font-size: 18px;
       line-height: 21px;
       color: #333333; }
+  .app__container .section_content_row_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .app__container .section_center_content {
     display: flex;
     flex-direction: column;

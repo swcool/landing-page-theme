@@ -3,6 +3,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import _ from "lodash";
 import { SocialIcon } from "react-social-icons";
 
+import SpeakerFeature from "../components/SpeakerFeature";
 import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
@@ -791,6 +792,20 @@ export default class App extends PureComponent {
             <p>
               俗話說得好，一個人固然可以走得快，一群人才能走得遠，讓我們共同努力，走向國際。
             </p>
+          </div>
+          <div className="app__section">
+            <h2 className="app__title">身為講者</h2>
+            <div className="section_content_row_container">
+              <SpeakerFeature title="一般議程" content={
+                "身為一個講者，議程長度約為 40 分鐘，你需要準備至少 30 分鐘的演講內容，並請保留 5 分鐘的時間給聽眾提問，為了讓你和聽眾在議程時有良好的互動和體驗，我們準備了講者建議與須知"
+              } />
+              <SpeakerFeature title="Workshop" content={
+                "同一般講程，我們對 Workshop 的主題並不設限，其時間長度為半天或一整天，相當於 3 或 6 小時的課程。你需要準備一個連貫的主題和可以實作的教學內容帶著學員們一起實作學習。"
+              } />
+              <SpeakerFeature title="優惠" content={
+                "身為講者可以免費獲得一張自己的入場卷以及驚喜優惠。"
+              } />
+            </div>
           </div>
           <div className="app__section">
             <h2 className="app__title">現在就應徵</h2>

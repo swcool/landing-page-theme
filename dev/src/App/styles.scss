@@ -150,6 +150,12 @@ html {
     }
   }
 
+  .section_content_row_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .section_center_content {
     display: flex;
     flex-direction: column;
