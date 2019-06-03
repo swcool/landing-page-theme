@@ -770,7 +770,7 @@ export default class App extends PureComponent {
         </div>
         <div className="app__container">
           <div className="app__section">
-            <h2 className="app__title">關於 iPlayground</h2>
+            <div className="app__title">關於 iPlayground</div>
             <p>
               2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場廣深度兼具又有趣的的 iOS 研討會。
             </p>
@@ -782,7 +782,7 @@ export default class App extends PureComponent {
             </p>
           </div>
           <div className="app__section">
-            <h2 className="app__title">投稿指南</h2>
+            <div className="app__title">投稿指南</div>
             <p>
               iPlayground 接受任何與 iOS/MacOS，ObjectiveC/Swift 開發相關的各式議題，包括軟體架構、測試技巧或者iOS政治學等，想必此刻在螢幕前的你就是想要來投稿的，那就不要再猶豫了！
             </p>
@@ -794,7 +794,7 @@ export default class App extends PureComponent {
             </p>
           </div>
           <div className="app__section">
-            <h2 className="app__title">身為講者</h2>
+            <div className="app__title">身為講者</div>
             <div className="section_content_row_container">
               <SpeakerFeature title="一般議程" content={
                 "身為一個講者，議程長度約為 40 分鐘，你需要準備至少 30 分鐘的演講內容，並請保留 5 分鐘的時間給聽眾提問，為了讓你和聽眾在議程時有良好的互動和體驗，我們準備了講者建議與須知"
@@ -808,7 +808,7 @@ export default class App extends PureComponent {
             </div>
           </div>
           <div className="app__section">
-            <h2 className="app__title">現在就應徵</h2>
+            <div className="app__title">現在就應徵</div>
             <div className="section_center_content">
               <p>
                 我們將採取匿名審稿制度來評審，歡迎下列主題投稿
