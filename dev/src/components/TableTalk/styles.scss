@@ -1,0 +1,15 @@
+@import "../../styles/variable.scss";
+
+.table-talk {
+  width: 45%;
+
+  span {
+    display: block;
+  }
+
+  .table-talk__topic {
+    color: $color--blue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
