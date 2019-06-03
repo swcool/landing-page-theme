@@ -779,146 +779,34 @@ export default class App extends PureComponent {
             <p>
               2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
             </p>
-            <a
-              className="app__submit"
-              href="https://iplayground.kktix.cc/events/iplayground2018"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>立刻購票</strong>
-            </a>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <SocialIcon
-                url="https://twitter.com/theiPlayground"
-                style={{ margin: 10 }}
-              />
-              <SocialIcon
-                url="https://www.facebook.com/theiPlayground/"
-                style={{ margin: 10 }}
-              />
-              <SocialIcon
-                url="https://mastodon.technology/@iplayground"
-                style={{ margin: 10 }}
-              />
-            </div>
+          </div>
+          <div className="app__section">
+            <h2 className="app__title">投稿指南</h2>
             <p>
-              iPlayground 是在台北舉辦的 Apple 軟體開發相關的研討會，名字來自於
-              Xcode 內建的開發工具 Playground，我們希望開發者、設計師、QA、PM
-              都可以在這邊交換想法，分享所學我們歡迎有興趣的朋友一同加入
-              iPlayground 並且認識更多同好。
+              iPlayground 接受任何與 iOS/MacOS，ObjectiveC/Swift 開發相關的各式議題，包括軟體架構、測試技巧或者iOS政治學等，想必此刻在螢幕前的你就是想要來投稿的，那就不要再猶豫了！
             </p>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <strong> 訂閱最新通知 </strong>
-              <MailchimpSubscribe url={mailChimpURL} />
+            <p>
+              今年對於 iOS 開發者來說可能是非常重要的一年， Swift 迎來 ABI 穩定以及 iOS 能夠更簡易地移植到 MacOS 上，有更多的可能性即將發生，若你有任何特別的開發經驗，比如 backend 或 web assembly，我們都邀請你投稿到 iPlayground，或者是你有許多帶人的經驗或有強烈傳道授業的渴望，也歡迎來投稿我們的 workshop，你將在 workshop 裡手把手地帶其它人一起成長。
+            </p>
+            <p>
+              俗話說得好，一個人固然可以走得快，一群人才能走得遠，讓我們共同努力，走向國際。
+            </p>
+          </div>
+          <div className="app__section">
+            <h2 className="app__title">現在就應徵</h2>
+            <div className="section_center_content">
+              <p>
+                我們將採取匿名審稿制度來評審，歡迎下列主題投稿
+              </p>
+              <p>
+                - Objective-C / Swift framework 使用心得分享<br/>
+                - iOS / Mac 軟體開發經驗分享<br/>
+                - UI Test / Unit Test / Refactor 軟體品質經驗分享<br/>
+                - UI / UX 設計經驗分享<br/>
+                - Agile / Scrum 經驗心得分享<br/>
+                - Swift for backend、TensorFlow 或其它開發經驗分享<br/>
+              </p>
             </div>
-            <a
-              className="app__submit"
-              href="https://cfp.iplayground.io/events/iplayground_2018_lightning_talk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>2018 lightning talk募集中</strong>
-            </a>
-
-            <iframe
-              title="location"
-              width="100%"
-              height="450"
-              frameBorder="0"
-              style={{ border: 0 }}
-              src="https://www.google.com/maps/embed/v1/place?q=%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8+NTU+Global+MBA&key=AIzaSyBIrI6CGIsBb7W9s5hvIXoZrsWG1J0ek1k"
-              allowFullScreen
-            />
-          </div>
-          <div className="app__section">
-            <h1 className="app__title">Schedule</h1>
-            <div className="app__sechdule-tab">
-              <button
-                className={
-                  whichDay === "day_1" ? "app__sechdule-tab__btn--selected" : ""
-                }
-                onClick={() => {
-                  this.setState({ whichDay: "day_1" });
-                }}
-                type="button"
-              >
-                Day 1
-              </button>
-              <button
-                className={
-                  whichDay === "day_2" ? "app__sechdule-tab__btn--selected" : ""
-                }
-                onClick={() => {
-                  this.setState({ whichDay: "day_2" });
-                }}
-                type="button"
-              >
-                Day 2
-              </button>
-            </div>
-            <table className="app__table">
-              <tbody>
-                <tr className="app__table-header">
-                  <th />
-                  <th>正大會議廳</th>
-                  <th>B101</th>
-                </tr>
-                {this.renderTableRow()}
-              </tbody>
-            </table>
-          </div>
-          <div className="app__section">
-            <h1 className="app__title">Official Party</h1>
-            <p>將於活動第二天 <b>10/21（日）13:00 ～ 17:00</b> 於 <b>後台咖啡（台北市大安區羅斯福路四段1號台大綜合體育館)</b> 舉行，屆時將舉辦兩場 <b>Panel Discussion</b>，邀請業界有名的資深主管與談。</p>
-            <p><b>PANEL 1 議題: "內部管理"、"開發流程"、"職涯建議"</b>，講者如下(以下依照名字排序):</p>
-            <ul>
-              <li>Oath Sr. Manager: Anistar</li>
-              <li>玉山銀行 Mobile Application Team Lead: 賴俊安</li>
-              <li>17 Media Sr. Director: Racing Wang</li>
-              <li>iCHEF CTO: Spencer</li>
-            </ul>
-            <p><b>PANEL 2 議題: "產品設計"、"產業生態"、"職涯建議"</b>，講者如下(以下依照名字排序):</p>
-            <ul>
-              <li>iOS@Taipei 創辦人: Aki</li>
-              <li>Cardinal Blue: YY</li>
-              <li>KKBOX Sr. Manager: Zonble </li>
-            </ul>
-
-
-            <table className="app__table">
-              <tbody>
-                <tr className="app__table-header">
-                  <th>time</th>
-                  <th>event</th>
-                </tr>
-                {this.renderPartyEventRow()}
-              </tbody>
-            </table>
-
-            <a
-              className="app__submit"
-              href="https://iplayground.kktix.cc/events/iplayground2018-officialparty"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>立即報名</strong>
-            </a>
-          </div>
-          <div className="app__section">
-            <h1 className="app__title">Sponsors</h1>
-            {this.renderSponsors()}
-          </div>
-          <div className="app__section">
-            <h1 className="app__title">Speakers</h1>
-            {this.renderSpeakers()}
-          </div>
-          <div className="app__section">
-            <h1 className="app__title">Staff</h1>
-            {this.renderStaff()}
-          </div>
-          <div className="app__section">
-            <h1 className="app__title">Co-organizers</h1>
-            {this.renderCoOrganisers()}
           </div>
         </div>
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>

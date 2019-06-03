@@ -139,6 +139,7 @@ html {
 
   .app__section {
     padding: 2.5rem 0;
+    margin: 0 80px;
 
     p {
       font-weight: 500;
@@ -147,6 +148,12 @@ html {
 
       color: #333333;
     }
+  }
+
+  .section_center_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .app__title {

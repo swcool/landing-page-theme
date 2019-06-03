@@ -97,12 +97,17 @@ html {
     .app__container .app__sponsor .app__sponsor-degree {
       color: #000; }
   .app__container .app__section {
-    padding: 2.5rem 0; }
+    padding: 2.5rem 0;
+    margin: 0 80px; }
     .app__container .app__section p {
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
       color: #333333; }
+  .app__container .section_center_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .app__container .app__title {
     margin-bottom: 2.5rem;
     text-align: center;
