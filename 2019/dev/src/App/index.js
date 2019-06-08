@@ -796,6 +796,21 @@ export default class App extends PureComponent {
             </p>
           </div>
           <div className="app__section">
+            <div className="app__title">時程</div>
+            <p>
+              2019.06.10 ・ 開放投稿
+            </p>
+            <p>
+              2019 7月底 ・ 投稿截止
+            </p>
+            <p>
+              2019 8月初 ・ 公佈結果
+            </p>
+            <p>
+              2019.09.21－2019.09.22 ・ 議程時間
+            </p>
+          </div>
+          <div className="app__section">
             <div className="app__title">身為講者</div>
             <div className="section_content_row_container">
               <SpeakerFeature title="一般議程" content={
