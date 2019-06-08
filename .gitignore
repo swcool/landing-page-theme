@@ -4,6 +4,8 @@ _site
 **/dev/node_modules
 **/dev/build
 
+.idea/*
+
 ### From https://github.com/github/gitignore/blob/master/Node.gitignore
 
 # Logs
