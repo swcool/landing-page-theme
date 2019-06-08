@@ -8,7 +8,7 @@ You can start developing as following:
 
 ```bash
 git clone https://github.com/iplayground/iplayground.github.io.git
-cd iplayground.github.io/dev
+cd iplayground.github.io/{year}/dev
 yarn install
 yarn start
 ```
