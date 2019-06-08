@@ -1,5 +1,5 @@
 _site
 .DS_Store
 
-2018/dev/node_modules
-2018/dev/build
+*/dev/node_modules
+*/dev/build

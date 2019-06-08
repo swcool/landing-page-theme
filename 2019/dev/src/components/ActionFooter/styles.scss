@@ -1,0 +1,27 @@
+.action-footer {
+  display: flex;
+
+}
+
+.button {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.solid-button {
+  background: #638AFF;
+  border-radius: 23px;
+
+  color: #FFFFFF;
+}
+
+.hollow-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #517CFF;
+  box-sizing: border-box;
+  border-radius: 23px;
+
+  color: #517CFF;
+}
+

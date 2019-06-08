@@ -3,11 +3,13 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import _ from "lodash";
 import { SocialIcon } from "react-social-icons";
 
+import ActionFooter from "../components/ActionFooter";
 import SpeakerFeature from "../components/SpeakerFeature";
 import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
 import TableRow from "../components/TableRow";
+
 
 import "./styles.css";
 
@@ -824,6 +826,7 @@ export default class App extends PureComponent {
             </div>
           </div>
         </div>
+        <ActionFooter />
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>
           {showModal === "speakers" ? (
             <ModalContentSpeakers
