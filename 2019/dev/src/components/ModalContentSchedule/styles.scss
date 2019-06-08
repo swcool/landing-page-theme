@@ -1,0 +1,50 @@
+@import "../../styles/variable.scss";
+
+.modal-content-schedule {
+  position: relative;
+  padding: 30px;
+  padding-top: 50px;
+  background-color: $color--bg;
+
+  .modal-content-schedule__topic {
+    margin: 0;
+    font-size: 2.5rem;
+    color: $color--secondary;
+  }
+
+  .modal-content-schedule__presenter {
+    color: $color--gray;
+  }
+
+  .modal-content-schedule__close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: #333;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

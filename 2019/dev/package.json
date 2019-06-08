@@ -1,0 +1,31 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://iplayground.io/2019",
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "yarn build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build-all": "npm-run-all build-css build-js",
+    "clean-build": "rm -rf ../static ../asset-manifest.json ../favicon.ico ../index.html ../manifest.json ../og_image.png ../service-worker.js",
+    "move-build": "mv ./build/* ../",
+    "build": "yarn build-all && yarn clean-build && yarn move-build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "node-sass-chokidar": "^1.3.3",
+    "normalize.css": "^8.0.0",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "react-mailchimp-subscribe": "2.0.2",
+    "react-social-icons": "3.0.0"
+  },
+  "devDependencies": {}
+}

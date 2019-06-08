@@ -1,0 +1,146 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+html {
+  font-family: -apple-system, Helvetica, Arial, sans-serif; }
+
+.app-fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.logo-container-fullscreen {
+  width: 100%;
+  background: linear-gradient(350.91deg, #A9C2FF 28.55%, #517CFF 89.13%); }
+  .logo-container-fullscreen .logo-container {
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; }
+  .logo-container-fullscreen .logo {
+    width: 100%;
+    height: auto; }
+  .logo-container-fullscreen .logo-info {
+    margin-right: 7pt;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: right;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.app__container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30pt; }
+  .app__container .app__submit {
+    display: block;
+    margin: 5rem 0;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    background-color: tomato; }
+  .app__container .app__sechdule-tab {
+    margin-bottom: 1rem; }
+    .app__container .app__sechdule-tab button {
+      font-weight: bold;
+      margin-right: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: 1px solid dodgerblue;
+      outline: none;
+      color: dodgerblue;
+      background-color: white; }
+    .app__container .app__sechdule-tab .app__sechdule-tab__btn--selected {
+      color: white;
+      background-color: dodgerblue; }
+  .app__container .app__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(240, 187, 64, 0.33); }
+    .app__container .app__table,
+    .app__container .app__table th,
+    .app__container .app__table td {
+      border: 1px solid white; }
+    .app__container .app__table th,
+    .app__container .app__table td {
+      padding: 0.5rem; }
+    .app__container .app__table th {
+      border-bottom-width: 3px; }
+  .app__container .app__speaker {
+    text-align: center;
+    cursor: pointer; }
+    .app__container .app__speaker .app__speaker-img {
+      width: 60%;
+      max-width: 275px;
+      margin-top: 2rem;
+      border-radius: 50%; }
+    .app__container .app__speaker .app__speaker-name {
+      font-size: 1.35rem;
+      margin-bottom: 0;
+      color: dodgerblue; }
+    .app__container .app__speaker .app__speaker-position {
+      margin-top: 0;
+      color: black; }
+  .app__container .app__sponsor {
+    text-align: center; }
+    .app__container .app__sponsor .app__sponsor-logo {
+      width: 80%;
+      max-width: 325px;
+      margin-top: 2rem; }
+    .app__container .app__sponsor .app__sponsor-degree {
+      color: #000; }
+  .app__container .app__section {
+    padding: 2.5rem 0;
+    margin: 0 80px; }
+    .app__container .app__section p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #333333; }
+  .app__container .section_content_row_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .app__container .section_center_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .app__container .app__title {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #517CFF; }
+  .app__container hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid lightgray; }
+  .app__container a {
+    text-decoration: none; }
+  @media screen and (min-width: 768px) {
+    .app__container .app__submit {
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px; }
+    .app__container .app__speaker,
+    .app__container .app__sponsor {
+      width: 25%;
+      display: inline-block; }
+    .app__container .app__speaker .app__speaker-name {
+      margin-top: 0.5rem; }
+    .app__container .app__sponsor .app__sponsor-logo {
+      width: 75%; } }
+  @media screen and (min-width: 992px) {
+    .app__container .app__container {
+      max-width: 960px; } }
