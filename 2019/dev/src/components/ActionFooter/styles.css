@@ -1,10 +1,21 @@
 .action-footer {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 20pt;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FBFCFE 100%); }
 
 .button {
   font-size: 36px;
   line-height: 42px;
-  text-align: center; }
+  text-align: center;
+  margin-left: 10pt;
+  margin-right: 10pt;
+  padding: 10pt 50pt;
+  text-decoration: none; }
 
 .solid-button {
   background: #638AFF;
