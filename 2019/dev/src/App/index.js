@@ -774,7 +774,7 @@ export default class App extends PureComponent {
           <div className="app__section">
             <div className="app__title">關於 iPlayground</div>
             <p>
-              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場廣深度兼具又有趣的的 iOS 研討會。
+              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場兼具廣深度又有趣的 iOS 研討會。
             </p>
             <p>
               2018年10月，有實戰技巧、初心者攻略、hard core 議題以及各式八卦政治學的 iPlaygrouond 華麗登場。
@@ -786,10 +786,10 @@ export default class App extends PureComponent {
           <div className="app__section">
             <div className="app__title">投稿指南</div>
             <p>
-              iPlayground 接受任何與 iOS/MacOS，ObjectiveC/Swift 開發相關的各式議題，包括軟體架構、測試技巧或者iOS政治學等，想必此刻在螢幕前的你就是想要來投稿的，那就不要再猶豫了！
+              iPlayground 接受任何與 iOS/macOS，Objective-C/Swift 開發相關的各式議題，包括軟體架構、測試技巧或者iOS政治學等，想必此刻在螢幕前的你就是想要來投稿的，那就不要再猶豫了！
             </p>
             <p>
-              今年對於 iOS 開發者來說可能是非常重要的一年， Swift 迎來 ABI 穩定以及 iOS 能夠更簡易地移植到 MacOS 上，有更多的可能性即將發生，若你有任何特別的開發經驗，比如 backend 或 web assembly，我們都邀請你投稿到 iPlayground，或者是你有許多帶人的經驗或有強烈傳道授業的渴望，也歡迎來投稿我們的 workshop，你將在 workshop 裡手把手地帶其它人一起成長。
+              今年對於 iOS 開發者來說可能是非常重要的一年， Swift 迎來 ABI 穩定以及 iOS 能夠更簡易地移植到 macOS 上，有更多的可能性即將發生，若你有任何特別的開發經驗，比如 backend 或 WebAssembly，我們都邀請你投稿到 iPlayground，或者是你有許多帶人的經驗或有強烈傳道授業的渴望，也歡迎來投稿我們的 workshop，你將在 workshop 裡手把手地帶其它人一起成長。
             </p>
             <p>
               俗話說得好，一個人固然可以走得快，一群人才能走得遠，讓我們共同努力，走向國際。
@@ -835,10 +835,14 @@ export default class App extends PureComponent {
               <p>
                 - Objective-C / Swift framework 使用心得分享<br/>
                 - iOS / Mac 軟體開發經驗分享<br/>
+                - AR / Metal 等開發經驗分享<br/>
+                - 遊戲開發經驗分享<br/>
+                - 軟體架構規畫或使用經驗分享<br/>
                 - UI Test / Unit Test / Refactor 軟體品質經驗分享<br/>
                 - UI / UX 設計經驗分享<br/>
                 - Agile / Scrum 經驗心得分享<br/>
-                - Swift for backend、TensorFlow 或其它開發經驗分享<br/>
+                - SwiftUI / Combine 入門心得分享<br/>
+                - Swift for backend、command line 或 TensorFlow 等其它開發經驗分享<br/>
               </p>
             </div>
           </div>
