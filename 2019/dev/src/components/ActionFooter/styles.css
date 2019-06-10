@@ -1,3 +1,7 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .action-footer {
   display: flex;
   justify-content: center;
@@ -9,13 +13,14 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FBFCFE 100%); }
 
 .button {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 26px;
+  line-height: 18px;
   text-align: center;
   margin-left: 10pt;
   margin-right: 10pt;
-  padding: 10pt 50pt;
-  text-decoration: none; }
+  padding: 17pt 10pt;
+  text-decoration: none;
+  letter-spacing: 7px; }
 
 .solid-button {
   background: #638AFF;
@@ -28,3 +33,13 @@
   box-sizing: border-box;
   border-radius: 23px;
   color: #517CFF; }
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    padding: 10pt 50pt;
+    text-decoration: none; } }

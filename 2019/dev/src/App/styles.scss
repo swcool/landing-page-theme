@@ -63,7 +63,7 @@ html {
   .app__sechdule-tab {
     margin-bottom: 1rem;
 
-    button {
+    .button {
       font-weight: bold;
       margin-right: 0.5rem;
       padding: 0.5rem 1rem;
@@ -139,12 +139,12 @@ html {
   }
 
   .app__section {
-    padding: 2.5rem 0;
-    margin: 0 80px;
+    padding: 2rem 0;
+    margin: 0 40px;
 
     p {
       font-weight: 500;
-      font-size: 24px;
+      font-size: 16px;
       line-height: 28px;
 
       color: #333333;
@@ -186,6 +186,9 @@ html {
   }
 
   @include screen--md {
+ 
+
+
     .app__submit {
       margin-left: auto;
       margin-right: auto;
@@ -210,6 +213,11 @@ html {
       }
     }
   }
+
+ 
+
+
+
 
   @include screen--lg {
     .app__container {
