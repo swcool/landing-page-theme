@@ -1,3 +1,4 @@
+@import "../../styles/variable.scss";
 .action-footer {
   display: flex;
   justify-content: center;
@@ -11,15 +12,21 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FBFCFE 100%);
 }
 
+
+
 .button {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 26px;
+  line-height: 18px;
   text-align: center;
   margin-left: 10pt;
   margin-right: 10pt;
-  padding: 10pt 50pt;
+  padding: 17pt 10pt;
   text-decoration: none;
+  letter-spacing: 7px;
 }
+
+
+
 
 .solid-button {
   background: #638AFF;
@@ -36,4 +43,19 @@
 
   color: #517CFF;
 }
+
+@include screen--md {
+  .button {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    padding: 10pt 50pt;
+    text-decoration: none;
+  }
+
+}
+
+
 
