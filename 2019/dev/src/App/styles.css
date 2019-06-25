@@ -12,25 +12,33 @@ html {
 
 .logo-container-fullscreen {
   width: 100%;
-  background: linear-gradient(350.91deg, #A9C2FF 28.55%, #517CFF 89.13%); }
+  background: linear-gradient(350.91deg, #A9C2FF 28.55%, #517CFF 89.13%);
+  min-height: 120vmin; }
   .logo-container-fullscreen .logo-container {
-    max-width: 688px;
+    max-width: 90vmin;
+    height: 101vmin;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end; }
+    flex-direction: column; }
+  .logo-container-fullscreen .logo-container-fullscreen-mask {
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20vmin 100vw;
+    border-color: transparent transparent #FFFFFF transparent; }
   .logo-container-fullscreen .logo {
     width: 100%;
     height: auto; }
   .logo-container-fullscreen .logo-info {
     margin-right: 7pt;
-    font-size: 48px;
-    line-height: 56px;
+    margin-block-start: 0px;
+    font-size: 8vmin;
+    line-height: 10vmin;
     text-align: right;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .logo-container-fullscreen .logo-info i {
+      padding-right: 4pt; }
 
 .app__container {
   padding: 0 20px;
