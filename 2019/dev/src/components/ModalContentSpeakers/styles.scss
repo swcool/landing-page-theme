@@ -6,6 +6,7 @@
   padding-top: 50px;
   text-align: center;
   background-color: $color--bg;
+  border-radius: 16px;
 
   .modal-content-speakers__img {
     width: 70%;
@@ -28,8 +29,8 @@
 
   .modal-content-speakers__close-btn {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 16px;
+    top: 16px;
     width: 32px;
     height: 32px;
     opacity: 0.3;

@@ -7,7 +7,8 @@
   padding: 30px;
   padding-top: 50px;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  border-radius: 16px; }
   .modal-content-speakers .modal-content-speakers__img {
     width: 70%;
     border-radius: 50%; }
@@ -21,8 +22,8 @@
     text-align: left; }
   .modal-content-speakers .modal-content-speakers__close-btn {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 16px;
+    top: 16px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
