@@ -298,174 +298,22 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       imgURL:
+        "https://pbs.twimg.com/profile_images/277613359/113d17e2e1f_400x400.jpg",
+      alt: "",
+      name: "OneVCat",
+      position: "",
+      intro:
+        "onevcat is a senior software development engineer at LINE, work on LINE SDK and well-known open source library - Kingfisher."
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:
         "https://pbs.twimg.com/profile_images/2904865970/141f9a79f4c6fafd0c645e8609e3d295_400x400.jpeg",
       alt: "",
       name: "Zonble",
       position: "",
       intro:
-        "zonble，從 2005 年開始寫 Objective-C，從 2008 年 iPhone SDK 釋出的第一天開始就開始投入 iOS 開發，長期在 KKBOX 任職以及參與台北 Cocoa-heads 活動，在網路上發佈電子書《KKBOX iOS 開發基本教材》。才華與美貌兼具，智慧與善良並重，人間大愛的體現，心智年齡從來沒有超過十四歲的中二工程師。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "藍永倫",
-      imgURL:
-        "https://pbs.twimg.com/profile_images/614453401192038400/pvulZ6Qb_400x400.png",
-      position: "",
-      intro:
-        "現任職於博智雲端科技用python寫web app，下班後的身份是台灣城市單車聯盟理事、Cocoaheads Taipei發起人、業餘macOS/iOS開發者。 上一個生涯目標是推廣熱愛的蘋果，已達成。接下來的生涯目標是推廣熱愛的單車多元文化，用單車來改變城市。 曾主辦「沈默的騎行」呼籲重視交通安全，以及「台北裸騎」。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "John Lin",
-      imgURL: "https://avatars3.githubusercontent.com/u/529248?s=460&v=4",
-      position: "",
-      intro:
-        "Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover."
-    },
-    {
-      id: _.uniqueId(),
-      name: "張景隆",
-      imgURL: require("../images/chang.jpg"),
-      position: "",
-      intro:
-        "CWMoney 開發者 i統一發票 開發者 台大 HackNTU - iOS 課程講師 東海大學 教學卓越計畫 講師 教育部開放式課程-程式開發講師 東山高中 CS50 講師 MOPCON 2014 講者 CodeData 作者 iOS Dev Club 講者 & 核心成員 參加蘋果官方主辦 2013年 Tech Talk 麥克自由聚(Apple, Mac, iOS 相關) 講者"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Allen Wang",
-      imgURL: require("../images/allen.jpg"),
-      position: "",
-      intro:
-        "4年經驗的mobile app工程師，經歷過公司IPO，10來個人的前端技術團隊和Team Leader經驗。目前在英國新創擔任iOS developer。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Enid Tian",
-      imgURL: require("../images/enid.jpg"),
-      position: "",
-      intro:
-        "Enid is the Head of AppWorks School, where she helps young people acquire the necessary programming skills as well as computational thinking mindset to start a career in Internet Companies. She joined AppWorks as an intern in 2011 and stayed on as Analyst after graduation. Enid received her B.A. in Finance from National Taiwan University, with “minors” in AIESEC and Ballroom Dancing Club."
-    },
-    {
-      id: _.uniqueId(),
-      name: "鄭雅方",
-      imgURL: require("../images/fan.png"),
-      position: "",
-      intro: "APP Girls 創辦人."
-    },
-    {
-      id: _.uniqueId(),
-      name: "Tina Chang",
-      imgURL: require("../images/tina.jpg"),
-      position: "",
-      intro:
-        "Swift 語言趨近穩定的現在，大多數公司開發新專案沒意外都會選擇 Swift，但對於歷史悠久的龐大專案，其程式碼沒有這麼容易通通轉成 Swift，混用，就是個不得已但必需的方案，而我任職的公司就屬於後者，希望能透過分享和大家交流經驗 :)"
-    },
-    {
-      id: _.uniqueId(),
-      name: "徐嘉駿 Toby Hsu",
-      imgURL: require("../images/Toby.jpg"),
-      position: "",
-      intro:
-        "畢業於政治大學數位內容碩士學位學程，興趣為人機互動介面與使用者經驗研究，自稱為非典型工程師。目前為 CATCHPLAY 的 tvOS / iOS 工程師。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "AKI YU",
-      imgURL: require("../images/aki.jpg"),
-      position: "",
-      intro: "iOS @ Taipei 傳教士"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Vivian Liu",
-      imgURL: require("../images/vivian.jpg"),
-      position: "",
-      intro:
-        "Hi 我是 Vivian ，目前任職於 KKBOX，是 KKBOX Application 的 Software Quality Assurance。主要負責的領域是 KKBOX iOS Application Automation，採用的測試框架為 XCUITest。一路以來收穫了不少能讓 XCUITest 穩定度及速度提升的技巧，並且成功讓我們的 Flaky rate 降到現在的 1.37%。誠心希望這場分享能夠讓大家有所收穫。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Luke Wu 伍智瑋",
-      imgURL: require("../images/luke.jpg"),
-      position: "",
-      intro:
-        "半路出家的 iOS developer，最近也玩一點 Flutter。目前在 AppWorks School 擔任 iOS Instructor."
-    },
-    {
-      id: _.uniqueId(),
-      name: "Jason",
-      imgURL: require("../images/jason.jpeg"),
-      position: "",
-      intro:
-        "程式愛好者，windows 開發一年多，iOS 開發三年。希望可以跟大家交流。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Gary niL",
-      imgURL: require("../images/gary.jpeg"),
-      position: "",
-      intro: "garynil.tw"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Su PingChen",
-      imgURL: require("../images/pingchen.jpg"),
-      position: "",
-      intro: "LINE Fukuoka iOS Engineer"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Marcus Wu",
-      imgURL: require("../images/marcus.jpg"),
-      position: "",
-      intro:
-        "Golface 資深iOS 工程師，擁有iOS 四年開發經歷，擅長使用Objective-C 與Swift 進行開發，致力於提升軟體品質。熱愛挑戰、學習新知。貢獻、開發數個開源專案。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Jeff Lin",
-      imgURL: require("../images/jeff.jpg"),
-      position: "",
-      intro: "Oath資深iOS App工程師"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Mars",
-      imgURL: require("../images/mars.jpg"),
-      position: "",
-      intro: "我是 CHOCO TV 的前端開發經理 Mars，有六年的 iOS app 開發經驗"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Elvis Lin",
-      imgURL: require("../images/elvis.jpg"),
-      position: "",
-      intro:
-        "行動應用軟體工程師，目前從事 Android, iOS 與 React Native 的開發。目標是將Unit Testing, CI 與 CD 推廣到工程團隊日常的開發中。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "丁沛堯",
-      imgURL: require("../images/ting.jpg"),
-      position: "",
-      intro:
-        "丁沛堯, iCHEF Senior Developer, 愛貓, 最近的興趣是做戴牙套也可以吃的料理"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Pofat",
-      imgURL: require("../images/pofat.jpg"),
-      position: "",
-      intro:
-        "邊緣系肥宅，喜好從頭到尾都自己動手重造輪子，無論是產品開發或程式設計。其它技能是拉花與社會觀察，曾經認真運動過。"
-    },
-    {
-      id: _.uniqueId(),
-      name: "Marvin Lin",
-      imgURL: require("../images/marvin.jpg"),
-      position: "",
-      intro: "iOS 工程師，從 Swift 開始學，但現在專案使用的是 Obj-C"
+        "Zonble is a senior iOS engineer at KKBOX, often participate in technical community, created a public git book “KKBOX iOS/MacOS X 基本開發教材”. Sharing the development experience on flutter recently."
     }
   ];
 
@@ -773,6 +621,12 @@ export default class App extends PureComponent {
           <div className = "logo-container-fullscreen-mask"></div>
         </div>
         <div className="app__container">
+          <div className="app__section">
+            <div className="app__title">Keynote Speakers</div>
+            <div className="app__speaker-container">
+              {this.renderSpeakers()}
+            </div>
+          </div>
           <div className="app__section">
             <div className="app__title">關於 iPlayground</div>
             <p>

@@ -82,6 +82,8 @@ html {
       padding: 0.5rem; }
     .app__container .app__table th {
       border-bottom-width: 3px; }
+  .app__container .app__speaker-container {
+    text-align: center; }
   .app__container .app__speaker {
     text-align: center;
     cursor: pointer; }
