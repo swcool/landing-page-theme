@@ -300,7 +300,7 @@ export default class App extends PureComponent {
       imgURL:
         "https://pbs.twimg.com/profile_images/277613359/113d17e2e1f_400x400.jpg",
       alt: "",
-      name: "OneVCat",
+      name: "onevcat",
       position: "",
       intro:
         "onevcat is a senior software development engineer at LINE, work on LINE SDK and well-known open source library - Kingfisher."

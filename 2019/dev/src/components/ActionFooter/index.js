@@ -8,7 +8,7 @@ export default ({}) => (
       我要投稿
     </a>
     <a className="button hollow-button" href='https://iplayground.kktix.cc/events/iplayground2019' target='_blank'>
-      我是早鳥
+      我是購票
     </a>
   </div>
 );
