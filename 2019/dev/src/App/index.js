@@ -618,7 +618,14 @@ export default class App extends PureComponent {
               9/21-9/22
             </p>
           </div>
+          <div className = "logo-container-fullscreen-mask-container">
           <div className = "logo-container-fullscreen-mask"></div>
+          <div className = "logo-container-fullscreen-mask-2-container">
+          <div className = "logo-container-fullscreen-mask-2-top"></div>
+          <div className = "logo-container-fullscreen-mask-2-bottom"></div>
+          </div>
+
+          </div>
         </div>
         <div className="app__container">
           <div className="app__section">

@@ -26,6 +26,21 @@ html {
     border-style: solid;
     border-width: 0 0 20vmin 100vw;
     border-color: transparent transparent #FFFFFF transparent; }
+  .logo-container-fullscreen .logo-container-fullscreen-mask-container {
+    position: relative; }
+  .logo-container-fullscreen .logo-container-fullscreen-mask-2-container {
+    position: absolute;
+    bottom: 0;
+    justify-content: end;
+    align-items: end; }
+    .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-top {
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 12vmin 100vw;
+      border-color: transparent transparent #FFFFFF33 transparent; }
+    .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-bottom {
+      background: #FFFFFF33;
+      height: 5vmin; }
   .logo-container-fullscreen .logo {
     width: 100%;
     height: auto; }
