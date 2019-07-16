@@ -628,10 +628,23 @@ export default class App extends PureComponent {
           </div>
         </div>
         <div className="app__container">
-          <div className="app__section">
-            <div className="app__title">Keynote Speakers</div>
-            <div className="app__speaker-container">
-              {this.renderSpeakers()}
+          <div className="app__section main_section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
+            <div className="main_section_container">
+              <div className="app__title">Keynote Speakers</div>
+              <div className="app__speaker-container">
+                {this.renderSpeakers()}
+              </div>
+            </div>
+          </div>
+          <div className="app__section main_section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
+            <div className="main_section_container">
+            </div>
+          </div>
+          <div className="app__section main_section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
+            <div className="main_section_container">
             </div>
           </div>
           <div className="app__section">

@@ -56,7 +56,6 @@ html {
       padding-right: 4pt; }
 
 .app__container {
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,13 +122,28 @@ html {
     .app__container .app__sponsor .app__sponsor-degree {
       color: #000; }
   .app__container .app__section {
-    padding: 2rem 0;
-    margin: 0 40px; }
+    padding: 2rem 0; }
     .app__container .app__section p {
       font-weight: 500;
       font-size: 16px;
       line-height: 28px;
       color: #333333; }
+  .app__container .main_section {
+    position: relative; }
+  .app__container .main_section_logo {
+    position: absolute;
+    width: 75vmin;
+    min-width: 360px;
+    left: -25vmin;
+    z-index: -1; }
+  .app__container .main_section_container {
+    padding: 2rem 0;
+    margin: 30vmin -0px 0px 5vw;
+    min-height: 360px;
+    /* box-shadow: 0px 4px 23px #88888888; */
+    background-color: #ffffff66;
+    border-radius: 23px 0 0 23px;
+    box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2); }
   .app__container .section_content_row_container {
     display: flex;
     justify-content: space-between;
