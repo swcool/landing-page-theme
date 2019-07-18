@@ -153,13 +153,17 @@ html {
     flex-direction: column;
     align-items: center; }
   .app__container .app__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "PingFangTC-Ultralight";
     margin-bottom: 2.5rem;
-    text-align: center;
-    font-weight: 500;
+    text-align: left;
+    padding: 0 2rem;
     font-size: 48px;
     line-height: 56px;
-    text-align: center;
-    color: #517CFF; }
+    color: #333333; }
+    .app__container .app__title a {
+      margin-right: 1rem; }
   .app__container hr {
     display: block;
     height: 1px;

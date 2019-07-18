@@ -631,7 +631,7 @@ export default class App extends PureComponent {
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
-              <div className="app__title">Keynote Speakers</div>
+              <div className="app__title"><a>Speakers</a><span>講者</span></div>
               <div className="app__speaker-container">
                 {this.renderSpeakers()}
               </div>
@@ -640,11 +640,13 @@ export default class App extends PureComponent {
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
+            <div className="app__title"><a>Agenda</a><span>議程</span></div>
             </div>
           </div>
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
+            <div className="app__title"><a>Venue</a><span>場地</span></div>
             </div>
           </div>
           <div className="app__section">
