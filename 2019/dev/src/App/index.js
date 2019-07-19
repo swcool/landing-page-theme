@@ -640,10 +640,44 @@ export default class App extends PureComponent {
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
-            <div className="app__title"><a>Agenda</a><span>議程</span></div>
-            <div className="section_action_container">
-              <ActionButton title="我要投稿" link="http://cfp.iplayground.io/events/iplayground_2019" />
-            </div>
+             <div className="app__title"><a>Agenda</a><span>議程</span></div>
+             <span className="section_tag" >議程徵稿中</span>
+             <div className="section_sub_title">時程</div>
+             <div className="section_sub_container">
+             <p>
+                2019.06.10 ・ 開放投稿
+              </p>
+              <p>
+                2019.08.10 ・ 投稿截止
+              </p>
+              <p>
+                2019 8月 ・ 公佈結果
+              </p>
+              <p>
+                2019.09.21－2019.09.22 ・ 議程時間
+              </p>
+             </div>
+              <div className="section_sub_title">現在就應徵</div>
+              <div className="section_sub_container">
+              <p>
+                我們將採取匿名審稿制度來評審，歡迎下列主題投稿
+              </p>
+              <p>
+                - Objective-C / Swift framework 使用心得分享<br/>
+                - iOS / Mac 軟體開發經驗分享<br/>
+                - AR / Metal 等開發經驗分享<br/>
+                - 遊戲開發經驗分享<br/>
+                - 軟體架構規畫或使用經驗分享<br/>
+                - UI Test / Unit Test / Refactor 軟體品質經驗分享<br/>
+                - UI / UX 設計經驗分享<br/>
+                - Agile / Scrum 經驗心得分享<br/>
+                - SwiftUI / Combine 入門心得分享<br/>
+                - Swift for backend、command line 或 TensorFlow 等其它開發經驗分享<br/>
+              </p>
+              </div>
+             <div className="section_action_container">
+              <ActionButton title="我要投稿" link="http://cfp.iplayground.io/events/iplayground_2019" />             
+             </div>
             </div>
           </div>
           <div className="app__section main_section">
@@ -664,71 +698,7 @@ export default class App extends PureComponent {
               2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
             </p>
           </div>
-          <div className="app__section">
-            <div className="app__title">投稿指南</div>
-            <p>
-              iPlayground 接受任何與 iOS/macOS，Objective-C/Swift 開發相關的各式議題，包括軟體架構、測試技巧或者iOS政治學等，想必此刻在螢幕前的你就是想要來投稿的，那就不要再猶豫了！
-            </p>
-            <p>
-              今年對於 iOS 開發者來說可能是非常重要的一年， Swift 迎來 ABI 穩定以及 iOS 能夠更簡易地移植到 macOS 上，有更多的可能性即將發生，若你有任何特別的開發經驗，比如 backend 或 WebAssembly，我們都邀請你投稿到 iPlayground，或者是你有許多帶人的經驗或有強烈傳道授業的渴望，也歡迎來投稿我們的 workshop，你將在 workshop 裡手把手地帶其它人一起成長。
-            </p>
-            <p>
-              俗話說得好，一個人固然可以走得快，一群人才能走得遠，讓我們共同努力，走向國際。
-            </p>
-          </div>
-          <div className="app__section">
-            <div className="app__title">時程</div>
-            <div className="section_center_content">
-              <p>
-                2019.06.10 ・ 開放投稿
-              </p>
-              <p>
-                2019.08.10 ・ 投稿截止
-              </p>
-              <p>
-                2019 8月 ・ 公佈結果
-              </p>
-              <p>
-                2019.09.21－2019.09.22 ・ 議程時間
-              </p>
-            </div>
-          </div>
-          <div className="app__section">
-            <div className="app__title">身為講者</div>
-            <div className="section_content_row_container">
-              <SpeakerFeature title="一般議程" content={
-                "身為一個講者，議程長度約為 40 分鐘，你需要準備至少 30 分鐘的演講內容，並請保留 5 分鐘的時間給聽眾提問，為了讓你和聽眾在議程時有良好的互動和體驗，我們準備了講者建議與須知"
-              } />
-              <SpeakerFeature title="Workshop" content={
-                "同一般講程，我們對 Workshop 的主題並不設限，其時間長度為半天或一整天，相當於 3 或 6 小時的課程。你需要準備一個連貫的主題和可以實作的教學內容帶著學員們一起實作學習。"
-              } />
-              <SpeakerFeature title="優惠" content={
-                "身為講者可以免費獲得一張自己的入場卷以及驚喜優惠。"
-              } />
-            </div>
-          </div>
-          <div className="app__section">
-            <div className="app__title">現在就應徵</div>
-            <div className="section_center_content">
-              <p>
-                我們將採取匿名審稿制度來評審，歡迎下列主題投稿
-              </p>
-              <p>
-                - Objective-C / Swift framework 使用心得分享<br/>
-                - iOS / Mac 軟體開發經驗分享<br/>
-                - AR / Metal 等開發經驗分享<br/>
-                - 遊戲開發經驗分享<br/>
-                - 軟體架構規畫或使用經驗分享<br/>
-                - UI Test / Unit Test / Refactor 軟體品質經驗分享<br/>
-                - UI / UX 設計經驗分享<br/>
-                - Agile / Scrum 經驗心得分享<br/>
-                - SwiftUI / Combine 入門心得分享<br/>
-                - Swift for backend、command line 或 TensorFlow 等其它開發經驗分享<br/>
-              </p>
-            </div>
-          </div>
         </div>
-        <ActionFooter />
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>
           {showModal === "speakers" ? (
             <ModalContentSpeakers

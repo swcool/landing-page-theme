@@ -182,7 +182,7 @@ html {
       font-size: 16px;
       line-height: 28px;
 
-      color: #333333;
+      color: #6e6e6e;
     }
   }
 
@@ -206,6 +206,21 @@ html {
     border-radius: 23px 0 0 23px;
     //border: 1px solid #FFFFFF;
     box-shadow: 0 3px 30px 2px rgba(0,0,0,0.20);
+
+    .section_tag {
+      color: #EF5FA7;
+      background-color: rgba(0,0,0,0.75);
+      border-radius: 8px;
+      font-size: 26px;
+      padding: 8px 16px;
+    }
+    .section_sub_title {
+      font-size: 24px;
+      padding: 1rem 0;
+    }
+    .section_sub_container {
+      padding-left: 2rem;
+    }
   }
   .section_content_row_container {
     display: flex;
@@ -226,8 +241,8 @@ html {
     margin-bottom: 2.5rem;
     text-align: left;
     padding: 0 0;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 64px;
+    line-height: 80px;
 
     color: #333333;
     a {
@@ -236,6 +251,7 @@ html {
   }
   .section_action_container {
     text-align: right;
+    padding: 16px 0;
   }
 
   hr {
