@@ -137,10 +137,9 @@ html {
     left: -25vmin;
     z-index: -1; }
   .app__container .main_section_container {
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     margin: 30vmin -0px 0px 5vw;
     min-height: 360px;
-    /* box-shadow: 0px 4px 23px #88888888; */
     background-color: #ffffff66;
     border-radius: 23px 0 0 23px;
     box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2); }
@@ -158,12 +157,14 @@ html {
     font-family: "PingFangTC-Ultralight";
     margin-bottom: 2.5rem;
     text-align: left;
-    padding: 0 2rem;
+    padding: 0 0;
     font-size: 48px;
     line-height: 56px;
     color: #333333; }
     .app__container .app__title a {
       margin-right: 1rem; }
+  .app__container .section_action_container {
+    text-align: right; }
   .app__container hr {
     display: block;
     height: 1px;

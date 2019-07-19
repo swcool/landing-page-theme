@@ -9,7 +9,7 @@ import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
 import TableRow from "../components/TableRow";
-
+import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
 
@@ -641,6 +641,9 @@ export default class App extends PureComponent {
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
             <div className="app__title"><a>Agenda</a><span>議程</span></div>
+            <div className="section_action_container">
+              <ActionButton title="我要投稿" link="http://cfp.iplayground.io/events/iplayground_2019" />
+            </div>
             </div>
           </div>
           <div className="app__section main_section">

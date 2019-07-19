@@ -199,10 +199,9 @@ html {
   }
 
   .main_section_container {
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     margin: 30vmin -0px 0px 5vw;
     min-height: 360px;
-    /* box-shadow: 0px 4px 23px #88888888; */
     background-color: #ffffff66;
     border-radius: 23px 0 0 23px;
     //border: 1px solid #FFFFFF;
@@ -226,7 +225,7 @@ html {
     font-family: "PingFangTC-Ultralight";
     margin-bottom: 2.5rem;
     text-align: left;
-    padding: 0 2rem;
+    padding: 0 0;
     font-size: 48px;
     line-height: 56px;
 
@@ -234,6 +233,9 @@ html {
     a {
       margin-right: 1rem;
     }
+  }
+  .section_action_container {
+    text-align: right;
   }
 
   hr {
