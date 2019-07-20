@@ -134,7 +134,7 @@ html {
   }
 
   .app__speaker-container {
-    text-align: center;
+    //text-align: center;
   }
   .app__speaker {
     text-align: center;
@@ -150,7 +150,12 @@ html {
     .app__speaker-name {
       font-size: 1.35rem;
       margin-bottom: 0;
-      color: $color--secondary;
+      background-color: rgba(0, 0, 0, 0.30);
+      color: #ffffff;
+      padding: 0.5rem 0;
+      margin: 0 15%;
+      border-radius: 8px;
+      //color: $color--secondary;
     }
 
     .app__speaker-position {

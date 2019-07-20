@@ -96,8 +96,6 @@ html {
       padding: 0.5rem; }
     .app__container .app__table th {
       border-bottom-width: 3px; }
-  .app__container .app__speaker-container {
-    text-align: center; }
   .app__container .app__speaker {
     text-align: center;
     cursor: pointer; }
@@ -109,7 +107,11 @@ html {
     .app__container .app__speaker .app__speaker-name {
       font-size: 1.35rem;
       margin-bottom: 0;
-      color: dodgerblue; }
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      padding: 0.5rem 0;
+      margin: 0 15%;
+      border-radius: 8px; }
     .app__container .app__speaker .app__speaker-position {
       margin-top: 0;
       color: black; }
