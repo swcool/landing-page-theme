@@ -308,7 +308,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       imgURL:
-        "https://pbs.twimg.com/profile_images/2904865970/141f9a79f4c6fafd0c645e8609e3d295_400x400.jpeg",
+        "https://avatars0.githubusercontent.com/u/53011?s=400&v=4",
       alt: "",
       name: "Zonble",
       position: "",
