@@ -628,8 +628,10 @@ export default class App extends PureComponent {
           </div>
         </div>
         <div className="app__container">
-        <div className="section_action_container">
+          <div className="empty_section">
+            <div className="section_action_container">
               <ActionButton title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" />             
+             </div>
              </div>
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
