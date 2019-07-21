@@ -684,10 +684,24 @@ export default class App extends PureComponent {
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
             <div className="app__title"><a>Venue</a><span>場地</span></div>
+            <div className="section_sub_title">國立臺灣大學博雅教學館</div>
+            <div className="section_sub_container">
+              <p>106台北市大安區羅斯福路四段1號</p>
+              </div>
+            <iframe
+              title="location"
+              width="100%"
+              height="450"
+              frameBorder="0"
+              style={{ border: 0 }}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.472391335001!2d121.53459524249845!3d25.018035389196143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989d9909417%3A0x13a8ef0043681664!2z5ZyL56uL6Ie654Gj5aSn5a245Y2a6ZuF5pWZ5a246aSo!5e0!3m2!1szh-TW!2stw!4v1563616292331!5m2!1szh-TW!2stw"
+              allowFullScreen
+            />
             </div>
           </div>
           <div className="app__section">
-            <div className="app__title">關於 iPlayground</div>
+          <div className="section_container">
+            <div className="app__title"><a>About</a><span>關於我們</span></div>
             <p>
               2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場兼具廣深度又有趣的 iOS 研討會。
             </p>
@@ -697,6 +711,7 @@ export default class App extends PureComponent {
             <p>
               2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
             </p>
+            </div>
           </div>
         </div>
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>
