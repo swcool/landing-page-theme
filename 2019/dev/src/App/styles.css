@@ -183,7 +183,7 @@ html {
     .app__container .app__title a {
       margin-right: 1rem; }
   .app__container .section_action_container {
-    text-align: right;
+    text-align: center;
     padding: 16px 0; }
   .app__container hr {
     display: block;

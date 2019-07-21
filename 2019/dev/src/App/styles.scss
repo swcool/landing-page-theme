@@ -263,7 +263,7 @@ html {
     }
   }
   .section_action_container {
-    text-align: right;
+    text-align: center;
     padding: 16px 0;
   }
 
@@ -306,11 +306,6 @@ html {
       }
     }
   }
-
- 
-
-
-
 
   @include screen--lg {
     .app__container {
