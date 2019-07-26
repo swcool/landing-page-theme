@@ -28,3 +28,9 @@ social:
     url: https://github.com/NamSuJi
   - title: Naver
     url: https://blog.naver.com/01928abcd
+
+# ----------------------- #
+#     category & tag      #
+# ----------------------- #
+category_dir: category/
+tag_dir: tag/
