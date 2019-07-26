@@ -1,4 +1,5 @@
 ---
 layout: category
-title: Github
+title: /category/Github
+permalin: '/category/Github'
 ---
