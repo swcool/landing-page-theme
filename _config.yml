@@ -1,7 +1,7 @@
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
-
+baseurl:
 url: http://namsuji.github.io/test
 title: For Web Programmer
 email: 01928abcd@naver.com
