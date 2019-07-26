@@ -1,91 +1,92 @@
-.site-category{
-  background: $brand-color;
-  border-top: 1px solid $border-color;
-  margin:auto;
-  padding:0;
-  font-size:14px;
-  text-align: center;
-  clear:left;
-  }
+.menubar{
+border:none;
+border:0px;
+margin:0px;
+padding:0px;
+font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+}
 
-  .site-category ul{
-  //background: #00aeff;
-  height:50px;
-  list-style:none;
-  line-height: 1.5;
-  margin:0 auto;
-  padding:0;
-  display:inline-block;
-  }
+.menubar ul{
+background: rgb(109,109,109);
+height:50px;
+list-style:none;
+margin:0;
+padding:0;
+}
 
-  .site-category li{
-  float: left;
-  display:inline;
+.menubar li{
+float:left;
+padding:0px;
+}
 
-  }
+.menubar li a{
+background: rgb(109,109,109);
+color:#cccccc;
+display:block;
+font-weight:normal;
+line-height:50px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
 
-  .site-category li a{
-  background: $brand-color;
-  display:block;
-  font-weight:normal;
-  line-height:50px;
-  margin:0px;
-  padding:0px 25px;
-  text-align:center;
-  text-decoration:none;
-  }
+.menubar li a:hover, .menubar ul li:hover a{
+background: rgb(71,71,71);
+color:#FFFFFF;
+text-decoration:none;
+}
 
-  .site-category li a:hover{
-  background: rgb(71,71,71);
-  color:#FFFFFF;
-  text-decoration:none;
-  }
+.menubar li ul{
+background: rgb(109,109,109);
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
 
-  .site-category li ul{
-  background: #f3f4f7;
-  display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
-  height:auto;
-  padding:0px;
-  margin:0px;
-  border:0px;
-  position:absolute;
-  width:200px;
-  z-index:200;
-  /*top:1em;
-  /*left:0;*/
-  }
+.menubar li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
 
-  .site-category li:hover ul{
-  display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
-  }
+.menubar li li {
+background: rgb(109,109,109);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
 
-  .site-category li li {
-  background: $brand-color;
-  display:block;
-  float:none;
-  margin:0px;
-  padding:0px;
-  width:200px;
-  }
+.menubar li:hover li a{
+background:none;
+}
 
-  .site-category li:hover li a{
-  background:none;
-  }
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
 
-  .site-category li ul a{
-  display:block;
-  height:50px;
-  font-size:12px;
-  font-style:normal;
-  margin:0px;
-  padding:0px 10px 0px 15px;
-  text-align:left;
-  }
+.menubar li ul a:hover, .menubar li ul li:hover a{
+background: rgb(71,71,71);
+border:0px;
+color:#ffffff;
+text-decoration:none;
+}
 
-  .site-category li ul a:hover, .menubar li ul li:hover a{
-  background: rgb(71,71,71);
-  border:0px;
-  color:#ffffff;
-  text-decoration:none;
-  }
+.menubar p{
+clear:left;
 }
