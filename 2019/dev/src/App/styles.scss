@@ -139,6 +139,7 @@ html {
   .app__speaker {
     text-align: center;
     cursor: pointer;
+    vertical-align: top;
 
     .app__speaker-img {
       width: 60%;
@@ -160,6 +161,8 @@ html {
 
     .app__speaker-position {
       margin-top: 0;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
       color: black;
     }
   }
@@ -219,10 +222,7 @@ html {
       font-size: 26px;
       padding: 8px 16px;
     }
-    .section_sub_title {
-      font-size: 24px;
-      padding: 1rem 0;
-    }
+    
     .section_sub_container {
       padding-left: 2rem;
     }
@@ -265,6 +265,12 @@ html {
       margin-right: 1rem;
     }
   }
+
+  .section_sub_title {
+    font-size: 24px;
+    padding: 1rem 0;
+  }
+
   .section_action_container {
     text-align: center;
     padding: 16px 0;

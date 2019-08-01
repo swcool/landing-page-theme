@@ -98,7 +98,8 @@ html {
       border-bottom-width: 3px; }
   .app__container .app__speaker {
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    vertical-align: top; }
     .app__container .app__speaker .app__speaker-img {
       width: 60%;
       max-width: 275px;
@@ -114,6 +115,8 @@ html {
       border-radius: 8px; }
     .app__container .app__speaker .app__speaker-position {
       margin-top: 0;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
       color: black; }
   .app__container .app__sponsor {
     text-align: center; }
@@ -151,9 +154,6 @@ html {
       border-radius: 8px;
       font-size: 26px;
       padding: 8px 16px; }
-    .app__container .main_section_container .section_sub_title {
-      font-size: 24px;
-      padding: 1rem 0; }
     .app__container .main_section_container .section_sub_container {
       padding-left: 2rem; }
   .app__container .empty_section {
@@ -184,6 +184,9 @@ html {
     color: #333333; }
     .app__container .app__title a {
       margin-right: 1rem; }
+  .app__container .section_sub_title {
+    font-size: 24px;
+    padding: 1rem 0; }
   .app__container .section_action_container {
     text-align: center;
     padding: 16px 0; }
