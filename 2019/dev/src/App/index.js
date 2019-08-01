@@ -444,6 +444,13 @@ export default class App extends PureComponent {
           imgURL: "https://pbs.twimg.com/profile_images/1152077514484797440/EeKrsTXU_400x400.png",
           position: "Producer",
           SNS: "https://twitter.com/OOBE"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Yoda",
+          imgURL: require("../images/Yoda.jpg"),
+          position: "Jedi / Designer / Developer",
+          SNS: "https://www.facebook.com/YongSaingWang"
         }
       ]
     },
@@ -464,6 +471,13 @@ export default class App extends PureComponent {
           imgURL: "https://pbs.twimg.com/profile_images/1137491029274218496/5iK8PhHm_400x400.png",
           position: "iOS Evangelist / Consultant / Trainer /Developer",
           SNS: "https://twitter.com/ChungPlusDev"
+        },
+        {
+          id: _.uniqueId(),
+          name: "鄭雅方",
+          imgURL: require("../images/fan.png"),
+          position: "APP Girls 創辦人",
+          SNS: "https://www.facebook.com/groups/1260405513988915/"
         }
       ]
     },
