@@ -522,58 +522,51 @@ export default class App extends PureComponent {
       ]
     }
   ];
-  /*
+  
   sponors = [
     {
-        id: _.uniqueId(),
-        imgURL: require("../images/logo_esun.png"),
-        link: "https://www.esunbank.com.tw/",
-        alt: "Esun Bank",
-        degree: "黃金贊助"
+      id: _.uniqueId(),
+      degree:"鑽石贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_17_Media.png"),
+          link: "https://m17.asia/",
+          alt: "17 Media"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      imgURL: require("../images/logo_dcard.png"),
-      link: "https://www.dcard.tw/",
-      alt: "Dcard",
-      degree: "黃金贊助"
+      degree:"白銀贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_grindr.png"),
+          link: "https://www.grindr.com/",
+          alt: "Grindr"
+        },
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_ichef.jpeg"),
+          link: "https://www.ichefpos.com/zh-tw",
+          alt: "iChef"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      imgURL: require("../images/logo_pic-collage.png"),
-      link: "https://cardinalblue.com/",
-      alt: "Cardinal Blue",
-      degree: "白銀贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_ichef.jpeg"),
-      link: "https://www.ichefpos.com/zh-tw",
-      alt: "iChef",
-      degree: "白銀贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_catchplay.png"),
-      link: "https://www.catchplay.com/tw",
-      alt: "Catch Play",
-      degree: "青銅贊助"
-    },
-    {
-        id: _.uniqueId(),
-        imgURL: require("../images/logo_keyxentic.png"),
-        link: "https://www.keyxentic.com/",
-        alt: "KeyXentic",
-        degree: "青銅贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_5xruby.tw.png"),
-      link: "https://5xruby.tw/",
-      alt: "5xRuby",
-      degree: "設備贊助"
+      degree:"青銅贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_cake_resume.png"),
+          link: "https://www.cakeresume.com/zh-TW",
+          alt: "CakeResume"
+        }
+      ]
     }
-  ];*/
+  ];
 
   partyEvents = [
     {
@@ -715,25 +708,20 @@ export default class App extends PureComponent {
     }
     </div>
   ));
-  /*_.map(this.staff, ({ id, imgURL, alt, name, position, SNS }) => (
-      <a key={id} href={SNS} target="_blank">
-        <div className="app__speaker">
-          <img className="app__speaker-img" src={imgURL} alt={alt} />
-          <p className="app__speaker-name">
-            <strong>{name}</strong>
-          </p>
-          <p className="app__speaker-position">{position}</p>
-        </div>
-      </a>
-    ));*/
 
   renderSponsors = () =>
-    _.map(this.sponors, ({ id, imgURL, link, alt, degree }) => (
-      <div key={id} className="app__sponsor">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img className="app__sponsor-logo" src={imgURL} alt={alt} />
-          <div className="app__sponsor-degree">{degree}</div>
-        </a>
+    _.map(this.sponors, ({ id, degree, sponorList }) => (
+      <div key= {id} className= "staff_team_container">
+       <div className="section_sub_title">{degree}</div>
+       {
+         sponorList.map( ({id,imgURL,link,alt}) => 
+          <div key={id} className="app__sponsor">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+          </a>
+         </div>
+        )
+      }
       </div>
     ));
 
@@ -870,6 +858,7 @@ export default class App extends PureComponent {
           <div className="app__section">
           <div className="section_container">
             <div className="app__title"><a>Sponsors</a><span>贊助</span></div>
+            {this.renderSponsors()}
             </div>
           </div>
           <div className="app__section">
