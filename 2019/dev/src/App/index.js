@@ -9,7 +9,7 @@ import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
 import TableRow from "../components/TableRow";
-
+import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
 
@@ -308,7 +308,7 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       imgURL:
-        "https://pbs.twimg.com/profile_images/2904865970/141f9a79f4c6fafd0c645e8609e3d295_400x400.jpeg",
+        "https://avatars0.githubusercontent.com/u/53011?s=400&v=4",
       alt: "",
       name: "Zonble",
       position: "",
@@ -320,128 +320,265 @@ export default class App extends PureComponent {
   staff = [
     {
       id: _.uniqueId(),
-      name: "Hokila",
-      imgURL:
-        "https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg",
-      position: "iOS Evangelist / Trello Lover/ Father",
-      SNS: "https://www.facebook.com/profile.php?id=100002142768087"
+      teamName: "總召",
+      memberList:[
+        {
+          id: _.uniqueId(),
+          name: "Hokila",
+          imgURL: "https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg",
+          position: "Father/ Trello Lover",
+          SNS: "https://twitter.com/hokilaJ"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      name: "Hanyu Chen",
-      imgURL: require("../images/tGm55idg.png"),
-      position: "iOS Developer",
-      SNS: "https://www.facebook.com/hanyu.chen.518"
+      teamName: "場務組",
+      memberList: [
+        {
+          id: _.uniqueId(),
+          name: "Dada",
+          imgURL: "https://pbs.twimg.com/profile_images/899649908466110464/0mMbdnp1_400x400.jpg",
+          position: "iOS Developer @ KKBOX",
+          SNS: "https://twitter.com/nalydadad"
+        },
+        {
+          id: _.uniqueId(),
+          name: "BigRoot",
+          imgURL: require("../images/BigRoot.jpeg"),
+          position: "KKBOX iOS Developer",
+          SNS: "https://twitter.com/BigRootHsu"
+        },
+        {
+          id: _.uniqueId(),
+          name: "JimmyLiao",
+          imgURL: "https://pbs.twimg.com/profile_images/467224301154742272/1G8N0p-H_400x400.jpeg",
+          position: "Jimmyliao",
+          SNS: "https://twitter.com/jimmyliao"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Kennedy",
+          imgURL: require("../images/default_portrait.png"),
+          position: "iOS Developer ",
+          SNS: "#"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Luke Wu",
+          imgURL: "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/46772801_2477584358948814_2304539628373278720_o.jpg?_nc_cat=108&_nc_oc=AQlWdzKLIrFXPY_McU47Ns9uxU4ya3RlSZ4SHcf4WHcd5BKKB17ZUn0YW9doxLt_rGE&_nc_ht=scontent.ftpe7-3.fna&oh=1fc3c8d5fd5b1369ed9ac6ec0f3c2847&oe=5DD6AA3B",
+          position: "iOS Instructor at AppWorks School",
+          SNS: "https://www.facebook.com/mvp0627"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Toby Hsu",
+          imgURL: "https://pbs.twimg.com/profile_images/1003327371619864576/tVVbiT6w_400x400.jpg",
+          position: "tvOS Dev @ CATCHPLAY",
+          SNS: "https://twitter.com/HsuToby"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Will Chen",
+          imgURL: "https://pbs.twimg.com/profile_images/3713259981/4ab5b44b5cc6817e117866d8ac4c2c57_400x400.jpeg",
+          position: "iOS Developer",
+          SNS: "https://twitter.com/willchen00"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      name: "John Lin",
-      imgURL: "https://avatars3.githubusercontent.com/u/529248?s=460&v=4",
-      position: "Swift Taipei Organizer",
-      SNS: "https://twitter.com/johnlinvc"
+      teamName: "議程組",
+      memberList: [
+        {
+          id: _.uniqueId(),
+          name: "Superbil",
+          imgURL: require("../images/superbil.png"),
+          position: "Software Freelancer",
+          SNS: "https://twitter.com/superbil"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Johnny Sung",
+          imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t31.0-1/1167538_698358250174703_2085038037_o.jpg?_nc_cat=101&_nc_oc=AQnf6Q7ODj0uYCCQ7wMr8WolyN5ti8NWYdKI60V9816chUGzekMD3HtVYVzpUp-sHDI&_nc_ht=scontent.ftpe7-4.fna&oh=a9bb04261127065a2aabbea214b0c1a0&oe=5DA6867A",
+          position: "iOS / Android Developer",
+          SNS: "https://fb.me/j796160836"
+        },
+        {
+          id: _.uniqueId(),
+          name: "MarkFly",
+          imgURL: require("../images/MarkFly.png"),
+          position: "iOS developer learning Android",
+          SNS: "https://www.facebook.com/mark33699"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Mike",
+          imgURL: require("../images/Chou_Mike.jpeg"),
+          position: "Rookie iOS Developer",
+          SNS: "https://www.facebook.com/mikechouo"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Steve Sun",
+          imgURL: "https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c0.0.958.958a/49947006_10161406364485525_1277997798444236800_n.jpg?_nc_cat=111&_nc_oc=AQmM0r4jf8YeK5BfMbJUyDmJ1k06oxvCwUnqOSG9Xl-9ode19JMVFCNeBXpsGNg5OL4&_nc_ht=scontent.ftpe7-2.fna&oh=1cf19488ae7e5f32032a18ed8716703b&oe=5DE872DC",
+          position: "iOS Developer @ Hootsuite",
+          SNS: "https://fb.me/steve.sun.125"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      name: "ethanhuang13",
-      imgURL:
-        "https://s.gravatar.com/avatar/61a2325aa2033a3d43c8edfb43718562?s=200",
-      position: "iOS Dev @ CATCHPLAY",
-      SNS: "https://twitter.com/ethanhuang13"
+      teamName: "設計組",
+      memberList: [
+        {
+          id: _.uniqueId(),
+          name: "大軍",
+          imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/65925674_2804262319590234_8548913230506885120_o.jpg?_nc_cat=107&_nc_oc=AQn8BtfdoRdPHG0GlOvYwrK3burw1MMuqh3D5q6UnqQm3t6iZP1kTIUwfV3-jvt0UwM&_nc_ht=scontent.ftpe7-4.fna&oh=36c4bfe364a77298951a5dcd5cb4f24b&oe=5DE8E668",
+          position: "程式、平面、動態設計都很有興趣，喜歡交朋友歡迎認識。",
+          SNS: "https://www.facebook.com/profile.php?id=100000194796912"
+        },
+        {
+          id: _.uniqueId(),
+          name: "OOBE",
+          imgURL: "https://pbs.twimg.com/profile_images/1152077514484797440/EeKrsTXU_400x400.png",
+          position: "Producer",
+          SNS: "https://twitter.com/OOBE"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Yoda",
+          imgURL: require("../images/Yoda.jpg"),
+          position: "Jedi / Designer / Developer",
+          SNS: "https://www.facebook.com/YongSaingWang"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      name: "Hao Lee",
-      imgURL:
-        "https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200",
-      position: "Software Engineer at DYLAN-TEK CO., LTD.",
-      SNS: "https://twitter.com/twhaolee"
+      teamName: "宣傳組",
+      memberList: [
+        {
+          id: _.uniqueId(),
+          name: "13 一三",
+          imgURL: "https://pbs.twimg.com/profile_images/1134379227145310209/3Nu6c7zn_400x400.jpg",
+          position: "I write cool apps for living.",
+          SNS: "https://twitter.com/ethanhuang13"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Chung",
+          imgURL: "https://pbs.twimg.com/profile_images/1137491029274218496/5iK8PhHm_400x400.png",
+          position: "iOS Evangelist / Consultant / Trainer /Developer",
+          SNS: "https://twitter.com/ChungPlusDev"
+        },
+        {
+          id: _.uniqueId(),
+          name: "鄭雅方",
+          imgURL: require("../images/fan.png"),
+          position: "APP Girls 創辦人",
+          SNS: "https://www.facebook.com/groups/1260405513988915/"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      name: "Welly",
-      imgURL: require("../images/meme.png"),
-      position: "F2E at KKStream",
-      SNS: "https://github.com/WellyShen"
+      teamName: "贊助組",
+      memberList: [
+        {
+          id: _.uniqueId(),
+          name: "陳涵宇",
+          imgURL: require("../images/hanyu_avatar.png"),
+          position: "我後面有一隻毛毛蟲。",
+          SNS: "https://www.facebook.com/hanyu.chen.518"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Bob Chang",
+          imgURL: "https://pbs.twimg.com/profile_images/794403929849085952/YITUEy7x_400x400.jpg",
+          position: "iOS dev chicken",
+          SNS: "https://twitter.com/bob910078"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Dan",
+          imgURL: require("../images/Dan_Avatar.jpg"),
+          position: "iOS Developer @Readmoo, Monster Hunter, Pokémon Master.",
+          SNS: "https://twitter.com/phy1988"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Joe Chen",
+          imgURL: require("../images/joe_chen.jpg"),
+          position: "我程式不會動，我不知道為什麼；我程式會動，我不知道為什麼",
+          SNS: "https://twitter.com/joe_trash_talk"
+        },
+        {
+          id: _.uniqueId(),
+          name: "Tank",
+          imgURL: "https://pbs.twimg.com/profile_images/725576374518312961/xnxZ-04v_400x400.jpg",
+          position: "iOS Developer at KKday",
+          SNS: "https://twitter.com/tank1005"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      imgURL: require("../images/10636419_10203880244832112_3086301521967770082_o.jpg"),
-      name: "Joe Chen",
-      position: "Software Engineer",
-      SNS: "#"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/Hanpo_Avatar.jpg"),
-      name: "Hanpo",
-      position: "UI Design Engineer at KeyXentic",
-      SNS: "https://www.facebook.com/hanpo.tw"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: "https://avatars1.githubusercontent.com/u/59567?s=460&v=4",
-      name: "Superbil",
-      position: "Software Freelance",
-      SNS: "https://twitter.com/superbil"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/14362711_1443783055638586_3924866533217962148_o.jpg"),
-      name: "Dada",
-      position: "iOS Developer at KKBOX",
-      SNS: "https://twitter.com/nalydadad"
+      teamName: "財務組",
+      memberList: [
+        {
+          id: _.uniqueId(),
+          name: "Hao Lee",
+          imgURL: "https://pbs.twimg.com/profile_images/1127086336790237184/PCmBt7MO_400x400.jpg",
+          position: "macOS Developer",
+          SNS: "https://twitter.com/twhaolee"
+        }
+      ]
     }
   ];
-
+  
   sponors = [
     {
-        id: _.uniqueId(),
-        imgURL: require("../images/logo_esun.png"),
-        link: "https://www.esunbank.com.tw/",
-        alt: "Esun Bank",
-        degree: "黃金贊助"
+      id: _.uniqueId(),
+      degree:"鑽石贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_17_Media.png"),
+          link: "https://m17.asia/",
+          alt: "17 Media"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      imgURL: require("../images/logo_dcard.png"),
-      link: "https://www.dcard.tw/",
-      alt: "Dcard",
-      degree: "黃金贊助"
+      degree:"白銀贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_grindr.png"),
+          link: "https://www.grindr.com/",
+          alt: "Grindr"
+        },
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_ichef.jpeg"),
+          link: "https://www.ichefpos.com/zh-tw",
+          alt: "iChef"
+        }
+      ]
     },
     {
       id: _.uniqueId(),
-      imgURL: require("../images/logo_pic-collage.png"),
-      link: "https://cardinalblue.com/",
-      alt: "Cardinal Blue",
-      degree: "白銀贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_ichef.jpeg"),
-      link: "https://www.ichefpos.com/zh-tw",
-      alt: "iChef",
-      degree: "白銀贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_catchplay.png"),
-      link: "https://www.catchplay.com/tw",
-      alt: "Catch Play",
-      degree: "青銅贊助"
-    },
-    {
-        id: _.uniqueId(),
-        imgURL: require("../images/logo_keyxentic.png"),
-        link: "https://www.keyxentic.com/",
-        alt: "KeyXentic",
-        degree: "青銅贊助"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_5xruby.tw.png"),
-      link: "https://5xruby.tw/",
-      alt: "5xRuby",
-      degree: "設備贊助"
+      degree:"青銅贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_cake_resume.png"),
+          link: "https://www.cakeresume.com/zh-TW",
+          alt: "CakeResume"
+        }
+      ]
     }
   ];
 
@@ -566,7 +703,12 @@ export default class App extends PureComponent {
     );
 
   renderStaff = () =>
-    _.map(this.staff, ({ id, imgURL, alt, name, position, SNS }) => (
+  _.map(this.staff, ({ id,teamName, memberList }) => (
+    <div key= {id} className= "staff_team_container">
+    <div className="section_sub_title">{teamName}</div>
+    {
+      memberList.map(({ id, imgURL, alt, name, position, SNS }) =>
+
       <a key={id} href={SNS} target="_blank">
         <div className="app__speaker">
           <img className="app__speaker-img" src={imgURL} alt={alt} />
@@ -576,15 +718,24 @@ export default class App extends PureComponent {
           <p className="app__speaker-position">{position}</p>
         </div>
       </a>
-    ));
+      )
+    }
+    </div>
+  ));
 
   renderSponsors = () =>
-    _.map(this.sponors, ({ id, imgURL, link, alt, degree }) => (
-      <div key={id} className="app__sponsor">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img className="app__sponsor-logo" src={imgURL} alt={alt} />
-          <div className="app__sponsor-degree">{degree}</div>
-        </a>
+    _.map(this.sponors, ({ id, degree, sponorList }) => (
+      <div key= {id} className= "staff_team_container">
+       <div className="section_sub_title">{degree}</div>
+       {
+         sponorList.map( ({id,imgURL,link,alt}) => 
+          <div key={id} className="app__sponsor">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+          </a>
+         </div>
+        )
+      }
       </div>
     ));
 
@@ -618,43 +769,38 @@ export default class App extends PureComponent {
               9/21-9/22
             </p>
           </div>
+          <div className = "logo-container-fullscreen-mask-container">
           <div className = "logo-container-fullscreen-mask"></div>
+          <div className = "logo-container-fullscreen-mask-2-container">
+          <div className = "logo-container-fullscreen-mask-2-top"></div>
+          <div className = "logo-container-fullscreen-mask-2-bottom"></div>
+          </div>
+
+          </div>
         </div>
         <div className="app__container">
-          <div className="app__section">
-            <div className="app__title">Keynote Speakers</div>
-            <div className="app__speaker-container">
-              {this.renderSpeakers()}
+          <div className="empty_section">
+            <div className="section_action_container">
+              <ActionButton title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" />             
+             </div>
+             </div>
+          <div className="app__section main_section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
+            <div className="main_section_container">
+              <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
+              <div className="app__speaker-container">
+                {this.renderSpeakers()}
+              </div>
             </div>
           </div>
-          <div className="app__section">
-            <div className="app__title">關於 iPlayground</div>
-            <p>
-              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場兼具廣深度又有趣的 iOS 研討會。
-            </p>
-            <p>
-              2018年10月，有實戰技巧、初心者攻略、hard core 議題以及各式八卦政治學的 iPlaygrouond 華麗登場。
-            </p>
-            <p>
-              2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
-            </p>
-          </div>
-          <div className="app__section">
-            <div className="app__title">投稿指南</div>
-            <p>
-              iPlayground 接受任何與 iOS/macOS，Objective-C/Swift 開發相關的各式議題，包括軟體架構、測試技巧或者iOS政治學等，想必此刻在螢幕前的你就是想要來投稿的，那就不要再猶豫了！
-            </p>
-            <p>
-              今年對於 iOS 開發者來說可能是非常重要的一年， Swift 迎來 ABI 穩定以及 iOS 能夠更簡易地移植到 macOS 上，有更多的可能性即將發生，若你有任何特別的開發經驗，比如 backend 或 WebAssembly，我們都邀請你投稿到 iPlayground，或者是你有許多帶人的經驗或有強烈傳道授業的渴望，也歡迎來投稿我們的 workshop，你將在 workshop 裡手把手地帶其它人一起成長。
-            </p>
-            <p>
-              俗話說得好，一個人固然可以走得快，一群人才能走得遠，讓我們共同努力，走向國際。
-            </p>
-          </div>
-          <div className="app__section">
-            <div className="app__title">時程</div>
-            <div className="section_center_content">
-              <p>
+          <div className="app__section main_section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
+            <div className="main_section_container">
+             <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
+             <span className="section_tag" >議程徵稿中</span>
+             <div className="section_sub_title">時程</div>
+             <div className="section_sub_container">
+             <p>
                 2019.06.10 ・ 開放投稿
               </p>
               <p>
@@ -666,25 +812,9 @@ export default class App extends PureComponent {
               <p>
                 2019.09.21－2019.09.22 ・ 議程時間
               </p>
-            </div>
-          </div>
-          <div className="app__section">
-            <div className="app__title">身為講者</div>
-            <div className="section_content_row_container">
-              <SpeakerFeature title="一般議程" content={
-                "身為一個講者，議程長度約為 40 分鐘，你需要準備至少 30 分鐘的演講內容，並請保留 5 分鐘的時間給聽眾提問，為了讓你和聽眾在議程時有良好的互動和體驗，我們準備了講者建議與須知"
-              } />
-              <SpeakerFeature title="Workshop" content={
-                "同一般講程，我們對 Workshop 的主題並不設限，其時間長度為半天或一整天，相當於 3 或 6 小時的課程。你需要準備一個連貫的主題和可以實作的教學內容帶著學員們一起實作學習。"
-              } />
-              <SpeakerFeature title="優惠" content={
-                "身為講者可以免費獲得一張自己的入場卷以及驚喜優惠。"
-              } />
-            </div>
-          </div>
-          <div className="app__section">
-            <div className="app__title">現在就應徵</div>
-            <div className="section_center_content">
+             </div>
+              <div className="section_sub_title">現在就應徵</div>
+              <div className="section_sub_container">
               <p>
                 我們將採取匿名審稿制度來評審，歡迎下列主題投稿
               </p>
@@ -700,10 +830,58 @@ export default class App extends PureComponent {
                 - SwiftUI / Combine 入門心得分享<br/>
                 - Swift for backend、command line 或 TensorFlow 等其它開發經驗分享<br/>
               </p>
+              </div>
+             <div className="section_action_container">
+              <ActionButton title="我要投稿" link="http://cfp.iplayground.io/events/iplayground_2019" />             
+             </div>
+            </div>
+          </div>
+          <div className="app__section main_section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
+            <div className="main_section_container">
+            <div className="app__title"><span className="app__title_eng">Venue</span><span>場地</span></div>
+            <div className="section_sub_title">國立臺灣大學博雅教學館</div>
+            <div className="section_sub_container">
+              <p>106台北市大安區羅斯福路四段1號</p>
+              </div>
+            <iframe
+              title="location"
+              width="100%"
+              height="450"
+              frameBorder="0"
+              style={{ border: 0 }}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.472391335001!2d121.53459524249845!3d25.018035389196143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989d9909417%3A0x13a8ef0043681664!2z5ZyL56uL6Ie654Gj5aSn5a245Y2a6ZuF5pWZ5a246aSo!5e0!3m2!1szh-TW!2stw!4v1563616292331!5m2!1szh-TW!2stw"
+              allowFullScreen
+            />
+            </div>
+          </div>
+          <div className="app__section">
+          <div className="section_container">
+            <div className="app__title"><a>About</a><span>關於我們</span></div>
+            <p>
+              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場兼具廣深度又有趣的 iOS 研討會。
+            </p>
+            <p>
+              2018年10月，有實戰技巧、初心者攻略、hard core 議題以及各式八卦政治學的 iPlaygrouond 華麗登場。
+            </p>
+            <p>
+              2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
+            </p>
+            </div>
+          </div>
+          <div className="app__section">
+          <div className="section_container">
+            <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
+            {this.renderSponsors()}
+            </div>
+          </div>
+          <div className="app__section">
+          <div className="section_container">
+            <div className="app__title"><span className="app__title_eng">Staffs</span><span>工作人員</span></div>
+            {this.renderStaff()}
             </div>
           </div>
         </div>
-        <ActionFooter />
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>
           {showModal === "speakers" ? (
             <ModalContentSpeakers

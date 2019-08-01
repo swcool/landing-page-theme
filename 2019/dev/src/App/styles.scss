@@ -28,8 +28,30 @@ html {
     height: 0;
     border-style: solid;
     border-width: 0 0 20vmin 100vw;
-    border-color: transparent transparent #FFFFFF transparent;
+    border-color: transparent transparent #FFFFFF transparent; 
   }
+
+  .logo-container-fullscreen-mask-container {
+    position: relative;
+  }
+
+  .logo-container-fullscreen-mask-2-container {
+    position: absolute;
+    bottom: 0;
+    justify-content: end;
+    align-items: end;
+    .logo-container-fullscreen-mask-2-top {
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 12vmin 100vw;
+      border-color: transparent transparent #FFFFFF33 transparent;
+    }
+    .logo-container-fullscreen-mask-2-bottom {
+      background: #FFFFFF33;
+      height: 5vmin;
+    }
+  }
+  
   .logo {
     width: 100%;
     height: auto;
@@ -53,7 +75,7 @@ html {
 }
 
 .app__container {
-  padding: 0 20px;
+  //padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,11 +134,12 @@ html {
   }
 
   .app__speaker-container {
-    text-align: center;
+    //text-align: center;
   }
   .app__speaker {
     text-align: center;
     cursor: pointer;
+    vertical-align: top;
 
     .app__speaker-img {
       width: 60%;
@@ -128,11 +151,18 @@ html {
     .app__speaker-name {
       font-size: 1.35rem;
       margin-bottom: 0;
-      color: $color--secondary;
+      background-color: rgba(0, 0, 0, 0.30);
+      color: #ffffff;
+      padding: 0.5rem 0;
+      margin: 0 15%;
+      border-radius: 8px;
+      //color: $color--secondary;
     }
 
     .app__speaker-position {
       margin-top: 0;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
       color: black;
     }
   }
@@ -153,17 +183,61 @@ html {
 
   .app__section {
     padding: 2rem 0;
-    margin: 0 40px;
+    //margin: 0 40px;
 
     p {
       font-weight: 500;
       font-size: 16px;
       line-height: 28px;
 
-      color: #333333;
+      color: #6e6e6e;
     }
   }
 
+  .main_section {
+    position: relative;
+  }
+  
+  .main_section_logo {
+    position: absolute;
+    width: 75vmin;
+    min-width: 360px;
+    left: -25vmin;
+    z-index: -1;
+  }
+
+  .main_section_container {
+    padding: 2rem 2rem;
+    margin: 30vmin -0px 0px 5vw;
+    min-height: 360px;
+    background-color: #ffffff66;
+    border-radius: 23px 0 0 23px;
+    //border: 1px solid #FFFFFF;
+    box-shadow: 0 3px 30px 2px rgba(0,0,0,0.20);
+
+    .section_tag {
+      color: #EF5FA7;
+      background-color: rgba(0,0,0,0.75);
+      border-radius: 8px;
+      font-size: 26px;
+      padding: 8px 16px;
+    }
+    
+    .section_sub_container {
+      padding-left: 2rem;
+    }
+  }
+  .empty_section {
+    margin: 0 -0px 0px 5vw;
+  }
+  .section_container {
+    padding: 2rem 2rem;
+   margin: 0 -0px 0px 5vw;
+   //min-height: 360px;
+   background-color: #ffffff66;
+   border-radius: 23px 0 0 23px;
+   box-shadow: 0 3px 30px 2px rgba(0,0,0,0.20);
+  }
   .section_content_row_container {
     display: flex;
     justify-content: space-between;
@@ -177,14 +251,29 @@ html {
   }
 
   .app__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "PingFangTC-Ultralight", "STHeitiTC-Ultralight", "STHeitiTC-Light", "Microsoft JhengHei" ;
     margin-bottom: 2.5rem;
-    text-align: center;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
+    text-align: left;
+    padding: 0 0;
+    font-size: 64px;
+    line-height: 80px;
 
-    color: #517CFF;
+    color: #333333;
+    .app__title_eng {
+      margin-right: 1rem;
+    }
+  }
+
+  .section_sub_title {
+    font-size: 24px;
+    padding: 1rem 0;
+  }
+
+  .section_action_container {
+    text-align: center;
+    padding: 16px 0;
   }
 
   hr {
@@ -226,11 +315,6 @@ html {
       }
     }
   }
-
- 
-
-
-
 
   @include screen--lg {
     .app__container {
