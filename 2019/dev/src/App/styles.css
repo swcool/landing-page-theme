@@ -182,7 +182,7 @@ html {
     font-size: 64px;
     line-height: 80px;
     color: #333333; }
-    .app__container .app__title a {
+    .app__container .app__title .app__title_eng {
       margin-right: 1rem; }
   .app__container .section_sub_title {
     font-size: 24px;

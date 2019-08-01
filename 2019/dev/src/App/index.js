@@ -787,7 +787,7 @@ export default class App extends PureComponent {
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
-              <div className="app__title"><a>Speakers</a><span>講者</span></div>
+              <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
               <div className="app__speaker-container">
                 {this.renderSpeakers()}
               </div>
@@ -796,7 +796,7 @@ export default class App extends PureComponent {
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
-             <div className="app__title"><a>Agenda</a><span>議程</span></div>
+             <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
              <span className="section_tag" >議程徵稿中</span>
              <div className="section_sub_title">時程</div>
              <div className="section_sub_container">
@@ -839,7 +839,7 @@ export default class App extends PureComponent {
           <div className="app__section main_section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
-            <div className="app__title"><a>Venue</a><span>場地</span></div>
+            <div className="app__title"><span className="app__title_eng">Venue</span><span>場地</span></div>
             <div className="section_sub_title">國立臺灣大學博雅教學館</div>
             <div className="section_sub_container">
               <p>106台北市大安區羅斯福路四段1號</p>
@@ -871,13 +871,13 @@ export default class App extends PureComponent {
           </div>
           <div className="app__section">
           <div className="section_container">
-            <div className="app__title"><a>Sponsors</a><span>贊助</span></div>
+            <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
             {this.renderSponsors()}
             </div>
           </div>
           <div className="app__section">
           <div className="section_container">
-            <div className="app__title"><a>Staffs</a><span>工作人員</span></div>
+            <div className="app__title"><span className="app__title_eng">Staffs</span><span>工作人員</span></div>
             {this.renderStaff()}
             </div>
           </div>
