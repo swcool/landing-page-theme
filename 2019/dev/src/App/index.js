@@ -320,220 +320,178 @@ export default class App extends PureComponent {
   staff = [
     {
       id: _.uniqueId(),
-      teamName: "總召",
-      memberList:[
-        {
-          id: _.uniqueId(),
-          name: "Hokila",
-          imgURL: "https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg",
-          position: "Father/ Trello Lover",
-          SNS: "https://twitter.com/hokilaJ"
-        }
-      ]
+      name: "Hokila",
+      imgURL: "https://pbs.twimg.com/profile_images/889516896004882432/c3sdNWS9_400x400.jpg",
+      position: "Father/ Trello Lover",
+      SNS: "https://twitter.com/hokilaJ"
     },
     {
       id: _.uniqueId(),
-      teamName: "場務組",
-      memberList: [
-        {
-          id: _.uniqueId(),
-          name: "Dada",
-          imgURL: "https://pbs.twimg.com/profile_images/899649908466110464/0mMbdnp1_400x400.jpg",
-          position: "iOS Developer @ KKBOX",
-          SNS: "https://twitter.com/nalydadad"
-        },
-        {
-          id: _.uniqueId(),
-          name: "BigRoot",
-          imgURL: require("../images/BigRoot.jpeg"),
-          position: "KKBOX iOS Developer",
-          SNS: "https://twitter.com/BigRootHsu"
-        },
-        {
-          id: _.uniqueId(),
-          name: "JimmyLiao",
-          imgURL: "https://pbs.twimg.com/profile_images/467224301154742272/1G8N0p-H_400x400.jpeg",
-          position: "Jimmyliao",
-          SNS: "https://twitter.com/jimmyliao"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Kennedy",
-          imgURL: require("../images/default_portrait.png"),
-          position: "iOS Developer ",
-          SNS: "#"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Luke Wu",
-          imgURL: "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/46772801_2477584358948814_2304539628373278720_o.jpg?_nc_cat=108&_nc_oc=AQlWdzKLIrFXPY_McU47Ns9uxU4ya3RlSZ4SHcf4WHcd5BKKB17ZUn0YW9doxLt_rGE&_nc_ht=scontent.ftpe7-3.fna&oh=1fc3c8d5fd5b1369ed9ac6ec0f3c2847&oe=5DD6AA3B",
-          position: "iOS Instructor at AppWorks School",
-          SNS: "https://www.facebook.com/mvp0627"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Toby Hsu",
-          imgURL: "https://pbs.twimg.com/profile_images/1003327371619864576/tVVbiT6w_400x400.jpg",
-          position: "tvOS Dev @ CATCHPLAY",
-          SNS: "https://twitter.com/HsuToby"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Will Chen",
-          imgURL: "https://pbs.twimg.com/profile_images/3713259981/4ab5b44b5cc6817e117866d8ac4c2c57_400x400.jpeg",
-          position: "iOS Developer",
-          SNS: "https://twitter.com/willchen00"
-        }
-      ]
+      name: "Dada",
+      imgURL: "https://pbs.twimg.com/profile_images/899649908466110464/0mMbdnp1_400x400.jpg",
+      position: "iOS Developer @ KKBOX",
+      SNS: "https://twitter.com/nalydadad"
     },
     {
       id: _.uniqueId(),
-      teamName: "議程組",
-      memberList: [
-        {
-          id: _.uniqueId(),
-          name: "Superbil",
-          imgURL: require("../images/superbil.png"),
-          position: "Software Freelancer",
-          SNS: "https://twitter.com/superbil"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Johnny Sung",
-          imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t31.0-1/1167538_698358250174703_2085038037_o.jpg?_nc_cat=101&_nc_oc=AQnf6Q7ODj0uYCCQ7wMr8WolyN5ti8NWYdKI60V9816chUGzekMD3HtVYVzpUp-sHDI&_nc_ht=scontent.ftpe7-4.fna&oh=a9bb04261127065a2aabbea214b0c1a0&oe=5DA6867A",
-          position: "iOS / Android Developer",
-          SNS: "https://fb.me/j796160836"
-        },
-        {
-          id: _.uniqueId(),
-          name: "MarkFly",
-          imgURL: require("../images/MarkFly.png"),
-          position: "iOS developer learning Android",
-          SNS: "https://www.facebook.com/mark33699"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Mike",
-          imgURL: require("../images/Chou_Mike.jpeg"),
-          position: "Rookie iOS Developer",
-          SNS: "https://www.facebook.com/mikechouo"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Steve Sun",
-          imgURL: "https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c0.0.958.958a/49947006_10161406364485525_1277997798444236800_n.jpg?_nc_cat=111&_nc_oc=AQmM0r4jf8YeK5BfMbJUyDmJ1k06oxvCwUnqOSG9Xl-9ode19JMVFCNeBXpsGNg5OL4&_nc_ht=scontent.ftpe7-2.fna&oh=1cf19488ae7e5f32032a18ed8716703b&oe=5DE872DC",
-          position: "iOS Developer @ Hootsuite",
-          SNS: "https://fb.me/steve.sun.125"
-        }
-      ]
+      name: "Superbil",
+      imgURL: require("../images/superbil.png"),
+      position: "Software Freelancer",
+      SNS: "https://twitter.com/superbil"
     },
     {
       id: _.uniqueId(),
-      teamName: "設計組",
-      memberList: [
-        {
-          id: _.uniqueId(),
-          name: "大軍",
-          imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/65925674_2804262319590234_8548913230506885120_o.jpg?_nc_cat=107&_nc_oc=AQn8BtfdoRdPHG0GlOvYwrK3burw1MMuqh3D5q6UnqQm3t6iZP1kTIUwfV3-jvt0UwM&_nc_ht=scontent.ftpe7-4.fna&oh=36c4bfe364a77298951a5dcd5cb4f24b&oe=5DE8E668",
-          position: "程式、平面、動態設計都很有興趣，喜歡交朋友歡迎認識。",
-          SNS: "https://www.facebook.com/profile.php?id=100000194796912"
-        },
-        {
-          id: _.uniqueId(),
-          name: "OOBE",
-          imgURL: "https://pbs.twimg.com/profile_images/1152077514484797440/EeKrsTXU_400x400.png",
-          position: "Producer",
-          SNS: "https://twitter.com/OOBE"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Yoda",
-          imgURL: require("../images/Yoda.jpg"),
-          position: "Jedi / Designer / Developer",
-          SNS: "https://www.facebook.com/YongSaingWang"
-        }
-      ]
+      name: "大軍",
+      imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/65925674_2804262319590234_8548913230506885120_o.jpg?_nc_cat=107&_nc_oc=AQn8BtfdoRdPHG0GlOvYwrK3burw1MMuqh3D5q6UnqQm3t6iZP1kTIUwfV3-jvt0UwM&_nc_ht=scontent.ftpe7-4.fna&oh=36c4bfe364a77298951a5dcd5cb4f24b&oe=5DE8E668",
+      position: "程式、平面、動態設計都很有興趣，喜歡交朋友歡迎認識。",
+      SNS: "https://www.facebook.com/profile.php?id=100000194796912"
     },
     {
       id: _.uniqueId(),
-      teamName: "宣傳組",
-      memberList: [
-        {
-          id: _.uniqueId(),
-          name: "13 一三",
-          imgURL: "https://pbs.twimg.com/profile_images/1134379227145310209/3Nu6c7zn_400x400.jpg",
-          position: "I write cool apps for living.",
-          SNS: "https://twitter.com/ethanhuang13"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Chung",
-          imgURL: "https://pbs.twimg.com/profile_images/1137491029274218496/5iK8PhHm_400x400.png",
-          position: "iOS Evangelist / Consultant / Trainer /Developer",
-          SNS: "https://twitter.com/ChungPlusDev"
-        },
-        {
-          id: _.uniqueId(),
-          name: "鄭雅方",
-          imgURL: require("../images/fan.png"),
-          position: "APP Girls 創辦人",
-          SNS: "https://www.facebook.com/groups/1260405513988915/"
-        }
-      ]
+      name: "13 一三",
+      imgURL: "https://pbs.twimg.com/profile_images/1134379227145310209/3Nu6c7zn_400x400.jpg",
+      position: "I write cool apps for living.",
+      SNS: "https://twitter.com/ethanhuang13"
     },
     {
       id: _.uniqueId(),
-      teamName: "贊助組",
-      memberList: [
-        {
-          id: _.uniqueId(),
-          name: "陳涵宇",
-          imgURL: require("../images/hanyu_avatar.png"),
-          position: "我後面有一隻毛毛蟲。",
-          SNS: "https://www.facebook.com/hanyu.chen.518"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Bob Chang",
-          imgURL: "https://pbs.twimg.com/profile_images/794403929849085952/YITUEy7x_400x400.jpg",
-          position: "iOS dev chicken",
-          SNS: "https://twitter.com/bob910078"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Dan",
-          imgURL: require("../images/Dan_Avatar.jpg"),
-          position: "iOS Developer @Readmoo, Monster Hunter, Pokémon Master.",
-          SNS: "https://twitter.com/phy1988"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Joe Chen",
-          imgURL: require("../images/joe_chen.jpg"),
-          position: "我程式不會動，我不知道為什麼；我程式會動，我不知道為什麼",
-          SNS: "https://twitter.com/joe_trash_talk"
-        },
-        {
-          id: _.uniqueId(),
-          name: "Tank",
-          imgURL: "https://pbs.twimg.com/profile_images/725576374518312961/xnxZ-04v_400x400.jpg",
-          position: "iOS Developer at KKday",
-          SNS: "https://twitter.com/tank1005"
-        }
-      ]
+      name: "陳涵宇",
+      imgURL: require("../images/hanyu_avatar.png"),
+      position: "我後面有一隻毛毛蟲。",
+      SNS: "https://www.facebook.com/hanyu.chen.518"
     },
     {
       id: _.uniqueId(),
-      teamName: "財務組",
-      memberList: [
-        {
-          id: _.uniqueId(),
-          name: "Hao Lee",
-          imgURL: "https://pbs.twimg.com/profile_images/1127086336790237184/PCmBt7MO_400x400.jpg",
-          position: "macOS Developer",
-          SNS: "https://twitter.com/twhaolee"
-        }
-      ]
+      name: "Hao Lee",
+      imgURL: "https://pbs.twimg.com/profile_images/1127086336790237184/PCmBt7MO_400x400.jpg",
+      position: "macOS Developer",
+      SNS: "https://twitter.com/twhaolee"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Luke Wu",
+      imgURL: "https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/46772801_2477584358948814_2304539628373278720_o.jpg?_nc_cat=108&_nc_oc=AQlWdzKLIrFXPY_McU47Ns9uxU4ya3RlSZ4SHcf4WHcd5BKKB17ZUn0YW9doxLt_rGE&_nc_ht=scontent.ftpe7-3.fna&oh=1fc3c8d5fd5b1369ed9ac6ec0f3c2847&oe=5DD6AA3B",
+      position: "iOS Instructor at AppWorks School",
+      SNS: "https://www.facebook.com/mvp0627"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Will Chen",
+      imgURL: "https://pbs.twimg.com/profile_images/3713259981/4ab5b44b5cc6817e117866d8ac4c2c57_400x400.jpeg",
+      position: "iOS Developer",
+      SNS: "https://twitter.com/willchen00"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Toby Hsu",
+      imgURL: "https://pbs.twimg.com/profile_images/1003327371619864576/tVVbiT6w_400x400.jpg",
+      position: "tvOS Dev @ CATCHPLAY",
+      SNS: "https://twitter.com/HsuToby"
+    },
+    {
+      id: _.uniqueId(),
+      name: "BigRoot",
+      imgURL: require("../images/BigRoot.jpeg"),
+      position: "KKBOX iOS Developer",
+      SNS: "https://twitter.com/BigRootHsu"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Chung",
+      imgURL: "https://pbs.twimg.com/profile_images/1137491029274218496/5iK8PhHm_400x400.png",
+      position: "iOS Evangelist / Consultant / Trainer /Developer",
+      SNS: "https://twitter.com/ChungPlusDev"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Tank",
+      imgURL: "https://pbs.twimg.com/profile_images/725576374518312961/xnxZ-04v_400x400.jpg",
+      position: "iOS Developer at KKday",
+      SNS: "https://twitter.com/tank1005"
+    },
+    {
+      id: _.uniqueId(),
+      name: "鄭雅方",
+      imgURL: require("../images/fan.png"),
+      position: "APP Girls 創辦人",
+      SNS: "https://www.facebook.com/groups/1260405513988915/"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Steve Sun",
+      imgURL: "https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c0.0.958.958a/49947006_10161406364485525_1277997798444236800_n.jpg?_nc_cat=111&_nc_oc=AQmM0r4jf8YeK5BfMbJUyDmJ1k06oxvCwUnqOSG9Xl-9ode19JMVFCNeBXpsGNg5OL4&_nc_ht=scontent.ftpe7-2.fna&oh=1cf19488ae7e5f32032a18ed8716703b&oe=5DE872DC",
+      position: "iOS Developer @ Hootsuite",
+      SNS: "https://fb.me/steve.sun.125"
+    },
+    {
+      id: _.uniqueId(),
+      name: "MarkFly",
+      imgURL: require("../images/MarkFly.png"),
+      position: "iOS developer learning Android",
+      SNS: "https://www.facebook.com/mark33699"
+    },
+    {
+      id: _.uniqueId(),
+      name: "JimmyLiao",
+      imgURL: "https://pbs.twimg.com/profile_images/467224301154742272/1G8N0p-H_400x400.jpeg",
+      position: "Jimmyliao",
+      SNS: "https://twitter.com/jimmyliao"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Dan",
+      imgURL: require("../images/Dan_Avatar.jpg"),
+      position: "iOS Developer @Readmoo, Monster Hunter, Pokémon Master.",
+      SNS: "https://twitter.com/phy1988"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Mike",
+      imgURL: require("../images/Chou_Mike.jpeg"),
+      position: "Rookie iOS Developer",
+      SNS: "https://www.facebook.com/mikechouo"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Bob Chang",
+      imgURL: "https://pbs.twimg.com/profile_images/794403929849085952/YITUEy7x_400x400.jpg",
+      position: "iOS dev chicken",
+      SNS: "https://twitter.com/bob910078"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Joe Chen",
+      imgURL: require("../images/joe_chen.jpg"),
+      position: "我程式不會動，我不知道為什麼；我程式會動，我不知道為什麼",
+      SNS: "https://twitter.com/joe_trash_talk"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Kennedy",
+      imgURL: require("../images/default_portrait.png"),
+      position: "iOS Developer ",
+      SNS: "#"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Johnny Sung",
+      imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t31.0-1/1167538_698358250174703_2085038037_o.jpg?_nc_cat=101&_nc_oc=AQnf6Q7ODj0uYCCQ7wMr8WolyN5ti8NWYdKI60V9816chUGzekMD3HtVYVzpUp-sHDI&_nc_ht=scontent.ftpe7-4.fna&oh=a9bb04261127065a2aabbea214b0c1a0&oe=5DA6867A",
+      position: "iOS / Android Developer",
+      SNS: "https://fb.me/j796160836"
+    },
+    {
+      id: _.uniqueId(),
+      name: "OOBE",
+      imgURL: "https://pbs.twimg.com/profile_images/1152077514484797440/EeKrsTXU_400x400.png",
+      position: "Producer",
+      SNS: "https://twitter.com/OOBE"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Yoda",
+      imgURL: require("../images/Yoda.jpg"),
+      position: "Jedi / Designer / Developer",
+      SNS: "https://www.facebook.com/YongSaingWang"
     }
   ];
   
@@ -703,12 +661,8 @@ export default class App extends PureComponent {
     );
 
   renderStaff = () =>
-  _.map(this.staff, ({ id,teamName, memberList }) => (
-    <div key= {id} className= "staff_team_container">
-    <div className="section_sub_title">{teamName}</div>
-    {
-      memberList.map(({ id, imgURL, alt, name, position, SNS }) =>
-
+  _.map(this.staff, ({ id, imgURL, alt, name, position, SNS }) => (
+    
       <a key={id} href={SNS} target="_blank">
         <div className="app__speaker">
           <img className="app__speaker-img" src={imgURL} alt={alt} />
@@ -718,9 +672,7 @@ export default class App extends PureComponent {
           <p className="app__speaker-position">{position}</p>
         </div>
       </a>
-      )
-    }
-    </div>
+    
   ));
 
   renderSponsors = () =>
