@@ -492,6 +492,34 @@ export default class App extends PureComponent {
       imgURL: require("../images/Yoda.jpg"),
       position: "Jedi / Designer / Developer",
       SNS: "https://www.facebook.com/YongSaingWang"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Gerry",
+      imgURL: "https://pbs.twimg.com/profile_images/1135207851876442113/l0_DV0k2_400x400.png",
+      position: "佛心軟體工程師",
+      SNS: "https://twitter.com/gerry73740659"
+    },
+    {
+      id: _.uniqueId(),
+      name: "TaiHsin",
+      imgURL: "https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/61659205_2647287845285510_1119561316797775872_n.jpg?_nc_cat=106&_nc_eui2=AeFZx0GiOwtYtNlxMq7WCUGIzUegN3bEGPFSEjItGVxI4U0IE-61W75mfgKHeDowFZzlwqG-d1hHrtVrkDb3rcp5ThxEgEEF3Kxa0oya_jb3PQ&_nc_oc=AQks4biU2W6ncurAJA-fzS0ThZuJKCmfqFtjfQKG2AcdazwSScJHm_JxqYaI3J9M0WI&_nc_pt=1&_nc_ht=scontent.ftpe7-1.fna&oh=352b182b2c8002c8486fdb8ed09a43e1&oe=5DD8FE79",
+      position: "iOS Developer @ KKBOX",
+      SNS: "https://www.facebook.com/peter.lee.752487"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Pofat",
+      imgURL: require("../images/pofat_avatar.jpg"),
+      position: "本鵝用翅膀寫 code",
+      SNS: "https://twitter.com/PofatTseng"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Cindy",
+      imgURL: require("../images/Cindy_Avatar.jpeg"),
+      position: "iOS Developer @H2Sync",
+      SNS: "https://www.facebook.com/hsin.chen.10"
     }
   ];
   
