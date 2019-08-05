@@ -514,6 +514,12 @@ export default class App extends PureComponent {
       sponorList: [
         {
           id: _.uniqueId(),
+          imgURL: require("../images/logo_cake_resume.png"),
+          link: "https://www.cakeresume.com/zh-TW",
+          alt: "CakeResume"
+        },
+        {
+          id: _.uniqueId(),
           imgURL: require("../images/logo_grindr.png"),
           link: "https://www.grindr.com/",
           alt: "Grindr"
@@ -523,18 +529,6 @@ export default class App extends PureComponent {
           imgURL: require("../images/logo_ichef.jpeg"),
           link: "https://www.ichefpos.com/zh-tw",
           alt: "iChef"
-        }
-      ]
-    },
-    {
-      id: _.uniqueId(),
-      degree:"青銅贊助",
-      sponorList: [
-        {
-          id: _.uniqueId(),
-          imgURL: require("../images/logo_cake_resume.png"),
-          link: "https://www.cakeresume.com/zh-TW",
-          alt: "CakeResume"
         }
       ]
     }
