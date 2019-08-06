@@ -1,10 +1,11 @@
 {
   "main.css": "static/css/main.688875d8.css",
   "main.css.map": "static/css/main.688875d8.css.map",
-  "main.js": "static/js/main.73b2f2db.js",
-  "main.js.map": "static/js/main.73b2f2db.js.map",
+  "main.js": "static/js/main.be408d4e.js",
+  "main.js.map": "static/js/main.be408d4e.js.map",
   "static/media/BigRoot.jpeg": "static/media/BigRoot.a2a7eea2.jpeg",
   "static/media/Chou_Mike.jpeg": "static/media/Chou_Mike.a75df77d.jpeg",
+  "static/media/Cindy_Avatar.jpeg": "static/media/Cindy_Avatar.3923767b.jpeg",
   "static/media/Dan_Avatar.jpg": "static/media/Dan_Avatar.1e9d4983.jpg",
   "static/media/MarkFly.png": "static/media/MarkFly.66caf2da.png",
   "static/media/Yoda.jpg": "static/media/Yoda.b8289e5b.jpg",
@@ -17,5 +18,6 @@
   "static/media/logo_grindr.png": "static/media/logo_grindr.507c8db5.png",
   "static/media/logo_iplayground.png": "static/media/logo_iplayground.da8f6e68.png",
   "static/media/logo_swift_girls.png": "static/media/logo_swift_girls.e221c42c.png",
+  "static/media/pofat_avatar.jpg": "static/media/pofat_avatar.5caf69e4.jpg",
   "static/media/superbil.png": "static/media/superbil.3ddef241.png"
 }
