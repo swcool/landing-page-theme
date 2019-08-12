@@ -594,6 +594,18 @@ export default class App extends PureComponent {
           alt: "iChef"
         }
       ]
+    },
+    {
+      id: _.uniqueId(),
+      degree:"青銅贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_coss_system.png"),
+          link: "http://www.coss.com.tw/about.html",
+          alt: "COSS SYSTEM INC 震江系統"
+        }
+      ]
     }
   ];
 
