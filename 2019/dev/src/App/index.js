@@ -818,7 +818,7 @@ export default class App extends PureComponent {
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
-             <span className="section_tag" >議程徵稿中</span>
+             <span className="section_tag" >議程審稿中</span>
              <div className="section_sub_title">時程</div>
              <div className="section_sub_container">
              <p>
@@ -833,27 +833,6 @@ export default class App extends PureComponent {
               <p>
                 2019.09.21－2019.09.22 ・ 議程時間
               </p>
-             </div>
-              <div className="section_sub_title">現在就應徵</div>
-              <div className="section_sub_container">
-              <p>
-                我們將採取匿名審稿制度來評審，歡迎下列主題投稿
-              </p>
-              <p>
-                - Objective-C / Swift framework 使用心得分享<br/>
-                - iOS / Mac 軟體開發經驗分享<br/>
-                - AR / Metal 等開發經驗分享<br/>
-                - 遊戲開發經驗分享<br/>
-                - 軟體架構規畫或使用經驗分享<br/>
-                - UI Test / Unit Test / Refactor 軟體品質經驗分享<br/>
-                - UI / UX 設計經驗分享<br/>
-                - Agile / Scrum 經驗心得分享<br/>
-                - SwiftUI / Combine 入門心得分享<br/>
-                - Swift for backend、command line 或 TensorFlow 等其它開發經驗分享<br/>
-              </p>
-              </div>
-             <div className="section_action_container">
-              <ActionButton title="我要投稿" link="http://cfp.iplayground.io/events/iplayground_2019" />             
              </div>
             </div>
           </div>
