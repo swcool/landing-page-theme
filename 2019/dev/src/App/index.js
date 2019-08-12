@@ -520,6 +520,41 @@ export default class App extends PureComponent {
       imgURL: require("../images/Cindy_Avatar.jpeg"),
       position: "iOS Developer @H2Sync",
       SNS: "https://www.facebook.com/hsin.chen.10"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Jeffrey Wang",
+      imgURL: require("../images/jeffery_wang.jpg"),
+      position: "Tech Lover / PM",
+      SNS: "https://www.facebook.com/jeffrey.wang.505"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Allen Lai",
+      imgURL: "https://pbs.twimg.com/profile_images/1057560139979403264/eTMrQlwF_400x400.jpg",
+      position: "iOS Developer",
+      SNS: "https://twitter.com/AllenEzailLai"
+    },
+    {
+      id: _.uniqueId(),
+      name: "啊嘶",
+      imgURL: "https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/13427884_1244017895610241_2033440176129311505_n.jpg?_nc_cat=100&_nc_oc=AQmuXxXkMsURvTUifjSXUob7ueKI21PxTWFYVVpEQ384hXsMuq9fWphMcK6BPSbKss0&_nc_ht=scontent.ftpe8-2.fna&oh=aa58a31cfe2cc79484c19e80eedca80a&oe=5DDB4A91",
+      position: "程式碼行數減少，體重卻默默上升",
+      SNS: "https://www.facebook.com/profile.php?id=100000061272837"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Mack Liu",
+      imgURL: "https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-1/11954677_964907706864318_6301963875485180400_n.jpg?_nc_cat=110&_nc_oc=AQm1YylyPPuP4vbPR3WpCSmcR7-76ABGn49DhVnhr8bVJLOwYQWoik_pnwU9Hztk63Q&_nc_ht=scontent.ftpe8-4.fna&oh=ad8f5c6c80d1855271c9edb1f12ba896&oe=5DC80771",
+      position: "iOS / .NET Developer ",
+      SNS: "https://www.facebook.com/bazhe1106"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Lim Yang",
+      imgURL: "https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/38405109_2257559720937929_6064429500521775104_o.jpg?_nc_cat=101&_nc_oc=AQmGev9eTQc-Ml5KpknIUkcGVGBOzBP1LSll8DRsfvs5SAT8rp10zjlXswuEQvztcSk&_nc_ht=scontent.ftpe8-2.fna&oh=e0af80971ae4fca5b5caab963cd505e1&oe=5DCBF420",
+      position: "system engineer at Thinking Software",
+      SNS: "https://www.facebook.com/arawn.yang"
     }
   ];
   
