@@ -555,6 +555,20 @@ export default class App extends PureComponent {
       imgURL: "https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/38405109_2257559720937929_6064429500521775104_o.jpg?_nc_cat=101&_nc_oc=AQmGev9eTQc-Ml5KpknIUkcGVGBOzBP1LSll8DRsfvs5SAT8rp10zjlXswuEQvztcSk&_nc_ht=scontent.ftpe8-2.fna&oh=e0af80971ae4fca5b5caab963cd505e1&oe=5DCBF420",
       position: "system engineer at Thinking Software",
       SNS: "https://www.facebook.com/arawn.yang"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Alice",
+      imgURL: "https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-1/25994495_1601902809900464_3240008977488848034_n.jpg?_nc_cat=106&_nc_oc=AQkGUigNseJw8N4y_F-P4_wWrSX1prjlF4scEVj86uUWT594Qilr6qnNrYb5EnHMDNk&_nc_ht=scontent.ftpe8-3.fna&oh=5a2a7ec1a558845c63b98243d5b7862c&oe=5DD41D1D",
+      position: "iOS developer @H2sync",
+      SNS: "https://www.facebook.com/profile.php?id=100002422822162"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Annie Li",
+      imgURL: "https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-1/15727063_10206383523146622_2368898774699621805_n.jpg?_nc_cat=102&_nc_oc=AQko1zFif55xQSmTWlZEHhiJLrHhp0mDFAEPFsY5kUqKsu2YTTynkCx3q2xi4kMp7AI&_nc_ht=scontent.ftpe8-4.fna&oh=6f2fc6071e9556575381364908e84943&oe=5DECAEED",
+      position: "iOS Developer @ KKBOX",
+      SNS: "https://www.facebook.com/profile.php?id=1824210769"
     }
   ];
   
