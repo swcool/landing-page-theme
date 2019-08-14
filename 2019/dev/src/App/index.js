@@ -659,6 +659,12 @@ export default class App extends PureComponent {
   coOrganisers = [
     {
       id: _.uniqueId(),
+      imgURL: require("../images/logo_twdc.png"),
+      link: "https://aatp.com.tw/",
+      alt: "TWDC"
+    },
+    {
+      id: _.uniqueId(),
       imgURL: require("../images/logo_cocoaheads_taipei.png"),
       link: "https://www.facebook.com/groups/cocoaheads.taipei/",
       alt: "Cocoaheads Taipei"
@@ -887,6 +893,12 @@ export default class App extends PureComponent {
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
             {this.renderSponsors()}
+            </div>
+          </div>
+          <div className="app__section">
+          <div className="section_container">
+            <div className="app__title"><span className="app__title_eng">Co-organizers</span><span>合作夥伴</span></div>
+            {this.renderCoOrganisers()}
             </div>
           </div>
           <div className="app__section">
