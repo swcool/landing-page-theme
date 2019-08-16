@@ -520,6 +520,55 @@ export default class App extends PureComponent {
       imgURL: require("../images/Cindy_Avatar.jpeg"),
       position: "iOS Developer @H2Sync",
       SNS: "https://www.facebook.com/hsin.chen.10"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Jeffrey Wang",
+      imgURL: require("../images/jeffery_wang.jpg"),
+      position: "Tech Lover / PM",
+      SNS: "https://www.facebook.com/jeffrey.wang.505"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Allen Lai",
+      imgURL: "https://pbs.twimg.com/profile_images/1057560139979403264/eTMrQlwF_400x400.jpg",
+      position: "iOS Developer",
+      SNS: "https://twitter.com/AllenEzailLai"
+    },
+    {
+      id: _.uniqueId(),
+      name: "啊嘶",
+      imgURL: "https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/13427884_1244017895610241_2033440176129311505_n.jpg?_nc_cat=100&_nc_oc=AQmuXxXkMsURvTUifjSXUob7ueKI21PxTWFYVVpEQ384hXsMuq9fWphMcK6BPSbKss0&_nc_ht=scontent.ftpe8-2.fna&oh=aa58a31cfe2cc79484c19e80eedca80a&oe=5DDB4A91",
+      position: "程式碼行數減少，體重卻默默上升",
+      SNS: "https://www.facebook.com/profile.php?id=100000061272837"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Mack Liu",
+      imgURL: "https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-1/11954677_964907706864318_6301963875485180400_n.jpg?_nc_cat=110&_nc_oc=AQm1YylyPPuP4vbPR3WpCSmcR7-76ABGn49DhVnhr8bVJLOwYQWoik_pnwU9Hztk63Q&_nc_ht=scontent.ftpe8-4.fna&oh=ad8f5c6c80d1855271c9edb1f12ba896&oe=5DC80771",
+      position: "iOS / .NET Developer ",
+      SNS: "https://www.facebook.com/bazhe1106"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Lim Yang",
+      imgURL: "https://scontent.ftpe8-2.fna.fbcdn.net/v/t1.0-9/38405109_2257559720937929_6064429500521775104_o.jpg?_nc_cat=101&_nc_oc=AQmGev9eTQc-Ml5KpknIUkcGVGBOzBP1LSll8DRsfvs5SAT8rp10zjlXswuEQvztcSk&_nc_ht=scontent.ftpe8-2.fna&oh=e0af80971ae4fca5b5caab963cd505e1&oe=5DCBF420",
+      position: "system engineer at Thinking Software",
+      SNS: "https://www.facebook.com/arawn.yang"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Alice",
+      imgURL: "https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-1/25994495_1601902809900464_3240008977488848034_n.jpg?_nc_cat=106&_nc_oc=AQkGUigNseJw8N4y_F-P4_wWrSX1prjlF4scEVj86uUWT594Qilr6qnNrYb5EnHMDNk&_nc_ht=scontent.ftpe8-3.fna&oh=5a2a7ec1a558845c63b98243d5b7862c&oe=5DD41D1D",
+      position: "iOS developer @H2sync",
+      SNS: "https://www.facebook.com/profile.php?id=100002422822162"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Annie Li",
+      imgURL: "https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-1/15727063_10206383523146622_2368898774699621805_n.jpg?_nc_cat=102&_nc_oc=AQko1zFif55xQSmTWlZEHhiJLrHhp0mDFAEPFsY5kUqKsu2YTTynkCx3q2xi4kMp7AI&_nc_ht=scontent.ftpe8-4.fna&oh=6f2fc6071e9556575381364908e84943&oe=5DECAEED",
+      position: "iOS Developer @ KKBOX",
+      SNS: "https://www.facebook.com/profile.php?id=1824210769"
     }
   ];
   
@@ -557,6 +606,18 @@ export default class App extends PureComponent {
           imgURL: require("../images/logo_ichef.jpeg"),
           link: "https://www.ichefpos.com/zh-tw",
           alt: "iChef"
+        }
+      ]
+    },
+    {
+      id: _.uniqueId(),
+      degree:"青銅贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_coss_system.png"),
+          link: "http://www.coss.com.tw/about.html",
+          alt: "COSS SYSTEM INC 震江系統"
         }
       ]
     }
@@ -771,7 +832,7 @@ export default class App extends PureComponent {
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
-             <span className="section_tag" >議程徵稿中</span>
+             <span className="section_tag" >議程審稿中</span>
              <div className="section_sub_title">時程</div>
              <div className="section_sub_container">
              <p>
@@ -786,27 +847,6 @@ export default class App extends PureComponent {
               <p>
                 2019.09.21－2019.09.22 ・ 議程時間
               </p>
-             </div>
-              <div className="section_sub_title">現在就應徵</div>
-              <div className="section_sub_container">
-              <p>
-                我們將採取匿名審稿制度來評審，歡迎下列主題投稿
-              </p>
-              <p>
-                - Objective-C / Swift framework 使用心得分享<br/>
-                - iOS / Mac 軟體開發經驗分享<br/>
-                - AR / Metal 等開發經驗分享<br/>
-                - 遊戲開發經驗分享<br/>
-                - 軟體架構規畫或使用經驗分享<br/>
-                - UI Test / Unit Test / Refactor 軟體品質經驗分享<br/>
-                - UI / UX 設計經驗分享<br/>
-                - Agile / Scrum 經驗心得分享<br/>
-                - SwiftUI / Combine 入門心得分享<br/>
-                - Swift for backend、command line 或 TensorFlow 等其它開發經驗分享<br/>
-              </p>
-              </div>
-             <div className="section_action_container">
-              <ActionButton title="我要投稿" link="http://cfp.iplayground.io/events/iplayground_2019" />             
              </div>
             </div>
           </div>
