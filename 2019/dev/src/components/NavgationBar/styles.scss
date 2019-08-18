@@ -1,0 +1,111 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 64px;
+    a { 
+      text-decoration: none;
+      color: white;
+      p {
+        margin-block-end: 0;
+        margin-block-start: 0.5em;
+        margin-left: 1em;
+        display: inline-block;
+      }
+    }
+    .logo-small-container {
+        position: absolute;
+        display: inline-block;
+        right: 2em;
+        height: 100%;
+        
+    }
+    .logo-small-subcontainer {
+        display: block;
+        text-align: center;
+        line-height: 1;
+    }
+    .logo-small-subcontainer::after{
+        content: "";
+        display: inline-block;
+        position:relative;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .logo-small-subcontainer::before{
+        content: "";
+        display: inline-block;
+        position:relative;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .nav-link-container {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline-block;
+        color: #fff;
+        font-size: 32px;
+        padding: 0.5em;
+    }
+
+    #nav {
+        background-color: transparent;
+        padding-bottom: 0;
+    }
+    #nav.menu-opened {
+        background-color: #ffffffef;        
+        padding-bottom: 2em;
+        box-shadow: 0 3px 5px 2px #00000033;
+    }
+
+    #nav-logo-small {
+        display: none;
+    }
+    
+}
+
+.is-shrink {
+    background-color: #ffffffef;
+    box-shadow: 0 3px 5px 2px #00000033;
+    P {
+        color: #333;
+    }
+    .nav-menu {
+        color: #333;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    nav {
+      height: 80px;
+      padding-left: 2em;
+
+      a {
+        p {
+            display: block;
+        }
+      }
+      .nav-link:first-child {
+        padding-left: 30px;
+        }
+      .nav-link {
+        display: inline-block;
+        padding-right: 30px;
+      }
+      .nav-link-container {
+        display: inline-block;
+    }
+      .nav-menu {
+          display: none;
+      }
+      .logo-small-container {
+        right: 4em;
+        
+    }
+    }
+}

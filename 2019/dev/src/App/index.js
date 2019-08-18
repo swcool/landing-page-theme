@@ -12,6 +12,7 @@ import TableRow from "../components/TableRow";
 import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
+import NavgationBar from "../components/NavgationBar";
 
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: "day_1" };
@@ -804,6 +805,7 @@ export default class App extends PureComponent {
     return (
       <div className="app-fullscreen">
         <div className="logo-container-fullscreen">
+          <NavgationBar/>
           <div className="logo-container">
             <img
               className="logo"
@@ -832,7 +834,7 @@ export default class App extends PureComponent {
               <ActionButton title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" />             
              </div>
              </div>
-          <div className="app__section main_section">
+          <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
               <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
@@ -841,7 +843,7 @@ export default class App extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="app__section main_section">
+          <div className="app__section main_section" id="schedule-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
@@ -863,7 +865,7 @@ export default class App extends PureComponent {
              </div>
             </div>
           </div>
-          <div className="app__section main_section">
+          <div className="app__section main_section" id="venue-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
             <div className="app__title"><span className="app__title_eng">Venue</span><span>場地</span></div>
@@ -882,7 +884,7 @@ export default class App extends PureComponent {
             />
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="about-section">
           <div className="section_container">
             <div className="app__title"><a>About</a><span>關於我們</span></div>
             <p>
@@ -896,19 +898,19 @@ export default class App extends PureComponent {
             </p>
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="sponsors-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
             {this.renderSponsors()}
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="coorganizers-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Co-organizers</span><span>合作夥伴</span></div>
             {this.renderCoOrganisers()}
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="staffs-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Staffs</span><span>工作人員</span></div>
             {this.renderStaff()}
