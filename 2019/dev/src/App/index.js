@@ -840,6 +840,13 @@ export default class App extends PureComponent {
       imgURL: "https://pbs.twimg.com/profile_images/1060466084791250946/XzYmqvLI_400x400.jpg",
       position: "iOS Developer",
       SNS: "https://twitter.com/roger_fanfan"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Crystal",
+      imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/56356650_2739201946094887_8845493078916595712_n.jpg?_nc_cat=105&_nc_oc=AQnnz9BQu89yKGXyJ9-m4oDs7S6WqgK_xrU4F2GtwAyfImxy3cHDUqmGRuC1Ic6vhB8&_nc_ht=scontent.ftpe7-4.fna&oh=df78f4571e0f3eed449053310b88c8e5&oe=5E13BC50",
+      position: "iOS Developer",
+      SNS: "https://www.facebook.com/liu.crystal.9"
     }
   ];
   
