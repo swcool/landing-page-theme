@@ -16,6 +16,10 @@
     margin: 0;
     font-size: 2.5rem;
     color: dodgerblue; }
+  .modal-content-speakers .modal-content-speakers__topic {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #EF5FA7; }
   .modal-content-speakers .modal-content-speakers__position {
     color: gray; }
   .modal-content-speakers .modal-content-speakers__intro {
