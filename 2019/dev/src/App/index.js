@@ -541,16 +541,6 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
-      alt: "",
-      name: "黃惠勤",
-      position: "",
-      intro:
-        "大家好，我叫黃惠勤，來自馬來西亞，大部分台灣朋友叫我NG。從事iOS工作已長達5年，目前在台灣KKBOX iOS部門任職工程師一職。",  
-      topic:"從MVC到MVVM，再到MVVMC的開發經驗分享"
-    },
-    {
-      id: _.uniqueId(),
       imgURL:require("../images/HanChang.jpg"),
       alt: "",
       name: "Han Chang",
