@@ -12,6 +12,7 @@ import TableRow from "../components/TableRow";
 import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
+import NavgationBar from "../components/NavgationBar";
 
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: "day_1" };
@@ -300,20 +301,273 @@ export default class App extends PureComponent {
       imgURL:
         "https://pbs.twimg.com/profile_images/277613359/113d17e2e1f_400x400.jpg",
       alt: "",
-      name: "onevcat",
+      name: "王巍",
       position: "",
       intro:
-        "onevcat is a senior software development engineer at LINE, work on LINE SDK and well-known open source library - Kingfisher."
+        "王巍現在是專註於 iOS 的職業開發者。他擁有對於 Swift，Objective-C 以及網路程式設計方面的深厚知識及多年實作經驗。他將這些技術運用於創建 app 和通用框架等解決方案，其中很多都被用戶喜愛，並被開發者社區廣泛使用來構建其他軟體。\r\n\r\n作為兩個可愛孩子的父親，王巍同時也熱愛旅遊，閱讀以及攝影。他總是樂於嘗試新鮮事物，並且持續地從這些新鮮事物中進行學習。\r\n\r\n現在，王巍是壹名在 LINE 工作的高級軟件工程師。",
+        topic:"網路難，難於上青天 - 用部件化的方式簡化網路程式設計"
     },
     {
       id: _.uniqueId(),
       imgURL:
         "https://avatars0.githubusercontent.com/u/53011?s=400&v=4",
       alt: "",
-      name: "Zonble",
+      name: "zonble",
       position: "",
       intro:
-        "Zonble is a senior iOS engineer at KKBOX, often participate in technical community, created a public git book “KKBOX iOS/MacOS X 基本開發教材”. Sharing the development experience on flutter recently."
+        "A Taipei-based developer working at KKBOX. Started developing in Objective-C language for macOS since 2005 and became an iOS developer since 2008 when iPhone SDK was out. Contributed to products including Yahoo! KeyKey Input Method, Boshiamy Input Method for macOS, KKBOX for macOS/iOS/tvOS, Uta Pass for iOS and so on. Wrote a free online e-book in Chinese about iOS development in 2015.\r\nHis latest work is KKBOX Kids, a new audio app with latest Flutter technology parenting contents from KKBOX.",  
+      topic:"Beyond a player: CarPlay and MFI Hearing Aids"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:
+        require("../images/kishikawakatsumi.png"),
+      alt: "",
+      name: "kishikawa katsumi",
+      position: "",
+      intro:
+        "Since early-2008 I've been working as a native iOS/Mac application developer.\r\nDeveloped several major iOS applications and maintained some popular open source libraries. Prefer developing small tools for developers.",  
+      topic:"Backporting UICollectionViewCompositionalLayout"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/Nelson.jpeg"),
+      alt: "",
+      name: "Nelson",
+      position: "",
+      intro:
+        "心血來潮就會寫部落格的 iOS 工程師，希望有天可以靠嘴寫程式。",  
+      topic:"漫談 iOS 架構：MVC / MVVM / VIPER 與 Redux"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/DaikiMatsudate.jpeg"),
+      alt: "",
+      name: "Daiki Matsudate",
+      position: "",
+      intro:
+        "Daiki has developing iOS app for 8 years in Tokyo, and is Google Developers Expert for Firebase. He has organizing try! Swift Tokyo and some meetups around Tokyo. When he’s not coding, he likes to play piano and go to Onsen♨️",  
+      topic:"Integrate your app to modern world"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/akos-birmacher-bitrise.jpg"),
+      alt: "",
+      name: "Akos Birmacher",
+      position: "",
+      intro:
+        "I’ve been an App Automation Engineer at Bitrise for 1,5 years. I’ve specialized in Xcode build tools and Code signing automation. Before joining Bitrise, I’d worked as an iOS Developer.",  
+      topic:"Continuous integration for iOS: CI as a service"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/JohnLin.jpeg"),
+      alt: "",
+      name: "John Lin",
+      position: "",
+      intro:
+        "Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover.",  
+      topic:"探索 Swift 自動微分實作"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:"https://pbs.twimg.com/profile_images/1079705464353435648/ZASvuGO1_400x400.jpg",
+      alt: "",
+      name: "Yusuke Kita",
+      position: "",
+      intro:
+        "I’m a Software Engineer at Mercari. I've been working on Mercari US app in frontend and backend team. I'm passionate about learning new technology. When not coding, you can find me cycling.",  
+      topic:"Making your own tools using SwiftSyntax"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "PC Lin 林培鈞",
+      position: "",
+      intro:
+        "iOS 七年開發經驗，在台灣電商服務五年，喜歡解決疑難雜症與開發自動化工具",  
+      topic:"APP 送審自動化"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/yllan.png"),
+      alt: "",
+      name: "yllan",
+      position: "",
+      intro:
+        "上班寫nodejs，下班後的身份是台灣城市單車聯盟理事、Cocoaheads Taipei發起人、業餘macOS/iOS開發者。 上一個生涯目標是推廣熱愛的蘋果，已達成。接下來的生涯目標是推廣熱愛的單車多元文化，用單車來改變城市。 曾主辦「沈默的騎行」呼籲重視交通安全，以及「台北裸騎」。",  
+      topic:"我搞不懂浮點數：CS 101"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:"https://avatars2.githubusercontent.com/u/17181670?s=400&v=4",
+      alt: "",
+      name: "TinXie-易致",
+      position: "",
+      intro:
+        "https://github.com/s2339956/Resume\r\n\r\nswift 線上讀書會 - 分享 iOS 逆向工程- Reveal基礎入門\r\nIT-Home2019資安大會 - 在iOS 系統架構下，你的app 真的無堅不摧？讓我們一起來看app 裸奔吧\r\n逢甲大學黑客社 - 概述iOS逆向攻擊\r\n2019亞太資訊安全論壇 - 雙平台下被刻板印象所忽略的手機app漏洞",  
+      topic:"一起來看 app 裸奔吧～"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/Qing-Cheng-Li.jpeg"),
+      alt: "",
+      name: "Qing-Cheng Li",
+      position: "",
+      intro:
+        "qcl, coding & leanring. \r\n\r\nTaiwanese, iOS developer @ Booking.com in Amsterdam, Netherlands. Former Sr. Mobile App Engineer @ Yahoo! Taiwan.   ",  
+      topic:"使用 BUCK 改善編譯速度"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/Li-Heng-Hsu.png"),
+      alt: "",
+      name: "Li-Heng Hsu",
+      position: "",
+      intro:
+        "獨立 App 開發者、影片創作者。擁有已上架作品 [Storyboards by narrativesaw]。AppCoda.com.tw 合作作者。[《電影冷知識：跨越銀幕之外，我們都想探索的電影製造祕密》]作者。個人網站 [https://www.lihenghsu.com]。",  
+      topic:"簡易版 Combine 框架 DIY：FRP 原理探討"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "Jersey Su",
+      position: "",
+      intro:
+        "我是哲西，目前任職於 Verizon Media, QE. 一個孩子的爸爸, 熱愛軟體測試技術, 出沒於 Test Corner 社群. 熟悉 Selenium, Cucumber 及 Appium.",  
+      topic:"How to make BDD possible in Flutter"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "Lynn",
+      position: "",
+      intro:
+        "最近看專案的代碼都抱著看鄉土劇的心態，別有一番樂趣。\r\n在跨國電子商務公司寫了六年的 iOS App；剛進公司時台灣團隊有十人以上，成員分散在三地，Code Review 會議可以開上兩天；後來 iOS6 過渡到 iOS7，設計風格從擬真轉向扁平化，藉著改版，大家一起協力重構代碼，App 上架以後，團隊也依然規律地進行代碼維護和重構；期間同事們來來去去，迎新送舊，累積很多和不同開發者、測試和 PM 協同開發的經驗；而今年初，公司決定改採用 React Native 重構 App，因為時間緊迫，有更多之前沒有合作過的異地團隊加入專案，期間經歷不少的磨合，都是滿有趣的經驗。",  
+      topic:"多人專案開發你可能會碰到的那些事"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "JackyChen",
+      position: "",
+      intro:
+        "對AR有極度熱忱的白日夢工程師，幻想有一天能創造自己的異世界冒險，為此不斷的修煉自己的開發技能",  
+      topic:"AR 互動遊戲開發經驗分享"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/ShihTingHuang.png"),
+      alt: "",
+      name: "ShihTing Huang (Neo)",
+      position: "",
+      intro:
+        "用一口破日文在東京掙扎求生的iOS工程師，待過電子書、醫療、旅遊、串流產業，熱衷研究架構、語法、與各種能夠能夠讓人類有時間偷懶的技術。為了讓更多人有時間看電影而不是debug，偶而會寫寫Blog文章。目前在東京也有經營一個技術社群，歡迎來東京時一起來討論技術！",  
+      topic:"Declarative UI on iOS (without SwiftUI)"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:"https://pbs.twimg.com/profile_images/1134379227145310209/3Nu6c7zn_400x400.jpg",
+      alt: "",
+      name: "Ethan Huang",
+      position: "",
+      intro:
+        "@ethanhuang13",  
+      topic:"初代 SwiftUI 就用來寫 Watch App 吧！"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "CJ Lin",
+      position: "",
+      intro:
+        "LINE TW iOS NERD.\r\n新創&企業經驗兼具，技術債的創造者與還債人.\r\n正在 Scrum 的道路上 Trial and Error.",  
+      topic:"大型專案生存守則 - 10x加速開發技巧"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "Mars",
+      position: "",
+      intro:
+        "A front-end team leader at LINE TV and an iOS developer with 10 years experience. 現職偶爾刷存在感的丈夫、陪毛尼玩的爸爸、剩餘時間拿來寫程式的工程師",  
+      topic:"The Reborn of the Our Product."
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "Jeff Lin",
+      position: "",
+      intro:
+        "Verizon Media資深App工程師，目前負責台灣電商App開發",  
+      topic:"在想色色的事情對吧？About color in iOS"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:"https://pbs.twimg.com/profile_images/1003327371619864576/tVVbiT6w_400x400.jpg",
+      alt: "",
+      name: "徐嘉駿 Toby Hsu",
+      position: "",
+      intro:
+        "## 邊緣的代表\r\n畢業於政治大學數位內容碩士學位學程，興趣為人機互動介面與使用者經驗研究，自稱為非典型工程師。目前為 CATCHPLAY 的 tvOS / iOS 工程師。",  
+      topic:"為邊緣開發獻上新知 - tvOS"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "Chiaote Ni",
+      position: "",
+      intro:
+        "Aaron Ni\r\n\r\niOS@Taipei 的固定講者之一\r\nhttps://github.com/ChiaoteNi?tab=repositories\r\n兩年iOS開發經驗\r\n專長ＵＩ繪製，興趣在Layer與CoreText，對於畫面熱衷於捲起袖子造輪子。\r\n\r\n其他部分曾經會一點點游泳跟潛水，喜歡旅遊，如果有做什麼旅遊相關的App請務必介紹給我：）",  
+      topic:"關於Smart KeyPath"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "黃惠勤",
+      position: "",
+      intro:
+        "大家好，我叫黃惠勤，來自馬來西亞，大部分台灣朋友叫我NG。從事iOS工作已長達5年，目前在台灣KKBOX iOS部門任職工程師一職。",  
+      topic:"從MVC到MVVM，再到MVVMC的開發經驗分享"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/HanChang.jpg"),
+      alt: "",
+      name: "Han Chang",
+      position: "",
+      intro:
+        "大家好，我是 17 Media iOS Manager－Han。\n在 17 Media iOS 團隊中負責 Streaming 相關工作，包含：維護與優化推拉流模組，解決直播斷線、延遲或卡頓問題，以及開發與 Streaming 相關的有趣新功能，例如：視訊連麥、螢幕直播、直播中的動畫特效⋯等。\n興趣是與同事一同去日本滑雪，歡迎大家一起加入滑雪的行列！ ",  
+      topic:"二次元直播 - 虛擬主播與 ReplayKit 的邂逅"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "Fengyi",
+      position: "",
+      intro:
+        "LINE Fukuoka iOS Developer\r\n參與 LINE 本體開發. 希望能透過分享跟大家交流.\r\n",  
+      topic:"Web API Mocking"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/peterpan.jpeg"),
+      alt: "",
+      name: "彼得潘",
+      position: "",
+      intro:
+        "著作: 彼得潘的 Swift 程式設計入門，App 程式設計入門－iPhone, iPad\r\niOS App 開發講師: 彼得潘的 iOS App程式設計入門，文組生的 iOS App程式設計入門\r\nBlog: 彼得潘的 App Neverland\r\nFB粉絲團: 愛瘋一切為蘋果的彼得潘\r\nApp 作品: Wealthy, LOCOMO運動記錄, 戴佩妮回家路上等二十幾款App \r\n學校講師: 台大共同教育中心，政治大學，中央大學，海洋大學，臺北大學\r\n家教: 專屬於你的 iOS APP 開發導師\r\n企業內訓:  Yahoo，聯陽半導體，世界先進，信義房屋",  
+      topic:"第一次 SwiftUI App 親密接觸"
     }
   ];
 
@@ -569,6 +823,20 @@ export default class App extends PureComponent {
       imgURL: "https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-1/15727063_10206383523146622_2368898774699621805_n.jpg?_nc_cat=102&_nc_oc=AQko1zFif55xQSmTWlZEHhiJLrHhp0mDFAEPFsY5kUqKsu2YTTynkCx3q2xi4kMp7AI&_nc_ht=scontent.ftpe8-4.fna&oh=6f2fc6071e9556575381364908e84943&oe=5DECAEED",
       position: "iOS Developer @ KKBOX",
       SNS: "https://www.facebook.com/profile.php?id=1824210769"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Roger",
+      imgURL: "https://pbs.twimg.com/profile_images/1060466084791250946/XzYmqvLI_400x400.jpg",
+      position: "iOS Developer",
+      SNS: "https://twitter.com/roger_fanfan"
+    },
+    {
+      id: _.uniqueId(),
+      name: "Crystal",
+      imgURL: "https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.0-9/56356650_2739201946094887_8845493078916595712_n.jpg?_nc_cat=105&_nc_oc=AQnnz9BQu89yKGXyJ9-m4oDs7S6WqgK_xrU4F2GtwAyfImxy3cHDUqmGRuC1Ic6vhB8&_nc_ht=scontent.ftpe7-4.fna&oh=df78f4571e0f3eed449053310b88c8e5&oe=5E13BC50",
+      position: "iOS Developer",
+      SNS: "https://www.facebook.com/liu.crystal.9"
     }
   ];
   
@@ -582,6 +850,18 @@ export default class App extends PureComponent {
           imgURL: require("../images/logo_17_Media.png"),
           link: "https://m17.asia/",
           alt: "17 Media"
+        }
+      ]
+    },
+    {
+      id: _.uniqueId(),
+      degree:"黃金贊助",
+      sponorList: [
+        {
+          id: _.uniqueId(),
+          imgURL: require("../images/logo_KKCO.png"),
+          link: "https://www.kkco.com.tw",
+          alt: "KlickKlack"
         }
       ]
     },
@@ -659,6 +939,12 @@ export default class App extends PureComponent {
   coOrganisers = [
     {
       id: _.uniqueId(),
+      imgURL: require("../images/logo_twdc.png"),
+      link: "https://aatp.com.tw/",
+      alt: "TWDC"
+    },
+    {
+      id: _.uniqueId(),
       imgURL: require("../images/logo_cocoaheads_taipei.png"),
       link: "https://www.facebook.com/groups/cocoaheads.taipei/",
       alt: "Cocoaheads Taipei"
@@ -686,6 +972,7 @@ export default class App extends PureComponent {
   onClickSpeaker = id => {
     this.modalContentDataSpeakers = _.find(this.speakers, { id });
     this.setState({ showModal: "speakers" });
+    document.getElementById("navbar").hidden = true;
   };
 
   onClickTopic = talk => {
@@ -695,6 +982,7 @@ export default class App extends PureComponent {
 
   onCloseRequest = () => {
     this.setState({ showModal: false });
+    document.getElementById("navbar").hidden = false;
   };
 
   renderTableRow = () =>
@@ -791,6 +1079,7 @@ export default class App extends PureComponent {
     return (
       <div className="app-fullscreen">
         <div className="logo-container-fullscreen">
+          <NavgationBar/>
           <div className="logo-container">
             <img
               className="logo"
@@ -819,7 +1108,7 @@ export default class App extends PureComponent {
               <ActionButton title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" />             
              </div>
              </div>
-          <div className="app__section main_section">
+          <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
               <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
@@ -828,7 +1117,7 @@ export default class App extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="app__section main_section">
+          <div className="app__section main_section" id="schedule-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
@@ -850,7 +1139,7 @@ export default class App extends PureComponent {
              </div>
             </div>
           </div>
-          <div className="app__section main_section">
+          <div className="app__section main_section" id="venue-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
             <div className="app__title"><span className="app__title_eng">Venue</span><span>場地</span></div>
@@ -869,7 +1158,7 @@ export default class App extends PureComponent {
             />
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="about-section">
           <div className="section_container">
             <div className="app__title"><a>About</a><span>關於我們</span></div>
             <p>
@@ -883,13 +1172,19 @@ export default class App extends PureComponent {
             </p>
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="sponsors-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
             {this.renderSponsors()}
             </div>
           </div>
-          <div className="app__section">
+          <div className="app__section sub_section" id="coorganizers-section">
+          <div className="section_container">
+            <div className="app__title"><span className="app__title_eng">Co-organizers</span><span>合作夥伴</span></div>
+            {this.renderCoOrganisers()}
+            </div>
+          </div>
+          <div className="app__section sub_section" id="staffs-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Staffs</span><span>工作人員</span></div>
             {this.renderStaff()}
@@ -897,6 +1192,7 @@ export default class App extends PureComponent {
           </div>
         </div>
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>
+          
           {showModal === "speakers" ? (
             <ModalContentSpeakers
               {...this.modalContentDataSpeakers}

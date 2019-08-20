@@ -19,6 +19,13 @@
     color: $color--secondary;
   }
 
+  .modal-content-speakers__topic {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #EF5FA7;
+    
+  }
+
   .modal-content-speakers__position {
     color: $color--gray;
   }
@@ -61,7 +68,6 @@
   @include screen--md {
     text-align: left;
     display: flex;
-
     .modal-content-speakers__img-section {
       flex: 3;
 
