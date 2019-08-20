@@ -451,7 +451,7 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
+      imgURL:require("../images/JackyChen.jpg"),
       alt: "",
       name: "JackyChen",
       position: "",
@@ -481,7 +481,7 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
+      imgURL:require("../images/CJLin.jpg"),
       alt: "",
       name: "CJ Lin",
       position: "",
@@ -491,7 +491,7 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
+      imgURL:require("../images/Mars.png"),
       alt: "",
       name: "Mars",
       position: "",
