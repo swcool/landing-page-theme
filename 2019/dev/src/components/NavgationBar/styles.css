@@ -42,6 +42,12 @@ nav {
     color: #fff;
     font-size: 32px;
     padding: 0.5em; }
+  nav .nav-button {
+    padding-top: 16px;
+    padding-inline-start: 10px; }
+  nav .action-button {
+    font-size: 16px;
+    line-height: 24px; }
   nav #nav {
     background-color: transparent;
     padding-bottom: 0; }
@@ -76,4 +82,8 @@ nav {
     nav .nav-menu {
       display: none; }
     nav .logo-small-container {
-      right: 4em; } }
+      right: 4em; }
+    nav .nav-button {
+      padding-inline-start: 20px;
+      padding-top: 20px;
+      vertical-align: top; } }
