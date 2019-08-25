@@ -101,20 +101,23 @@ html {
   .app__sechdule-tab {
     margin-bottom: 1rem;
 
-    .button {
+    .app__sechdule-tab__btn {
       font-weight: bold;
+      font-size: 18pt;
       margin-right: 0.5rem;
+      margin-bottom: 0.5em;
       padding: 0.5rem 1rem;
-      border-radius: 5px;
-      border: 1px solid $color--secondary;
+      border-radius: 60px;
+      border: 1px solid #EF5FA7;
       outline: none;
-      color: $color--secondary;
+      color: #EF5FA7;
       background-color: $color--white;
     }
 
     .app__sechdule-tab__btn--selected {
-      color: $color--white;
-      background-color: $color--secondary;
+      color: #EF5FA7;
+      background-color: rgba(0,0,0,0.75);
+      border: 1px solid rgba(0,0,0,0.75);
     }
   }
 

@@ -1311,22 +1311,41 @@ export default class App extends PureComponent {
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
-             <span className="section_tag" >議程審稿中</span>
-             <div className="section_sub_title">時程</div>
-             <div className="section_sub_container">
-             <p>
-                2019.06.10 ・ 開放投稿
-              </p>
-              <p>
-                2019.08.10 ・ 投稿截止
-              </p>
-              <p>
-                2019 8月 ・ 公佈結果
-              </p>
-              <p>
-                2019.09.21－2019.09.22 ・ 議程時間
-              </p>
-             </div>
+             <div className="app__sechdule-tab">
+              <button
+                className={
+                  whichDay === "day_1" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                }
+                onClick={() => {
+                  this.setState({ whichDay: "day_1" });
+                }}
+                type="button"
+              >
+                9/21 Day 1
+              </button>
+              <button
+                className={
+                  whichDay === "day_2" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                }
+                onClick={() => {
+                  this.setState({ whichDay: "day_2" });
+                }}
+                type="button"
+              >
+                9/22 Day 2
+              </button>
+              <button
+                className={
+                  whichDay === "workshop" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                }
+                onClick={() => {
+                  this.setState({ whichDay: "workshop" });
+                }}
+                type="button"
+              >
+                workshop
+              </button>
+              </div>
             </div>
           </div>
           <div className="app__section main_section" id="venue-section">
