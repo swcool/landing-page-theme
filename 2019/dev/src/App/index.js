@@ -1127,6 +1127,12 @@ export default class App extends PureComponent {
       sponorList: [
         {
           id: _.uniqueId(),
+          imgURL: require("../images/logo_bitrise.png"),
+          link: "https://www.bitrise.io",
+          alt: "Bitrise"
+        },
+        {
+          id: _.uniqueId(),
           imgURL: require("../images/logo_KKCO.png"),
           link: "https://www.kkco.com.tw",
           alt: "KlickKlack"
