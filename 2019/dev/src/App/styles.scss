@@ -142,7 +142,6 @@ html {
     .sechdule_block {
       width: 100%;
     }
-   
     .sechdule_room_container {
       width: 100%;
       display: none;
@@ -167,6 +166,15 @@ html {
     }
     .room_103 {
       background-color: #F8BA00EF;
+    }
+    .workshop_day {
+      text-align: center;
+      height: 40px;
+      font-size: 1.25em;
+      font-weight: bold;
+      color: #444444;
+      padding-left: 2em;
+      padding-top: 1em;
     }
     @include screen--md {
       .sechdule_room_container {

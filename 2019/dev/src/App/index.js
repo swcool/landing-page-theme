@@ -449,10 +449,31 @@ export default class App extends PureComponent {
         rest: "閉幕"
       }
     ],
-    workshop:[
+  };
+
+  workshop = {
+    day_1:[
       {
         id: _.uniqueId(),
-        day:"day2",
+        start: "13:00",
+        end: "14:35",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "利用TDD來發大財吧～",
+            presenter: "DinDin , Steve Sun",
+            description: "不知道什麼是測試嗎？\r\n沒寫過任何UnitTest嗎？\r\n沒聽過TDD嗎？\r\n你來對地方了。我們會一步步帶你認識了解\r\n透過實作一個樂透發財APP\r\n從最基礎型的MVC架構，搭配DI技巧\r\n用TDD心法來做代碼的整理與優化\r\n並且逐步完善我們想要實作的功能\r\n目標對象：\r\n對測試沒概念的人\r\n對TDD沒概念的人\r\n(此主題適合給junior朋友\r\n",
+            tags:[],
+            room:"103",
+            isWorkshop:true
+          }
+        ]
+      }
+    ]
+  ,
+  day_2:[
+      {
+        id: _.uniqueId(),
         start: "13:30",
         end: "15:05",
         talks: [
@@ -460,17 +481,17 @@ export default class App extends PureComponent {
             id: _.uniqueId(),
             topic: "Web API Mocking",
             presenter: "Fengyi",
-            description: "後端API沒完成，前端該如何同步開發？\r\n單元測試好麻煩，如何有效使用Mocking，輕鬆撰寫單元測試。\r\n",
+            description: "後端API沒完成，前端該如何同步開發？\r\n帶你一起透過依賴注入，讓外部API調用從代碼中解耦, \r\n編寫易於測試與Debug的代碼。",
             tags:[],
-            room:"103"
+            room:"103",
+            isWorkshop:true
           }
         ]
       },
       {
         id: _.uniqueId(),
-        day:"day2",
         start: "13:30",
-        end: "16:20",
+        end: "16:30",
         talks: [
           {
             id: _.uniqueId(),
@@ -478,12 +499,29 @@ export default class App extends PureComponent {
             presenter: "彼得潘",
             description: "如果有一萬個小時的程式練習，我就能開發比 IG 還棒的 App。一萬個小時的練習有可能嗎? 可以 ! 就從 Workshop 的 3 個小時，開始第一次的 SwiftUI App 親密接觸。\r\n\r\nApple 最新推出的 SwiftUI 幫助我們以更直覺精簡的程式製作 App，活動將搭配滿滿的實作練習，介紹 SwiftUI 的各種技術。比方畫面的製作，頁面的切換，data binding，動畫和轉場效果，結合 iOS 13 的 dark mode，SF Symbols，SPM 等，帶著大家一步步創作一個完整的 App。\r\n",
             tags:[],
-            room:"103"
+            room:"201",
+            isWorkshop:true
+          }
+        ]
+      },
+      {
+        id: _.uniqueId(),
+        start: "15:25",
+        end: "17:00",
+        talks: [
+          {
+            id: _.uniqueId(),
+            topic: "擴增實境人物控制實作",
+            presenter: "Han Chang",
+            description: "您將會學到\r\n1. imageAnchor 設定\r\n2. 座標設定、轉角設定、比例縮放\r\n3. 材質設定\r\n4. 人物動作處理\r\n5. 搖桿控制\r\n\r\n環境需求\r\n1. 設備版本 iOS12 以上，並內建 A9 以上晶片，如 iphone6S 以上機種\r\n2. 平板體驗更佳\r\n3. 請安裝 Xcode 11\r\n",
+            tags:[],
+            room:"103",
+            isWorkshop:true
           }
         ]
       }
     ]
-  };
+  }
 
   speakers = [
     {
@@ -1178,19 +1216,61 @@ export default class App extends PureComponent {
   renderTableRow = () =>
     _.map(
       this.sechdule[this.state.whichDay],
-      ({ id, start, end, rest, talks }) => (
+      ({ id, start, end, rest, isWorkshop, talks }) => (
         <TableRow
           key={id}
           start={start}
           end={end}
           rest={rest || null}
           talks={talks}
+          isWorkshop = {null}
           onClickTopic={talk => {
             this.onClickTopic(talk);
           }}
         />
       )
     );
+
+    renderTable = () => (
+      <ul className="sechdule_table">
+                  <li className="sechdule_row">           
+                    <div className="sechdule_time_block"></div>
+                    <div className="sechdule_room_container">
+                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_101">101</div></div>
+                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_102">102</div></div>
+                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">103</div></div>
+                    </div>
+                    </li>
+                    {this.renderTableRow()}
+                </ul>
+    ) 
+  renderWorkShopRow = (day) => _.map (
+    this.workshop[day],
+      ({ id, start, end, rest, isWorkshop, talks }) => (
+        <TableRow
+          key={id}
+          start={start}
+          end={end}
+          rest={rest || null}
+          talks={talks}
+          isWorkshop = {true}
+          onClickTopic={talk => {
+            this.onClickTopic(talk);
+          }}
+        />
+      )
+  );
+
+  renderWorkShop = () => (
+    <ul className="sechdule_table">
+      <li className="sechdule_row"><div className="workshop_day">9/21 day 1</div></li>
+      {this.renderWorkShopRow("day_1")}
+      <li className="sechdule_row "><div className="workshop_day">9/22 day 2</div></li>
+      {this.renderWorkShopRow("day_2")}      
+    </ul>
+    
+    //{renderWorkShopRow("day_2")}
+  );
 
   renderSpeakers = () =>
     _.map(this.speakers, ({ id, imgURL, alt, name, position }) => (
@@ -1347,17 +1427,7 @@ export default class App extends PureComponent {
               </button>
               </div>
               <div className="sechdule_container">
-                <ul className="sechdule_table">
-                  <li className="sechdule_row">           
-                    <div className="sechdule_time_block"></div>
-                    <div className="sechdule_room_container" style = {(whichDay === "workshop") ? {display : "none"}:{}}>
-                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_101">101</div></div>
-                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_102">102</div></div>
-                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">103</div></div>
-                    </div>
-                    </li>
-                    {this.renderTableRow()}
-                </ul>
+              {(whichDay === "workshop")? this.renderWorkShop() : this.renderTable()}
               </div>
             </div>
           </div>

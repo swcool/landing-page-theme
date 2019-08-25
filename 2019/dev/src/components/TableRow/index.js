@@ -5,7 +5,7 @@ import TableTime from "../TableTime";
 import TableTalk from "../TableTalk";
 import './styles.css';
 
-export default ({ start, end, rest, talks, onClickTopic }) => {
+export default ({ start, end, rest, talks, isWorkshop, onClickTopic }) => {
   const renderTalks = _.map(talks, ({ id, topic, presenter, description, room }) => (
     <TableTalk
       key={id}
@@ -13,6 +13,7 @@ export default ({ start, end, rest, talks, onClickTopic }) => {
       presenter={presenter}
       description={description}
       room = {room}
+      isWorkshop = {isWorkshop}
       onClickTopic={onClickTopic}
       
     />

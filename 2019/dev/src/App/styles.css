@@ -123,6 +123,14 @@ html {
       background-color: #EF5FA7EF; }
     .app__container .sechdule_container .room_103 {
       background-color: #F8BA00EF; }
+    .app__container .sechdule_container .workshop_day {
+      text-align: center;
+      height: 40px;
+      font-size: 1.25em;
+      font-weight: bold;
+      color: #444444;
+      padding-left: 2em;
+      padding-top: 1em; }
     @media screen and (min-width: 768px) {
       .app__container .sechdule_container .sechdule_room_container {
         display: flex; }
