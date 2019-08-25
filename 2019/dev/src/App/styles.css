@@ -90,6 +90,45 @@ html {
       color: #EF5FA7;
       background-color: rgba(0, 0, 0, 0.75);
       border: 1px solid rgba(0, 0, 0, 0.75); }
+  .app__container .sechdule_container {
+    background-color: rgba(128, 128, 128, 0.33);
+    padding: 1em 0;
+    border-radius: 6px; }
+    .app__container .sechdule_container ul {
+      padding: 0; }
+    .app__container .sechdule_container li {
+      display: flex;
+      width: 100%; }
+    .app__container .sechdule_container .sechdule_row {
+      border-bottom: 1px solid #FFFFFF; }
+    .app__container .sechdule_container .sechdule_time_block {
+      width: 20%; }
+    .app__container .sechdule_container .sechdule_block {
+      width: 100%; }
+    .app__container .sechdule_container .sechdule_room_container {
+      width: 100%;
+      display: none; }
+    .app__container .sechdule_container .room_lable {
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0.5em;
+      border-radius: 6px;
+      font-size: 16px; }
+    .app__container .sechdule_container .sechdule_room_lable {
+      margin: 0.5em 1em;
+      font-weight: 300; }
+    .app__container .sechdule_container .room_101 {
+      background-color: #517CFFEF; }
+    .app__container .sechdule_container .room_102 {
+      background-color: #EF5FA7EF; }
+    .app__container .sechdule_container .room_103 {
+      background-color: #F8BA00EF; }
+    @media screen and (min-width: 768px) {
+      .app__container .sechdule_container .sechdule_room_container {
+        display: flex; }
+      .app__container .sechdule_container .sechdule_block {
+        width: 33%;
+        display: inline-block; } }
   .app__container .app__table {
     width: 100%;
     border-collapse: collapse;

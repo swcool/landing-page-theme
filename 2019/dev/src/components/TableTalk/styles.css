@@ -3,10 +3,24 @@
 /* Media queries
  * ======================================================================== */
 .table-talk {
-  width: 45%; }
+  padding: 1em 0;
+  width: 100%; }
   .table-talk span {
-    display: block; }
+    display: block;
+    margin: 0 0.5em; }
+  .table-talk .talk_room_lable {
+    margin: 0 0.5em 0.5em 0.5em; }
   .table-talk .table-talk__topic {
-    color: dodgerblue;
+    color: #517CFFEF;
     font-weight: bold;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 0.95em; }
+  .table-talk .table-talk__presenter {
+    color: #444444;
+    font-size: 1em; }
+
+@media screen and (min-width: 768px) {
+  .table-talk {
+    width: 33%; }
+  .talk_room_lable {
+    display: none; } }

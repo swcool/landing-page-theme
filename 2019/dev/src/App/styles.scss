@@ -121,6 +121,63 @@ html {
     }
   }
 
+  .sechdule_container {
+    background-color: rgba(128, 128, 128, 0.33);
+    padding: 1em 0;
+    border-radius: 6px;
+    
+    ul {
+      padding: 0;
+    }
+    li {
+      display: flex;
+      width: 100%;
+    }
+    .sechdule_row {
+      border-bottom: 1px solid #FFFFFF;
+    }
+    .sechdule_time_block {
+      width: 20%;
+    }
+    .sechdule_block {
+      width: 100%;
+    }
+   
+    .sechdule_room_container {
+      width: 100%;
+      display: none;
+    }
+    .room_lable {
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0.5em;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .sechdule_room_lable {
+      margin: 0.5em 1em;
+      font-weight: 300;
+      
+    }
+    .room_101 {
+      background-color: #517CFFEF;
+    }
+    .room_102 {
+      background-color: #EF5FA7EF;
+    }
+    .room_103 {
+      background-color: #F8BA00EF;
+    }
+    @include screen--md {
+      .sechdule_room_container {
+        display: flex;
+      }
+      .sechdule_block {
+        width: 33%;
+        display: inline-block;
+      }
+    }
+  }
   .app__table {
     width: 100%;
     border-collapse: collapse;
