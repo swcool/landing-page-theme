@@ -1206,6 +1206,7 @@ export default class App extends PureComponent {
   onClickTopic = talk => {
     this.modalContentDataSchedule = talk;
     this.setState({ showModal: "schedule" });
+    document.getElementById("navbar").hidden = true;
   };
 
   onCloseRequest = () => {
