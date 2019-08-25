@@ -669,7 +669,7 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
+      imgURL:require("../images/lynn.jpg"),
       alt: "",
       name: "Lynn",
       position: "",
@@ -729,7 +729,7 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
+      imgURL:require("../images/jeffLin_avatar.png"),
       alt: "",
       name: "Jeff Lin",
       position: "",
@@ -749,7 +749,27 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
+      imgURL:require("../images/lamb.jpeg"),
+      alt: "",
+      name: "羊小咩",
+      position: "",
+      intro:
+        "電子支付/第三方支付 App 行動裝置研發經理，致力於支付 App 架構和安全以及更好用支付體驗。 實際為什麼都略懂一點的雜工一枚。",  
+      topic:"您的 APP 安全嗎?"
+    },
+    {
+      id: _.uniqueId(),
       imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "丁沛堯",
+      position: "",
+      intro:
+        "iCHEF iOS Developer, 愛貓, 以為戴牙套會變瘦結果一年後還是胖了2公斤。",  
+      topic:"怦然心動的編譯時間優化魔法"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/chiaoteNi.png"),
       alt: "",
       name: "Chiaote Ni",
       position: "",
@@ -759,7 +779,7 @@ export default class App extends PureComponent {
     },
     {
       id: _.uniqueId(),
-      imgURL:require("../images/default_portrait.png"),
+      imgURL:require("../images/huygin.jpeg"),
       alt: "",
       name: "黃惠勤",
       position: "",
@@ -780,6 +800,26 @@ export default class App extends PureComponent {
     {
       id: _.uniqueId(),
       imgURL:require("../images/default_portrait.png"),
+      alt: "",
+      name: "DinDin",
+      position: "",
+      intro:
+        "HI\b，我是DinDIn，大概約3年經驗 曾做過旅遊、潛水錶、區塊鏈，現在在興趣與工作結合的公司，喜歡實作各種同事奇怪發想的題目，興趣是攝影跟爬山。",  
+      topic:"利用TDD來發大財吧～"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:"https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c0.0.958.958a/49947006_10161406364485525_1277997798444236800_n.jpg?_nc_cat=111&_nc_oc=AQmM0r4jf8YeK5BfMbJUyDmJ1k06oxvCwUnqOSG9Xl-9ode19JMVFCNeBXpsGNg5OL4&_nc_ht=scontent.ftpe7-2.fna&oh=1cf19488ae7e5f32032a18ed8716703b&oe=5DE872DC",
+      alt: "",
+      name: "Steve Sun",
+      position: "",
+      intro:
+        "My name is Steve, I am Taiwanese but I am working in a company called Hootsuite in Vancouver Canada. I enjoy iOS development and would love to share and exchange knowledges with other Taiwanese iOS devs.",  
+      topic:"利用TDD來發大財吧～"
+    },
+    {
+      id: _.uniqueId(),
+      imgURL:require("../images/fengyi.jpg"),
       alt: "",
       name: "Fengyi",
       position: "",
