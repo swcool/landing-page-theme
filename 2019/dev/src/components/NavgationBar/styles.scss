@@ -53,6 +53,14 @@ nav {
         padding: 0.5em;
     }
 
+    .nav-button {
+        padding-top: 16px;
+        padding-inline-start: 10px;
+    }
+    .action-button {
+        font-size: 16px;
+        line-height: 24px;
+    }
     #nav {
         background-color: transparent;
         padding-bottom: 0;
@@ -106,6 +114,12 @@ nav {
       .logo-small-container {
         right: 4em;
         
+    }
+
+    .nav-button {
+        padding-inline-start: 20px;
+        padding-top: 20px;
+        vertical-align: top;
     }
     }
 }

@@ -6,10 +6,11 @@
   position: relative;
   padding: 30px;
   padding-top: 50px;
-  background-color: white; }
+  background-color: white;
+  border-radius: 16px; }
   .modal-content-schedule .modal-content-schedule__topic {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: dodgerblue; }
   .modal-content-schedule .modal-content-schedule__presenter {
     color: gray; }

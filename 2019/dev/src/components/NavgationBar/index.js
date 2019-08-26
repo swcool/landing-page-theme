@@ -1,19 +1,7 @@
 import React, { PureComponent } from 'react';
 import './styles.css';
 
-
-/*window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 96 || document.documentElement.scrollTop > 96) {
-    document.getElementById("navbar").classList.add("is-shrink")
-    document.getElementById("nav-logo-small").style.display = "block"
-  } else {
-    document.getElementById("navbar").classList.remove("is-shrink")
-    document.getElementById("nav-logo-small").style.display = "none"
-  }
-}*/
-
+import ActionButton from "../ActionButton";
 
 export default class NavgationBar extends PureComponent {
     constructor() {
@@ -88,6 +76,8 @@ export default class NavgationBar extends PureComponent {
           <div className="nav-link"><a href="#sponsors-section"><p>Sponsors</p><p>贊助</p></a></div>
           <div className="nav-link"><a href="#coorganizers-section"><p>Co-organizers</p><p>合作夥伴</p></a></div>
           <div className="nav-link"><a href="#staffs-section"><p>Staffs</p><p>工作人員</p></a></div>
+          <div className="nav-link nav-button"><ActionButton style={{fontSize:"32px",lineHeight:"40px"}} title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" /></div>
+          
           </div>
         </div>
         </div>

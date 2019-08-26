@@ -3,28 +3,34 @@ import _ from "lodash";
 
 import TableTime from "../TableTime";
 import TableTalk from "../TableTalk";
+import './styles.css';
 
-export default ({ start, end, rest, talks, onClickTopic }) => {
-  const renderTalks = _.map(talks, ({ id, topic, presenter, description }) => (
+export default ({ start, end, rest, talks, isWorkshop, onClickTopic }) => {
+  const renderTalks = _.map(talks, ({ id, topic, presenter, description, room }) => (
     <TableTalk
       key={id}
       topic={topic}
       presenter={presenter}
       description={description}
+      room = {room}
+      isWorkshop = {isWorkshop}
       onClickTopic={onClickTopic}
+      
     />
   ));
 
   return (
-    <tr>
+    <li className="sechdule_row">
       <TableTime start={start} end={end} />
       {rest ? (
-        <td colSpan="2" style={{ textAlign: "center", fontWeight: "bold" }}>
+        <div  className="sechdule_talk_container" style={{textAlign: "center",fontWeight: "bold",alignItems : "center", justifyContent: "center",color:"#666666"}}>
           {rest}
-        </td>
+        </div>
       ) : (
-        renderTalks
+        <div className="sechdule_talk_container">
+        {renderTalks}
+        </div>
       )}
-    </tr>
+    </li>
   );
 };
