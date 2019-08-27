@@ -512,8 +512,8 @@ export default class App extends PureComponent {
           {
             id: _.uniqueId(),
             topic: "擴增實境人物控制實作",
-            presenter: "Han Chang",
-            description: "您將會學到\r\n1. imageAnchor 設定\r\n2. 座標設定、轉角設定、比例縮放\r\n3. 材質設定\r\n4. 人物動作處理\r\n5. 搖桿控制\r\n\r\n環境需求\r\n1. 設備版本 iOS12 以上，並內建 A9 以上晶片，如 iphone6S 以上機種\r\n2. 平板體驗更佳\r\n3. 請安裝 Xcode 11\r\n",
+            presenter: "JackyChen",
+            description: "如果你對 AR 充滿好奇，不妨來體驗開發 AR App 的樂趣，ARKit 真假難辨的視覺效果，肯定不會讓你失望，經過這堂課後，您將擁有開發AR的基本能力。如：\r\nimageAnchor 設定、座標設定、轉角設定、比例縮放、材質設定、人物動作處理等。\r\n\r\n環境需求：\r\n1. 請攜帶內建 A9 以上晶片的設備，如 iphone6S 以上機種，平板體驗更佳。\r\n2. 設備OS版本需iOS12以上。\r\n3. 開發環境請安裝 Xcode 11。\r\n",
             tags:[],
             room:"103",
             isWorkshop:true
