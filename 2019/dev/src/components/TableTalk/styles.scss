@@ -23,6 +23,11 @@
     color: #444444;
     font-size: 1em;
   }
+  .tag_image {
+    width: 24px;
+    height: 24px;
+    margin: 6px;
+  }
 }
 
 @include screen--md {

@@ -51,7 +51,7 @@ export default class App extends PureComponent {
             topic: "Beyond a player: CarPlay and MFI Hearing Aids",
             presenter: "zonble",
             description: "Nowadays the music experience for iOS devices is not merely limited on speakers and headsets, but already expanded to  modern car systems, hearing aids and more.\r\n\r\nThis brings challenges to music services like KKBOX, since some audio APIs behave in unexpectedly ways and some of them are not actually well documented, while playing audio on these new output devices.\r\n\r\nThe talks covers how we encountered and solved the challenges, although they might not be good solutions.",
-            tags:[],
+            tags:["public_address"],
             room:"101",
             programId:106
           }
@@ -73,7 +73,7 @@ export default class App extends PureComponent {
             topic: "Backporting UICollectionViewCompositionalLayout",
             presenter: "kishikawa katsumi",
             description: "A new UICollectionViewCompositionalLayout class has been added to UIKit to make it incredibly easier to create custom complex collection view layout. In iOS 12 and earlier, we need subclassing of UICollectionViewLayout to do that. We have to override lots of methods correctly, and it is error-prone.\r\n\r\nHowever, we can not use new useful APIs immediately. We have to wait until iOS 13 to reach users sufficiently. Otherwise, we must maintain two different code bases.\r\n\r\nIf we can create a library that emulates the behavior of UIKit's new API, we can start using the new code base without waiting for the spread of iOS 13.\r\n\r\nI made it; https://github.com/kishikawakatsumi/IBPCollectionViewCompositionalLayout\r\nit seems works well.\r\n\r\nIn this talk, I will share the knowledge gained from the experience of creating this library and the right way to customize the collection view layout.",
-            tags:[],
+            tags:["english_talk"],
             room:"101",
             programId:154
           },
@@ -93,7 +93,7 @@ export default class App extends PureComponent {
             presenter: "Chiaote Ni",
             description:
               "簡介什麼是Swift的Smart KeyPath，他能做到什麼事，有哪些可使用的類別\r\n以及介紹我們能如何利用Smart KeyPath來優化我們的Code\r\n",
-              tags:[],
+              tags:["no_record"],
               room:"103",
               programId:162
           }
@@ -149,7 +149,7 @@ export default class App extends PureComponent {
             topic: "Integrate your app to modern world",
             presenter: "Daiki Matsudate",
             description: "Exciting SwiftUI has coming to us. SwiftUI has declarative syntax and realtime update so we can develop our apps more faster.You might thought changing better the iOS world. \r\nHowever, of course you know, SwiftUI can be introduced from iOS 13, so we must cut off until iOS12 and it takes 1 - 2 years.So we don’t have to do nothing this 2 years, right? Absolutely not. We should invest time to prepare for migration.\r\n\r\nThe data flow of SwiftUI is based in Single source of truth and composition with small components.\r\n\r\nIn this talk, I’d like to talk about how to divide your huge view controller into small components,  and how to migrate to SwiftUI well.",
-            tags:[],
+            tags:["english_talk"],
             room:"101",
             programId:153
           },
@@ -183,7 +183,7 @@ export default class App extends PureComponent {
             topic: "Continuous integration for iOS: CI as a service",
             presenter: "Akos Birmacher",
             description: "In the beginning of my talk, I will walk you through the differences between local and cloud-based CI solutions for iOS development. We will talk about the setbacks of cloud-based solutions and how Bitrise has managed to overcome these difficulties.\r\nIn the second half, we will be talking about hands-on examples and best practices in automating your CI/CD pipeline with Bitrise.\r\n",
-            tags:[],
+            tags:["english_talk","no_record"],
             room:"101",
             programId:160
           },
@@ -253,7 +253,7 @@ export default class App extends PureComponent {
             topic: "網路難，難於上青天 - 用部件化的方式簡化網路程式設計",
             presenter: "王巍",
             description: "無論是 API 調用獲取 JSON，還是從網路下載圖片數據，都是 app 開發中最常見任務。URLSession 和 Codable 為我們提供了壹套簡單易用的進行網路程式設計接口，但如果不注意程式架構，相關的網路部分的代碼很容易腐爛。特別在當程式邏輯變得複雜時，想要保持修正和變更依然能夠敏捷進行，並確保高效的測試覆蓋，並不是那麽容易的事情。\r\n\r\n這個 Session 將討論使用一種部件化的方式，來將網路程式的構建和處理拆分為可以理解，易於測試的小塊。通過這種方式，我們可以有信心地為 app 設計出可擴展，無 bug 的網路部分。\r\n",
-            tags:[],
+            tags:["public_address"],
             room:"",
             programId:98
           }
@@ -275,7 +275,7 @@ export default class App extends PureComponent {
             topic: "Making your own tools using SwiftSyntax",
             presenter: "Yusuke Kita",
             description: "Do you want to make your own tools like formatter? SourceKit was the only option for us, but SwiftSyntax is now available via SPM. It parses Swift source code and gives us syntax tree that can be used for the analysis by Swift API.\r\nIn this talk, we’ll cover overview of SwifSyntax and go over how and where to start to make productivity tools for your projects with some examples.\r\n",
-            tags:[],
+            tags:["english_talk"],
             room:"101",
             programId:152
           },
@@ -327,7 +327,7 @@ export default class App extends PureComponent {
             presenter: "Mars",
             description:
               "There is bunch of legacy code in most of the products which we are trying to improve the flexibility and reliability. However,\r\n\r\n* How could we hanld with bugs or features and refactor the legacy code at the same time?\r\n* How could we take the advantage of the moden language Swift and inject into Objective-C code?\r\n* How could we turn the Massive-View-Controller chaos into Clean Architecture?\r\n\r\nTherefore, for those developers who want to be in a higher level or try to refactor their legacy code of the product.\r\nI will share my real-life experience and answer those questions.",
-              tags:[],
+              tags:["english_talk"],
               room:"102",
               programId:151
           },
@@ -519,7 +519,7 @@ export default class App extends PureComponent {
             topic: "Web API Mocking",
             presenter: "Fengyi",
             description: "後端API沒完成，前端該如何同步開發？\r\n帶你一起透過依賴注入，讓外部API調用從代碼中解耦, \r\n編寫易於測試與Debug的代碼。",
-            tags:[],
+            tags:["no_record"],
             room:"103",
             isWorkshop:true
           }

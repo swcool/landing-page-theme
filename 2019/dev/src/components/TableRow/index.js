@@ -9,13 +9,14 @@ export default ({ start, end, rest, talks, isWorkshop, onClickTopic }) => {
   
   //state = { programs: []};
 
-  const renderTalks = _.map(talks, ({ id, topic, presenter, description, room }) => (
+  const renderTalks = _.map(talks, ({ id, topic, presenter, description, room, tags }) => (
     <TableTalk
       key={id}
       topic={topic}
       presenter={presenter}
       description={description}
       room = {room}
+      tags = {tags}
       isWorkshop = {isWorkshop}
       onClickTopic={onClickTopic}
       
