@@ -6,6 +6,9 @@ import TableTalk from "../TableTalk";
 import './styles.css';
 
 export default ({ start, end, rest, talks, isWorkshop, onClickTopic }) => {
+  
+  //state = { programs: []};
+
   const renderTalks = _.map(talks, ({ id, topic, presenter, description, room }) => (
     <TableTalk
       key={id}
