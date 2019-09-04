@@ -18,6 +18,10 @@
   .table-talk .table-talk__presenter {
     color: #444444;
     font-size: 1em; }
+  .table-talk .tag_image {
+    width: 24px;
+    height: 24px;
+    margin: 6px; }
 
 @media screen and (min-width: 768px) {
   .table-talk {

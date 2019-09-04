@@ -14,6 +14,14 @@
     color: dodgerblue; }
   .modal-content-schedule .modal-content-schedule__presenter {
     color: gray; }
+  .modal-content-schedule .modal_tag {
+    vertical-align: middle;
+    margin: 4px 0;
+    color: #666666; }
+  .modal-content-schedule .modal_tag_image {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px; }
   .modal-content-schedule .modal-content-schedule__close-btn {
     position: absolute;
     right: 10px;

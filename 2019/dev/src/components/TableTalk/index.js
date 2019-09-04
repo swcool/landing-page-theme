@@ -1,9 +1,10 @@
 import React from "react";
-
+import _ from "lodash";
 import "./styles.css";
 
-export default ({ topic, presenter, description, room, isWorkshop, onClickTopic }) => {
-  const talk = { topic, presenter, description, room };
+export default ({ topic, presenter, description, room, tags, isWorkshop, onClickTopic }) => {
+  const talk = { topic, presenter, description, room, tags };
+
 
   return (
     <div className="table-talk">
@@ -29,6 +30,13 @@ export default ({ topic, presenter, description, room, isWorkshop, onClickTopic 
         {topic}
       </span>
       <span className="table-talk__presenter">{presenter}</span>
+      <div>
+      {
+        _.map(tags,(tag) => 
+        <img className = "tag_image" src = {require("../../images/"+tag+".png")}/>
+          )
+        }    
+      </div>
     </div>
   );
 };
