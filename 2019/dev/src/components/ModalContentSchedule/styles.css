@@ -13,7 +13,10 @@
     font-size: 1.5rem;
     color: dodgerblue; }
   .modal-content-schedule .modal-content-schedule__presenter {
-    color: gray; }
+    color: #666666; }
+  .modal-content-schedule .modal-content-schedule__presenter-description {
+    color: gray;
+    font-size: 0.8em; }
   .modal-content-schedule .modal_tag {
     vertical-align: middle;
     margin: 4px 0;
@@ -22,6 +25,16 @@
     width: 32px;
     height: 32px;
     margin-right: 6px; }
+  .modal-content-schedule .modal-content-speakers__img {
+    width: 64px;
+    border-radius: 50%; }
+  .modal-content-schedule .modal-content-schedule_subtitle {
+    padding-top: 1em;
+    font-size: 1.2em;
+    color: dodgerblue; }
+  .modal-content-schedule .modal-content-speakers_sns {
+    margin-top: 1em;
+    color: dodgerblue; }
   .modal-content-schedule .modal-content-schedule__close-btn {
     position: absolute;
     right: 10px;

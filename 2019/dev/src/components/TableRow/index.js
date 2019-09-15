@@ -5,23 +5,34 @@ import TableTime from "../TableTime";
 import TableTalk from "../TableTalk";
 import './styles.css';
 
-export default ({ start, end, rest, talks, isWorkshop, onClickTopic }) => {
+export default ({ start, end, rest, talks, isWorkshop, programs, onClickTopic }) => {
   
   //state = { programs: []};
 
-  const renderTalks = _.map(talks, ({ id, topic, presenter, description, room, tags }) => (
-    <TableTalk
+  const renderTalks = _.map(talks, ({ id, topic, presenter, description, room, tags, programId }) => {
+    const program = programs ? programs.find(function(element) {
+      return element.id === programId;
+    }) : null
+
+    var speaker = ""
+    program ? program.speakers.map(({name,bio}) => {
+      speaker += (name + " ")
+       
+    })  : (speaker = null)
+
+    return (
+      <TableTalk 
       key={id}
-      topic={topic}
-      presenter={presenter}
-      description={description}
+      topic={program? program.title : topic}
+      presenter={speaker? speaker : presenter}
+      description={program? program.abstract : description}
       room = {room}
       tags = {tags}
+      program = {program}
       isWorkshop = {isWorkshop}
       onClickTopic={onClickTopic}
-      
-    />
-  ));
+    />)
+    });
 
   return (
     <li className="sechdule_row">

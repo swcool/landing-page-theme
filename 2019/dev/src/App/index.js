@@ -19,7 +19,7 @@ export default class App extends PureComponent {
 
   componentDidMount = async () => {
     //const data = await 
-    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/master/program.json')
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2019/v2/program.json')
     .then(response => response.json())
     .then(data => {
       console.log(data.program)
@@ -502,7 +502,8 @@ export default class App extends PureComponent {
             description: "不知道什麼是測試嗎？\r\n沒寫過任何UnitTest嗎？\r\n沒聽過TDD嗎？\r\n你來對地方了。我們會一步步帶你認識了解\r\n透過實作一個樂透發財APP\r\n從最基礎型的MVC架構，搭配DI技巧\r\n用TDD心法來做代碼的整理與優化\r\n並且逐步完善我們想要實作的功能\r\n目標對象：\r\n對測試沒概念的人\r\n對TDD沒概念的人\r\n(此主題適合給junior朋友\r\n",
             tags:[],
             room:"103",
-            isWorkshop:true
+            isWorkshop:true,
+            programId:168
           }
         ]
       }
@@ -521,7 +522,8 @@ export default class App extends PureComponent {
             description: "後端API沒完成，前端該如何同步開發？\r\n帶你一起透過依賴注入，讓外部API調用從代碼中解耦, \r\n編寫易於測試與Debug的代碼。",
             tags:["no_record"],
             room:"103",
-            isWorkshop:true
+            isWorkshop:true,
+            programId:155
           }
         ]
       },
@@ -537,7 +539,8 @@ export default class App extends PureComponent {
             description: "如果有一萬個小時的程式練習，我就能開發比 IG 還棒的 App。一萬個小時的練習有可能嗎? 可以 ! 就從 Workshop 的 3 個小時，開始第一次的 SwiftUI App 親密接觸。\r\n\r\nApple 最新推出的 SwiftUI 幫助我們以更直覺精簡的程式製作 App，活動將搭配滿滿的實作練習，介紹 SwiftUI 的各種技術。比方畫面的製作，頁面的切換，data binding，動畫和轉場效果，結合 iOS 13 的 dark mode，SF Symbols，SPM 等，帶著大家一步步創作一個完整的 App。\r\n",
             tags:[],
             room:"201",
-            isWorkshop:true
+            isWorkshop:true,
+            programId:97
           }
         ]
       },
@@ -553,7 +556,8 @@ export default class App extends PureComponent {
             description: "如果你對 AR 充滿好奇，不妨來體驗開發 AR App 的樂趣，ARKit 真假難辨的視覺效果，肯定不會讓你失望，經過這堂課後，您將擁有開發AR的基本能力。如：\r\nimageAnchor 設定、座標設定、轉角設定、比例縮放、材質設定、人物動作處理等。\r\n\r\n環境需求：\r\n1. 請攜帶內建 A9 以上晶片的設備，如 iphone6S 以上機種，平板體驗更佳。\r\n2. 設備OS版本需iOS12以上。\r\n3. 開發環境請安裝 Xcode 11。\r\n",
             tags:[],
             room:"103",
-            isWorkshop:true
+            isWorkshop:true,
+            programId:182
           }
         ]
       }
@@ -570,7 +574,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "王巍現在是專註於 iOS 的職業開發者。他擁有對於 Swift，Objective-C 以及網路程式設計方面的深厚知識及多年實作經驗。他將這些技術運用於創建 app 和通用框架等解決方案，其中很多都被用戶喜愛，並被開發者社區廣泛使用來構建其他軟體。\r\n\r\n作為兩個可愛孩子的父親，王巍同時也熱愛旅遊，閱讀以及攝影。他總是樂於嘗試新鮮事物，並且持續地從這些新鮮事物中進行學習。\r\n\r\n現在，王巍是壹名在 LINE 工作的高級軟件工程師。",
-        topic:"網路難，難於上青天 - 用部件化的方式簡化網路程式設計"
+      topic:"網路難，難於上青天 - 用部件化的方式簡化網路程式設計",
+      programIds:[98],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -580,7 +586,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "A Taipei-based developer working at KKBOX. Started developing in Objective-C language for macOS since 2005 and became an iOS developer since 2008 when iPhone SDK was out. Contributed to products including Yahoo! KeyKey Input Method, Boshiamy Input Method for macOS, KKBOX for macOS/iOS/tvOS, Uta Pass for iOS and so on. Wrote a free online e-book in Chinese about iOS development in 2015.\r\nHis latest work is KKBOX Kids, a new audio app with latest Flutter technology parenting contents from KKBOX.",  
-      topic:"Beyond a player: CarPlay and MFI Hearing Aids"
+      topic:"Beyond a player: CarPlay and MFI Hearing Aids",
+      programIds:[106],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -591,7 +599,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "Since early-2008 I've been working as a native iOS/Mac application developer.\r\nDeveloped several major iOS applications and maintained some popular open source libraries. Prefer developing small tools for developers.",  
-      topic:"Backporting UICollectionViewCompositionalLayout"
+      topic:"Backporting UICollectionViewCompositionalLayout",
+      programIds:[154],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -601,7 +611,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "心血來潮就會寫部落格的 iOS 工程師，希望有天可以靠嘴寫程式。",  
-      topic:"漫談 iOS 架構：MVC / MVVM / VIPER 與 Redux"
+      topic:"漫談 iOS 架構：MVC / MVVM / VIPER 與 Redux",
+      programIds:[108],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -611,7 +623,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "Daiki has developing iOS app for 8 years in Tokyo, and is Google Developers Expert for Firebase. He has organizing try! Swift Tokyo and some meetups around Tokyo. When he’s not coding, he likes to play piano and go to Onsen♨️",  
-      topic:"Integrate your app to modern world"
+      topic:"Integrate your app to modern world",
+      programIds:[153],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -621,7 +635,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "I’ve been an App Automation Engineer at Bitrise for 1,5 years. I’ve specialized in Xcode build tools and Code signing automation. Before joining Bitrise, I’d worked as an iOS Developer.",  
-      topic:"Continuous integration for iOS: CI as a service"
+      topic:"Continuous integration for iOS: CI as a service",
+      programIds:[160],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -631,7 +647,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "Organizer of Swift Taipei. Full-stack developer.  iOS developer. Language Nerd. FP lover.",  
-      topic:"探索 Swift 自動微分實作"
+      topic:"探索 Swift 自動微分實作",
+      programIds:[173],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -641,7 +659,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "I’m a Software Engineer at Mercari. I've been working on Mercari US app in frontend and backend team. I'm passionate about learning new technology. When not coding, you can find me cycling.",  
-      topic:"Making your own tools using SwiftSyntax"
+      topic:"Making your own tools using SwiftSyntax",
+      programIds:[152],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -651,7 +671,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "iOS 七年開發經驗，在台灣電商服務五年，喜歡解決疑難雜症與開發自動化工具",  
-      topic:"APP 送審自動化"
+      topic:"APP 送審自動化",
+      programIds:[175],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -661,7 +683,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "上班寫nodejs，下班後的身份是台灣城市單車聯盟理事、Cocoaheads Taipei發起人、業餘macOS/iOS開發者。 上一個生涯目標是推廣熱愛的蘋果，已達成。接下來的生涯目標是推廣熱愛的單車多元文化，用單車來改變城市。 曾主辦「沈默的騎行」呼籲重視交通安全，以及「台北裸騎」。",  
-      topic:"我搞不懂浮點數：CS 101"
+      topic:"我搞不懂浮點數：CS 101",
+      programIds:[109],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -671,7 +695,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "https://github.com/s2339956/Resume\r\n\r\nswift 線上讀書會 - 分享 iOS 逆向工程- Reveal基礎入門\r\nIT-Home2019資安大會 - 在iOS 系統架構下，你的app 真的無堅不摧？讓我們一起來看app 裸奔吧\r\n逢甲大學黑客社 - 概述iOS逆向攻擊\r\n2019亞太資訊安全論壇 - 雙平台下被刻板印象所忽略的手機app漏洞",  
-      topic:"一起來看 app 裸奔吧～"
+      topic:"一起來看 app 裸奔吧～",
+      programIds:[89],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -681,7 +707,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "qcl, coding & leanring. \r\n\r\nTaiwanese, iOS developer @ Booking.com in Amsterdam, Netherlands. Former Sr. Mobile App Engineer @ Yahoo! Taiwan.   ",  
-      topic:"使用 BUCK 改善編譯速度"
+      topic:"使用 BUCK 改善編譯速度",
+      programIds:[149],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -691,7 +719,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "獨立 App 開發者、影片創作者。擁有已上架作品 [Storyboards by narrativesaw]。AppCoda.com.tw 合作作者。[《電影冷知識：跨越銀幕之外，我們都想探索的電影製造祕密》]作者。個人網站 [https://www.lihenghsu.com]。",  
-      topic:"簡易版 Combine 框架 DIY：FRP 原理探討"
+      topic:"簡易版 Combine 框架 DIY：FRP 原理探討",
+      programIds:[95],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -701,7 +731,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "我是哲西，目前任職於 Verizon Media, QE. 一個孩子的爸爸, 熱愛軟體測試技術, 出沒於 Test Corner 社群. 熟悉 Selenium, Cucumber 及 Appium.",  
-      topic:"How to make BDD possible in Flutter"
+      topic:"How to make BDD possible in Flutter",
+      programIds:[161],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -711,7 +743,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "最近看專案的代碼都抱著看鄉土劇的心態，別有一番樂趣。\r\n在跨國電子商務公司寫了六年的 iOS App；剛進公司時台灣團隊有十人以上，成員分散在三地，Code Review 會議可以開上兩天；後來 iOS6 過渡到 iOS7，設計風格從擬真轉向扁平化，藉著改版，大家一起協力重構代碼，App 上架以後，團隊也依然規律地進行代碼維護和重構；期間同事們來來去去，迎新送舊，累積很多和不同開發者、測試和 PM 協同開發的經驗；而今年初，公司決定改採用 React Native 重構 App，因為時間緊迫，有更多之前沒有合作過的異地團隊加入專案，期間經歷不少的磨合，都是滿有趣的經驗。",  
-      topic:"多人專案開發你可能會碰到的那些事"
+      topic:"多人專案開發你可能會碰到的那些事",
+      programIds:[150],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -721,7 +755,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "對AR有極度熱忱的白日夢工程師，幻想有一天能創造自己的異世界冒險，為此不斷的修煉自己的開發技能",  
-      topic:"AR 互動遊戲開發經驗分享"
+      topic:"AR 互動遊戲開發經驗分享",
+      programIds:[102,182],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -731,7 +767,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "用一口破日文在東京掙扎求生的iOS工程師，待過電子書、醫療、旅遊、串流產業，熱衷研究架構、語法、與各種能夠能夠讓人類有時間偷懶的技術。為了讓更多人有時間看電影而不是debug，偶而會寫寫Blog文章。目前在東京也有經營一個技術社群，歡迎來東京時一起來討論技術！",  
-      topic:"Declarative UI on iOS (without SwiftUI)"
+      topic:"Declarative UI on iOS (without SwiftUI)",
+      programIds:[172],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -741,7 +779,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "@ethanhuang13",  
-      topic:"初代 SwiftUI 就用來寫 Watch App 吧！"
+      topic:"初代 SwiftUI 就用來寫 Watch App 吧！",
+      programIds:[165],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -751,7 +791,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "LINE TW iOS NERD.\r\n新創&企業經驗兼具，技術債的創造者與還債人.\r\n正在 Scrum 的道路上 Trial and Error.",  
-      topic:"大型專案生存守則 - 10x加速開發技巧"
+      topic:"大型專案生存守則 - 10x加速開發技巧",
+      programIds:[158],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -761,7 +803,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "A front-end team leader at LINE TV and an iOS developer with 10 years experience. 現職偶爾刷存在感的丈夫、陪毛尼玩的爸爸、剩餘時間拿來寫程式的工程師",  
-      topic:"The Reborn of the Our Product."
+      topic:"The Reborn of the Our Product.",
+      programIds:[151],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -771,7 +815,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "Verizon Media資深App工程師，目前負責台灣電商App開發",  
-      topic:"在想色色的事情對吧？About color in iOS"
+      topic:"在想色色的事情對吧？About color in iOS",
+      programIds:[167],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -781,7 +827,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "## 邊緣的代表\r\n畢業於政治大學數位內容碩士學位學程，興趣為人機互動介面與使用者經驗研究，自稱為非典型工程師。目前為 CATCHPLAY 的 tvOS / iOS 工程師。",  
-      topic:"為邊緣開發獻上新知 - tvOS"
+      topic:"為邊緣開發獻上新知 - tvOS",
+      programIds:[169],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -791,7 +839,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "電子支付/第三方支付 App 行動裝置研發經理，致力於支付 App 架構和安全以及更好用支付體驗。 實際為什麼都略懂一點的雜工一枚。",  
-      topic:"您的 APP 安全嗎?"
+      topic:"您的 APP 安全嗎?",
+      programIds:[116],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -801,7 +851,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "iCHEF iOS Developer, 愛貓, 以為戴牙套會變瘦結果一年後還是胖了2公斤。",  
-      topic:"怦然心動的編譯時間優化魔法"
+      topic:"怦然心動的編譯時間優化魔法",
+      programIds:[163],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -811,7 +863,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "Aaron Ni\r\n\r\niOS@Taipei 的固定講者之一\r\nhttps://github.com/ChiaoteNi?tab=repositories\r\n兩年iOS開發經驗\r\n專長ＵＩ繪製，興趣在Layer與CoreText，對於畫面熱衷於捲起袖子造輪子。\r\n\r\n其他部分曾經會一點點游泳跟潛水，喜歡旅遊，如果有做什麼旅遊相關的App請務必介紹給我：）",  
-      topic:"關於Smart KeyPath"
+      topic:"關於Smart KeyPath",
+      programIds:[162],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -821,7 +875,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "大家好，我叫黃惠勤，來自馬來西亞，大部分台灣朋友叫我NG。從事iOS工作已長達5年，目前在台灣KKBOX iOS部門任職工程師一職。",  
-      topic:"從MVC到MVVM，再到MVVMC的開發經驗分享"
+      topic:"從MVC到MVVM，再到MVVMC的開發經驗分享",
+      programIds:[176],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -831,7 +887,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "大家好，我是 17 Media iOS Manager－Han。\n在 17 Media iOS 團隊中負責 Streaming 相關工作，包含：維護與優化推拉流模組，解決直播斷線、延遲或卡頓問題，以及開發與 Streaming 相關的有趣新功能，例如：視訊連麥、螢幕直播、直播中的動畫特效⋯等。\n興趣是與同事一同去日本滑雪，歡迎大家一起加入滑雪的行列！ ",  
-      topic:"二次元直播 - 虛擬主播與 ReplayKit 的邂逅"
+      topic:"二次元直播 - 虛擬主播與 ReplayKit 的邂逅",
+      programIds:[164],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -841,7 +899,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "HI\b，我是DinDIn，大概約3年經驗 曾做過旅遊、潛水錶、區塊鏈，現在在興趣與工作結合的公司，喜歡實作各種同事奇怪發想的題目，興趣是攝影跟爬山。",  
-      topic:"利用TDD來發大財吧～"
+      topic:"利用TDD來發大財吧～",
+      programIds:[168],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -851,7 +911,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "My name is Steve, I am Taiwanese but I am working in a company called Hootsuite in Vancouver Canada. I enjoy iOS development and would love to share and exchange knowledges with other Taiwanese iOS devs.",  
-      topic:"利用TDD來發大財吧～"
+      topic:"利用TDD來發大財吧～",
+      programIds:[168],
+      speakerNumber:1
     },
     {
       id: _.uniqueId(),
@@ -861,7 +923,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "LINE Fukuoka iOS Developer\r\n參與 LINE 本體開發. 希望能透過分享跟大家交流.\r\n",  
-      topic:"Web API Mocking"
+      topic:"Web API Mocking",
+      programIds:[155],
+      speakerNumber:0
     },
     {
       id: _.uniqueId(),
@@ -871,7 +935,9 @@ export default class App extends PureComponent {
       position: "",
       intro:
         "著作: 彼得潘的 Swift 程式設計入門，App 程式設計入門－iPhone, iPad\r\niOS App 開發講師: 彼得潘的 iOS App程式設計入門，文組生的 iOS App程式設計入門\r\nBlog: 彼得潘的 App Neverland\r\nFB粉絲團: 愛瘋一切為蘋果的彼得潘\r\nApp 作品: Wealthy, LOCOMO運動記錄, 戴佩妮回家路上等二十幾款App \r\n學校講師: 台大共同教育中心，政治大學，中央大學，海洋大學，臺北大學\r\n家教: 專屬於你的 iOS APP 開發導師\r\n企業內訓:  Yahoo，聯陽半導體，世界先進，信義房屋",  
-      topic:"第一次 SwiftUI App 親密接觸"
+      topic:"第一次 SwiftUI App 親密接觸",
+      programIds:[97],
+      speakerNumber:0
     }
   ];
 
@@ -1308,11 +1374,11 @@ export default class App extends PureComponent {
           rest={rest || null}
           talks={talks}
           isWorkshop = {null}
+          programs = {this.state.programs}
           onClickTopic={talk => {
             this.onClickTopic(talk);
           }}
         />)
-        //row.setState({ programs: this.state.programs });
         return row
       } 
     );
@@ -1340,6 +1406,7 @@ export default class App extends PureComponent {
           rest={rest || null}
           talks={talks}
           isWorkshop = {true}
+          programs = {this.state.programs}
           onClickTopic={talk => {
             this.onClickTopic(talk);
           }}
@@ -1353,9 +1420,7 @@ export default class App extends PureComponent {
       {this.renderWorkShopRow("day_1")}
       <li className="sechdule_row "><div className="workshop_day">9/22 day 2</div></li>
       {this.renderWorkShopRow("day_2")}      
-    </ul>
-    
-    //{renderWorkShopRow("day_2")}
+    </ul>    
   );
 
   programObject = (id) => {
@@ -1588,6 +1653,7 @@ export default class App extends PureComponent {
             <ModalContentSchedule
               {...this.modalContentDataSchedule}
               onClickCloseBtn={this.onCloseRequest}
+              speakers = {this.speakers}
             />
           )}
         </Modal>

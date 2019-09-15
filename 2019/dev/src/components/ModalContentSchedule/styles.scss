@@ -14,7 +14,12 @@
   }
 
   .modal-content-schedule__presenter {
+    color: #666666;
+  }
+
+  .modal-content-schedule__presenter-description {
     color: $color--gray;
+    font-size: 0.8em;
   }
 
   .modal_tag {
@@ -27,6 +32,21 @@
     height: 32px;
     margin-right: 6px;
   }
+
+  .modal-content-speakers__img {
+    width: 64px;
+    border-radius: 50%;
+  }
+  .modal-content-schedule_subtitle {
+    padding-top: 1em;
+    font-size: 1.2em;
+    color: $color--secondary;
+  }
+  .modal-content-speakers_sns {
+    margin-top: 1em;
+    color: $color--secondary
+  }
+
   .modal-content-schedule__close-btn {
     position: absolute;
     right: 10px;
