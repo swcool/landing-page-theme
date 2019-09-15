@@ -2,8 +2,8 @@ import React from "react";
 import _ from "lodash";
 import "./styles.css";
 
-export default ({ topic, presenter, description, room, tags, isWorkshop, onClickTopic }) => {
-  const talk = { topic, presenter, description, room, tags };
+export default ({ topic, presenter, description, room, tags, isWorkshop, program, onClickTopic }) => {
+  const talk = { topic, presenter, description, room, tags, program };
 
 
   return (
