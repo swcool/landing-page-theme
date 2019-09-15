@@ -15,15 +15,22 @@ import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
 
 export default class App extends PureComponent {
-  state = { showModal: false, whichDay: "day_1" , programs: []};
+  state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null};
 
   componentDidMount = async () => {
     //const data = await 
     await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2019/v2/program.json')
     .then(response => response.json())
     .then(data => {
-      console.log(data.program)
+      //console.log(data.program)
       this.setState({programs: data.program})
+    });
+
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2019/v2/sponsors.json')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      this.setState({sponsors: data})
     });
   }
 
@@ -1475,30 +1482,38 @@ export default class App extends PureComponent {
     
   ));
 
-  renderSponsors = () =>
-    _.map(this.sponors, ({ id, degree, sponorList }) => (
-      <div key= {id} className= "staff_team_container">
-       <div className="section_sub_title">{degree}</div>
+  renderSponsors = () => {
+    const sponsorsList = this.state.sponsors ? this.state.sponsors.sponsors : null
+
+    return _.map(sponsorsList, ({title,items}) => (
+      <div key= {_.uniqueId()} className= "staff_team_container">
+       <div className="section_sub_title">{title}</div>
        {
-         sponorList.map( ({id,imgURL,link,alt}) => 
-          <div key={id} className="app__sponsor">
+         items.map( ({picture,link,name}) => 
+          <div key={_.uniqueId()} className="app__sponsor">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+            <img className="app__sponsor-logo" src={picture} alt={name} />
           </a>
          </div>
         )
       }
       </div>
     ));
+    }
+    
 
-  renderCoOrganisers = () =>
-    _.map(this.coOrganisers, ({ id, imgURL, link, alt }) => (
-      <div key={id} className="app__sponsor">
+  renderCoOrganisers = () => {
+    const partners = this.state.sponsors ? this.state.sponsors.partner : null
+
+    return _.map(partners, ({ icon, link, name }) => (
+      <div key={_.uniqueId()} className="app__sponsor">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img className="app__sponsor-logo" src={imgURL} alt={alt} />
+          <img className="app__sponsor-logo" src={icon} alt={name} />
         </a>
       </div>
     ));
+  }
+    
 
   render() {
     const { whichDay, showModal } = this.state;
