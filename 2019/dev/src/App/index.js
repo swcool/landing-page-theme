@@ -809,7 +809,7 @@ export default class App extends PureComponent {
       name: "Mars",
       position: "",
       intro:
-        "A front-end team leader at LINE TV and an iOS developer with 10 years experience. 現職偶爾刷存在感的丈夫、陪毛尼玩的爸爸、剩餘時間拿來寫程式的工程師",  
+        "A front-end team leader and an iOS developer with 10 years experience. 現職偶爾刷存在感的丈夫、陪毛尼玩的爸爸、剩餘時間拿來寫程式的工程師",  
       topic:"The Reborn of the Our Product.",
       programIds:[151],
       speakerNumber:0
