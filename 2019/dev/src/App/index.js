@@ -1549,7 +1549,7 @@ export default class App extends PureComponent {
         <div className="app__container">
           <div className="empty_section">
             <div className="section_action_container">
-              <ActionButton title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" />             
+              <ActionButton title="HackMD 共筆" link="https://hackmd.io/@iPlayground" />             
              </div>
              <div className="section_action_container" style={{marginTop:"1em"}}>
                <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon" style={{color:"#1DA1F2"}}></i></a>
