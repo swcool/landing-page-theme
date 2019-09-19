@@ -374,6 +374,15 @@ html {
     text-decoration: none;
   }
 
+  .twitter_icon {
+    color: #1DA1F2;
+  }
+  .facebook_icon {
+    color: #1877F2;
+  }
+  .telegram_icon {
+    color: #0088cc;
+  }
   @include screen--md {
  
 
@@ -410,4 +419,39 @@ html {
   }
 
   
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #666;
+  }
+  .logo-container-fullscreen {
+    .logo-container-fullscreen-mask {
+      border-color: transparent transparent #666 transparent; 
+    }
+    .logo-container-fullscreen-mask-2-container {
+      
+      .logo-container-fullscreen-mask-2-top {
+    
+        border-color: transparent transparent #66666633 transparent;
+      }
+      .logo-container-fullscreen-mask-2-bottom {
+        background: #66666633;
+   
+      }
+    }
+  }
+  .app__container {
+    .main_section_container {
+      background-color: #ffffffaa
+    }
+    .twitter_icon {
+      color: #ffffff;
+    }
+    .facebook_icon {
+      color: #ffffff;
+    }
+    .telegram_icon {
+      color: #ffffff;
+    }
+  }
 }

@@ -261,6 +261,12 @@ html {
     border-top: 1px solid lightgray; }
   .app__container a {
     text-decoration: none; }
+  .app__container .twitter_icon {
+    color: #1DA1F2; }
+  .app__container .facebook_icon {
+    color: #1877F2; }
+  .app__container .telegram_icon {
+    color: #0088cc; }
   @media screen and (min-width: 768px) {
     .app__container .app__submit {
       margin-left: auto;
@@ -277,3 +283,21 @@ html {
   @media screen and (min-width: 992px) {
     .app__container .app__container {
       max-width: 960px; } }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #666; }
+  .logo-container-fullscreen .logo-container-fullscreen-mask {
+    border-color: transparent transparent #666 transparent; }
+  .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-top {
+    border-color: transparent transparent #66666633 transparent; }
+  .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-bottom {
+    background: #66666633; }
+  .app__container .main_section_container {
+    background-color: #ffffffaa; }
+  .app__container .twitter_icon {
+    color: #ffffff; }
+  .app__container .facebook_icon {
+    color: #ffffff; }
+  .app__container .telegram_icon {
+    color: #ffffff; } }

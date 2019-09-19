@@ -1552,10 +1552,10 @@ export default class App extends PureComponent {
               <ActionButton title="HackMD 共筆" link="https://hackmd.io/@iPlayground" />             
              </div>
              <div className="section_action_container" style={{marginTop:"1em"}}>
-               <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon" style={{color:"#1DA1F2"}}></i></a>
-               <a href="https://t.me/iPlayground" target="_blank"><i className="fab fa-telegram social_icon" style={{color:"#0088cc"}}></i></a>
-               <a href="https://t.me/iPlaygroundAnnouncement" target="_blank"><i className="fas fa-bullhorn social_icon" style={{color:"#0088cc",fontSize:"24pt"}}></i></a>
-               <a href="https://www.facebook.com/theiPlayground/" target="_blank"><i className="fab fa-facebook social_icon" style={{color:"#1877F2"}}></i></a>
+               <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon twitter_icon"></i></a>
+               <a href="https://t.me/iPlayground" target="_blank"><i className="fab fa-telegram social_icon telegram_icon"></i></a>
+               <a href="https://t.me/iPlaygroundAnnouncement" target="_blank"><i className="fas fa-bullhorn social_icon telegram_icon" style={{fontSize:"24pt"}}></i></a>
+               <a href="https://www.facebook.com/theiPlayground/" target="_blank"><i className="fab fa-facebook social_icon facebook_icon"></i></a>
              </div>
              <div className="section_action_container">
                <a href="https://apps.apple.com/tw/app/iplayground-19/id1367423535?mt=8" style={{display:"inline-block",overflow:"hidden",background:"url(https://linkmaker.itunes.apple.com/zh-tw/badge-lrg.svg?releaseDate=2018-10-03&kind=iossoftware&bubble=ios_apps) no-repeat",width:"135px",height:"40px",verticalAlign: "middle"}}></a>
