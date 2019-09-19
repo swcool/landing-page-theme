@@ -1557,6 +1557,10 @@ export default class App extends PureComponent {
                <a href="https://t.me/iPlaygroundAnnouncement" target="_blank"><i className="fas fa-bullhorn social_icon" style={{color:"#0088cc",fontSize:"24pt"}}></i></a>
                <a href="https://www.facebook.com/theiPlayground/" target="_blank"><i className="fab fa-facebook social_icon" style={{color:"#1877F2"}}></i></a>
              </div>
+             <div className="section_action_container">
+               <a href="https://apps.apple.com/tw/app/iplayground-19/id1367423535?mt=8" style={{display:"inline-block",overflow:"hidden",background:"url(https://linkmaker.itunes.apple.com/zh-tw/badge-lrg.svg?releaseDate=2018-10-03&kind=iossoftware&bubble=ios_apps) no-repeat",width:"135px",height:"40px",verticalAlign: "middle"}}></a>
+               <a href='https://play.google.com/store/apps/details?id=net.zonble.iplayground19&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play立即下載' src='https://play.google.com/intl/en_us/badges/images/generic/zh-tw_badge_web_generic.png' style={{height:"60px",verticalAlign: "middle"}}/></a>
+             </div>
              </div>
           <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
