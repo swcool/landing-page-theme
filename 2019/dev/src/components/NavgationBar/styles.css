@@ -87,3 +87,14 @@ nav {
       padding-inline-start: 20px;
       padding-top: 20px;
       vertical-align: top; } }
+
+@media (prefers-color-scheme: dark) {
+  .is-shrink {
+    background-color: #333333ef;
+    box-shadow: 0 3px 5px 2px #00000033; }
+    .is-shrink P {
+      color: #fff; }
+    .is-shrink .nav-menu {
+      color: #fff; }
+  nav #nav.menu-opened {
+    background-color: #333333ef; } }
