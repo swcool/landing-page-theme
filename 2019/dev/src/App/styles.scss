@@ -352,7 +352,17 @@ html {
     text-align: center;
     padding: 16px 0;
   }
+  .social_icon {
+    width: 64px;
+    line-height: 64px;
+    vertical-align: middle;
+    font-size: 32pt;
+  }
 
+  .content_small_title {
+    font-size: 1.2em;
+    color: #333333;
+  }
   hr {
     display: block;
     height: 1px;
