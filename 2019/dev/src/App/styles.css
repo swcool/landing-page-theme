@@ -246,6 +246,14 @@ html {
   .app__container .section_action_container {
     text-align: center;
     padding: 16px 0; }
+  .app__container .social_icon {
+    width: 64px;
+    line-height: 64px;
+    vertical-align: middle;
+    font-size: 32pt; }
+  .app__container .content_small_title {
+    font-size: 1.2em;
+    color: #333333; }
   .app__container hr {
     display: block;
     height: 1px;

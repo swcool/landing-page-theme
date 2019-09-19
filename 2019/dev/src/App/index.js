@@ -1551,6 +1551,12 @@ export default class App extends PureComponent {
             <div className="section_action_container">
               <ActionButton title="我要購票" link="https://iplayground.kktix.cc/events/iplayground2019" />             
              </div>
+             <div className="section_action_container" style={{marginTop:"1em"}}>
+               <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon" style={{color:"#1DA1F2"}}></i></a>
+               <a href="https://t.me/iPlayground" target="_blank"><i className="fab fa-telegram social_icon" style={{color:"#0088cc"}}></i></a>
+               <a href="https://t.me/iPlaygroundAnnouncement" target="_blank"><i className="fas fa-bullhorn social_icon" style={{color:"#0088cc",fontSize:"24pt"}}></i></a>
+               <a href="https://www.facebook.com/theiPlayground/" target="_blank"><i className="fab fa-facebook social_icon" style={{color:"#1877F2"}}></i></a>
+             </div>
              </div>
           <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
