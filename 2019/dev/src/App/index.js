@@ -665,7 +665,7 @@ export default class App extends PureComponent {
       name: "Yusuke Kita",
       position: "",
       intro:
-        "I’m a Software Engineer at Mercari. I've been working on Mercari US app in frontend and backend team. I'm passionate about learning new technology. When not coding, you can find me cycling.",  
+        "I'm a Software Engineer at Mercari. I'm passionate about learning new technology like Swift Compiler and SwiftSyntax. When not coding, you can find me cycling.",  
       topic:"Making your own tools using SwiftSyntax",
       programIds:[152],
       speakerNumber:0
