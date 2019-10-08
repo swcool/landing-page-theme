@@ -1,11 +1,11 @@
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
-
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
+baseurl:
+url: http://namsuji.github.io/test
+title: For Web Programmer
+email: 01928abcd@naver.com
+author: Nam
 description: > # "Write an awesome description for your new site here. 
   You can edit this line in _config.yml. It will appear in your document 
   head meta (for Google search results) and in your feed.xml site 
@@ -20,13 +20,17 @@ markdown: kramdown
 permalink: pretty
 
 # ----------------------- #
-#   3rd Party Settings    #
+#   2nd Party Settings    #
 # ----------------------- #
 
 social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url: 
+    url: https://github.com/NamSuJi
+  - title: Naver
+    url: https://blog.naver.com/01928abcd
+
+# ----------------------- #
+#     category & tag      #
+# ----------------------- #
+category_dir: category/
+tag_dir: tag/
