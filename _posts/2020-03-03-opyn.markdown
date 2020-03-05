@@ -2,7 +2,7 @@
 layout: default
 img: opyn.png
 category: Services
-title: ...insurance from Opyn Protocol, equals...
+title: ...plus insurance from Opyn Protocol...
 description: |
 ---
   The insurance component of saveDAI comes from ocDAI, a token produced by the [Opyn Protocol](https://www.opyn.co) that represents an option to redeem for the initial value of cDAI. Each ocDAI token insures the principal for one cDAI token.
