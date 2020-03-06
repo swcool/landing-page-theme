@@ -1,6 +1,6 @@
 ---
 layout: default
-img: compound.png
+img: compound2.png
 category: Services
 title: Interest from Compound Protocol...
 description: |
