@@ -1,6 +1,6 @@
 ---
 layout: default
-img: opyn.png
+img: opyn_transparent.png
 category: Services
 title: ...and insurance comes from Opyn Protocol.
 description: |
