@@ -2,7 +2,7 @@
 layout: default
 img: saveDAI_logo_transparent.png
 category: Services
-title: ...equals saveDAI, a self-insured high-interest savings account
+title: saveDAI is a self-insured high-interest savings account, where...
 description: |
 ---
   saveDAI combines interest and insurance together to make it dead simple to insure your savings account.
