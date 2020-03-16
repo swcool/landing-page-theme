@@ -5,4 +5,4 @@ category: Services
 title: ...interest comes from the Compound Protocol...
 description: |
 ---
-  The interest-earning power of saveDAI comes from cDAI, an interest-generating version of DAI obtained by lending DAI via the [Compound Protocol](https://compound.finance)
+  The interest-earning power of saveDAI comes from cDAI, an interest-generating version of DAI obtained by lending DAI via the [Compound Protocol](https://compound.finance).
