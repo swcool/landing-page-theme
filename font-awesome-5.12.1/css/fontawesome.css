@@ -2,6 +2,15 @@
  * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+ /* FONT PATH
+  * -------------------------- */
+ @font-face {
+   font-family: 'FontAwesome';
+   src: url('../fonts/fontawesome-webfont.eot?v=5.12.1');
+   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=5.12.1') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=5.12.1') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=5.12.1') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=5.12.1#fontawesomeregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
 .fa,
 .fas,
 .far,
