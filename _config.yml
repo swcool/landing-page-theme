@@ -4,7 +4,7 @@
 
 url: https://save-dai.github.io/
 title: saveDAI
-description: > # "Write an awesome description for your new site here. 
+description: > # "Write an awesome description for your new site here.
   The easiest way to open an insured, high-interest savings account.
 copyright: 'Copyright &copy; 2020 saveDAI. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
@@ -26,5 +26,5 @@ social:
     url: https://twitter.com/save_dai
   - title: github
     url: https://github.com/save-dai
-  - title: blog
+  - title: medium
     url: https://medium.com/savedai
