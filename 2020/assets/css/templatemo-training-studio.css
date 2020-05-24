@@ -182,8 +182,9 @@ body {
   display: inline-block;
   font-size: 15px;
   padding: 12px 30px;
-  background-color: #2894FF;
-  color: #fff;
+  background-color: #FFFF37;
+  color: #000000;
+  border-radius: 8px;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
