@@ -1,0 +1,30 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+.table-talk {
+  padding: 1em 0;
+  width: 100%; }
+  .table-talk span {
+    display: block;
+    margin: 0 0.5em; }
+  .table-talk .talk_room_lable {
+    margin: 0 0.5em 0.5em 0.5em; }
+  .table-talk .table-talk__topic {
+    color: #517CFFEF;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95em; }
+  .table-talk .table-talk__presenter {
+    color: #444444;
+    font-size: 1em; }
+  .table-talk .tag_image {
+    width: 24px;
+    height: 24px;
+    margin: 6px; }
+
+@media screen and (min-width: 768px) {
+  .table-talk {
+    width: 33%; }
+  .talk_room_lable {
+    display: none; } }

@@ -1,0 +1,40 @@
+@import "../../styles/variable.scss";
+
+.table-talk {
+  padding: 1em 0;
+  width: 100%;
+
+  span {
+    display: block;
+    margin: 0 0.5em;
+  }
+
+  .talk_room_lable {
+    margin: 0 0.5em 0.5em 0.5em;
+  }
+  .table-talk__topic {
+    color: #517CFFEF;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95em;
+  }
+
+  .table-talk__presenter {
+    color: #444444;
+    font-size: 1em;
+  }
+  .tag_image {
+    width: 24px;
+    height: 24px;
+    margin: 6px;
+  }
+}
+
+@include screen--md {
+  .table-talk {
+    width: 33%;
+  }
+  .talk_room_lable {
+    display: none;
+  }
+}
