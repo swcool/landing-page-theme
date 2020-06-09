@@ -1532,7 +1532,7 @@ export default class App extends PureComponent {
             />
             <p className="logo-info">
             <i className="fas fa-map-marker-alt"></i>
-                  台大博雅館
+                  台大博雅館456
               <br/>
               9/21-9/22
             </p>
