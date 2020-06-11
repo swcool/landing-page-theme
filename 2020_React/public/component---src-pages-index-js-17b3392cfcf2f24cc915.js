@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),c=(t("Wbzz"),t("Bl7J")),l=t("vrFN");n.default=function(){return r.a.createElement(c.a,null,r.a.createElement(l.a,{title:"iplayground"}))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-17b3392cfcf2f24cc915.js.map
