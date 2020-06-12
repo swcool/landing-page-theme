@@ -1495,7 +1495,7 @@ export default class App extends PureComponent {
           <div className="logo-container">
             <img
               className="logo"
-              src="./og_image.png"
+              src="./logo_image.png"
               alt="iPlayground"
             />
             <br/>
