@@ -1503,7 +1503,7 @@ export default class App extends PureComponent {
             {/* <i className="fas fa-map-marker-alt"></i>
                   台大博雅館
               <br/> */}
-              10/31-11/22
+              10/31-11/01
             </p>
           </div>
           <div className = "logo-container-fullscreen-mask-container">
