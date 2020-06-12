@@ -69,13 +69,13 @@ export default class NavgationBar extends PureComponent {
           </div>
         </div>
         <div className="nav-link-container" id="nav-link-container"> 
-          <div className="nav-link"><a href="#speakers-section"><p>Speakers</p><p>講者</p></a></div>
-          <div className="nav-link"><a href="#schedule-section"><p>Schedule</p><p>議程</p></a></div>
-          <div className="nav-link"><a href="#venue-section"><p>Venue</p><p>場地</p></a></div>
+          {/* <div className="nav-link"><a href="#speakers-section"><p>Speakers</p><p>講者</p></a></div> */}
+          {/* <div className="nav-link"><a href="#schedule-section"><p>Schedule</p><p>議程</p></a></div> */}
+          {/* <div className="nav-link"><a href="#venue-section"><p>Venue</p><p>場地</p></a></div> */}
           <div className="nav-link"><a href="#about-section"><p>About</p><p>關於我們</p></a></div>
-          <div className="nav-link"><a href="#sponsors-section"><p>Sponsors</p><p>贊助</p></a></div>
+          {/* <div className="nav-link"><a href="#sponsors-section"><p>Sponsors</p><p>贊助</p></a></div> */}
           <div className="nav-link"><a href="#coorganizers-section"><p>Co-organizers</p><p>合作夥伴</p></a></div>
-          <div className="nav-link"><a href="#staffs-section"><p>Staffs</p><p>工作人員</p></a></div>
+          {/* <div className="nav-link"><a href="#staffs-section"><p>Staffs</p><p>工作人員</p></a></div> */}
           <div className="nav-link nav-button"><ActionButton style={{fontSize:"32px",lineHeight:"40px"}} title="HackMD 共筆" link="https://hackmd.io/@iPlayground" /></div>
           
           </div>

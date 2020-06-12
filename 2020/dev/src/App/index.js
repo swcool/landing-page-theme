@@ -1319,39 +1319,6 @@ export default class App extends PureComponent {
     },
   ]
 
-  coOrganisers = [
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_twdc.png"),
-      link: "https://aatp.com.tw/",
-      alt: "TWDC"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_cocoaheads_taipei.png"),
-      link: "https://www.facebook.com/groups/cocoaheads.taipei/",
-      alt: "Cocoaheads Taipei"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_iOS_taipei.png"),
-      link: "https://www.facebook.com/groups/ios.taipei/",
-      alt: "iOS Taipei"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_swift_taipei.png"),
-      link: "https://www.meetup.com/Swift-Taipei-User-Group/",
-      alt: "Swift Taipei"
-    },
-    {
-      id: _.uniqueId(),
-      imgURL: require("../images/logo_swift_girls.png"),
-      link: "https://www.facebook.com/groups/1260405513988915/",
-      alt: "Swift Girls"
-    }
-  ];
-
   onClickSpeaker = id => {
     this.modalContentDataSpeakers = _.find(this.speakers, { id });
     this.setState({ showModal: "speakers" });
@@ -1390,6 +1357,7 @@ export default class App extends PureComponent {
       } 
     );
 
+    
     renderTable = () => (
       <ul className="sechdule_table">
                   <li className="sechdule_row">           
@@ -1530,11 +1498,12 @@ export default class App extends PureComponent {
               src="./og_image.png"
               alt="iPlayground"
             />
+            <br/>
             <p className="logo-info">
-            <i className="fas fa-map-marker-alt"></i>
+            {/* <i className="fas fa-map-marker-alt"></i>
                   台大博雅館
-              <br/>
-              9/21-9/22
+              <br/> */}
+              10/31-11/22
             </p>
           </div>
           <div className = "logo-container-fullscreen-mask-container">
@@ -1549,7 +1518,8 @@ export default class App extends PureComponent {
         <div className="app__container">
           <div className="empty_section">
             <div className="section_action_container">
-              <ActionButton title="HackMD 共筆" link="https://hackmd.io/@iPlayground" />             
+              {/* <ActionButton title="HackMD 共筆" link="https://hackmd.io/@iPlayground" />              */}
+              <ActionButton title="Donate 贊助" link="" />             
              </div>
              <div className="section_action_container" style={{marginTop:"1em"}}>
                <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon twitter_icon"></i></a>
@@ -1557,12 +1527,14 @@ export default class App extends PureComponent {
                <a href="https://t.me/iPlaygroundAnnouncement" target="_blank"><i className="fas fa-bullhorn social_icon telegram_icon" style={{fontSize:"24pt"}}></i></a>
                <a href="https://www.facebook.com/theiPlayground/" target="_blank"><i className="fab fa-facebook social_icon facebook_icon"></i></a>
              </div>
-             <div className="section_action_container">
+             {/* <div className="section_action_container">
                <a href="https://apps.apple.com/tw/app/iplayground-19/id1367423535?mt=8" style={{display:"inline-block",overflow:"hidden",background:"url(https://linkmaker.itunes.apple.com/zh-tw/badge-lrg.svg?releaseDate=2018-10-03&kind=iossoftware&bubble=ios_apps) no-repeat",width:"135px",height:"40px",verticalAlign: "middle"}}></a>
                <a href='https://play.google.com/store/apps/details?id=net.zonble.iplayground19&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play立即下載' src='https://play.google.com/intl/en_us/badges/images/generic/zh-tw_badge_web_generic.png' style={{height:"60px",verticalAlign: "middle"}}/></a>
+             </div> */}
              </div>
-             </div>
-          <div className="app__section main_section" id="speakers-section">
+
+          {/* Speakers講者 */}
+          {/* <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
               <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
@@ -1570,8 +1542,10 @@ export default class App extends PureComponent {
                 {this.renderSpeakers()}
               </div>
             </div>
-          </div>
-          <div className="app__section main_section" id="schedule-section">
+          </div> */}
+
+          {/* Schedule議程 */}
+          {/* <div className="app__section main_section" id="schedule-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
@@ -1614,8 +1588,10 @@ export default class App extends PureComponent {
               {(whichDay === "workshop")? this.renderWorkShop() : this.renderTable()}
               </div>
             </div>
-          </div>
-          <div className="app__section main_section" id="venue-section">
+          </div> */}
+
+          {/* Venue 場地 */}
+          {/* <div className="app__section main_section" id="venue-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
             <div className="app__title"><span className="app__title_eng">Venue</span><span>場地</span></div>
@@ -1633,7 +1609,9 @@ export default class App extends PureComponent {
               allowFullScreen
             />
             </div>
-          </div>
+          </div> */}
+
+          {/* About關於我們 */}
           <div className="app__section sub_section" id="about-section">
           <div className="section_container">
             <div className="app__title"><a>About</a><span>關於我們</span></div>
@@ -1648,24 +1626,31 @@ export default class App extends PureComponent {
             </p>
             </div>
           </div>
-          <div className="app__section sub_section" id="sponsors-section">
+
+          {/* Sponsors贊助 */}
+          {/* <div className="app__section sub_section" id="sponsors-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
             {this.renderSponsors()}
             </div>
-          </div>
+          </div> */}
+
+          {/* Co-organizers合作夥伴 */}
           <div className="app__section sub_section" id="coorganizers-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Co-organizers</span><span>合作夥伴</span></div>
             {this.renderCoOrganisers()}
             </div>
           </div>
-          <div className="app__section sub_section" id="staffs-section">
+
+          {/* Staffs工作人員 */}
+          {/* <div className="app__section sub_section" id="staffs-section">
           <div className="section_container">
             <div className="app__title"><span className="app__title_eng">Staffs</span><span>工作人員</span></div>
             {this.renderStaff()}
             </div>
-          </div>
+          </div> */}
+          
         </div>
         <Modal visible={showModal} onCloseRequest={this.onCloseRequest}>
           
