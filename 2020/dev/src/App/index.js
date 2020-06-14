@@ -19,14 +19,14 @@ export default class App extends PureComponent {
 
   componentDidMount = async () => {
     //const data = await 
-    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2019/v2/program.json')
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v2/program.json')
     .then(response => response.json())
     .then(data => {
       //console.log(data.program)
       this.setState({programs: data.program})
     });
 
-    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2019/v2/sponsors.json')
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v2/sponsors.json')
     .then(response => response.json())
     .then(data => {
       console.log(data)
@@ -1519,7 +1519,7 @@ export default class App extends PureComponent {
           <div className="empty_section">
             <div className="section_action_container">
               {/* <ActionButton title="HackMD 共筆" link="https://hackmd.io/@iPlayground" />              */}
-              <ActionButton title="Donate 贊助" link="" />             
+              <ActionButton title="Sponsor 贊助" link="" />             
              </div>
              <div className="section_action_container" style={{marginTop:"1em"}}>
                <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon twitter_icon"></i></a>
@@ -1616,21 +1616,21 @@ export default class App extends PureComponent {
           <div className="section_container">
             <div className="app__title"><a>About</a><span>關於我們</span></div>
             <p>
-              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，在看到國外蓬勃活躍的程式力，熱血自此被點燃，決心舉辦一場兼具廣深度又有趣的 iOS 研討會。
+              2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，看到國外蓬勃活躍的程式力後，點燃了滿腔熱血，決心在台灣舉辦兼具廣深度與有趣的 iOS 研討會——iPlayground 自此誕生。
             </p>
             <p>
-              2018年10月，有實戰技巧、初心者攻略、hard core 議題以及各式八卦政治學的 iPlaygrouond 華麗登場。
+              在 2018、2019 連續兩年，有幸邀請到國內外知名講者帶來各種議題，從實戰技巧、初心者攻略到各式八卦政治學，都在 iPlaygrouond 中華麗登場。
             </p>
             <p>
-              2019年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
+              2020年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
             </p>
             </div>
           </div>
 
-          {/* Sponsors贊助 */}
+          {/* Sponsorships贊助商 */}
           {/* <div className="app__section sub_section" id="sponsors-section">
           <div className="section_container">
-            <div className="app__title"><span className="app__title_eng">Sponsors</span><span>贊助</span></div>
+            <div className="app__title"><span className="app__title_eng">Sponsorships</span><span>贊助商</span></div>
             {this.renderSponsors()}
             </div>
           </div> */}
