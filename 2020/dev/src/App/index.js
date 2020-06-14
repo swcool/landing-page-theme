@@ -19,14 +19,14 @@ export default class App extends PureComponent {
 
   componentDidMount = async () => {
     //const data = await 
-    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v2/program.json')
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/program.json')
     .then(response => response.json())
     .then(data => {
       //console.log(data.program)
       this.setState({programs: data.program})
     });
 
-    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v2/sponsors.json')
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/sponsors.json')
     .then(response => response.json())
     .then(data => {
       console.log(data)
