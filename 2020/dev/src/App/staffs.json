@@ -1,0 +1,148 @@
+{
+	"staff": [
+		{
+			"name": "Hao Lee",
+			"imgURL": "https://s.gravatar.com/avatar/482ac461ed40d8e43a19f8897069f018?s=200",
+            "position": "🍎🏭👨‍💻 / macOS Developer @ 🇰🇷",
+            "SNS": "https://twitter.com/twhaolee"
+		},
+		{
+			"name": "Hokila",
+			"imgURL": "https://s.gravatar.com/avatar/3a2b21620c5ce5defe1c2c8c597160c4?s=200&r=g",
+            "position": "Cat Lover, Father, I hate JIRA",
+            "SNS": "https://twitter.com/hokilaJ"
+		},
+		{
+			"name": "Tank",
+			"imgURL": "https://s.gravatar.com/avatar/fa931a004619c7f08e0ba632ecd3ddbc?s=200",
+            "position": "iOS Developer:💪⛰️🐈🐕{ }",
+            "SNS": "https://twitter.com/tank1005"
+		},
+		{
+			"name": "Gerry",
+			"imgURL": "https://s.gravatar.com/avatar/1758a89d84d177f8eaf1df6783ed3087?s=200",
+            "position": "iOS Developer",
+            "SNS": "https://twitter.com/gerry73740659"
+		},
+		{
+			"name": "DinDin",
+			"imgURL": "https://s.gravatar.com/avatar/f30c7fec91b998c8d86304c25f9f8d98?s=200",
+            "position": "King of AV and Foundation",
+            "SNS": "https://twitter.com/PeterDin87"
+		},
+		{
+			"name": "小傑 (JE)",
+			"imgURL": "https://s.gravatar.com/avatar/9632ce7d70dcf85c751fa757438b4045?s=200",
+            "position": "iOS Developer & Poop-picker for cats (Cataholic🐈)",
+            "SNS": "https://twitter.com/chiehyi1020"
+		},
+		{
+			"name": "Mars",
+			"imgURL": "https://s.gravatar.com/avatar/e9c667478398e55cb86ba6b78f151f7c?s=200",
+            "position": "iOS Developer at Grindr",
+            "SNS": "https://twitter.com/marslin_dev"
+		},
+		{
+			"name": "Hanyu",
+			"imgURL": "https://s.gravatar.com/avatar/cc8c9b6f42948a80987949a6b31f41f1?s=200",
+            "position": "Hosting Cocoaheads@Taipei, Coding@Pinkoi",
+            "SNS": "https://twitter.com/hanyu_chen_ios"
+		},
+		{
+			"name": "家豪",
+			"imgURL": "https://s.gravatar.com/avatar/840662586da21fd3fc7b5131cff31e58?s=200",
+            "position": "Software Engineer📈 && Consultant  💡",
+            "SNS": "https://twitter.com/ChungPlusDev"
+		},
+		{
+			"name": "Roger",
+			"imgURL": "https://s.gravatar.com/avatar/d0ee230a493e52c5e13f7c1254192185?s=200",
+            "position": "basketball & baseball developer",
+            "SNS": "https://twitter.com/roger_fanfan"
+		},
+		{
+			"name": "Wayne",
+			"imgURL": "https://s.gravatar.com/avatar/f8a85405d66a11c6b128af08f61553e0?s=200",
+            "position": "iOS /  FinTech Developer",
+            "SNS": "https://twitter.com/matchachoaulait"
+		},
+		{
+			"name": "Lynn",
+			"imgURL": "https://s.gravatar.com/avatar/eb950e1cf1a27289195715d6a5619da2?s=200",
+            "position": "iOS Developer@TaiChung",
+            "SNS": "https://twitter.com/LynnChe69228597"
+		},
+		{
+			"name": "Steven",
+			"imgURL": "https://s.gravatar.com/avatar/74e610940a25f8b08da3270ea4fe780c?s=200",
+            "position": "FullStack",
+            "SNS": "https://stevenhsu.info/"
+		},
+		{
+			"name": "陳小嬰",
+			"imgURL": "https://s.gravatar.com/avatar/7cd56da284164941883e80c747776db7?s=200",
+            "position": "APP Developer",
+            "SNS": "https://twitter.com/KellyCh76517387"
+		},
+		{
+			"name": "Will",
+			"imgURL": "https://s.gravatar.com/avatar/c3cde94196d11a8df13fc96bc0343e2e?s=200",
+            "position": "iOS Developer",
+            "SNS": "https://twitter.com/willchen00"
+		},
+		{
+			"name": "Bob",
+			"imgURL": "https://s.gravatar.com/avatar/fb1b3076ebd84728fba37cd824c7a927?s=200",
+            "position": "Solo Developer 🚌",
+            "SNS": "https://twitter.com/bob910078"
+		},
+		{
+			"name": "Freddy",
+			"imgURL": "https://s.gravatar.com/avatar/0fae2a36ccb6411158a0482357f763b2?s=200",
+            "position": "Swift lover, NLP researcher",
+            "SNS": "https://twitter.com/jamfly37"
+		},
+		{
+			"name": "Ray",
+			"imgURL": "https://s.gravatar.com/avatar/d181f8c4d7b542636ef33401243ce9de?s=200",
+            "position": "iOS Developer",
+            "SNS": "https://twitter.com/ssbomb_r"
+		},
+		{
+			"name": "Miguel",
+			"imgURL": "https://s.gravatar.com/avatar/9afab3c532d275c5c745cd2927385e87?s=200",
+            "position": "-10x MaserChef",
+            "SNS": "https://twitter.com/GanNaSong"
+		},
+		{
+			"name": "Irving",
+			"imgURL": "https://secure.gravatar.com/avatar/a7970f36d2c8aa02bb4b35bf3ff7d905?s=200",
+            "position": "tableView Developer",
+            "SNS": "https://twitter.com/jj2564"
+		},
+		{
+			"name": "Allen",
+			"imgURL": "https://s.gravatar.com/avatar/97ed20e81e5ea44625c3c71e428bb0b9?s=200",
+            "position": "iOS Developer",
+            "SNS": "https://twitter.com/AllenEzailLai"
+		},
+		{
+			"name": "Carter",
+			"imgURL": "https://s.gravatar.com/avatar/2e13a0418e2c8829105dd34d137d9e42?s=200",
+            "position": "the weakest iOS Developer",
+            "SNS": "https://twitter.com/carter__huang"
+		},
+		{
+			"name": "Janice",
+			"imgURL": "",
+            "position": "Recruitment Consultant, Podcaster",
+            "SNS": "https://www.facebook.com/Janicelai0502"
+		},
+		{
+			"name": "Yoda",
+			"imgURL": "",
+            "position": "Jedi / Designer / Developer",
+            "SNS": "https://twitter.com/YodaWangTW"
+		}
+	]
+}
