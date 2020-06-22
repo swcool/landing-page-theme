@@ -134,13 +134,13 @@
 		},
 		{
 			"name": "Janice",
-			"imgURL": "",
+			"imgURL": "https://s.gravatar.com/userimage/188463005/4cd5757c419d003b9eff15b8be470379.jpg?size=200",
             "position": "Recruitment Consultant, Podcaster",
             "SNS": "https://www.facebook.com/Janicelai0502"
 		},
 		{
 			"name": "Yoda",
-			"imgURL": "",
+			"imgURL": "https://s.gravatar.com/avatar/1f480e50d0de34d0034d4f414b7a602c?s=200",
             "position": "Jedi / Designer / Developer",
             "SNS": "https://twitter.com/YodaWangTW"
 		}
