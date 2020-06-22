@@ -1,12 +1,12 @@
 @import "../../styles/variable.scss";
 
-.sechdule_talk_container {
+.schedule_talk_container {
 
     width: 100%;
 }
 
 @include screen--md {
-    .sechdule_talk_container {
+    .schedule_talk_container {
         width: 100%;
         display: flex;
     }

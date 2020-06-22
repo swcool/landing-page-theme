@@ -1,0 +1,59 @@
+{
+    "sponors": [
+        {
+          "degree":"鑽石贊助",
+          "sponorList": [
+            {
+                "imgURL": "../images/logo_17_Media.png",
+                "link": "https://m17.asia/",
+                "alt": "17 Media"
+            }
+          ]
+        },
+        {
+          "degree":"黃金贊助",
+          "sponorList": [
+            {
+                "imgURL": "../images/logo_bitrise.png",
+                "link": "https://www.bitrise.io",
+                "alt": "Bitrise"
+            },
+            {
+                "imgURL": "../images/logo_KKCO.png",
+                "link": "https://www.kkco.com.tw",
+                "alt": "KlickKlack"
+            }
+          ]
+        },
+        {
+          "degree":"白銀贊助",
+          "sponorList": [
+            {
+                "imgURL": "../images/logo_cake_resume.png",
+                "link": "https://www.cakeresume.com/zh-TW",
+                "alt": "CakeResume"
+            },
+            {
+                "imgURL": "../images/logo_grindr.png",
+                "link": "https://www.grindr.com/",
+                "alt": "Grindr"
+            },
+            {
+                "imgURL": "../images/logo_ichef.jpeg",
+                "link": "https://www.ichefpos.com/zh-tw",
+                "alt": "iChef"
+            }
+          ]
+        },
+        {
+          "degree":"青銅贊助",
+          "sponorList": [
+            {
+                "imgURL": "../images/logo_coss_system.png",
+                "link": "http://www.coss.com.tw/about.html",
+                "alt": "COSS SYSTEM INC 震江系統"
+            }
+          ]
+        }
+      ]
+}

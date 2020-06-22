@@ -2,10 +2,10 @@
  * ======================================================================== */
 /* Media queries
  * ======================================================================== */
-.sechdule_talk_container {
+.schedule_talk_container {
   width: 100%; }
 
 @media screen and (min-width: 768px) {
-  .sechdule_talk_container {
+  .schedule_talk_container {
     width: 100%;
     display: flex; } }

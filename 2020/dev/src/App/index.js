@@ -13,7 +13,7 @@ import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
-import staffsListJson from "../App/staffs.json"
+import staffsListJson from "../App/JsonData/staffs.json"
 
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null};
@@ -35,7 +35,7 @@ export default class App extends PureComponent {
     });
   }
 
-  sechdule = {
+  schedule = {
     day_1: [
       {
         id: _.uniqueId(),
@@ -1070,7 +1070,7 @@ export default class App extends PureComponent {
 
   renderTableRow = () =>
     _.map(
-      this.sechdule[this.state.whichDay],
+      this.schedule[this.state.whichDay],
       ({ id, start, end, rest, isWorkshop, talks }) => {
 
         var row = (<TableRow
@@ -1091,13 +1091,13 @@ export default class App extends PureComponent {
 
     
     renderTable = () => (
-      <ul className="sechdule_table">
-                  <li className="sechdule_row">           
-                    <div className="sechdule_time_block"></div>
-                    <div className="sechdule_room_container">
-                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_101">101</div></div>
-                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_102">102</div></div>
-                      <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">103</div></div>
+      <ul className="schedule_table">
+                  <li className="schedule_row">           
+                    <div className="schedule_time_block"></div>
+                    <div className="schedule_room_container">
+                      <div className="schedule_block"><div className="room_lable schedule_room_lable room_101">101</div></div>
+                      <div className="schedule_block"><div className="room_lable schedule_room_lable room_102">102</div></div>
+                      <div className="schedule_block"><div className="room_lable schedule_room_lable room_103">103</div></div>
                     </div>
                     </li>
                     {this.renderTableRow()}
@@ -1122,10 +1122,10 @@ export default class App extends PureComponent {
   );
 
   renderWorkShop = () => (
-    <ul className="sechdule_table">
-      <li className="sechdule_row"><div className="workshop_day">9/21 day 1</div></li>
+    <ul className="schedule_table">
+      <li className="schedule_row"><div className="workshop_day">9/21 day 1</div></li>
       {this.renderWorkShopRow("day_1")}
-      <li className="sechdule_row "><div className="workshop_day">9/22 day 2</div></li>
+      <li className="schedule_row "><div className="workshop_day">9/22 day 2</div></li>
       {this.renderWorkShopRow("day_2")}      
     </ul>    
   );
@@ -1285,10 +1285,10 @@ export default class App extends PureComponent {
             <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
             <div className="main_section_container">
              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
-             <div className="app__sechdule-tab">
+             <div className="app__schedule-tab">
               <button
                 className={
-                  whichDay === "day_1" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                  whichDay === "day_1" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
                 }
                 onClick={() => {
                   this.setState({ whichDay: "day_1" });
@@ -1299,7 +1299,7 @@ export default class App extends PureComponent {
               </button>
               <button
                 className={
-                  whichDay === "day_2" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                  whichDay === "day_2" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
                 }
                 onClick={() => {
                   this.setState({ whichDay: "day_2" });
@@ -1310,7 +1310,7 @@ export default class App extends PureComponent {
               </button>
               <button
                 className={
-                  whichDay === "workshop" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                  whichDay === "workshop" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
                 }
                 onClick={() => {
                   this.setState({ whichDay: "workshop" });
@@ -1320,7 +1320,7 @@ export default class App extends PureComponent {
                 workshop
               </button>
               </div>
-              <div className="sechdule_container">
+              <div className="schedule_container">
               {(whichDay === "workshop")? this.renderWorkShop() : this.renderTable()}
               </div>
             </div>

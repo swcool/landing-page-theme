@@ -35,14 +35,14 @@ export default ({ start, end, rest, talks, isWorkshop, programs, onClickTopic })
     });
 
   return (
-    <li className="sechdule_row">
+    <li className="schedule_row">
       <TableTime start={start} end={end} />
       {rest ? (
-        <div  className="sechdule_talk_container" style={{textAlign: "center",fontWeight: "bold",alignItems : "center", justifyContent: "center",color:"#666666"}}>
+        <div  className="schedule_talk_container" style={{textAlign: "center",fontWeight: "bold",alignItems : "center", justifyContent: "center",color:"#666666"}}>
           {rest}
         </div>
       ) : (
-        <div className="sechdule_talk_container">
+        <div className="schedule_talk_container">
         {renderTalks}
         </div>
       )}

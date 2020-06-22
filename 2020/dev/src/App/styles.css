@@ -170,8 +170,14 @@ html {
     .app__container .app__speaker .app__speaker-position {
       margin-top: 0;
       padding-left: 1.2rem;
-      padding-right: 1.2rem;
-      color: black; }
+      padding-right: 1.2rem; }
+      @media (prefers-color-scheme: dark) {
+        .app__container .app__speaker .app__speaker-position {
+          color: white;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } }
+      @media (prefers-color-scheme: light) {
+        .app__container .app__speaker .app__speaker-position {
+          color: black; } }
   .app__container .app__sponsor {
     text-align: center; }
     .app__container .app__sponsor .app__sponsor-logo {
@@ -185,8 +191,14 @@ html {
     .app__container .app__section p {
       font-weight: 500;
       font-size: 16px;
-      line-height: 28px;
-      color: #6e6e6e; }
+      line-height: 28px; }
+      @media (prefers-color-scheme: dark) {
+        .app__container .app__section p {
+          color: white;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } }
+      @media (prefers-color-scheme: light) {
+        .app__container .app__section p {
+          color: black; } }
   .app__container .main_section {
     position: relative; }
   .app__container .sub_section {
@@ -237,6 +249,7 @@ html {
     padding: 0 0;
     font-size: 64px;
     line-height: 80px;
+    font-weight: bold;
     color: #333333; }
     .app__container .app__title .app__title_eng {
       margin-right: 1rem; }
