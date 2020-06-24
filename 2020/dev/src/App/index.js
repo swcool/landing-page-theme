@@ -1350,7 +1350,7 @@ export default class App extends PureComponent {
           {/* About關於我們 */}
           <div className="app__section sub_section" id="about-section">
           <div className="section_container">
-            <div className="app__title"><a>About</a><span>關於我們</span></div>
+          <div className="app__title"><span className="app__title_eng">About</span><span>關於我們</span></div>
             <p>
               2017年9月，一群到東京參加 <a href="https://iosdc.jp/2017/" target="_blank">iOSDC</a> 的工程師們，看到國外蓬勃活躍的程式力後，點燃了滿腔熱血，決心在台灣舉辦兼具廣深度與有趣的 iOS 研討會——iPlayground 自此誕生。
             </p>
@@ -1382,7 +1382,7 @@ export default class App extends PureComponent {
           {/* Staffs工作人員 */}
           <div className="app__section sub_section" id="staffs-section">
           <div className="section_container">
-            <div className="app__title"><span className="app__title_eng">Staffs</span><span>工作人員</span></div>
+            <div className="app__title"><span className="app__title_eng">Staff</span><span>工作人員</span></div>
             {this.renderStaff()}
             </div>
           </div>
