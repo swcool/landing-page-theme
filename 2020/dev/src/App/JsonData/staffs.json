@@ -143,6 +143,12 @@
 			"imgURL": "https://s.gravatar.com/avatar/1f480e50d0de34d0034d4f414b7a602c?s=200",
             "position": "Jedi / Designer / Developer",
             "SNS": "https://twitter.com/YodaWangTW"
+		},
+		{
+			"name": "Annie",
+			"imgURL": "https://s.gravatar.com/avatar/45b81954d095d4bd5a345331f6e0a6a0?s=200",
+            "position": "Recruitment Consultant, learning French and interesting bars now",
+            "SNS": "https://www.facebook.com/beselfonly"
 		}
 	]
 }
