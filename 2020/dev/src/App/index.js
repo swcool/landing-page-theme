@@ -14,6 +14,7 @@ import ActionButton from "../components/ActionButton";
 import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
 import staffsListJson from "../App/JsonData/staffs.json"
+import activityPicturesJson from "../App/JsonData/activityPictures.json"
 
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null};
@@ -1218,7 +1219,21 @@ export default class App extends PureComponent {
       </div>
     ));
   }
-    
+
+  renderPictures = () => {
+    const activityPicturesList = activityPicturesJson ? activityPicturesJson.activityPictures : null
+      return _.map(activityPicturesList, ({ id, imgURL, name, SNS }) => (
+        <a key={id} href={SNS} target="_blank">
+          <div className="app__speaker">
+            <img className="app__speaker-square-img" src={require(`./images/${imgURL}`)}/>
+            <p className="app__speaker-name">
+              <strong>{name}</strong>
+            </p>
+            {/* <p className="app__speaker-position">{position}</p> */}
+          </div>
+        </a>
+      ));
+  }
 
   render() {
     const { whichDay, showModal } = this.state;
@@ -1361,6 +1376,9 @@ export default class App extends PureComponent {
             <p>
               2020年，iPlayground 誠摯召喚各位鍵盤好手一起來燃燒熱血，讓議程更多元、更有料！
             </p>
+            {/* 活動照片 */}
+            {/* <div className="app__title"><span className="app__title_eng">Photos</span><span>活動照片</span></div> */}
+            {this.renderPictures()}
             </div>
           </div>
 
