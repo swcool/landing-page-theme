@@ -1,0 +1,27 @@
+{
+    "navTitle.about": "About",
+    "navTitle.about2": "",
+    "navTitle.coOrganizers": "Co-organizers",
+    "navTitle.coOrganizers2": "",
+    "navTitle.staff": "Staff",
+    "navTitle.staff2": "",
+
+    "navButtonTitle.sponsor": "Sponsor",
+    "navButtonTitle.becomeASpeaker": "Become a Speaker",
+
+    "aboutUs.title": "About",
+    "aboutUs.title2": "",
+    "aboutUs.content.firstSentence.one": "In September 2017, a group of developers attended ",
+    "aboutUs.content.firstSentence.second": "in Tokyo, and was impressed by how well organized the event was. These grass root members were then influenced to host their own version of the conference for local iOS/macOS developers in Taiwan.",
+    "aboutUs.content.secondSentence": "Since October 2018, iPlayground has become the first of its kind to be labeled as an interesting conference with a technical focus.",
+    "aboutUs.content.thirdSentence": "iPlayground welcomes all developers with a focus on iOS and macOS. Ignite your passion today and join iPlayground!",
+
+    "underAboutUs.button.sponsor": "Sponsor",
+    "underAboutUs.button.becomeASpeaker": "Become a speaker",
+
+    "CoOrganizers.title": "Co-organizers",
+    "CoOrganizers.title2": "",
+
+    "staff.title": "Staff",
+    "staff.title2": ""
+  }
