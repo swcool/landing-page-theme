@@ -23,11 +23,11 @@ i18n
   .init({
     resources,
 
-    // fallbackLng: 'zh-TW',     //如果當前切換的語言沒有對應的翻譯則使用這個語言，
-    // lng: 'zh-TW',             //預設語言
+    fallbackLng: 'zh-TW',     //如果當前切換的語言沒有對應的翻譯則使用這個語言，
+    lng: 'zh-TW',             //預設語言
 
-    lng: 'en',             //預設語言
-    fallbackLng: 'en',     //如果當前切換的語言沒有對應的翻譯則使用這個語言，
+    // lng: 'en',             //預設語言
+    // fallbackLng: 'en',     //如果當前切換的語言沒有對應的翻譯則使用這個語言，
 
     keySeparator: false, // we do not use keys in form messages.welcome
 
