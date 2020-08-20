@@ -26,6 +26,7 @@
     "react-dom": "^16.4.2",
     "react-i18next": "^11.7.0",
     "react-mailchimp-subscribe": "2.0.2",
+    "react-native-localize": "^1.4.1",
     "react-scripts": "1.1.4",
     "react-social-icons": "3.0.0",
     "start": "^5.1.0"

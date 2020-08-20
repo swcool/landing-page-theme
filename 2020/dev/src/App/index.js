@@ -18,7 +18,7 @@ import activityPicturesJson from "../App/JsonData/activityPictures.json"
 
 import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
-
+import i18n from "i18next";
 
 export default class App extends PureComponent {
   state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null};
@@ -227,6 +227,12 @@ export default class App extends PureComponent {
     const { whichDay, showModal } = this.state;
     const mailChimpURL =
       "https://iplayground.us17.list-manage.com/subscribe/post?u=61bc80c5d8118e451c9a5ac80&amp;id=b804a3d8e0";
+
+      const getLanguage = () => {
+        return i18n.language ||
+          (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
+          'zh-TW';
+      };
 
     return (
       <div className="app-fullscreen">
