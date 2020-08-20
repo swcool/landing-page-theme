@@ -7,7 +7,7 @@
     "navTitle.staff2": "",
 
     "navButtonTitle.sponsor": "Sponsor",
-    "navButtonTitle.becomeASpeaker": "Become a Speaker",
+    "navButtonTitle.becomeASpeaker": "Apply To Speaker",
 
     "aboutUs.title": "About",
     "aboutUs.title2": "",
@@ -17,7 +17,7 @@
     "aboutUs.content.thirdSentence": "iPlayground welcomes all developers with a focus on iOS and macOS. Ignite your passion today and join iPlayground!",
 
     "underAboutUs.button.sponsor": "Sponsor",
-    "underAboutUs.button.becomeASpeaker": "Become a speaker",
+    "underAboutUs.button.becomeASpeaker": "Apply To speaker",
 
     "CoOrganizers.title": "Co-organizers",
     "CoOrganizers.title2": "",
