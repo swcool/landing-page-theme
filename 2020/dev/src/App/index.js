@@ -238,11 +238,12 @@ export default class App extends PureComponent {
               alt="iPlayground"
             />
             <br/>
-            <p className="logo-info">
-            {/* <i className="fas fa-map-marker-alt"></i>
-                  台大博雅館
-              <br/> */}
-              10/31-11/01
+            {/* <p className="logo-info" style={{fontSize:"5vmin"}}> */}
+            <p className="logo-info" style={{fontSize:"5vmin"}}>
+            <i className="fas fa-map-marker-alt"></i>
+                  張榮發基金會國際會議中心
+              <br/>
+              11月08日
             </p>
           </div>
           <div className = "logo-container-fullscreen-mask-container">
