@@ -57,7 +57,8 @@ html {
       padding-right: 4pt; }
   @media screen and (min-width: 680px) {
     .logo-container-fullscreen .logo-container {
-      padding-top: 96px; } }
+      padding-top: 96px;
+      text-shadow: 1px 3px black; } }
 
 .app__container {
   display: flex;
