@@ -238,7 +238,6 @@ export default class App extends PureComponent {
               alt="iPlayground"
             />
             <br/>
-            {/* <p className="logo-info" style={{fontSize:"5vmin"}}> */}
             <p className="logo-info" style={{fontSize:"5vmin"}}>
             <i className="fas fa-map-marker-alt"></i>
                   {<Trans>location.name</Trans>}
