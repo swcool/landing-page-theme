@@ -1,4 +1,8 @@
+
 {
+    "navTitle.venue": "Venue",
+    "navTitle.venue2": "場地",
+
     "navTitle.about": "About",
     "navTitle.about2": "關於我們",
     "navTitle.coOrganizers": "Co-organizers",
@@ -8,6 +12,23 @@
 
     "navButtonTitle.sponsor": "贊助",
     "navButtonTitle.becomeASpeaker": "徵求講者",
+
+    "location.name": "張榮發基金會國際會議中心",
+    "location": "台北市中正區中山南路11號8樓",
+    "date":"11月08日",
+
+    "venue.title" : "Venue",
+    "venue.title2" : "場地",
+    "venue.tafficTitle" : "交通方式",
+    "venue.busTitle" : "＊公車＊",
+    "venue.busContent.firstSentence" : "景福門：208、和平幹線",
+    "venue.busContent.secondSentence" : "仁愛中山路口：37、249(單邊停靠)、261(單邊停靠)、270、621、630、651、仁愛幹線",
+    "venue.MRTTitle" : "＊捷運＊",
+    "venue.MRTContent.firstSentence" : "捷運中正紀念堂站5號出口，步行約550公尺",
+    "venue.MRTContent.secondSentence" : "捷運臺大醫院站2號出口，步行約450公尺",
+    "venue.parkingTitle" : "＊停車＊",
+    "venue.parkingContent.firstSentence" : "大樓設有汽車付費停車場，入口位於信義路一段上，收費 30元/小時",
+    "venue.parkingContent.secondSentence" : "",
 
     "aboutUs.title": "About",
     "aboutUs.title2": "關於我們",
@@ -24,4 +45,6 @@
 
     "staff.title": "Staff",
     "staff.title2": "工作人員"
+
+
   }

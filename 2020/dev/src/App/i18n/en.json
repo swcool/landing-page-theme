@@ -1,4 +1,6 @@
 {
+    "navTitle.venue": "Venue",
+    "navTitle.venue2": "",
     "navTitle.about": "About",
     "navTitle.about2": "",
     "navTitle.coOrganizers": "Co-organizers",
@@ -8,6 +10,23 @@
 
     "navButtonTitle.sponsor": "Sponsor",
     "navButtonTitle.becomeASpeaker": "Apply To Speaker",
+
+    "location.name": "CHANG YUNG-FA FOUNDATION International Convention Center",
+    "location": "8F., No. 11, Zhongshan S. Rd., Zhongzheng Dist., Taipei City 100, Taiwan (R.O.C.)",
+    "date":"2020/11/08",
+
+    "venue.title" : "Venue",
+    "venue.title2" : "",
+    "venue.tafficTitle" : "How to Get Here",
+    "venue.busTitle" : "＊By Bus＊",
+    "venue.busContent.firstSentence" : "Jingfu Gate(Taipei East Gate): 208, Heping Main Line",
+    "venue.busContent.secondSentence" : "Ren Ai Zhongshan Rd. Intersection: 37, 249 (bus offloads on one side only), 261 (bus offloads on one side only), 270, 621, 630, 651, Ren Ai Main Line",
+    "venue.MRTTitle" : "＊By MRT (Mass Rapid Transit)＊",
+    "venue.MRTContent.firstSentence" : "Take the Green line to Chiang Kai-Shek Memorial Hall Station (G10) and exit from Exit #5. From there, it will be a 7 minute walk.",
+    "venue.MRTContent.secondSentence" : "Or, take the Red line to NTU Hospital Station (R09) and exit from Exit #2. From there, it will be a 7 minute walk.",
+    "venue.parkingTitle" : "＊Parking＊",
+    "venue.parkingContent.firstSentence" : "Location: Entrance by Section 1, Xinyi Road. GPS: 25.038300, 121.518964",
+    "venue.parkingContent.secondSentence" : "Fee: NT$30/hour",
 
     "aboutUs.title": "About",
     "aboutUs.title2": "",

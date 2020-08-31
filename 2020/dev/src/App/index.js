@@ -241,9 +241,9 @@ export default class App extends PureComponent {
             {/* <p className="logo-info" style={{fontSize:"5vmin"}}> */}
             <p className="logo-info" style={{fontSize:"5vmin"}}>
             <i className="fas fa-map-marker-alt"></i>
-                  張榮發基金會國際會議中心
+                  {<Trans>location.name</Trans>}
               <br/>
-              11月08日
+              {<Trans>date</Trans>}
             </p>
           </div>
           <div className = "logo-container-fullscreen-mask-container">
@@ -331,25 +331,53 @@ export default class App extends PureComponent {
           </div> */}
 
           {/* Venue 場地 */}
-          {/* <div className="app__section main_section" id="venue-section">
+          <div className="app__section main_section" id="venue-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
             <div className="main_section_container">
-            <div className="app__title"><span className="app__title_eng">Venue</span><span>場地</span></div>
-            <div className="section_sub_title">國立臺灣大學博雅教學館</div>
-            <div className="section_sub_container">
-              <p>106台北市大安區羅斯福路四段1號</p>
-              </div>
+            <div className="app__title"><span className="app__title_eng">{<Trans>venue.title</Trans>}</span><span>{<Trans>venue.title2</Trans>}</span></div>
+            <p className="logo-info" style={{fontSize:"3vmin", color:"rgb(96,96,96)"}}>
+            <i className="fas fa-map-marker-alt"></i>
+                  {<Trans>location.name</Trans>}
+              <br/><br/>
+              {<Trans>location</Trans>}
+            </p>
+            <br/>
             <iframe
-              title="location"
+              title={<Trans>location</Trans>}
               width="100%"
               height="450"
               frameBorder="0"
               style={{ border: 0 }}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.472391335001!2d121.53459524249845!3d25.018035389196143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989d9909417%3A0x13a8ef0043681664!2z5ZyL56uL6Ie654Gj5aSn5a245Y2a6ZuF5pWZ5a246aSo!5e0!3m2!1szh-TW!2stw!4v1563616292331!5m2!1szh-TW!2stw"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.862925961839!2d121.51648511507155!3d25.038725483970115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a975c13ae63d%3A0x99f529730969be7f!2z5by15qau55m85Z-66YeR5pyD!5e0!3m2!1szh-TW!2stw!4v1598889656465!5m2!1szh-TW!2stw"
               allowFullScreen
             />
+
+            <div className="section_sub_title" style={{fontSize:"3vmin", fontWeight:"bold"}}>
+              {<Trans>venue.tafficTitle</Trans>}
             </div>
-          </div> */}
+
+            <div className="section_sub_title" style={{fontSize:"2.5vmin"}}>
+              {<Trans>venue.busTitle</Trans>}
+              <br/>
+              {<Trans>venue.busContent.firstSentence</Trans>}
+              <br/>
+              {<Trans>venue.busContent.secondSentence</Trans>}
+              <br/><br/>
+              {<Trans>venue.MRTTitle</Trans>}
+              <br/>
+              {<Trans>venue.MRTContent.firstSentence</Trans>}
+              <br/>
+              {<Trans>venue.MRTContent.secondSentence</Trans>}
+              <br/><br/>
+              {<Trans>venue.parkingTitle</Trans>}
+              <br/>
+              {<Trans>venue.parkingContent.firstSentence</Trans>}
+              <br/>
+              {<Trans>venue.parkingContent.secondSentence</Trans>}
+            </div>
+            
+            </div>
+          </div>
 
           {/* About關於我們 */}
           <div className="app__section sub_section" id="about-section">
