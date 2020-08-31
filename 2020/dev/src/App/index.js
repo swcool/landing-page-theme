@@ -331,17 +331,17 @@ export default class App extends PureComponent {
           </div> */}
 
           {/* Venue 場地 */}
-          <div className="app__section main_section" id="venue-section">
-            <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
-            <div className="main_section_container">
-            <div className="app__title"><span className="app__title_eng">{<Trans>venue.title</Trans>}</span><span>{<Trans>venue.title2</Trans>}</span></div>
-            <p className="logo-info" style={{fontSize:"3vmin", color:"rgb(96,96,96)"}}>
+          <div className="app__section sub_section" id="venue-section">
+          <img className="main_section_logo" src={require("../images/iplayground_logo_stairs.png")}/>
+          <div className="section_container">
+          <div className="app__title"><span className="app__title_eng">{<Trans>venue.title</Trans>}</span><span>{<Trans>venue.title2</Trans>}</span></div>
+          <p>
             <i className="fas fa-map-marker-alt"></i>
                   {<Trans>location.name</Trans>}
               <br/><br/>
               {<Trans>location</Trans>}
-            </p>
-            <br/>
+          </p>
+
             <iframe
               title={<Trans>location</Trans>}
               width="100%"
@@ -351,12 +351,9 @@ export default class App extends PureComponent {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.862925961839!2d121.51648511507155!3d25.038725483970115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a975c13ae63d%3A0x99f529730969be7f!2z5by15qau55m85Z-66YeR5pyD!5e0!3m2!1szh-TW!2stw!4v1598889656465!5m2!1szh-TW!2stw"
               allowFullScreen
             />
-
-            <div className="section_sub_title" style={{fontSize:"3vmin", fontWeight:"bold"}}>
-              {<Trans>venue.tafficTitle</Trans>}
-            </div>
-
-            <div className="section_sub_title" style={{fontSize:"2.5vmin"}}>
+            <p>
+              {<Trans>venue.tafficTitle</Trans>}  
+              <br/><br/>
               {<Trans>venue.busTitle</Trans>}
               <br/>
               {<Trans>venue.busContent.firstSentence</Trans>}
@@ -374,8 +371,7 @@ export default class App extends PureComponent {
               {<Trans>venue.parkingContent.firstSentence</Trans>}
               <br/>
               {<Trans>venue.parkingContent.secondSentence</Trans>}
-            </div>
-            
+            </p>
             </div>
           </div>
 
