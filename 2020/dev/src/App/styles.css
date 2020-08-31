@@ -51,6 +51,7 @@ html {
     font-size: 5vmin;
     line-height: 10vmin;
     text-align: right;
+    font-weight: 500;
     color: #FFFFFF;
     text-shadow: 3px 3px black; }
     .logo-container-fullscreen .logo-info i {
@@ -59,7 +60,7 @@ html {
     .logo-container-fullscreen .logo-container {
       padding-top: 96px; }
     .logo-container-fullscreen .logo-info {
-      text-shadow: 1px 1px black; } }
+      text-shadow: 0.5px 0.5px black; } }
 
 .app__container {
   display: flex;

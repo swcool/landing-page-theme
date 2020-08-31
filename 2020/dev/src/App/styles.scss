@@ -65,6 +65,7 @@ html {
     font-size: 5vmin;
     line-height: 10vmin;
     text-align: right;
+    font-weight: 500;
 
     color: #FFFFFF;
 
@@ -79,7 +80,7 @@ html {
       // text-shadow: 1px 3px rgba(0, 0, 0, 1);
     }
     .logo-info {
-      text-shadow: 1px 1px rgba(0, 0, 0, 1);
+      text-shadow: 0.5px 0.5px rgba(0, 0, 0, 1);
     }
   }
 }
