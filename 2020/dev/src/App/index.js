@@ -415,6 +415,11 @@ export default class App extends PureComponent {
             <div className="app__title"><span className="app__title_eng">{<Trans>staff.title</Trans>}</span><span>{<Trans>staff.title2</Trans>}</span></div>
             {this.renderStaff()}
             </div>
+            
+            <p style={{textAlign:"center"}}>
+              {<Trans>allRightsReserved</Trans>}  
+            </p>
+
           </div>
           
         </div>
