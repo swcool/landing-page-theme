@@ -7,9 +7,15 @@
     "navTitle.coOrganizers2": "",
     "navTitle.staff": "Staff",
     "navTitle.staff2": "",
+    "navTitle.speakers": "Speakers",
+    "navTitle.speakers2": "",
+    
 
     "navButtonTitle.sponsor": "Sponsor",
     "navButtonTitle.becomeASpeaker": "Apply To Speaker",
+
+    "speakers.title": "Speakers",
+    "speakers.title2": "",
 
     "location.name": "CHANG YUNG-FA FOUNDATION International Convention Center",
     "location": "8F., No. 11, Zhongshan S. Rd., Zhongzheng Dist., Taipei City 100, Taiwan (R.O.C.)",

@@ -6,7 +6,7 @@ export default ({ imgURL, alt, name, position, intro, topic, abstract, onClickCl
   <div className="modal-content-speakers">
     <a className="modal-content-speakers__close-btn" onClick={onClickCloseBtn} />
     <div className="modal-content-speakers__img-section">
-      <img className="modal-content-speakers__img" src={imgURL} alt={alt} />
+      <img className="app__speaker-square-img" src={require(`./images/${imgURL}`)} alt={alt} />
     </div>
     <div className="modal-content-speakers__txt-section">
       <p className="modal-content-speakers__name"><strong>{name}</strong></p>
