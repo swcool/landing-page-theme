@@ -268,6 +268,12 @@ html {
       margin-top: 2rem;
     }
 
+    .app__sponsor-gold-logo {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 2rem;
+    }
+
     .app__sponsor-degree {
       color: #000;
     }
@@ -364,11 +370,16 @@ html {
     .app__title_eng {
       margin-right: 1rem;
     }
+    .app__title_smaller_eng {
+      font-size: 55px;
+      margin-right: 1rem;
+    }
   }
 
   .section_sub_title {
-    font-size: 24px;
+    font-size: 40px;
     padding: 1rem 0;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 1);
   }
 
   .section_action_container {

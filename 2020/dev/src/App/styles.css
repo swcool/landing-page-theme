@@ -192,6 +192,10 @@ html {
       width: 80%;
       max-width: 325px;
       margin-top: 2rem; }
+    .app__container .app__sponsor .app__sponsor-gold-logo {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 2rem; }
     .app__container .app__sponsor .app__sponsor-degree {
       color: #000; }
   .app__container .app__section {
@@ -261,9 +265,13 @@ html {
     color: #333333; }
     .app__container .app__title .app__title_eng {
       margin-right: 1rem; }
+    .app__container .app__title .app__title_smaller_eng {
+      font-size: 55px;
+      margin-right: 1rem; }
   .app__container .section_sub_title {
-    font-size: 24px;
-    padding: 1rem 0; }
+    font-size: 40px;
+    padding: 1rem 0;
+    text-shadow: 0.5px 0.5px black; }
   .app__container .section_action_container {
     text-align: center;
     padding: 16px 0; }

@@ -13,7 +13,6 @@ import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
-import speakersListJson from "../App/JsonData/speakers.json"
 import staffsListJson from "../App/JsonData/staffs.json"
 import activityPicturesJson from "../App/JsonData/activityPictures.json"
 
@@ -21,7 +20,7 @@ import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
 
 export default class App extends PureComponent {
-  state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null};
+  state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null, isGoldSponsor:false};
 
   componentDidMount = async () => {
     //const data = await 
@@ -41,8 +40,7 @@ export default class App extends PureComponent {
   }
 
   onClickSpeaker = id => {
-    const speakerList = speakersListJson ? speakersListJson.speakers : null
-    this.modalContentDataSpeakers = _.find(speakerList, { id });
+    this.modalContentDataSpeakers = _.find(this.speakers, { id });
     this.setState({ showModal: "speakers" });
     document.getElementById("navbar").hidden = true;
   };
@@ -129,23 +127,21 @@ export default class App extends PureComponent {
     return program.title; }
   }
 
-  renderSpeakers = () => {
-    const speakerList = speakersListJson ? speakersListJson.speakers : null
-        return _.map(speakerList, ({ id, imgURL, alt, name, position }) => (
-          <div key={id} className="app__speaker">
-            <img
-              className="app__speaker-img"
-              onClick={() => this.onClickSpeaker(id)}
-              src={require(`./images/${imgURL}`)}
-              alt={alt}
-            />
-          <p className="app__speaker-name">
+  renderSpeakers = () =>
+    _.map(this.speakers, ({ id, imgURL, alt, name, position }) => (
+      <div key={id} className="app__speaker">
+        <img
+          className="app__speaker-img"
+          onClick={() => this.onClickSpeaker(id)}
+          src={imgURL}
+          alt={alt}
+        />
+        <p className="app__speaker-name">
           <strong>{name}</strong>
         </p>
-          <p className="app__speaker-position">{position}</p>
-      </div>    
+        <p className="app__speaker-position">{position}</p>
+      </div>
     ));
-  }
 
   renderPartyEventRow = () =>
     _.map(
@@ -179,17 +175,26 @@ export default class App extends PureComponent {
       ));
     }
 
-  renderSponsors = () => {
-    const sponsorsList = this.state.sponsors ? this.state.sponsors.sponsors : null
 
-    return _.map(sponsorsList, ({ name, picture, link }) => (
-      <div key={_.uniqueId()} className="app__sponsor">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img className="app__sponsor-logo" src={picture} alt={name} />
-        </a>
-      </div>
-    ));
-  }
+    renderSponsors = () => {
+      const sponsorsList = this.state.sponsors ? this.state.sponsors.sponsors : null
+      var str = "黃金級";
+
+      return _.map(sponsorsList, ({title,items}) => (
+        <div key= {_.uniqueId()} className= "staff_team_container">
+          <div className="section_sub_title">{title}</div>
+         {
+           items.map( ({picture,link,name}) => 
+           <div key={_.uniqueId()} className="app__sponsor">
+           <a href={link} target="_blank" rel="noopener noreferrer">
+             <img className="app__sponsor-gold-logo" src={picture} alt={name}/>
+           </a>
+          </div>
+          )
+        }
+        </div>
+      ));
+    }
     
 
   renderCoOrganisers = () => {
@@ -270,15 +275,15 @@ export default class App extends PureComponent {
              </div>
 
           {/* Speakers講者 */}
-          <div className="app__section main_section" id="speakers-section">
+          {/* <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
-              <div className="app__title"><span className="app__title_eng">{<Trans>speakers.title</Trans>}</span><span>{<Trans>speakers.title2</Trans>}</span></div>
+              <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
               <div className="app__speaker-container">
                 {this.renderSpeakers()}
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Schedule議程 */}
           {/* <div className="app__section main_section" id="schedule-section">
@@ -385,6 +390,7 @@ export default class App extends PureComponent {
               {<Trans>aboutUs.content.thirdSentence</Trans>}
             </p>
             {/* 活動照片 */}
+            {/* <div className="app__title"><span className="app__title_eng">Photos</span><span>活動照片</span></div> */}
             {this.renderPictures()}
             </div>
           </div>
@@ -392,7 +398,7 @@ export default class App extends PureComponent {
           {/* Sponsorships贊助商 */}
           <div className="app__section sub_section" id="sponsors-section">
           <div className="section_container">
-            <div className="app__title"><span className="app__title_eng">{<Trans>sponsorships.title</Trans>}</span><span>{<Trans>sponsorships.title2</Trans>}</span></div>
+            <div className="app__title"><span className="app__title_smaller_eng" >{<Trans>sponsorships.title</Trans>}</span><span>{<Trans>sponsorships.title2</Trans>}</span></div>
             {this.renderSponsors()}
             </div>
           </div>

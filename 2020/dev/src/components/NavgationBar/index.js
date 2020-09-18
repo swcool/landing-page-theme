@@ -72,7 +72,7 @@ export default class NavgationBar extends PureComponent {
           </div>
         </div>
         <div className="nav-link-container" id="nav-link-container"> 
-          <div className="nav-link"><a href="#speakers-section"><p>{<Trans>navTitle.speakers</Trans>}</p><p>{<Trans>navTitle.speakers2</Trans>}</p></a></div>
+          {/* <div className="nav-link"><a href="#speakers-section"><p>Speakers</p><p>講者</p></a></div> */}
           {/* <div className="nav-link"><a href="#schedule-section"><p>Schedule</p><p>議程</p></a></div> */}
           <div className="nav-link"><a href="#venue-section"><p>{<Trans>navTitle.venue</Trans>}</p><p>{<Trans>navTitle.venue2</Trans>}</p></a></div>
           <div className="nav-link"><a href="#about-section"><p>{<Trans>navTitle.about</Trans>}</p><p>{<Trans>navTitle.about2</Trans>}</p></a></div>
