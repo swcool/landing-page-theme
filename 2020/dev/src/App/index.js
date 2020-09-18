@@ -182,18 +182,11 @@ export default class App extends PureComponent {
   renderSponsors = () => {
     const sponsorsList = this.state.sponsors ? this.state.sponsors.sponsors : null
 
-    return _.map(sponsorsList, ({title,items}) => (
-      <div key= {_.uniqueId()} className= "staff_team_container">
-       <div className="section_sub_title">{title}</div>
-       {
-         items.map( ({picture,link,name}) => 
-          <div key={_.uniqueId()} className="app__sponsor">
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <img className="app__sponsor-logo" src={picture} alt={name} />
-          </a>
-         </div>
-        )
-      }
+    return _.map(sponsorsList, ({ name, picture, link }) => (
+      <div key={_.uniqueId()} className="app__sponsor">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img className="app__sponsor-logo" src={picture} alt={name} />
+        </a>
       </div>
     ));
   }
@@ -397,12 +390,12 @@ export default class App extends PureComponent {
           </div>
 
           {/* Sponsorships贊助商 */}
-          {/* <div className="app__section sub_section" id="sponsors-section">
+          <div className="app__section sub_section" id="sponsors-section">
           <div className="section_container">
-            <div className="app__title"><span className="app__title_eng">Sponsorships</span><span>贊助商</span></div>
+            <div className="app__title"><span className="app__title_eng">{<Trans>sponsorships.title</Trans>}</span><span>{<Trans>sponsorships.title2</Trans>}</span></div>
             {this.renderSponsors()}
             </div>
-          </div> */}
+          </div>
 
           {/* Co-organizers合作夥伴 */}
           <div className="app__section sub_section" id="coorganizers-section">

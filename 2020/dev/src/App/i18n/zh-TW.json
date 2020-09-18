@@ -5,6 +5,8 @@
 
     "navTitle.about": "About",
     "navTitle.about2": "關於我們",
+    "navTitle.sponsorships": "Sponsorships",
+    "navTitle.sponsorships2": "贊助商",
     "navTitle.coOrganizers": "Co-organizers",
     "navTitle.coOrganizers2": "合作夥伴",
     "navTitle.staff": "Staff",
@@ -44,6 +46,9 @@
 
     "underAboutUs.button.sponsor": "贊助",
     "underAboutUs.button.becomeASpeaker": "徵求講者",
+
+    "sponsorships.title": "Sponsorships",
+    "sponsorships.title2": "贊助商",
 
     "CoOrganizers.title": "Co-organizers",
     "CoOrganizers.title2": "合作夥伴",

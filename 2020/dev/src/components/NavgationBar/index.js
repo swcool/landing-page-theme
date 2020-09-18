@@ -76,7 +76,7 @@ export default class NavgationBar extends PureComponent {
           {/* <div className="nav-link"><a href="#schedule-section"><p>Schedule</p><p>議程</p></a></div> */}
           <div className="nav-link"><a href="#venue-section"><p>{<Trans>navTitle.venue</Trans>}</p><p>{<Trans>navTitle.venue2</Trans>}</p></a></div>
           <div className="nav-link"><a href="#about-section"><p>{<Trans>navTitle.about</Trans>}</p><p>{<Trans>navTitle.about2</Trans>}</p></a></div>
-          {/* <div className="nav-link"><a href="#sponsors-section"><p>Sponsorships</p><p>贊助商</p></a></div> */}
+          <div className="nav-link"><a href="#sponsors-section"><p>{<Trans>navTitle.sponsorships</Trans>}</p><p>{<Trans>navTitle.sponsorships2</Trans>}</p></a></div>
           <div className="nav-link"><a href="#coorganizers-section"><p>{<Trans>navTitle.coOrganizers</Trans>}</p><p>{<Trans>navTitle.coOrganizers2</Trans>}</p></a></div>
           <div className="nav-link"><a href="#staffs-section"><p>{<Trans>navTitle.staff</Trans>}</p><p>{<Trans>navTitle.staff2</Trans>}</p></a></div>
           <div className="nav-link nav-button"><ActionButton style={{fontSize:"30px",lineHeight:"40px"}} title={<Trans>navButtonTitle.sponsor</Trans>} link="https://bit.ly/iplayground-2020-sponsors" /></div>

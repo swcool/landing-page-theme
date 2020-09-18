@@ -3,6 +3,8 @@
     "navTitle.venue2": "",
     "navTitle.about": "About",
     "navTitle.about2": "",
+    "navTitle.sponsorships": "Sponsorships",
+    "navTitle.sponsorships2": "",
     "navTitle.coOrganizers": "Co-organizers",
     "navTitle.coOrganizers2": "",
     "navTitle.staff": "Staff",
@@ -43,6 +45,9 @@
 
     "underAboutUs.button.sponsor": "Sponsor",
     "underAboutUs.button.becomeASpeaker": "Apply To Speaker",
+    
+    "sponsorships.title": "Sponsorships",
+    "sponsorships.title2": "",
 
     "CoOrganizers.title": "Co-organizers",
     "CoOrganizers.title2": "",
