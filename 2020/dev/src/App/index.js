@@ -15,6 +15,7 @@ import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
 import staffsListJson from "../App/JsonData/staffs.json"
 import activityPicturesJson from "../App/JsonData/activityPictures.json"
+import speakersListJson from "../App/JsonData/speakers.json"
 
 import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
@@ -40,7 +41,8 @@ export default class App extends PureComponent {
   }
 
   onClickSpeaker = id => {
-    this.modalContentDataSpeakers = _.find(this.speakers, { id });
+    const speakerList = speakersListJson ? speakersListJson.speakers : null
+    this.modalContentDataSpeakers = _.find(speakerList, { id });
     this.setState({ showModal: "speakers" });
     document.getElementById("navbar").hidden = true;
   };
@@ -127,13 +129,14 @@ export default class App extends PureComponent {
     return program.title; }
   }
 
-  renderSpeakers = () =>
-    _.map(this.speakers, ({ id, imgURL, alt, name, position }) => (
+  renderSpeakers = () => {
+    const speakerList = speakersListJson ? speakersListJson.speakers : null
+    return _.map(speakerList, ({ id, imgURL, alt, name, position }) => (
       <div key={id} className="app__speaker">
         <img
           className="app__speaker-img"
           onClick={() => this.onClickSpeaker(id)}
-          src={imgURL}
+          src={require(`./images/${imgURL}`)}
           alt={alt}
         />
         <p className="app__speaker-name">
@@ -142,6 +145,7 @@ export default class App extends PureComponent {
         <p className="app__speaker-position">{position}</p>
       </div>
     ));
+  }
 
   renderPartyEventRow = () =>
     _.map(
@@ -275,15 +279,15 @@ export default class App extends PureComponent {
              </div>
 
           {/* Speakers講者 */}
-          {/* <div className="app__section main_section" id="speakers-section">
+          <div className="app__section main_section" id="speakers-section">
             <img className="main_section_logo" src={require("../images/iplayground_logo_ball.png")}/>
             <div className="main_section_container">
-              <div className="app__title"><span className="app__title_eng">Speakers</span><span>講者</span></div>
+              <div className="app__title"><span className="app__title_eng">{<Trans>speakers.title</Trans>}</span><span>{<Trans>speakers.title2</Trans>}</span></div>
               <div className="app__speaker-container">
                 {this.renderSpeakers()}
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Schedule議程 */}
           {/* <div className="app__section main_section" id="schedule-section">

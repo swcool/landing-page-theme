@@ -1,5 +1,7 @@
 
 {
+    "navTitle.speakers": "Speakers",
+    "navTitle.speakers2": "講者",
     "navTitle.venue": "Venue",
     "navTitle.venue2": "場地",
 
@@ -18,6 +20,9 @@
     "location.name": "張榮發基金會國際會議中心",
     "location": "台北市中正區中山南路11號8樓",
     "date":"11月08日",
+
+    "speakers.title": "Speakers",
+    "speakers.title2": "講者",
 
     "venue.title" : "Venue",
     "venue.title2" : "場地",

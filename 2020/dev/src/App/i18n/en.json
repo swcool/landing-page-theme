@@ -1,4 +1,6 @@
 {
+    "navTitle.speakers": "Speakers",
+    "navTitle.speakers2": "",
     "navTitle.venue": "Venue",
     "navTitle.venue2": "",
     "navTitle.about": "About",
@@ -16,6 +18,9 @@
     "location.name": "CHANG YUNG-FA FOUNDATION International Convention Center",
     "location": "8F., No. 11, Zhongshan S. Rd., Zhongzheng Dist., Taipei City 100, Taiwan (R.O.C.)",
     "date":"11/08",
+
+    "speakers.title": "Speakers",
+    "speakers.title2": "",
 
     "venue.title" : "Venue",
     "venue.title2" : "",
