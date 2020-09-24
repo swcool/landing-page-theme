@@ -15,13 +15,12 @@ import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
 import staffsListJson from "../App/JsonData/staffs.json"
 import activityPicturesJson from "../App/JsonData/activityPictures.json"
-import speakersListJson from "../App/JsonData/speakers.json"
 
 import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
 
 export default class App extends PureComponent {
-  state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null, isGoldSponsor:false};
+  state = { showModal: false, whichDay: "day_1" , programs: [], sponsors:null, speakers:null};
 
   componentDidMount = async () => {
     //const data = await 
@@ -38,11 +37,18 @@ export default class App extends PureComponent {
       console.log(data)
       this.setState({sponsors: data})
     });
+
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/speakers.json')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      this.setState({speakers: data})
+    });
   }
 
   onClickSpeaker = id => {
-    const speakerList = speakersListJson ? speakersListJson.speakers : null
-    this.modalContentDataSpeakers = _.find(speakerList, { id });
+    const speakersList = this.state.speakers ? this.state.speakers.speakers : null
+    this.modalContentDataSpeakers = _.find(speakersList, { id });
     this.setState({ showModal: "speakers" });
     document.getElementById("navbar").hidden = true;
   };
@@ -130,13 +136,13 @@ export default class App extends PureComponent {
   }
 
   renderSpeakers = () => {
-    const speakerList = speakersListJson ? speakersListJson.speakers : null
-    return _.map(speakerList, ({ id, imgURL, alt, name, position }) => (
+    const speakersList = this.state.speakers ? this.state.speakers.speakers : null
+    return _.map(speakersList, ({ id, imgURL, alt, name, position }) => (
       <div key={id} className="app__speaker">
         <img
           className="app__speaker-img"
           onClick={() => this.onClickSpeaker(id)}
-          src={require(`./images/${imgURL}`)}
+          src={imgURL}
           alt={alt}
         />
         <p className="app__speaker-name">
