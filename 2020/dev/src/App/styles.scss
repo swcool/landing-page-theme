@@ -212,8 +212,8 @@ html {
     }
   }
 
-  .app__speaker-container {
-    //text-align: center;
+  .app__sponsor-gold-container {
+    text-align: center;
   }
   .app__speaker {
     text-align: center;
@@ -258,19 +258,28 @@ html {
       }
     }
   }
+  .app__speaker-container {
+    // text-align: center;
+  }
 
   .app__sponsor {
     text-align: center;
 
-    .app__sponsor-logo {
-      width: 80%;
+    .app__CoOrganisers-logo {
+      width:80%;
       max-width: 325px;
       margin-top: 2rem;
     }
 
-    .app__sponsor-gold-logo {
-      width: 100%;
-      max-width: 500px;
+    .app__sponsor-logo {
+      width:70%;
+      max-width: 250px;
+      margin-top: 2rem;
+    }
+
+    .app__sponsor-gold {
+      width:100%;
+      max-width: 400px;
       margin-top: 2rem;
     }
 
@@ -377,6 +386,7 @@ html {
   }
 
   .section_sub_title {
+    text-align: left;
     font-size: 40px;
     padding: 1rem 0;
     text-shadow: 0.5px 0.5px rgba(0, 0, 0, 1);
@@ -441,7 +451,11 @@ html {
 
     .app__sponsor {
       .app__sponsor-logo {
-        width: 75%;
+        width: 70%;
+      }
+
+      .app__sponsor-gold {
+        width: 100%;
       }
     }
   }

@@ -190,13 +190,13 @@ export default class App extends PureComponent {
       const sponsorsList = this.state.sponsors ? this.state.sponsors.sponsors : null
       
       return _.map(sponsorsList, ({title,items}) => (
-        <div key= {_.uniqueId()} className= "staff_team_container">
-          <div className="section_sub_title">{title}</div>
+        <div key= {_.uniqueId()} className={title == "黃金級" ? "app__sponsor-gold-container" : "staff_team_container"}>
+        <div className="section_sub_title">{title}</div>
          {
            items.map( ({picture,link,name}) => 
            <div key={_.uniqueId()} className="app__sponsor">
            <a href={link} target="_blank" rel="noopener noreferrer">
-             <img className={title == "黃金級" ? "app__sponsor-gold-logo" : "app__sponsor-logo"} src={picture} alt={name}/>
+             <img className={title == "黃金級" ? "app__sponsor-gold" : "app__sponsor-logo"} src={picture} alt={name}/>
            </a>
           </div>
           )
@@ -212,7 +212,7 @@ export default class App extends PureComponent {
     return _.map(partners, ({ icon, link, name }) => (
       <div key={_.uniqueId()} className="app__sponsor">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img className="app__sponsor-logo" src={icon} alt={name} />
+          <img className="app__CoOrganisers-logo" src={icon} alt={name} />
         </a>
       </div>
     ));

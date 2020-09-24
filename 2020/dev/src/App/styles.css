@@ -153,6 +153,8 @@ html {
       padding: 0.5rem; }
     .app__container .app__table th {
       border-bottom-width: 3px; }
+  .app__container .app__sponsor-gold-container {
+    text-align: center; }
   .app__container .app__speaker {
     text-align: center;
     cursor: pointer;
@@ -188,13 +190,17 @@ html {
           color: black; } }
   .app__container .app__sponsor {
     text-align: center; }
-    .app__container .app__sponsor .app__sponsor-logo {
+    .app__container .app__sponsor .app__CoOrganisers-logo {
       width: 80%;
       max-width: 325px;
       margin-top: 2rem; }
-    .app__container .app__sponsor .app__sponsor-gold-logo {
+    .app__container .app__sponsor .app__sponsor-logo {
+      width: 70%;
+      max-width: 250px;
+      margin-top: 2rem; }
+    .app__container .app__sponsor .app__sponsor-gold {
       width: 100%;
-      max-width: 500px;
+      max-width: 400px;
       margin-top: 2rem; }
     .app__container .app__sponsor .app__sponsor-degree {
       color: #000; }
@@ -269,6 +275,7 @@ html {
       font-size: 55px;
       margin-right: 1rem; }
   .app__container .section_sub_title {
+    text-align: left;
     font-size: 40px;
     padding: 1rem 0;
     text-shadow: 0.5px 0.5px black; }
@@ -308,7 +315,9 @@ html {
     .app__container .app__speaker .app__speaker-name {
       margin-top: 0.5rem; }
     .app__container .app__sponsor .app__sponsor-logo {
-      width: 75%; } }
+      width: 70%; }
+    .app__container .app__sponsor .app__sponsor-gold {
+      width: 100%; } }
   @media screen and (min-width: 992px) {
     .app__container .app__container {
       max-width: 960px; } }
