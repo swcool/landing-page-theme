@@ -214,6 +214,18 @@ html {
 
   .app__sponsor-gold-container {
     text-align: center;
+
+    .app__sponsor{
+      width: 100%;
+    }
+
+    a{
+      width: 100%;
+    }
+
+    .app__sponsor-gold{
+      max-width: 50%;
+    }
   }
   .app__speaker {
     text-align: center;
@@ -278,7 +290,7 @@ html {
     }
 
     .app__sponsor-gold {
-      width:100%;
+      width:200%;
       max-width: 400px;
       margin-top: 2rem;
     }
@@ -455,9 +467,14 @@ html {
       }
 
       .app__sponsor-gold {
-        width: 100%;
+        width: 200%;
       }
     }
+    .app__sponsor-gold-container {
+      .app__sponsor-gold{
+        max-width: 50%;
+      }
+    }  
   }
 
   @include screen--lg {
