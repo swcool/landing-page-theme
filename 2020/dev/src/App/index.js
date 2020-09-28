@@ -271,8 +271,10 @@ export default class App extends PureComponent {
           <div className="empty_section">
             <div className="section_action_container">
               <ActionButton title={<Trans>underAboutUs.button.sponsor</Trans>} link="https://bit.ly/iplayground-2020-sponsors" />
+              <ActionButton title={<Trans>underAboutUs.button.buyTicket</Trans>} link="https://iplayground.kktix.cc/events/iplayground2020" /> 
               {/* <ActionButton title={<Trans>underAboutUs.button.becomeASpeaker</Trans>} link="https://cfp.iplayground.io/events/iplayground_2020" />  */}
-            </div>
+              </div>
+
             <div className="section_action_container" style={{ marginTop: "1em" }}>
               <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon twitter_icon"></i></a>
               <a href="https://t.me/iPlayground" target="_blank"><i className="fab fa-telegram social_icon telegram_icon"></i></a>
