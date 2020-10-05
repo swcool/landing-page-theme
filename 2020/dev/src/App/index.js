@@ -13,14 +13,13 @@ import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
-import staffsListJson from "../App/JsonData/staffs.json"
 import activityPicturesJson from "../App/JsonData/activityPictures.json"
 
 import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
 
 export default class App extends PureComponent {
-  state = { showModal: false, whichDay: "day_1", programs: [], sponsors: null, speakers: null };
+  state = { showModal: false, whichDay: "day_1", programs: [], sponsors: null, speakers: null, staffs: null };
 
   componentDidMount = async () => {
     //const data = await 
@@ -43,6 +42,13 @@ export default class App extends PureComponent {
       .then(data => {
         console.log(data)
         this.setState({ speakers: data })
+      });
+
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/staffs.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        this.setState({ staffs: data })
       });
   }
 
@@ -170,7 +176,7 @@ export default class App extends PureComponent {
 
 
   renderStaff = () => {
-    const staffsList = staffsListJson ? staffsListJson.staff : null
+    const staffsList = this.state.staffs ? this.state.staffs.staff : null
 
     return _.map(staffsList, ({ id, imgURL, alt, name, position, SNS }) => (
 
