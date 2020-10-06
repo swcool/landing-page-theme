@@ -13,14 +13,13 @@ import ActionButton from "../components/ActionButton";
 
 import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
-import staffsListJson from "../App/JsonData/staffs.json"
 import activityPicturesJson from "../App/JsonData/activityPictures.json"
 
 import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
 
 export default class App extends PureComponent {
-  state = { showModal: false, whichDay: "day_1", programs: [], sponsors: null, speakers: null };
+  state = { showModal: false, whichDay: "day_1", programs: [], sponsors: null, speakers: null, staffs: null };
 
   componentDidMount = async () => {
     //const data = await 
@@ -43,6 +42,13 @@ export default class App extends PureComponent {
       .then(data => {
         console.log(data)
         this.setState({ speakers: data })
+      });
+
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/staffs.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        this.setState({ staffs: data })
       });
   }
 
@@ -170,7 +176,7 @@ export default class App extends PureComponent {
 
 
   renderStaff = () => {
-    const staffsList = staffsListJson ? staffsListJson.staff : null
+    const staffsList = this.state.staffs ? this.state.staffs.staff : null
 
     return _.map(staffsList, ({ id, imgURL, alt, name, position, SNS }) => (
 
@@ -271,8 +277,10 @@ export default class App extends PureComponent {
           <div className="empty_section">
             <div className="section_action_container">
               <ActionButton title={<Trans>underAboutUs.button.sponsor</Trans>} link="https://bit.ly/iplayground-2020-sponsors" />
+              <ActionButton title={<Trans>underAboutUs.button.buyTicket</Trans>} link="https://iplayground.kktix.cc/events/iplayground2020" /> 
               {/* <ActionButton title={<Trans>underAboutUs.button.becomeASpeaker</Trans>} link="https://cfp.iplayground.io/events/iplayground_2020" />  */}
-            </div>
+              </div>
+
             <div className="section_action_container" style={{ marginTop: "1em" }}>
               <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon twitter_icon"></i></a>
               <a href="https://t.me/iPlayground" target="_blank"><i className="fab fa-telegram social_icon telegram_icon"></i></a>
