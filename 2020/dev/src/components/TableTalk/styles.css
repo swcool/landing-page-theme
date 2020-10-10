@@ -4,27 +4,63 @@
  * ======================================================================== */
 .table-talk {
   padding: 1em 0;
-  width: 100%; }
-  .table-talk span {
-    display: block;
-    margin: 0 0.5em; }
-  .table-talk .talk_room_lable {
-    margin: 0 0.5em 0.5em 0.5em; }
-  .table-talk .table-talk__topic {
-    color: #D2438BEF;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 0.95em; }
-  .table-talk .table-talk__presenter {
-    color: #444444;
-    font-size: 1em; }
-  .table-talk .tag_image {
-    width: 24px;
-    height: 24px;
-    margin: 6px; }
+  width: 100%;
+}
+.table-talk span {
+  display: block;
+  margin: 0 0.5em;
+}
+.table-talk .talk_room_lable {
+  margin: 0 0.5em 0.5em 0.5em;
+}
+.table-talk .table-talk__topic {
+  /* color: #d2438bef; */
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95em;
+}
+.table-talk .table-talk__presenter {
+  color: #444444;
+  font-size: 1em;
+}
+.table-talk .tag_image {
+  width: 24px;
+  height: 24px;
+  margin: 6px;
+}
+
+.font_801 {
+  color: #517cffef;
+}
+.font_802 {
+  color: #ef5fa7ef;
+}
+
+.font_1002 {
+  color: #f8ba00ef;
+}
+.font_1005 {
+  color: #00f853ef;
+}
+
+.talk_room_lable .room_101 {
+  background-color: #517cffef;
+}
+.talk_room_lable .room_102 {
+  background-color: #ef5fa7ef;
+}
+.talk_room_lable .room_103 {
+  background-color: #f8ba00ef;
+}
+.talk_room_lable .room_1002 {
+  background-color: #00f853ef;
+}
 
 @media screen and (min-width: 768px) {
   .table-talk {
-    width: 33%; }
+    width: 33%;
+  }
   .talk_room_lable {
-    display: none; } }
+    display: none;
+  }
+}
