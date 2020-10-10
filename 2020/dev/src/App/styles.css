@@ -12,7 +12,7 @@ html {
 
 .logo-container-fullscreen {
   width: 100%;
-  background: linear-gradient(350.91deg, #3B559A 28.55%, #9EB0D6 89.13%);
+  background: linear-gradient(350.91deg, #3b559a 28.55%, #9eb0d6 89.13%);
   min-height: 120vmin; }
   .logo-container-fullscreen .logo-container {
     max-width: 90vmin;
@@ -26,7 +26,7 @@ html {
     height: 0;
     border-style: solid;
     border-width: 0 0 20vmin 100vw;
-    border-color: transparent transparent #FFFFFF transparent; }
+    border-color: transparent transparent #ffffff transparent; }
   .logo-container-fullscreen .logo-container-fullscreen-mask-container {
     position: relative; }
   .logo-container-fullscreen .logo-container-fullscreen-mask-2-container {
@@ -38,9 +38,9 @@ html {
       height: 0;
       border-style: solid;
       border-width: 0 0 12vmin 100vw;
-      border-color: transparent transparent #FFFFFF33 transparent; }
+      border-color: transparent transparent #ffffff33 transparent; }
     .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-bottom {
-      background: #FFFFFF33;
+      background: #ffffff33;
       height: 5vmin; }
   .logo-container-fullscreen .logo {
     width: 100%;
@@ -52,7 +52,7 @@ html {
     line-height: 10vmin;
     text-align: right;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #ffffff;
     text-shadow: 3px 3px black; }
     .logo-container-fullscreen .logo-info i {
       padding-right: 4pt; }
@@ -85,12 +85,12 @@ html {
       margin-bottom: 0.5em;
       padding: 0.5rem 1rem;
       border-radius: 60px;
-      border: 1px solid #EF5FA7;
+      border: 1px solid #ef5fa7;
       outline: none;
-      color: #EF5FA7;
+      color: #ef5fa7;
       background-color: #ffffff66; }
     .app__container .app__sechdule-tab .app__sechdule-tab__btn--selected {
-      color: #EF5FA7;
+      color: #ef5fa7;
       background-color: rgba(0, 0, 0, 0.75);
       border: 1px solid rgba(0, 0, 0, 0.75); }
   .app__container .sechdule_container {
@@ -103,7 +103,7 @@ html {
       display: flex;
       width: 100%; }
     .app__container .sechdule_container .sechdule_row {
-      border-bottom: 1px solid #FFFFFF; }
+      border-bottom: 1px solid #ffffff; }
     .app__container .sechdule_container .sechdule_time_block {
       width: 20%; }
     .app__container .sechdule_container .sechdule_block {
@@ -113,7 +113,7 @@ html {
       display: none; }
     .app__container .sechdule_container .room_lable {
       text-align: center;
-      color: #FFFFFF;
+      color: #ffffff;
       padding: 0.5em;
       border-radius: 6px;
       font-size: 16px; }
@@ -121,11 +121,13 @@ html {
       margin: 0.5em 1em;
       font-weight: 300; }
     .app__container .sechdule_container .room_101 {
-      background-color: #517CFFEF; }
+      background-color: #517cffef; }
     .app__container .sechdule_container .room_102 {
-      background-color: #EF5FA7EF; }
+      background-color: #ef5fa7ef; }
     .app__container .sechdule_container .room_103 {
-      background-color: #F8BA00EF; }
+      background-color: #f8ba00ef; }
+    .app__container .sechdule_container .room_1005 {
+      background-color: #57ff51ef; }
     .app__container .sechdule_container .workshop_day {
       text-align: center;
       height: 40px;
@@ -241,7 +243,7 @@ html {
     border-radius: 23px 0 0 23px;
     box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2); }
     .app__container .main_section_container .section_tag {
-      color: #EF5FA7;
+      color: #ef5fa7;
       background-color: rgba(0, 0, 0, 0.75);
       border-radius: 8px;
       font-size: 26px;
@@ -304,9 +306,9 @@ html {
   .app__container a {
     text-decoration: none; }
   .app__container .twitter_icon {
-    color: #1DA1F2; }
+    color: #1da1f2; }
   .app__container .facebook_icon {
-    color: #1877F2; }
+    color: #1877f2; }
   .app__container .telegram_icon {
     color: #0088cc; }
   @media screen and (min-width: 768px) {

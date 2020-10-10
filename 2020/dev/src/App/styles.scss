@@ -12,7 +12,7 @@ html {
 
 .logo-container-fullscreen {
   width: 100%;
-  background: linear-gradient(350.91deg, #3B559A 28.55%, #9EB0D6 89.13%);
+  background: linear-gradient(350.91deg, #3b559a 28.55%, #9eb0d6 89.13%);
   min-height: 120vmin;
 
   .logo-container {
@@ -29,7 +29,7 @@ html {
     height: 0;
     border-style: solid;
     border-width: 0 0 20vmin 100vw;
-    border-color: transparent transparent #FFFFFF transparent; 
+    border-color: transparent transparent #ffffff transparent;
   }
 
   .logo-container-fullscreen-mask-container {
@@ -45,14 +45,14 @@ html {
       height: 0;
       border-style: solid;
       border-width: 0 0 12vmin 100vw;
-      border-color: transparent transparent #FFFFFF33 transparent;
+      border-color: transparent transparent #ffffff33 transparent;
     }
     .logo-container-fullscreen-mask-2-bottom {
-      background: #FFFFFF33;
+      background: #ffffff33;
       height: 5vmin;
     }
   }
-  
+
   .logo {
     width: 100%;
     height: auto;
@@ -67,11 +67,11 @@ html {
     text-align: right;
     font-weight: 500;
 
-    color: #FFFFFF;
+    color: #ffffff;
 
     text-shadow: 3px 3px rgba(0, 0, 0, 1);
     i {
-      padding-right: 4pt
+      padding-right: 4pt;
     }
   }
   @media screen and (min-width: 680px) {
@@ -113,16 +113,16 @@ html {
       margin-bottom: 0.5em;
       padding: 0.5rem 1rem;
       border-radius: 60px;
-      border: 1px solid #EF5FA7;
+      border: 1px solid #ef5fa7;
       outline: none;
-      color: #EF5FA7;
+      color: #ef5fa7;
       background-color: #ffffff66;
     }
 
     .app__sechdule-tab__btn--selected {
-      color: #EF5FA7;
-      background-color: rgba(0,0,0,0.75);
-      border: 1px solid rgba(0,0,0,0.75);
+      color: #ef5fa7;
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(0, 0, 0, 0.75);
     }
   }
 
@@ -130,7 +130,7 @@ html {
     background-color: rgba(128, 128, 128, 0.33);
     padding: 1em 0;
     border-radius: 6px;
-    
+
     ul {
       padding: 0;
     }
@@ -139,7 +139,7 @@ html {
       width: 100%;
     }
     .sechdule_row {
-      border-bottom: 1px solid #FFFFFF;
+      border-bottom: 1px solid #ffffff;
     }
     .sechdule_time_block {
       width: 20%;
@@ -153,7 +153,7 @@ html {
     }
     .room_lable {
       text-align: center;
-      color: #FFFFFF;
+      color: #ffffff;
       padding: 0.5em;
       border-radius: 6px;
       font-size: 16px;
@@ -161,16 +161,18 @@ html {
     .sechdule_room_lable {
       margin: 0.5em 1em;
       font-weight: 300;
-      
     }
     .room_101 {
-      background-color: #517CFFEF;
+      background-color: #517cffef;
     }
     .room_102 {
-      background-color: #EF5FA7EF;
+      background-color: #ef5fa7ef;
     }
     .room_103 {
-      background-color: #F8BA00EF;
+      background-color: #f8ba00ef;
+    }
+    .room_1005 {
+      background-color: #57ff51ef;
     }
     .workshop_day {
       text-align: center;
@@ -215,15 +217,15 @@ html {
   .app__sponsor-gold-container {
     text-align: center;
 
-    .app__sponsor{
+    .app__sponsor {
       width: 100%;
     }
 
-    a{
+    a {
       width: 100%;
     }
 
-    .app__sponsor-gold{
+    .app__sponsor-gold {
       max-width: 50%;
     }
   }
@@ -249,7 +251,7 @@ html {
     .app__speaker-name {
       font-size: 1.35rem;
       margin-bottom: 0;
-      background-color: rgba(0, 0, 0, 0.30);
+      background-color: rgba(0, 0, 0, 0.3);
       color: #ffffff;
       padding: 0.5rem 0;
       margin: 0 15%;
@@ -262,11 +264,11 @@ html {
       padding-left: 1.2rem;
       padding-right: 1.2rem;
       @media (prefers-color-scheme: dark) {
-        color: white; 
+        color: white;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
       @media (prefers-color-scheme: light) {
-        color: black; 
+        color: black;
       }
     }
   }
@@ -278,19 +280,19 @@ html {
     text-align: center;
 
     .app__CoOrganisers-logo {
-      width:80%;
+      width: 80%;
       max-width: 325px;
       margin-top: 2rem;
     }
 
     .app__sponsor-logo {
-      width:70%;
+      width: 70%;
       max-width: 250px;
       margin-top: 2rem;
     }
 
     .app__sponsor-gold {
-      width:200%;
+      width: 200%;
       max-width: 325px;
       margin-top: 2rem;
     }
@@ -309,11 +311,11 @@ html {
       font-size: 16px;
       line-height: 28px;
       @media (prefers-color-scheme: dark) {
-        color: white; 
+        color: white;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
       @media (prefers-color-scheme: light) {
-        color: black; 
+        color: black;
       }
     }
   }
@@ -321,7 +323,7 @@ html {
   .main_section {
     position: relative;
   }
-  
+
   .sub_section {
     padding-top: 120px;
   }
@@ -340,16 +342,16 @@ html {
     background-color: #ffffff66;
     border-radius: 23px 0 0 23px;
     //border: 1px solid #FFFFFF;
-    box-shadow: 0 3px 30px 2px rgba(0,0,0,0.20);
+    box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2);
 
     .section_tag {
-      color: #EF5FA7;
-      background-color: rgba(0,0,0,0.75);
+      color: #ef5fa7;
+      background-color: rgba(0, 0, 0, 0.75);
       border-radius: 8px;
       font-size: 26px;
       padding: 8px 16px;
     }
-    
+
     .section_sub_container {
       padding-left: 2rem;
     }
@@ -359,11 +361,11 @@ html {
   }
   .section_container {
     padding: 2rem 2rem;
-   margin: 0 -0px 0px 5vw;
-   //min-height: 360px;
-   background-color: #ffffff66;
-   border-radius: 23px 0 0 23px;
-   box-shadow: 0 3px 30px 2px rgba(0,0,0,0.20);
+    margin: 0 -0px 0px 5vw;
+    //min-height: 360px;
+    background-color: #ffffff66;
+    border-radius: 23px 0 0 23px;
+    box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2);
   }
   .section_content_row_container {
     display: flex;
@@ -380,7 +382,7 @@ html {
   .app__title {
     display: flex;
     flex-wrap: wrap;
-    font-family: "PingFangTC-Ultralight", "STHeitiTC-Ultralight", "STHeitiTC-Light", "Microsoft JhengHei" ;
+    font-family: "PingFangTC-Ultralight", "STHeitiTC-Ultralight", "STHeitiTC-Light", "Microsoft JhengHei";
     margin-bottom: 2.5rem;
     text-align: left;
     padding: 0 0;
@@ -431,18 +433,15 @@ html {
   }
 
   .twitter_icon {
-    color: #1DA1F2;
+    color: #1da1f2;
   }
   .facebook_icon {
-    color: #1877F2;
+    color: #1877f2;
   }
   .telegram_icon {
     color: #0088cc;
   }
   @include screen--md {
- 
-
-
     .app__submit {
       margin-left: auto;
       margin-right: auto;
@@ -471,10 +470,10 @@ html {
       }
     }
     .app__sponsor-gold-container {
-      .app__sponsor-gold{
+      .app__sponsor-gold {
         max-width: 50%;
       }
-    }  
+    }
   }
 
   @include screen--lg {
@@ -482,8 +481,6 @@ html {
       max-width: 960px;
     }
   }
-
-  
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -491,23 +488,20 @@ html {
   }
   .logo-container-fullscreen {
     .logo-container-fullscreen-mask {
-      border-color: transparent transparent #666 transparent; 
+      border-color: transparent transparent #666 transparent;
     }
     .logo-container-fullscreen-mask-2-container {
-      
       .logo-container-fullscreen-mask-2-top {
-    
         border-color: transparent transparent #66666633 transparent;
       }
       .logo-container-fullscreen-mask-2-bottom {
         background: #66666633;
-   
       }
     }
   }
   .app__container {
     .main_section_container {
-      background-color: #ffffffaa
+      background-color: #ffffffaa;
     }
     .twitter_icon {
       color: #ffffff;
