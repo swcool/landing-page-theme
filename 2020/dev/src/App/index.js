@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import _ from "lodash";
+import _, { random } from "lodash";
 import { SocialIcon } from "react-social-icons";
 
 import ActionFooter from "../components/ActionFooter";
@@ -19,7 +19,7 @@ import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
 
 export default class App extends PureComponent {
-  state = { showModal: false, whichDay: "day_1", programs: [], sponsors: null, speakers: null, staffs: null };
+  state = { showModal: false, whichDay: "session", programs: [], sponsors: null, speakers: null, staffs: null, schedule: null };
 
   componentDidMount = async () => {
     //const data = await 
@@ -27,7 +27,7 @@ export default class App extends PureComponent {
       .then(response => response.json())
       .then(data => {
         console.log(data.program)
-        this.setState({ programs: data })
+        this.setState({ programs: data.program })
       });
 
     await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/sponsors.json')
@@ -50,10 +50,18 @@ export default class App extends PureComponent {
         console.log(data)
         this.setState({ staffs: data })
       });
+
+    await fetch('https://raw.githubusercontent.com/iplayground/SessionData/2020/v1/schedule.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        this.setState({ schedule: data.schedule })
+      });
+
   }
 
   onClickSpeaker = id => {
-    const speakersList = this.state.programs ? this.state.programs.program : null
+    const speakersList = this.state.programs ? this.state.programs : null
     console.log(speakersList, id)
     this.modalContentDataSpeakers = _.find(speakersList, { id });
     this.setState({ showModal: "speakers" });
@@ -71,41 +79,66 @@ export default class App extends PureComponent {
     document.getElementById("navbar").hidden = false;
   };
 
-  renderTableRow = () =>
-    _.map(
-      this.schedule[this.state.whichDay],
-      ({ id, start, end, rest, isWorkshop, talks }) => {
+  renderTableRow = () => {
+    console.log(this.state.schedule)
+    const tableCellData = this.state.schedule[this.state.whichDay]
+    if (Array.isArray(tableCellData)) {
+      return tableCellData.map((value, index) => {
+        return (
+          <TableRow
+            key={index}
+            start={value.start}
+            end={value.end}
+            rest={value.rest || null}
+            talks={value.talks}
+            isWorkshop={null}
+            programs={this.state.programs}
+            onClickTopic={talk => {
+              this.onClickTopic(talk);
+            }}
+          />
+        );
+      })
+    }
+    return null
+  }
 
-        var row = (<TableRow
-          key={id}
-          start={start}
-          end={end}
-          rest={rest || null}
-          talks={talks}
-          isWorkshop={null}
-          programs={this.state.programs}
-          onClickTopic={talk => {
-            this.onClickTopic(talk);
-          }}
-        />)
-        return row
-      }
-    );
-
-
-  renderTable = () => (
-    <ul className="schedule_table">
-      <li className="schedule_row">
-        <div className="schedule_time_block"></div>
-        <div className="schedule_room_container">
-          <div className="schedule_block"><div className="room_lable schedule_room_lable room_101">101</div></div>
-          <div className="schedule_block"><div className="room_lable schedule_room_lable room_102">102</div></div>
-          <div className="schedule_block"><div className="room_lable schedule_room_lable room_103">103</div></div>
+  workshop = () => {
+    return (
+      <li className="sechdule_row">
+        <div className="sechdule_time_block"></div>
+        <div className="sechdule_room_container" style={{ justifyContent: "center", alignItems: "center" }}>
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_1005">1005</div></div>
         </div>
       </li>
-      {this.renderTableRow()}
-    </ul>
-  )
+    );
+  }
+  session = () => {
+    return (
+      <li className="sechdule_row">
+        <div className="sechdule_time_block"></div>
+        <div className="sechdule_room_container">
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_101">801</div></div>
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_102">803</div></div>
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">1001</div></div>
+        </div>
+      </li>
+    );
+  }
+  renderTable = () => {
+    console.log(this.state.schedule)
+    if (this.state.schedule === null) {
+      return null
+    }
+    return (
+      (
+        <ul className="sechdule_table">
+          {this.state.whichDay === "session" ? this.session() : this.workshop()}
+          {this.renderTableRow()}
+        </ul>
+      )
+    );
+  }
   renderWorkShopRow = (day) => _.map(
     this.workshop[day],
     ({ id, start, end, rest, isWorkshop, talks }) => (
@@ -125,10 +158,10 @@ export default class App extends PureComponent {
   );
 
   renderWorkShop = () => (
-    <ul className="schedule_table">
-      <li className="schedule_row"><div className="workshop_day">9/21 day 1</div></li>
-      {this.renderWorkShopRow("day_1")}
-      <li className="schedule_row "><div className="workshop_day">9/22 day 2</div></li>
+    <ul className="sechdule_table">
+      <li className="sechdule_row"><div className="workshop_day">9/21 day 1</div></li>
+      {this.renderWorkShopRow("session")}
+      <li className="sechdule_row "><div className="workshop_day">9/22 day 2</div></li>
       {this.renderWorkShopRow("day_2")}
     </ul>
   );
@@ -144,7 +177,7 @@ export default class App extends PureComponent {
   }
 
   renderSpeakers = () => {
-    const speakersList = this.state.programs ? this.state.programs.program : null
+    const speakersList = this.state.programs ? this.state.programs : null
     console.log(speakersList)
     return _.map(speakersList, ({ id, video_url, speakers }) => (
       <div key={id} className="app__speaker">
@@ -277,9 +310,9 @@ export default class App extends PureComponent {
           <div className="empty_section">
             <div className="section_action_container">
               <ActionButton title={<Trans>underAboutUs.button.sponsor</Trans>} link="https://bit.ly/iplayground-2020-sponsors" />
-              <ActionButton title={<Trans>underAboutUs.button.buyTicket</Trans>} link="https://iplayground.kktix.cc/events/iplayground2020" /> 
+              <ActionButton title={<Trans>underAboutUs.button.buyTicket</Trans>} link="https://iplayground.kktix.cc/events/iplayground2020" />
               {/* <ActionButton title={<Trans>underAboutUs.button.becomeASpeaker</Trans>} link="https://cfp.iplayground.io/events/iplayground_2020" />  */}
-              </div>
+            </div>
 
             <div className="section_action_container" style={{ marginTop: "1em" }}>
               <a href="https://twitter.com/theiPlayground" target="_blank"><i className="fab fa-twitter social_icon twitter_icon"></i></a>
@@ -305,50 +338,50 @@ export default class App extends PureComponent {
           </div>
 
           {/* Schedule議程 */}
-          {/* <div className="app__section main_section" id="schedule-section">
-            <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")}/>
+          <div className="app__section main_section" id="sechdule-section">
+            <img className="main_section_logo" src={require("../images/iplayground_logo_diamond.png")} />
             <div className="main_section_container">
-             <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
-             <div className="app__schedule-tab">
-              <button
-                className={
-                  whichDay === "day_1" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
-                }
-                onClick={() => {
-                  this.setState({ whichDay: "day_1" });
-                }}
-                type="button"
-              >
-                9/21 Day 1
+              <div className="app__title"><span className="app__title_eng">Schedule</span><span>議程</span></div>
+              <div className="app__sechdule-tab">
+                <button
+                  className={
+                    whichDay === "session" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                  }
+                  onClick={() => {
+                    this.setState({ whichDay: "session" });
+                  }}
+                  type="button"
+                >
+                  session
               </button>
-              <button
-                className={
-                  whichDay === "day_2" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
-                }
-                onClick={() => {
-                  this.setState({ whichDay: "day_2" });
-                }}
-                type="button"
-              >
-                9/22 Day 2
-              </button>
-              <button
-                className={
-                  whichDay === "workshop" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
-                }
-                onClick={() => {
-                  this.setState({ whichDay: "workshop" });
-                }}
-                type="button"
-              >
-                workshop
+                {/* <button
+                  className={
+                    whichDay === "day_2" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
+                  }
+                  onClick={() => {
+                    this.setState({ whichDay: "day_2" });
+                  }}
+                  type="button"
+                >
+                  9/22 Day 2
+              </button> */}
+                <button
+                  className={
+                    whichDay === "workshop" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"
+                  }
+                  onClick={() => {
+                    this.setState({ whichDay: "workshop" });
+                  }}
+                  type="button"
+                >
+                  workshop
               </button>
               </div>
-              <div className="schedule_container">
-              {(whichDay === "workshop")? this.renderWorkShop() : this.renderTable()}
+              <div className="sechdule_container">
+                {(whichDay === "workshop") ? this.renderTable() : this.renderTable()}
               </div>
             </div>
-          </div>  */}
+          </div>
 
           {/* Venue 場地 */}
           <div className="app__section sub_section" id="venue-section">
@@ -453,9 +486,9 @@ export default class App extends PureComponent {
             />
           ) : (
               <ModalContentSchedule
-                {...this.modalContentDataSchedule}
+                session={this.modalContentDataSchedule}
                 onClickCloseBtn={this.onCloseRequest}
-                speakers={this.speakers}
+                speakers={this.state.programs}
               />
             )}
         </Modal>
