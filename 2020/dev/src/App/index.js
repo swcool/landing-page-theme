@@ -120,7 +120,7 @@ export default class App extends PureComponent {
         <div className="sechdule_room_container">
           <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_101">801</div></div>
           <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_102">803</div></div>
-          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">1001</div></div>
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">1002</div></div>
         </div>
       </li>
     );
