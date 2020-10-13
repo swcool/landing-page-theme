@@ -376,7 +376,7 @@ export default class App extends PureComponent {
                   }}
                   type="button"
                 >
-                  onConference
+                  unConference
               </button>
               </div>
               <div className="sechdule_container">
