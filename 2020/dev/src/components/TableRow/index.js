@@ -34,6 +34,7 @@ export default ({ start, end, rest, talks, isWorkshop, programs, onClickTopic })
         tags={tags}
         program={program}
         isWorkshop={isWorkshop}
+        programId={programId}
         onClickTopic={onClickTopic}
       />)
   });
@@ -45,10 +46,13 @@ export default ({ start, end, rest, talks, isWorkshop, programs, onClickTopic })
         <div className="sechdule_talk_container" style={{ display: "flex", width: "100%", textAlign: "center", fontWeight: "bold", alignItems: "center", justifyContent: "center", color: "#666666" }}>
           {rest}
         </div>
-      ) : (
-          <div className="sechdule_talk_container" style={{ display: "flex", width: "100%", textAlign: "center", fontWeight: "bold", alignItems: "center", justifyContent: "center", color: "#666666" }}>
-            {renderTalks}
-          </div>
+      ) : (renderTalks.count > 1 ?
+        <div className="sechdule_talk_container" style={{ display: "grid", width: "100%", gridTemplateColumns: "1fr 1fr 1fr" }}>
+          {renderTalks}
+        </div> :
+        <div className="sechdule_talk_container" style={{ display: "flex", width: "100%", textAlign: "center", fontWeight: "bold", alignItems: "center", justifyContent: "center", color: "#666666" }}>
+          {renderTalks}
+        </div>
         )}
     </li>
   );

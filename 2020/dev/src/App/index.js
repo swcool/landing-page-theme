@@ -107,8 +107,10 @@ export default class App extends PureComponent {
     return (
       <li className="sechdule_row">
         <div className="sechdule_time_block"></div>
-        <div className="sechdule_room_container" style={{ justifyContent: "center", alignItems: "center" }}>
-          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_1005">1005</div></div>
+        <div className="sechdule_room_container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_101">1005</div></div>
+          {/* <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_102">1006</div></div>
+          <div className="sechdule_block"><div className="room_lable sechdule_room_lable room_103">1007</div></div> */}
         </div>
       </li>
     );
@@ -374,7 +376,7 @@ export default class App extends PureComponent {
                   }}
                   type="button"
                 >
-                  workshop
+                  unconference
               </button>
               </div>
               <div className="sechdule_container">

@@ -3,7 +3,15 @@
 html {
   font-family: -apple-system, Helvetica, Arial, sans-serif;
 }
-
+.font_801 {
+  color: #517cffef;
+}
+.font_802 {
+  color: #ef5fa7ef;
+}
+.font_1002 {
+  color: #f8ba00ef;
+}
 .app-fullscreen {
   display: flex;
   flex-direction: column;
@@ -170,9 +178,6 @@ html {
     }
     .room_103 {
       background-color: #f8ba00ef;
-    }
-    .room_1005 {
-      background-color: #57ff51ef;
     }
     .workshop_day {
       text-align: center;
