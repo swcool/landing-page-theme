@@ -31,7 +31,7 @@ export default ({ session, onClickCloseBtn, speakers }) => {
             )
           }
         </div>
-        <p>{session.description}</p>
+        <p dangerouslySetInnerHTML={{ __html: session.description }}></p>
         <div className="modal-content-schedule_subtitle">Speaker 講者</div>
         <div>
           {
