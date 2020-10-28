@@ -22,6 +22,7 @@
   .table-talk__presenter {
     color: #444444;
     font-size: 1em;
+    text-align: center;
   }
   .tag_image {
     width: 24px;
@@ -32,7 +33,7 @@
 
 @include screen--md {
   .table-talk {
-    width: 33%;
+    width: 100%;
   }
   .talk_room_lable {
     display: none;

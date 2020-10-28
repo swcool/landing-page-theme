@@ -38,7 +38,8 @@ export default ({ start, end, rest, talks, isWorkshop, programs, onClickTopic })
         onClickTopic={onClickTopic}
       />)
   });
-
+  console.log(Array.isArray(renderTalks))
+  console.log(renderTalks.length)
   return (
     <li className="sechdule_row">
       <TableTime start={start} end={end} />
@@ -46,7 +47,7 @@ export default ({ start, end, rest, talks, isWorkshop, programs, onClickTopic })
         <div className="sechdule_talk_container" style={{ display: "flex", width: "100%", textAlign: "center", fontWeight: "bold", alignItems: "center", justifyContent: "center", color: "#666666" }}>
           {rest}
         </div>
-      ) : (renderTalks.count > 1 ?
+      ) : (renderTalks.length !== 1 ?
         <div className="sechdule_talk_container" style={{ display: "grid", width: "100%", gridTemplateColumns: "1fr 1fr 1fr" }}>
           {renderTalks}
         </div> :
