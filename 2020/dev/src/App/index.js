@@ -312,8 +312,9 @@ export default class App extends PureComponent {
           <div className="empty_section">
             <div className="section_action_container">
               {/* <ActionButton title={<Trans>underAboutUs.button.sponsor</Trans>} link="https://bit.ly/iplayground-2020-sponsors" /> */}
-              <ActionButton title={<Trans>underAboutUs.button.buyTicket</Trans>} link="https://iplayground.kktix.cc/events/iplayground2020" />
-              {/* <ActionButton title={<Trans>underAboutUs.button.becomeASpeaker</Trans>} link="https://cfp.iplayground.io/events/iplayground_2020" />  */}
+              {/* <ActionButton title={<Trans>underAboutUs.button.buyTicket</Trans>} link="https://iplayground.kktix.cc/events/iplayground2020" /> */}
+              {/* <ActionButton title={<Trans>underAboutUs.button.becomeASpeaker</Trans>} link="https://cfp.iplayground.io/events/iplayground_2020" /> */}
+              <ActionButton title={<Trans>underAboutUs.button.hackMD</Trans>} link="https://hackmd.io/@iPlayground/2020/" />
             </div>
 
             <div className="section_action_container" style={{ marginTop: "1em" }}>
@@ -322,10 +323,10 @@ export default class App extends PureComponent {
               <a href="https://t.me/iPlaygroundAnnouncement" target="_blank"><i className="fas fa-bullhorn social_icon telegram_icon" style={{ fontSize: "24pt" }}></i></a>
               <a href="https://www.facebook.com/theiPlayground/" target="_blank"><i className="fab fa-facebook social_icon facebook_icon"></i></a>
             </div>
-            {/* <div className="section_action_container">
-               <a href="https://apps.apple.com/tw/app/iplayground-19/id1367423535?mt=8" style={{display:"inline-block",overflow:"hidden",background:"url(https://linkmaker.itunes.apple.com/zh-tw/badge-lrg.svg?releaseDate=2018-10-03&kind=iossoftware&bubble=ios_apps) no-repeat",width:"135px",height:"40px",verticalAlign: "middle"}}></a>
-               <a href='https://play.google.com/store/apps/details?id=net.zonble.iplayground19&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play立即下載' src='https://play.google.com/intl/en_us/badges/images/generic/zh-tw_badge_web_generic.png' style={{height:"60px",verticalAlign: "middle"}}/></a>
-             </div> */}
+            <div className="section_action_container">
+              <a href="https://apps.apple.com/tw/app/iplayground-19/id1367423535?mt=8" style={{ display: "inline-block", overflow: "hidden", background: "url(https://linkmaker.itunes.apple.com/zh-tw/badge-lrg.svg?releaseDate=2018-10-03&kind=iossoftware&bubble=ios_apps) no-repeat", width: "135px", height: "40px", verticalAlign: "middle" }}></a>
+              <a href='https://play.google.com/store/apps/details?id=net.zonble.iplayground19&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Google Play立即下載' src='https://play.google.com/intl/en_us/badges/images/generic/zh-tw_badge_web_generic.png' style={{ height: "60px", verticalAlign: "middle" }} /></a>
+            </div>
           </div>
 
           {/* Speakers講者 */}
@@ -356,17 +357,6 @@ export default class App extends PureComponent {
                 >
                   session
               </button>
-                {/* <button
-                  className={
-                    whichDay === "day_2" ? "app__schedule-tab__btn app__schedule-tab__btn--selected" : "app__schedule-tab__btn"
-                  }
-                  onClick={() => {
-                    this.setState({ whichDay: "day_2" });
-                  }}
-                  type="button"
-                >
-                  9/22 Day 2
-              </button> */}
                 <button
                   className={
                     whichDay === "workshop" ? "app__sechdule-tab__btn app__sechdule-tab__btn--selected" : "app__sechdule-tab__btn"

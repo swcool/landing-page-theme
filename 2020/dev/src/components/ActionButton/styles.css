@@ -4,8 +4,7 @@
  * ======================================================================== */
 .action-button {
   display: inline-block;
-  width: 250px;
-  background-image: linear-gradient(-60deg, #E9A315 6%, #D2438B 100%);
+  background-image: linear-gradient(-60deg, #e9a315 6%, #d2438b 100%);
   border-radius: 60px;
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.33);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
