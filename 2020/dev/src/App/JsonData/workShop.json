@@ -1,0 +1,69 @@
+{
+    "workshop" : {
+        "day_1":[
+          {
+            "start": "13:00",
+            "end": "14:35",
+            "talks": [
+              {
+                "topic": "利用TDD來發大財吧～",
+                "presenter": "DinDin , Steve Sun",
+                "description": "不知道什麼是測試嗎？\r\n沒寫過任何UnitTest嗎？\r\n沒聽過TDD嗎？\r\n你來對地方了。我們會一步步帶你認識了解\r\n透過實作一個樂透發財APP\r\n從最基礎型的MVC架構，搭配DI技巧\r\n用TDD心法來做代碼的整理與優化\r\n並且逐步完善我們想要實作的功能\r\n目標對象：\r\n對測試沒概念的人\r\n對TDD沒概念的人\r\n(此主題適合給junior朋友\r\n",
+                "tags":["no_record"],
+                "room":"103",
+                "isWorkshop":true,
+                "programId":168
+              }
+            ]
+          }
+        ]
+      ,
+      "day_2":[
+          {
+            "start": "13:30",
+            "end": "15:05",
+            "talks": [
+              {
+                "topic": "Web API Mocking",
+                "presenter": "Fengyi",
+                "description": "後端API沒完成，前端該如何同步開發？\r\n帶你一起透過依賴注入，讓外部API調用從代碼中解耦, \r\n編寫易於測試與Debug的代碼。",
+                "tags":["no_record"],
+                "room":"103",
+                "isWorkshop":true,
+                "programId":155
+              }
+            ]
+          },
+          {
+            "start": "13:30",
+            "end": "16:30",
+            "talks": [
+              {
+                "topic": "第一次 SwiftUI App 親密接觸",
+                "presenter": "彼得潘",
+                "description": "如果有一萬個小時的程式練習，我就能開發比 IG 還棒的 App。一萬個小時的練習有可能嗎? 可以 ! 就從 Workshop 的 3 個小時，開始第一次的 SwiftUI App 親密接觸。\r\n\r\nApple 最新推出的 SwiftUI 幫助我們以更直覺精簡的程式製作 App，活動將搭配滿滿的實作練習，介紹 SwiftUI 的各種技術。比方畫面的製作，頁面的切換，data binding，動畫和轉場效果，結合 iOS 13 的 dark mode，SF Symbols，SPM 等，帶著大家一步步創作一個完整的 App。\r\n",
+                "tags":["no_record"],
+                "room":"201",
+                "isWorkshop":true,
+                "programId":97
+              }
+            ]
+          },
+          {
+            "start": "15:25",
+            "end": "17:00",
+            "talks": [
+              {
+                "topic": "擴增實境人物控制實作",
+                "presenter": "JackyChen",
+                "description": "如果你對 AR 充滿好奇，不妨來體驗開發 AR App 的樂趣，ARKit 真假難辨的視覺效果，肯定不會讓你失望，經過這堂課後，您將擁有開發AR的基本能力。如：\r\nimageAnchor 設定、座標設定、轉角設定、比例縮放、材質設定、人物動作處理等。\r\n\r\n環境需求：\r\n1. 請攜帶內建 A9 以上晶片的設備，如 iphone6S 以上機種，平板體驗更佳。\r\n2. 設備OS版本需iOS12以上。\r\n3. 開發環境請安裝 Xcode 11。\r\n",
+                "tags":["no_record"],
+                "room":"103",
+                "isWorkshop":true,
+                "programId":182
+              }
+            ]
+          }
+        ]
+      }
+}

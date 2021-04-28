@@ -1,0 +1,45 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+.action-footer {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 20pt;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FBFCFE 100%); }
+
+.button {
+  font-size: 26px;
+  line-height: 18px;
+  text-align: center;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  padding: 17pt 10pt;
+  text-decoration: none;
+  letter-spacing: 7px; }
+
+.solid-button {
+  background: #638AFF;
+  border-radius: 23px;
+  color: #FFFFFF; }
+
+.hollow-button {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #D2438B;
+  box-sizing: border-box;
+  border-radius: 23px;
+  color: #D2438B; }
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding: 10pt 50pt;
+    text-decoration: none; } }

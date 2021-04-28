@@ -1,0 +1,36 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+.modal-content-schedule {
+  position: relative;
+  padding: 30px;
+  padding-top: 50px;
+  background-color: white; }
+  .modal-content-schedule .modal-content-schedule__topic {
+    margin: 0;
+    font-size: 2.5rem;
+    color: dodgerblue; }
+  .modal-content-schedule .modal-content-schedule__presenter {
+    color: gray; }
+  .modal-content-schedule .modal-content-schedule__close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer; }
+    .modal-content-schedule .modal-content-schedule__close-btn:hover {
+      opacity: 1; }
+    .modal-content-schedule .modal-content-schedule__close-btn::before, .modal-content-schedule .modal-content-schedule__close-btn::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: #333; }
+    .modal-content-schedule .modal-content-schedule__close-btn::before {
+      transform: rotate(45deg); }
+    .modal-content-schedule .modal-content-schedule__close-btn::after {
+      transform: rotate(-45deg); }
