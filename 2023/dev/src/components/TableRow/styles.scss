@@ -1,0 +1,13 @@
+@import "../../styles/variable.scss";
+
+.schedule_talk_container {
+
+    width: 100%;
+}
+
+@include screen--md {
+    .schedule_talk_container {
+        width: 100%;
+        display: flex;
+    }
+  }
