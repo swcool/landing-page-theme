@@ -1,9 +1,10 @@
 nav {
   position: fixed;
-  top: 0;
-  z-index: 9999;
+  padding: 0 20px;
+  z-index: 999;
   width: 100%;
-  height: 64px; }
+  height: 80px;
+  background-color: #d9d9d9; }
   nav a {
     text-decoration: none;
     color: #ffffff;
@@ -13,10 +14,15 @@ nav {
       margin-block-start: 0.5em;
       margin-left: 1em;
       display: inline-block; }
+  nav .logo-twitter {
+    width: 35px;
+    height: 29px;
+    justify-content: center;
+    align-items: center; }
   nav .logo-small-container {
     position: absolute;
     display: inline-block;
-    right: 2em;
+    left: 120px;
     height: 100%; }
   nav .logo-small-subcontainer {
     display: block;
@@ -37,6 +43,8 @@ nav {
     height: 100%;
     vertical-align: middle; }
   nav .nav-link-container {
+    display: none; }
+  nav .nav-text-container {
     display: none; }
   nav .nav-menu {
     display: inline-block;
@@ -61,7 +69,7 @@ nav {
     padding-bottom: 2em;
     box-shadow: 0 3px 5px 2px #00000033; }
   nav #nav-logo-small {
-    display: none; }
+    display: block; }
 
 .is-shrink {
   background-color: #ffffffef;
@@ -74,20 +82,21 @@ nav {
 @media screen and (min-width: 680px) {
   nav {
     height: 80px;
-    padding-left: 2em; }
-    nav a p {
-      display: block; }
+    padding: 0px 120px;
+    display: flex; }
+    nav .nav-logo-container {
+      flex: auto;
+      justify-content: center;
+      align-items: center; }
     nav .nav-link:first-child {
       padding-left: 30px; }
     nav .nav-link {
       display: inline-block;
       padding-right: 30px; }
-    nav .nav-link-container {
-      display: inline-block; }
     nav .nav-menu {
       display: none; }
     nav .logo-small-container {
-      right: 4em; }
+      left: 4em; }
     nav .nav-button {
       letter-spacing: 10px;
       padding-inline-start: 20px;
