@@ -3,301 +3,387 @@
 /* Media queries
  * ======================================================================== */
 html {
-  font-family: -apple-system, Helvetica, Arial, sans-serif; }
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+}
 
 .app-fullscreen {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .logo-container-fullscreen {
   width: 100%;
   background: linear-gradient(350.91deg, #A9C2FF 28.55%, #517CFF 89.13%);
-  min-height: 120vmin; }
+  min-height: 120vmin;
+}
+.logo-container-fullscreen .logo-container {
+  max-width: 90vmin;
+  height: 101vmin;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.logo-container-fullscreen .logo-container-fullscreen-mask {
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20vmin 100vw;
+  border-color: transparent transparent #FFFFFF transparent;
+}
+.logo-container-fullscreen .logo-container-fullscreen-mask-container {
+  position: relative;
+}
+.logo-container-fullscreen .logo-container-fullscreen-mask-2-container {
+  position: absolute;
+  bottom: 0;
+  justify-content: end;
+  align-items: end;
+}
+.logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-top {
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 12vmin 100vw;
+  border-color: transparent transparent rgba(255, 255, 255, 0.2) transparent;
+}
+.logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-bottom {
+  background: rgba(255, 255, 255, 0.2);
+  height: 5vmin;
+}
+.logo-container-fullscreen .logo {
+  width: 100%;
+  height: auto;
+}
+.logo-container-fullscreen .logo-info {
+  margin-right: 7pt;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  font-size: 8vmin;
+  line-height: 10vmin;
+  text-align: right;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo-container-fullscreen .logo-info i {
+  padding-right: 4pt;
+}
+@media screen and (min-width: 680px) {
   .logo-container-fullscreen .logo-container {
-    max-width: 90vmin;
-    height: 101vmin;
-    margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 64px;
-    display: flex;
-    flex-direction: column; }
-  .logo-container-fullscreen .logo-container-fullscreen-mask {
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 20vmin 100vw;
-    border-color: transparent transparent #FFFFFF transparent; }
-  .logo-container-fullscreen .logo-container-fullscreen-mask-container {
-    position: relative; }
-  .logo-container-fullscreen .logo-container-fullscreen-mask-2-container {
-    position: absolute;
-    bottom: 0;
-    justify-content: end;
-    align-items: end; }
-    .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-top {
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 12vmin 100vw;
-      border-color: transparent transparent #FFFFFF33 transparent; }
-    .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-bottom {
-      background: #FFFFFF33;
-      height: 5vmin; }
-  .logo-container-fullscreen .logo {
-    width: 100%;
-    height: auto; }
-  .logo-container-fullscreen .logo-info {
-    margin-right: 7pt;
-    margin-block-start: 0px;
-    font-size: 8vmin;
-    line-height: 10vmin;
-    text-align: right;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-    .logo-container-fullscreen .logo-info i {
-      padding-right: 4pt; }
-  @media screen and (min-width: 680px) {
-    .logo-container-fullscreen .logo-container {
-      padding-top: 96px; } }
+    padding-top: 96px;
+  }
+}
 
 .app__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 30pt; }
+  margin-bottom: 30pt;
+}
+.app__container .app__submit {
+  display: block;
+  margin: 5rem 0;
+  padding: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  background-color: tomato;
+}
+.app__container .app__sechdule-tab {
+  margin-bottom: 1rem;
+}
+.app__container .app__sechdule-tab .app__sechdule-tab__btn {
+  font-weight: bold;
+  font-size: 18pt;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5em;
+  padding: 0.5rem 1rem;
+  border-radius: 60px;
+  border: 1px solid #EF5FA7;
+  outline: none;
+  color: #EF5FA7;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.app__container .app__sechdule-tab .app__sechdule-tab__btn--selected {
+  color: #EF5FA7;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+.app__container .sechdule_container {
+  background-color: rgba(128, 128, 128, 0.33);
+  padding: 1em 0;
+  border-radius: 6px;
+}
+.app__container .sechdule_container ul {
+  padding: 0;
+}
+.app__container .sechdule_container li {
+  display: flex;
+  width: 100%;
+}
+.app__container .sechdule_container .sechdule_row {
+  border-bottom: 1px solid #FFFFFF;
+}
+.app__container .sechdule_container .sechdule_time_block {
+  width: 20%;
+}
+.app__container .sechdule_container .sechdule_block {
+  width: 100%;
+}
+.app__container .sechdule_container .sechdule_room_container {
+  width: 100%;
+  display: none;
+}
+.app__container .sechdule_container .room_lable {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.5em;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.app__container .sechdule_container .sechdule_room_lable {
+  margin: 0.5em 1em;
+  font-weight: 300;
+}
+.app__container .sechdule_container .room_101 {
+  background-color: rgba(81, 124, 255, 0.937254902);
+}
+.app__container .sechdule_container .room_102 {
+  background-color: rgba(239, 95, 167, 0.937254902);
+}
+.app__container .sechdule_container .room_103 {
+  background-color: rgba(248, 186, 0, 0.937254902);
+}
+.app__container .sechdule_container .workshop_day {
+  text-align: center;
+  height: 40px;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #444444;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+@media screen and (min-width: 768px) {
+  .app__container .sechdule_container .sechdule_room_container {
+    display: flex;
+  }
+  .app__container .sechdule_container .sechdule_block {
+    width: 33%;
+    display: inline-block;
+  }
+}
+.app__container .app__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(240, 187, 64, 0.33);
+}
+.app__container .app__table,
+.app__container .app__table th,
+.app__container .app__table td {
+  border: 1px solid white;
+}
+.app__container .app__table th,
+.app__container .app__table td {
+  padding: 0.5rem;
+}
+.app__container .app__table th {
+  border-bottom-width: 3px;
+}
+.app__container .app__speaker {
+  text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+}
+.app__container .app__speaker .app__speaker-img {
+  width: 60%;
+  max-width: 275px;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+.app__container .app__speaker .app__speaker-name {
+  font-size: 1.35rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 0.5rem 0;
+  margin: 0 15%;
+  border-radius: 8px;
+}
+.app__container .app__speaker .app__speaker-position {
+  margin-top: 0;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: black;
+}
+.app__container .app__sponsor {
+  text-align: center;
+}
+.app__container .app__sponsor .app__sponsor-logo {
+  width: 80%;
+  max-width: 325px;
+  margin-top: 2rem;
+}
+.app__container .app__sponsor .app__sponsor-degree {
+  color: #000;
+}
+.app__container .app__section {
+  padding: 2rem 0;
+}
+.app__container .app__section p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6e6e6e;
+}
+.app__container .main_section {
+  position: relative;
+}
+.app__container .sub_section {
+  padding-top: 120px;
+}
+.app__container .main_section_logo {
+  position: absolute;
+  width: 75vmin;
+  min-width: 360px;
+  left: -25vmin;
+  z-index: -1;
+}
+.app__container .main_section_container {
+  padding: 2rem 2rem;
+  margin: 30vmin 0px 0px 5vw;
+  min-height: 360px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 23px 0 0 23px;
+  box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2);
+}
+.app__container .main_section_container .section_tag {
+  color: #EF5FA7;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  font-size: 26px;
+  padding: 8px 16px;
+}
+.app__container .main_section_container .section_sub_container {
+  padding-left: 2rem;
+}
+.app__container .empty_section {
+  margin: 0 0px 0px 5vw;
+}
+.app__container .section_container {
+  padding: 2rem 2rem;
+  margin: 0 0px 0px 5vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 23px 0 0 23px;
+  box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2);
+}
+.app__container .section_content_row_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.app__container .section_center_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__container .app__title {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "PingFangTC-Ultralight", "STHeitiTC-Ultralight", "STHeitiTC-Light", "Microsoft JhengHei";
+  margin-bottom: 2.5rem;
+  text-align: left;
+  padding: 0 0;
+  font-size: 64px;
+  line-height: 80px;
+  color: #333333;
+}
+.app__container .app__title .app__title_eng {
+  margin-right: 1rem;
+}
+.app__container .section_sub_title {
+  font-size: 24px;
+  padding: 1rem 0;
+}
+.app__container .section_action_container {
+  text-align: center;
+  padding: 16px 0;
+}
+.app__container .social_icon {
+  width: 64px;
+  line-height: 64px;
+  vertical-align: middle;
+  font-size: 32pt;
+}
+.app__container .content_small_title {
+  font-size: 1.2em;
+  color: #333333;
+}
+.app__container hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid lightgray;
+}
+.app__container a {
+  text-decoration: none;
+}
+.app__container .twitter_icon {
+  color: #1DA1F2;
+}
+.app__container .facebook_icon {
+  color: #1877F2;
+}
+.app__container .telegram_icon {
+  color: #0088cc;
+}
+@media screen and (min-width: 768px) {
   .app__container .app__submit {
-    display: block;
-    margin: 5rem 0;
-    padding: 1.25rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 3px;
-    color: white;
-    background-color: tomato; }
-  .app__container .app__sechdule-tab {
-    margin-bottom: 1rem; }
-    .app__container .app__sechdule-tab .app__sechdule-tab__btn {
-      font-weight: bold;
-      font-size: 18pt;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5em;
-      padding: 0.5rem 1rem;
-      border-radius: 60px;
-      border: 1px solid #EF5FA7;
-      outline: none;
-      color: #EF5FA7;
-      background-color: #ffffff66; }
-    .app__container .app__sechdule-tab .app__sechdule-tab__btn--selected {
-      color: #EF5FA7;
-      background-color: rgba(0, 0, 0, 0.75);
-      border: 1px solid rgba(0, 0, 0, 0.75); }
-  .app__container .sechdule_container {
-    background-color: rgba(128, 128, 128, 0.33);
-    padding: 1em 0;
-    border-radius: 6px; }
-    .app__container .sechdule_container ul {
-      padding: 0; }
-    .app__container .sechdule_container li {
-      display: flex;
-      width: 100%; }
-    .app__container .sechdule_container .sechdule_row {
-      border-bottom: 1px solid #FFFFFF; }
-    .app__container .sechdule_container .sechdule_time_block {
-      width: 20%; }
-    .app__container .sechdule_container .sechdule_block {
-      width: 100%; }
-    .app__container .sechdule_container .sechdule_room_container {
-      width: 100%;
-      display: none; }
-    .app__container .sechdule_container .room_lable {
-      text-align: center;
-      color: #FFFFFF;
-      padding: 0.5em;
-      border-radius: 6px;
-      font-size: 16px; }
-    .app__container .sechdule_container .sechdule_room_lable {
-      margin: 0.5em 1em;
-      font-weight: 300; }
-    .app__container .sechdule_container .room_101 {
-      background-color: #517CFFEF; }
-    .app__container .sechdule_container .room_102 {
-      background-color: #EF5FA7EF; }
-    .app__container .sechdule_container .room_103 {
-      background-color: #F8BA00EF; }
-    .app__container .sechdule_container .workshop_day {
-      text-align: center;
-      height: 40px;
-      font-size: 1.25em;
-      font-weight: bold;
-      color: #444444;
-      padding-left: 2em;
-      padding-top: 1em; }
-    @media screen and (min-width: 768px) {
-      .app__container .sechdule_container .sechdule_room_container {
-        display: flex; }
-      .app__container .sechdule_container .sechdule_block {
-        width: 33%;
-        display: inline-block; } }
-  .app__container .app__table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgba(240, 187, 64, 0.33); }
-    .app__container .app__table,
-    .app__container .app__table th,
-    .app__container .app__table td {
-      border: 1px solid white; }
-    .app__container .app__table th,
-    .app__container .app__table td {
-      padding: 0.5rem; }
-    .app__container .app__table th {
-      border-bottom-width: 3px; }
-  .app__container .app__speaker {
-    text-align: center;
-    cursor: pointer;
-    vertical-align: top; }
-    .app__container .app__speaker .app__speaker-img {
-      width: 60%;
-      max-width: 275px;
-      margin-top: 2rem;
-      border-radius: 50%; }
-    .app__container .app__speaker .app__speaker-name {
-      font-size: 1.35rem;
-      margin-bottom: 0;
-      background-color: rgba(0, 0, 0, 0.3);
-      color: #ffffff;
-      padding: 0.5rem 0;
-      margin: 0 15%;
-      border-radius: 8px; }
-    .app__container .app__speaker .app__speaker-position {
-      margin-top: 0;
-      padding-left: 1.2rem;
-      padding-right: 1.2rem;
-      color: black; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  .app__container .app__speaker,
   .app__container .app__sponsor {
-    text-align: center; }
-    .app__container .app__sponsor .app__sponsor-logo {
-      width: 80%;
-      max-width: 325px;
-      margin-top: 2rem; }
-    .app__container .app__sponsor .app__sponsor-degree {
-      color: #000; }
-  .app__container .app__section {
-    padding: 2rem 0; }
-    .app__container .app__section p {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 28px;
-      color: #6e6e6e; }
-  .app__container .main_section {
-    position: relative; }
-  .app__container .sub_section {
-    padding-top: 120px; }
-  .app__container .main_section_logo {
-    position: absolute;
-    width: 75vmin;
-    min-width: 360px;
-    left: -25vmin;
-    z-index: -1; }
-  .app__container .main_section_container {
-    padding: 2rem 2rem;
-    margin: 30vmin -0px 0px 5vw;
-    min-height: 360px;
-    background-color: #ffffff66;
-    border-radius: 23px 0 0 23px;
-    box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2); }
-    .app__container .main_section_container .section_tag {
-      color: #EF5FA7;
-      background-color: rgba(0, 0, 0, 0.75);
-      border-radius: 8px;
-      font-size: 26px;
-      padding: 8px 16px; }
-    .app__container .main_section_container .section_sub_container {
-      padding-left: 2rem; }
-  .app__container .empty_section {
-    margin: 0 -0px 0px 5vw; }
-  .app__container .section_container {
-    padding: 2rem 2rem;
-    margin: 0 -0px 0px 5vw;
-    background-color: #ffffff66;
-    border-radius: 23px 0 0 23px;
-    box-shadow: 0 3px 30px 2px rgba(0, 0, 0, 0.2); }
-  .app__container .section_content_row_container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .app__container .section_center_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .app__container .app__title {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "PingFangTC-Ultralight", "STHeitiTC-Ultralight", "STHeitiTC-Light", "Microsoft JhengHei";
-    margin-bottom: 2.5rem;
-    text-align: left;
-    padding: 0 0;
-    font-size: 64px;
-    line-height: 80px;
-    color: #333333; }
-    .app__container .app__title .app__title_eng {
-      margin-right: 1rem; }
-  .app__container .section_sub_title {
-    font-size: 24px;
-    padding: 1rem 0; }
-  .app__container .section_action_container {
-    text-align: center;
-    padding: 16px 0; }
-  .app__container .social_icon {
-    width: 64px;
-    line-height: 64px;
-    vertical-align: middle;
-    font-size: 32pt; }
-  .app__container .content_small_title {
-    font-size: 1.2em;
-    color: #333333; }
-  .app__container hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid lightgray; }
-  .app__container a {
-    text-decoration: none; }
-  .app__container .twitter_icon {
-    color: #1DA1F2; }
-  .app__container .facebook_icon {
-    color: #1877F2; }
-  .app__container .telegram_icon {
-    color: #0088cc; }
-  @media screen and (min-width: 768px) {
-    .app__container .app__submit {
-      margin-left: auto;
-      margin-right: auto;
-      width: 300px; }
-    .app__container .app__speaker,
-    .app__container .app__sponsor {
-      width: 25%;
-      display: inline-block; }
-    .app__container .app__speaker .app__speaker-name {
-      margin-top: 0.5rem; }
-    .app__container .app__sponsor .app__sponsor-logo {
-      width: 75%; } }
-  @media screen and (min-width: 992px) {
-    .app__container .app__container {
-      max-width: 960px; } }
+    width: 25%;
+    display: inline-block;
+  }
+  .app__container .app__speaker .app__speaker-name {
+    margin-top: 0.5rem;
+  }
+  .app__container .app__sponsor .app__sponsor-logo {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .app__container .app__container {
+    max-width: 960px;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #666; }
+    background: #666;
+  }
   .logo-container-fullscreen .logo-container-fullscreen-mask {
-    border-color: transparent transparent #666 transparent; }
+    border-color: transparent transparent #666 transparent;
+  }
   .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-top {
-    border-color: transparent transparent #66666633 transparent; }
+    border-color: transparent transparent rgba(102, 102, 102, 0.2) transparent;
+  }
   .logo-container-fullscreen .logo-container-fullscreen-mask-2-container .logo-container-fullscreen-mask-2-bottom {
-    background: #66666633; }
+    background: rgba(102, 102, 102, 0.2);
+  }
   .app__container .main_section_container {
-    background-color: #ffffffaa; }
+    background-color: rgba(255, 255, 255, 0.6666666667);
+  }
   .app__container .twitter_icon {
-    color: #ffffff; }
+    color: #ffffff;
+  }
   .app__container .facebook_icon {
-    color: #ffffff; }
+    color: #ffffff;
+  }
   .app__container .telegram_icon {
-    color: #ffffff; } }
+    color: #ffffff;
+  }
+}/*# sourceMappingURL=styles.css.map */

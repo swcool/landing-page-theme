@@ -11,9 +11,12 @@
   font-size: 24px;
   line-height: 44px;
   letter-spacing: 2px;
-  padding: 12px 24px; }
+  padding: 12px 24px;
+}
 
 @media screen and (min-width: 768px) {
   .action-button {
     font-size: 40px;
-    line-height: 56px; } }
+    line-height: 56px;
+  }
+}/*# sourceMappingURL=styles.css.map */

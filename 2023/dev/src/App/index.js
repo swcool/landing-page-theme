@@ -1,19 +1,21 @@
 import React, { PureComponent } from "react";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-import _, { random } from "lodash";
-import { SocialIcon } from "react-social-icons";
 
 import ActionFooter from "../components/ActionFooter";
 import SpeakerFeature from "../components/SpeakerFeature";
 import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
-import TableRow from "../components/TableRow";
 import ActionButton from "../components/ActionButton";
+import TableRow from "../components/TableRow";
 
 import "./styles.css";
 import NavgationBar from "../components/NavgationBar";
+import InterduceView from "../components/Interduce"
+import MailimpContainer from "../components/MailChimp"
 import activityPicturesJson from "../App/JsonData/activityPictures.json"
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import _, { random } from "lodash";
+import { SocialIcon } from "react-social-icons";
 
 import './i18n'; // 在这里导入 i18n.js
 import { Trans } from 'react-i18next';
@@ -285,7 +287,9 @@ export default class App extends PureComponent {
       <div className="app-fullscreen">
         <div className="logo-container-fullscreen">
           <NavgationBar />
-          <div className="logo-container">
+          <InterduceView />
+          <MailimpContainer />
+          {/* <div className="logo-container">
             <img
               className="logo"
               src="./logo_image.png"
@@ -306,7 +310,7 @@ export default class App extends PureComponent {
               <div className="logo-container-fullscreen-mask-2-bottom"></div>
             </div>
 
-          </div>
+          </div> */}
         </div>
         <div className="app__container">
           {/* <div className="empty_section">

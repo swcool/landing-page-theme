@@ -24,7 +24,6 @@ html {
 
 .logo-container-fullscreen {
   width: 100%;
-  background: linear-gradient(350.91deg, #3b559a 28.55%, #9eb0d6 89.13%);
   min-height: 120vmin; }
   .logo-container-fullscreen .logo-container {
     max-width: 90vmin;

@@ -1,0 +1,6 @@
+.mailchimp-Container {
+  height: 830px;
+  padding: 100px; }
+  .mailchimp-Container .mailchimp-main-container {
+    background: #f5f5f5;
+    border-radius: 6px; }

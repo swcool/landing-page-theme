@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap');
+
+.interduce {
+    height: 830px;
+    background-color: gold;
+    padding: 180px 95px 100px 95px;
+
+    .inerduce-container {
+        background-color: purple;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .interduce-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+
+        .interduce-content-top {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            color: #000000;
+        }
+
+        .interduce-content-mid {
+            font-family: 'Alice';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 27px;
+            line-height: 31px;
+            
+            color: #000000;
+        }
+
+        .interduce-signup-bottom {
+            width: 180px;
+            height: 37px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 20px;
+            gap: 8px;
+            isolation: isolate;
+            background: linear-gradient(180deg, #4B58EF 0%, #517CFF 100%);
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            border-radius: 6px;
+            margin: 0px 0px 0px 38px;
+        }
+
+        .interduce-signup-text-bottom {
+            font-family: 'Playfair Display', serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .interduce-image-container {
+        background-color: green;
+        height: 592px;
+        width: 560px;
+    }
+}

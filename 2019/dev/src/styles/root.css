@@ -4,7 +4,10 @@
  * ======================================================================== */
 :root {
   font-size: 14px;
-  line-height: 1.5; }
-  @media screen and (min-width: 768px) {
-    :root {
-      font-size: 16px; } }
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=root.css.map */

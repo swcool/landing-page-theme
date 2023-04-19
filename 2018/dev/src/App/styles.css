@@ -3,99 +3,129 @@
 /* Media queries
  * ======================================================================== */
 html {
-  font-family: -apple-system, Helvetica, Arial, sans-serif; }
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+}
 
 .app {
-  padding: 0 20px; }
-  .app .app__iplayground-logo {
-    width: 100%; }
+  padding: 0 20px;
+}
+.app .app__iplayground-logo {
+  width: 100%;
+}
+.app .app__submit {
+  display: block;
+  margin: 5rem 0;
+  padding: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  background-color: tomato;
+}
+.app .app__sechdule-tab {
+  margin-bottom: 1rem;
+}
+.app .app__sechdule-tab button {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid dodgerblue;
+  outline: none;
+  color: dodgerblue;
+  background-color: white;
+}
+.app .app__sechdule-tab .app__sechdule-tab__btn--selected {
+  color: white;
+  background-color: dodgerblue;
+}
+.app .app__table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(240, 187, 64, 0.33);
+}
+.app .app__table,
+.app .app__table th,
+.app .app__table td {
+  border: 1px solid white;
+}
+.app .app__table th,
+.app .app__table td {
+  padding: 0.5rem;
+}
+.app .app__table th {
+  border-bottom-width: 3px;
+}
+.app .app__speaker {
+  text-align: center;
+  cursor: pointer;
+}
+.app .app__speaker .app__speaker-img {
+  width: 60%;
+  max-width: 275px;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+.app .app__speaker .app__speaker-name {
+  font-size: 1.35rem;
+  margin-bottom: 0;
+  color: dodgerblue;
+}
+.app .app__speaker .app__speaker-position {
+  margin-top: 0;
+  color: black;
+}
+.app .app__sponsor {
+  text-align: center;
+}
+.app .app__sponsor .app__sponsor-logo {
+  width: 80%;
+  max-width: 325px;
+  margin-top: 2rem;
+}
+.app .app__sponsor .app__sponsor-degree {
+  color: #000;
+}
+.app .app__section {
+  padding: 2.5rem 0;
+}
+.app .app__title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.app hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid lightgray;
+}
+.app a {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
   .app .app__submit {
-    display: block;
-    margin: 5rem 0;
-    padding: 1.25rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 3px;
-    color: white;
-    background-color: tomato; }
-  .app .app__sechdule-tab {
-    margin-bottom: 1rem; }
-    .app .app__sechdule-tab button {
-      font-weight: bold;
-      margin-right: 0.5rem;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      border: 1px solid dodgerblue;
-      outline: none;
-      color: dodgerblue;
-      background-color: white; }
-    .app .app__sechdule-tab .app__sechdule-tab__btn--selected {
-      color: white;
-      background-color: dodgerblue; }
-  .app .app__table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgba(240, 187, 64, 0.33); }
-    .app .app__table,
-    .app .app__table th,
-    .app .app__table td {
-      border: 1px solid white; }
-    .app .app__table th,
-    .app .app__table td {
-      padding: 0.5rem; }
-    .app .app__table th {
-      border-bottom-width: 3px; }
-  .app .app__speaker {
-    text-align: center;
-    cursor: pointer; }
-    .app .app__speaker .app__speaker-img {
-      width: 60%;
-      max-width: 275px;
-      margin-top: 2rem;
-      border-radius: 50%; }
-    .app .app__speaker .app__speaker-name {
-      font-size: 1.35rem;
-      margin-bottom: 0;
-      color: dodgerblue; }
-    .app .app__speaker .app__speaker-position {
-      margin-top: 0;
-      color: black; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  .app .app__speaker,
   .app .app__sponsor {
-    text-align: center; }
-    .app .app__sponsor .app__sponsor-logo {
-      width: 80%;
-      max-width: 325px;
-      margin-top: 2rem; }
-    .app .app__sponsor .app__sponsor-degree {
-      color: #000; }
-  .app .app__section {
-    padding: 2.5rem 0; }
-  .app .app__title {
-    margin-bottom: 2.5rem;
-    text-align: center; }
-  .app hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid lightgray; }
-  .app a {
-    text-decoration: none; }
-  @media screen and (min-width: 768px) {
-    .app .app__submit {
-      margin-left: auto;
-      margin-right: auto;
-      width: 300px; }
-    .app .app__speaker,
-    .app .app__sponsor {
-      width: 25%;
-      display: inline-block; }
-    .app .app__speaker .app__speaker-name {
-      margin-top: 0.5rem; }
-    .app .app__sponsor .app__sponsor-logo {
-      width: 75%; } }
-  @media screen and (min-width: 992px) {
-    .app {
-      display: flex;
-      justify-content: center; }
-      .app .app__container {
-        max-width: 960px; } }
+    width: 25%;
+    display: inline-block;
+  }
+  .app .app__speaker .app__speaker-name {
+    margin-top: 0.5rem;
+  }
+  .app .app__sponsor .app__sponsor-logo {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .app {
+    display: flex;
+    justify-content: center;
+  }
+  .app .app__container {
+    max-width: 960px;
+  }
+}/*# sourceMappingURL=styles.css.map */

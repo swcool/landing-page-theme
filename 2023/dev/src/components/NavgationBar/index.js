@@ -5,10 +5,6 @@ import './styles.css';
 export default class NavgationBar extends PureComponent {
   constructor() {
     super()
-
-    this.state = {
-      toggle: false
-    }
   }
   render() {
     return (

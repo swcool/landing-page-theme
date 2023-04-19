@@ -3,9 +3,12 @@
 /* Media queries
  * ======================================================================== */
 .schedule_talk_container {
-  width: 100%; }
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .schedule_talk_container {
     width: 100%;
-    display: flex; } }
+    display: flex;
+  }
+}/*# sourceMappingURL=styles.css.map */

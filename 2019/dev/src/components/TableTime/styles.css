@@ -1,13 +1,15 @@
 .table-time {
-  border-right: 1px solid #FFFFFF33;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   min-height: 60px;
-  padding: 1em 0; }
-  .table-time span {
-    display: block;
-    text-align: center; }
+  padding: 1em 0;
+}
+.table-time span {
+  display: block;
+  text-align: center;
+}
 
 /*@include screen--md {
   .table-time {
     min-height: 80px;
   }
-}*/
+}*//*# sourceMappingURL=styles.css.map */
