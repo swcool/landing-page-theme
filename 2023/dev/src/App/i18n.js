@@ -23,9 +23,9 @@ const resources = {
     nonExplicitWhitelist: false,
     fallbackLng: {
       'en': ['en'],
-      'default': ['zh-TW']  //如果當前切換的語言沒有對應的翻譯則使用這個語言，
+      'default': ['en']  //如果當前切換的語言沒有對應的翻譯則使用這個語言，
     },
-    ng: 'zh-TW',            //預設語言
+    ng: 'en',            //預設語言
 
     keySeparator: false, // we do not use keys in form messages.welcome
 

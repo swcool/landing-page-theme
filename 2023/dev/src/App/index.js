@@ -1,4 +1,11 @@
 import React, { PureComponent } from "react";
+import "./styles.css";
+import NavgationBar from "../components/NavgationBar";
+import InterduceView from "../components/Interduce"
+import MailimpContainer from "../components/MailChimp"
+import activityPicturesJson from "../App/JsonData/activityPictures.json"
+import TableRow from "../components/TableRow";
+import _, { random } from "lodash";
 
 import ActionFooter from "../components/ActionFooter";
 import SpeakerFeature from "../components/SpeakerFeature";
@@ -6,15 +13,9 @@ import Modal from "../components/Modal";
 import ModalContentSpeakers from "../components/ModalContentSpeakers";
 import ModalContentSchedule from "../components/ModalContentSchedule";
 import ActionButton from "../components/ActionButton";
-import TableRow from "../components/TableRow";
 
-import "./styles.css";
-import NavgationBar from "../components/NavgationBar";
-import InterduceView from "../components/Interduce"
-import MailimpContainer from "../components/MailChimp"
-import activityPicturesJson from "../App/JsonData/activityPictures.json"
+
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import _, { random } from "lodash";
 import { SocialIcon } from "react-social-icons";
 
 import './i18n'; // 在这里导入 i18n.js

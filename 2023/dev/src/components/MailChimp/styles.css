@@ -10,5 +10,6 @@
   flex-direction: column; }
   .mailchimp-submit-container .mailchimp-submit-cell-content {
     border-radius: 10px;
+    border-width: 0px;
     font-size: 2em;
     padding: 5px; }

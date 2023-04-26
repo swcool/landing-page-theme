@@ -4,7 +4,6 @@
  * ======================================================================== */
 .action-button {
   padding: 12px 20px;
-  isolation: isolate;
   background: linear-gradient(180deg, #4b58ef 0%, #517cff 100%);
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 6px; }
@@ -18,21 +17,3 @@
     align-items: center;
     justify-content: center;
     color: #ffffff; }
-
-@media screen and (min-width: 768px) {
-  .action-button {
-    padding: 12px 20px;
-    isolation: isolate;
-    background: linear-gradient(180deg, #4b58ef 0%, #517cff 100%);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 6px; }
-    .action-button .action-button-text {
-      font-family: "Playfair Display", serif;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 20px;
-      line-height: 27px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff; } }
