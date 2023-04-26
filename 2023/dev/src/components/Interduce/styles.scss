@@ -39,31 +39,7 @@
         }
 
         .interduce-signup-bottom {
-            width: 180px;
-            height: 37px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 12px 20px;
-            gap: 8px;
-            isolation: isolate;
-            background: linear-gradient(180deg, #4B58EF 0%, #517CFF 100%);
-            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-            border-radius: 6px;
-            margin: 0px 0px 0px 38px;
-        }
-
-        .interduce-signup-text-bottom {
-            font-family: 'Playfair Display', serif;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 20px;
-            line-height: 27px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: #FFFFFF;
+            width: 250px;
         }
     }
 

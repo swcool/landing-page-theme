@@ -8,3 +8,14 @@
         border-radius: 6px;
     }
 }
+
+.mailchimp-submit-container {
+    display: flex;
+    flex-direction: column;
+
+    .mailchimp-submit-cell-content {
+        border-radius: 10px;
+        font-size: 2em;
+        padding: 5px;
+    }
+}

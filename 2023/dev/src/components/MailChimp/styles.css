@@ -4,3 +4,11 @@
   .mailchimp-Container .mailchimp-main-container {
     background: #f5f5f5;
     border-radius: 6px; }
+
+.mailchimp-submit-container {
+  display: flex;
+  flex-direction: column; }
+  .mailchimp-submit-container .mailchimp-submit-cell-content {
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 5px; }
