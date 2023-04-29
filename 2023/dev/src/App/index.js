@@ -288,7 +288,7 @@ export default class App extends PureComponent {
       <div className="app-fullscreen">
         <div className="logo-container-fullscreen">
           <NavgationBar />
-          <InterduceView />
+          {/* <InterduceView /> */}
           <MailimpContainer />
           {/* <div className="logo-container">
             <img
@@ -426,7 +426,7 @@ export default class App extends PureComponent {
           </div> */}
 
           {/* About關於我們 */}
-          <div className="app__section sub_section" id="about-section">
+          {/* <div className="app__section sub_section" id="about-section">
             <div className="section_container">
               <div className="app__title"><span className="app__title_eng">{<Trans>aboutUs.title</Trans>}</span><span>{<Trans>aboutUs.title2</Trans>}</span></div>
               <p>
@@ -438,11 +438,9 @@ export default class App extends PureComponent {
               <p>
                 {<Trans>aboutUs.content.thirdSentence</Trans>}
               </p>
-              {/* 活動照片 */}
-              {/* <div className="app__title"><span className="app__title_eng">Photos</span><span>活動照片</span></div> */}
               {this.renderPictures()}
             </div>
-          </div>
+          </div> */}
 
           {/* Sponsorships贊助商 */}
           {/* <div className="app__section sub_section" id="sponsors-section">

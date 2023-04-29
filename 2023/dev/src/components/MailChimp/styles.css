@@ -1,15 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap");
 .mailchimp-Container {
-  height: 830px;
-  padding: 100px; }
+  background-color: white;
+  padding: 100px 150px 100px 150px; }
   .mailchimp-Container .mailchimp-main-container {
-    background: #f5f5f5;
-    border-radius: 6px; }
+    position: relative; }
+    .mailchimp-Container .mailchimp-main-container .mailchimp-main-container-triangle {
+      width: 0;
+      height: 0;
+      border: 100px solid;
+      border-color: transparent #f7b900 #f7b900 transparent;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
 
 .mailchimp-submit-container {
-  display: flex;
-  flex-direction: column; }
-  .mailchimp-submit-container .mailchimp-submit-cell-content {
-    border-radius: 10px;
-    border-width: 0px;
-    font-size: 2em;
-    padding: 5px; }
+  border-radius: 6px;
+  background-color: #f5f5f5; }
+  .mailchimp-submit-container .mailchimp-submit-container-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .mailchimp-submit-container .mailchimp-submit-container-container .mailchimp-submit-cell-header {
+      width: 409px;
+      height: 48px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+      /* identical to box height */
+      color: #000000;
+      /* Inside auto layout */
+      flex: none;
+      flex-grow: 0; }
+    .mailchimp-submit-container .mailchimp-submit-container-container .mailchimp-submit-cell-title {
+      width: 763px;
+      height: 60px;
+      font-family: "Alice";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 25px;
+      color: #000000;
+      /* Inside auto layout */
+      flex: none;
+      flex-grow: 0; }
+    .mailchimp-submit-container .mailchimp-submit-container-container .mailchimp-submit-cell-content {
+      box-sizing: border-box;
+      font-family: "Playfair Display";
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 23px 28px;
+      gap: 10px;
+      width: 750px;
+      height: 70px;
+      background: #ffffff;
+      border: 2px solid #ececec;
+      border-radius: 10px;
+      /* Inside auto layout */
+      flex: none;
+      flex-grow: 0; }

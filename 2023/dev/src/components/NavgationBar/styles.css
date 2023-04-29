@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap");
 nav {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 999; }
   nav .nav-container {
     display: flex;
     z-index: 999;
@@ -25,7 +26,12 @@ nav {
     align-items: center;
     text-align: center;
     color: #000000; }
-  nav .sub-signup-container {
-    width: 180px; }
-  nav .logo-twitter {
-    height: 37px; }
+  nav .nav-right-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; }
+    nav .nav-right-container .sub-signup-container {
+      width: 180px; }
+    nav .nav-right-container .logo-twitter {
+      height: 37px; }

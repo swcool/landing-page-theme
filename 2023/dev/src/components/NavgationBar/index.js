@@ -22,7 +22,7 @@ export default class NavgationBar extends PureComponent {
               Get ready for a must-go conference for Apple developers!
             </div>
           </div>
-          <div className="sub-container">
+          <div className="nav-right-container">
             <img
               className="logo-twitter"
               src={require("../../images/logo_twitter.png")}

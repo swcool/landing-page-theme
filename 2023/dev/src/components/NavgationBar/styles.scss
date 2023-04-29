@@ -3,6 +3,7 @@
 nav {
     position: fixed;
     width: 100%;
+    z-index: 999;
 
     .nav-container{
         display: flex;
@@ -35,185 +36,19 @@ nav {
         color: #000000;
     }
 
-    .sub-signup-container {
-        width: 180px;
-    }
+    .nav-right-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
 
-    // .sub-signup-text-container {
-    //     font-family: 'Playfair Display', serif;
-    //     font-style: normal;
-    //     font-weight: 900;
-    //     font-size: 20px;
-    //     line-height: 27px;
-
-    //     display: flex;
-    //     align-items: center;
-    //     text-align: center;
-
-    //     color: #FFFFFF;
-    // }
-
-    .logo-twitter {
-        height: 37px;
+        .sub-signup-container {
+            width: 180px;
+        }
+    
+        .logo-twitter {
+            height: 37px;
+        }
     }
 
 }
-
-// nav {
-//     position: fixed;
-//     padding: 0 20px;
-//     z-index: 999;
-//     width: 100%;
-//     height: 80px;
-//     background-color: #d9d9d9;
-//     a {
-//         text-decoration: none;
-//         color: #ffffff;
-//         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//         p {
-//             margin-block-end: 0;
-//             margin-block-start: 0.5em;
-//             margin-left: 1em;
-//             display: inline-block;
-//         }
-//     }
-//     .logo-twitter {
-//         width: 35px;
-//         height: 29px;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     .logo-small-container {
-//         position: absolute;
-//         display: inline-block;
-//         left: 120px;
-//         height: 100%;
-//     }
-//     .logo-small-subcontainer {
-//         display: block;
-//         text-align: center;
-//         line-height: 1;
-//     }
-//     .logo-small-subcontainer::after {
-//         content: "";
-//         display: inline-block;
-//         position: relative;
-//         width: 0;
-//         height: 100%;
-//         vertical-align: middle;
-//     }
-//     .logo-small-subcontainer::before {
-//         content: "";
-//         display: inline-block;
-//         position: relative;
-//         width: 0;
-//         height: 100%;
-//         vertical-align: middle;
-//     }
-//     .nav-link-container {
-//         display: none;
-//     }
-//     .nav-text-container {
-//         display: none;
-//     }
-
-//     .nav-menu {
-//         display: inline-block;
-//         color: #fff;
-//         font-size: 32px;
-//         padding: 0.5em;
-//     }
-
-//     .nav-button {
-//         padding-top: 16px;
-//         padding-inline-start: 10px;
-//     }
-//     .action-button {
-//         display: inline-block;
-//         // width: 130px;
-//         margin-left: -20px;
-//         margin-top: -10px;
-//         letter-spacing: 5px;
-//         font-size: 18px;
-//         line-height: 24px;
-//     }
-//     #nav {
-//         background-color: transparent;
-//         padding-bottom: 0;
-//     }
-//     #nav.menu-opened {
-//         background-color: #ffffffef;
-//         padding-bottom: 2em;
-//         box-shadow: 0 3px 5px 2px #00000033;
-//     }
-
-//     #nav-logo-small {
-//         display: block;
-//     }
-// }
-
-// .is-shrink {
-//     background-color: #ffffffef;
-//     box-shadow: 0 3px 5px 2px #00000033;
-//     P {
-//         color: #333;
-//     }
-//     .nav-menu {
-//         color: #333;
-//     }
-// }
-
-// @media screen and (min-width: 680px) {
-//     nav {
-//         height: 80px;
-//         padding: 0px 120px;
-//         display: flex;
-//         justify-content: space-evenly;
-//         align-items: center;
-
-//         .nav-logo-container {
-//             flex: auto;
-//             justify-content: center;
-//             align-items: center;
-//         }
-
-//         .nav-link:first-child {
-//             padding-left: 30px;
-//         }
-//         .nav-link {
-//             display: inline-block;
-//             padding-right: 30px;
-//         }
-//         .nav-menu {
-//             display: none;
-//         }
-//         .logo-small-container {
-//             left: 4em;
-//         }
-
-//         .nav-button {
-//             letter-spacing: 10px;
-//             padding-inline-start: 20px;
-//             padding-top: 20px;
-//             vertical-align: top;
-//         }
-//     }
-// }
-
-// @media (prefers-color-scheme: dark) {
-//     .is-shrink {
-//         background-color: #333333ef;
-//         box-shadow: 0 3px 5px 2px #00000033;
-//         P {
-//             color: #fff;
-//         }
-//         .nav-menu {
-//             color: #fff;
-//         }
-//     }
-//     nav {
-//         #nav.menu-opened {
-//             background-color: #333333ef;
-//         }
-//     }
-// }
