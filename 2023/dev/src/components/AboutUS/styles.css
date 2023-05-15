@@ -1,0 +1,19 @@
+.abount-container {
+  width: 100vw;
+  background: linear-gradient(180deg, #d2e7f8 0%, #d3f8d2 100%); }
+  .abount-container .abount-content {
+    position: relative;
+    padding-left: calc(15vw - 30px);
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .abount-container .abount-content .abount-title-container {
+      position: absolute;
+      z-index: 100;
+      width: 70%;
+      height: 50px; }
+      .abount-container .abount-content .abount-title-container .abount-content-container {
+        position: absolute;
+        z-index: 1;
+        left: 16px;
+        top: 25px;
+        width: 80vw; }

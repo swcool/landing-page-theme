@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.action-title-content-container-layer {
+  position: relative;
+  background: #4d4d4d;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  z-index: 1;
+  width: 90%;
+  // height: 100%;
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: center;
+
+  .action-title-content-container {
+    position: relative;
+    background: white;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    z-index: 10;
+    width: 100%;
+    right: 8px;
+    top: -4px;
+
+    .action-title-content-font-container {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 37px;
+      padding-left: 10px;
+  
+      color: #000000;
+
+      padding: 50px 70px 70px 70px;
+    }
+  }
+
+
+}
+
+.action-title-content {
+  // position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0px 5px;
+}

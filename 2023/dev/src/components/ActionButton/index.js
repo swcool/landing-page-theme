@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { PureComponent } from "react";
+import "./styles.css";
 
-import './styles.css';
-
-export default ({title,link}) => (
-  <div className="action-button" target='_blank'>
-    <div className='action-button-text'>
-      {title}
-    </div>
-  </div>
-);
+export default class ActionButton extends PureComponent {
+  render() {
+    return (
+      <div className="action-button">
+        <div className="action-button-container">
+          <div className="action-button-font-container">{this.props.content}</div>
+        </div>
+        <div className="action-button-container-layer"></div>
+      </div>
+    );
+  }
+}

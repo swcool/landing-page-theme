@@ -1,0 +1,30 @@
+.introduction-content {
+  display: flex;
+  height: 100vh; }
+
+.introduction-left-contnet {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .introduction-left-contnet .introduction-logo-content {
+    width: 403px;
+    height: 205px; }
+  .introduction-left-contnet .introduction-actionbutton-contnet {
+    width: 320px;
+    height: 80px; }
+
+.introduction-right-contnet {
+  flex: 3;
+  height: 100%;
+  background: linear-gradient(0deg, #D2E7F8 0%, #D2D0E8 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden; }
+  .introduction-right-contnet .introduction-right-image-contnet {
+    width: 50%;
+    object-fit: contain; }

@@ -1,0 +1,29 @@
+.logo-contnet {
+  width: 100%;
+  height: 100%; }
+  .logo-contnet .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .logo-contnet .header-container .header-container-year {
+      height: 52px; }
+    .logo-contnet .header-container .header-container-logo {
+      height: 32px; }
+  .logo-contnet .second-content-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+  .logo-contnet .time-content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .logo-contnet .time-content-container .time-content-font {
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      color: #666666; }
