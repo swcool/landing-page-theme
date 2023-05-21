@@ -4,7 +4,8 @@
 }
 
 .introduction-left-contnet {
-    flex: 2;
+    // flex: 2;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
@@ -26,7 +27,7 @@
 }
 
 .introduction-right-contnet {
-    flex: 3;
+    flex: 1;
     height: 100%;
     background: linear-gradient(0deg, #D2E7F8 0%, #D2D0E8 100%);
     position: relative;
@@ -37,7 +38,7 @@
     overflow: hidden;
 
     .introduction-right-image-contnet{
-        width: 50%;
+        width: 80%;
         object-fit: contain;
         // position: absolute;
         // bottom: -50px;

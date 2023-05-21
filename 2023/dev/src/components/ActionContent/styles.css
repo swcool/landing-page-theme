@@ -1,31 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-.action-title-content-container-layer {
+.action-content-layer {
   position: relative;
-  background: #4d4d4d;
+  background: #ffffff;
   border: 2px solid #000000;
-  border-radius: 16px;
-  z-index: 1;
-  width: 90%; }
-  .action-title-content-container-layer .action-title-content-container {
-    position: relative;
-    background: white;
+  border-radius: 4px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 30px;
+  width: 60vw;
+  min-height: 100px;
+  display: flex;
+  align-items: center; }
+  .action-content-layer .action-content-content-font-layer {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333; }
+  .action-content-layer .action-content-title-layer {
+    background: #ffffff;
     border: 2px solid #000000;
-    border-radius: 16px;
-    z-index: 10;
-    width: 100%;
-    right: 8px;
-    top: -4px; }
-    .action-title-content-container-layer .action-title-content-container .action-title-content-font-container {
+    border-radius: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    position: absolute;
+    height: 50px;
+    width: calc(100% - 20px);
+    top: -25px;
+    left: -8px;
+    display: flex;
+    align-items: center; }
+    .action-content-layer .action-content-title-layer .action-content-title-font-layer {
       font-family: "Helvetica";
       font-style: normal;
       font-weight: 700;
-      font-size: 32px;
-      line-height: 37px;
-      padding-left: 10px;
-      color: #000000;
-      padding: 50px 70px 70px 70px; }
-
-.action-title-content {
-  height: 50px;
-  width: 100%;
-  margin: 0px 5px; }
+      font-size: 24px;
+      line-height: 28px;
+      margin-left: 20px;
+      color: #527cff; }

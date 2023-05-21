@@ -1,10 +1,10 @@
-.about-container {
+.faq-container {
   width: 100vw;
-  background: linear-gradient(180deg, #d2e7f8 0%, #d3f8d2 100%);
+  background: linear-gradient(180deg, #f7f8d2 0%, #f8e2d2 100%);
   display: flex;
   justify-content: center;
   align-items: center; }
-  .about-container .about-content {
+  .faq-container .faq-content {
     position: relative;
     min-height: 100px;
     width: 70vw;
@@ -15,23 +15,30 @@
     border-right-width: 4px;
     border-bottom-width: 4px;
     background-color: white; }
-    .about-container .about-content .about-content-container {
+    .faq-container .faq-content .faq-list-container {
+      padding-top: 100px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px; }
+    .faq-container .faq-content .faq-content-container {
       font-family: "Helvetica";
       font-style: normal;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 37px;
-      padding-left: 10px;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 55px;
       color: #000000;
       padding: 50px 70px 70px 70px; }
-    .about-container .about-content .about-title-container {
+    .faq-container .faq-content .faq-title-container {
       position: absolute;
       z-index: 100;
       border: 2px solid #000000;
       border-radius: 8px;
       border-right-width: 4px;
       border-bottom-width: 4px;
-      background-color: #517cff;
+      background-color: #ef5fa7;
       left: -25px;
       top: -25px;
       height: 50px;
@@ -39,7 +46,7 @@
       display: flex;
       align-items: center;
       padding-left: 20px; }
-      .about-container .about-content .about-title-container .about-title-container-font {
+      .faq-container .faq-content .faq-title-container .faq-title-container-font {
         font-family: "Helvetica";
         font-style: normal;
         font-weight: 700;

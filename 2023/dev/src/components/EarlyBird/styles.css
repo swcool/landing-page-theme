@@ -1,10 +1,15 @@
-.about-container {
+.earlybird-container {
   width: 100vw;
-  background: linear-gradient(180deg, #d2e7f8 0%, #d3f8d2 100%);
+  background: linear-gradient(180deg, #D3F8D2 0%, #F7F8D2 100%);
   display: flex;
   justify-content: center;
   align-items: center; }
-  .about-container .about-content {
+  .earlybird-container .earlybird-mailchimp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; }
+  .earlybird-container .earlybird-content {
     position: relative;
     min-height: 100px;
     width: 70vw;
@@ -15,23 +20,22 @@
     border-right-width: 4px;
     border-bottom-width: 4px;
     background-color: white; }
-    .about-container .about-content .about-content-container {
-      font-family: "Helvetica";
+    .earlybird-container .earlybird-content .earlybird-content-container {
+      font-family: 'Helvetica';
       font-style: normal;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 37px;
-      padding-left: 10px;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 55px;
       color: #000000;
       padding: 50px 70px 70px 70px; }
-    .about-container .about-content .about-title-container {
+    .earlybird-container .earlybird-content .earlybird-title-container {
       position: absolute;
       z-index: 100;
       border: 2px solid #000000;
       border-radius: 8px;
       border-right-width: 4px;
       border-bottom-width: 4px;
-      background-color: #517cff;
+      background-color: #F8BA00;
       left: -25px;
       top: -25px;
       height: 50px;
@@ -39,7 +43,7 @@
       display: flex;
       align-items: center;
       padding-left: 20px; }
-      .about-container .about-content .about-title-container .about-title-container-font {
+      .earlybird-container .earlybird-content .earlybird-title-container .earlybird-title-container-font {
         font-family: "Helvetica";
         font-style: normal;
         font-weight: 700;

@@ -3,7 +3,7 @@
   height: 100vh; }
 
 .introduction-left-contnet {
-  flex: 2;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -16,7 +16,7 @@
     height: 80px; }
 
 .introduction-right-contnet {
-  flex: 3;
+  flex: 1;
   height: 100%;
   background: linear-gradient(0deg, #D2E7F8 0%, #D2D0E8 100%);
   position: relative;
@@ -26,5 +26,5 @@
   align-items: center;
   overflow: hidden; }
   .introduction-right-contnet .introduction-right-image-contnet {
-    width: 50%;
+    width: 80%;
     object-fit: contain; }
