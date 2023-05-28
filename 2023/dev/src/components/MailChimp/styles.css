@@ -33,7 +33,10 @@
       outline: none;
       border: none;
       margin-left: 10px;
-      background-color: white; }
+      background-color: white;
+      font-family: "Helvetica";
+      font-size: x-large;
+      font-weight: 600; }
   .mailchimp-Container .mailchimp-send-Container {
     width: 75px;
     height: 75px;

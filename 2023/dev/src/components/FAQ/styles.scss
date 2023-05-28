@@ -5,13 +5,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  .footer-content-thirdparty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+
+    width: 100%;
+  }
 
   .faq-content {
     position: relative;
     min-height: 100px;
     width: 70vw;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     border: 2px solid #000000;
     border-radius: 16px;
@@ -27,7 +37,6 @@
       align-items: center;
       flex-direction: column;
       gap: 50px;
-
     }
 
     .faq-content-container {

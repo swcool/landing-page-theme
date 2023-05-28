@@ -3,6 +3,8 @@
   height: 100vh; }
 
 .introduction-left-contnet {
+  margin-left: 3vw;
+  margin-right: 3vw;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@
 .introduction-right-contnet {
   flex: 1;
   height: 100%;
-  background: linear-gradient(0deg, #D2E7F8 0%, #D2D0E8 100%);
+  background: linear-gradient(0deg, #d2e7f8 0%, #d2d0e8 100%);
   position: relative;
   display: flex;
   flex-direction: column;

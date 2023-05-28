@@ -5,7 +5,7 @@ import "./styles.css";
 export default class EarlyBirdContent extends PureComponent {
   render() {
     return (
-      <div className="earlybird-container">
+      <div className="earlybird-container" id="earlyBird">
         <div className="earlybird-content">
           <div className="earlybird-title-container">
             <div className="earlybird-title-container-font">
