@@ -1,3 +1,7 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .logo-contnet {
   width: 100%;
   display: flex;
@@ -6,8 +10,14 @@
   flex-direction: column; }
   .logo-contnet .header-container-logo {
     width: 400px; }
+    @media screen and (max-width: 600px) {
+      .logo-contnet .header-container-logo {
+        width: 80vw; } }
   .logo-contnet .header-container-thirdparty {
     margin-top: 20px;
     width: 400px;
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 600px) {
+      .logo-contnet .header-container-thirdparty {
+        width: 80vw; } }

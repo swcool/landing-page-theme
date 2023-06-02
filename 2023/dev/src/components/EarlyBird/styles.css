@@ -1,3 +1,7 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .earlybird-container {
   width: 100vw;
   background: linear-gradient(180deg, #D3F8D2 0%, #F7F8D2 100%);
@@ -20,6 +24,10 @@
     border-right-width: 4px;
     border-bottom-width: 4px;
     background-color: white; }
+    @media screen and (max-width: 600px) {
+      .earlybird-container .earlybird-content {
+        width: 90vw;
+        margin-bottom: 0px; } }
     .earlybird-container .earlybird-content .earlybird-content-container {
       font-family: 'Helvetica';
       font-style: normal;
@@ -28,6 +36,11 @@
       line-height: 45px;
       color: #000000;
       padding: 50px 70px 70px 70px; }
+      @media screen and (max-width: 600px) {
+        .earlybird-container .earlybird-content .earlybird-content-container {
+          font-size: 16px;
+          padding: 50px 16px 24px 16px;
+          line-height: 18px; } }
     .earlybird-container .earlybird-content .earlybird-title-container {
       position: absolute;
       z-index: 100;
@@ -43,9 +56,16 @@
       display: flex;
       align-items: center;
       padding-left: 20px; }
+      @media screen and (max-width: 600px) {
+        .earlybird-container .earlybird-content .earlybird-title-container {
+          left: -10px;
+          width: 80vw; } }
       .earlybird-container .earlybird-content .earlybird-title-container .earlybird-title-container-font {
         font-family: "Helvetica";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 37px; }
+        @media screen and (max-width: 600px) {
+          .earlybird-container .earlybird-content .earlybird-title-container .earlybird-title-container-font {
+            font-size: 24px; } }

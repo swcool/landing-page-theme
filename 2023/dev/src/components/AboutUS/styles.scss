@@ -1,3 +1,6 @@
+@import '../../styles/variable.scss';
+
+
 .about-container {
   width: 100vw;
   // height: 100px;
@@ -19,17 +22,27 @@
     border-bottom-width: 4px;
     background-color: white;
 
+    @include mobile {
+      width: 90vw;
+      margin-bottom: 0px;
+    }
+
     .about-content-container {
       font-family: "Helvetica";
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
       line-height: 45px;
-      padding-left: 10px;
 
       color: #000000;
 
       padding: 50px 70px 70px 70px;
+
+      @include mobile {
+        font-size: 16px;
+        padding: 50px 16px 24px 16px;
+        line-height: 18px;
+      }
     }
 
     .about-title-container {
@@ -49,12 +62,22 @@
       align-items: center;
       padding-left: 20px;
 
+      @include mobile {
+        left: -10px;
+        width: 80vw;
+      }
+
       .about-title-container-font {
         font-family: "Helvetica";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 37px;
+
+        @include mobile {
+          font-size: 24px;
+
+        }
       }
     }
   }

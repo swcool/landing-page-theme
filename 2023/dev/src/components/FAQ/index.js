@@ -19,12 +19,14 @@ export default class FAQContent extends PureComponent {
 
   render() {
     return (
-      <div className="faq-container">
-        <div className="faq-content">
-          <div className="faq-title-container">
-            <div className="faq-title-container-font">FAQ</div>
+      <div className="faq-block-container">
+        <div className="faq-container">
+          <div className="faq-content">
+            <div className="faq-title-container">
+              <div className="faq-title-container-font">FAQ</div>
+            </div>
+            <div className="faq-list-container">{this.getList()}</div>
           </div>
-          <div className="faq-list-container">{this.getList()}</div>
         </div>
         <div className="footer-content-thirdparty">
           <a href="https://twitter.com/theiPlayground">

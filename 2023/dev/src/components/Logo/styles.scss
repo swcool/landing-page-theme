@@ -1,3 +1,5 @@
+@import "../../styles/variable.scss";
+
 .logo-contnet {
   width: 100%;
   // height: 100%;
@@ -8,11 +10,19 @@
 
   .header-container-logo {
     width: 400px;
+
+    @include mobile {
+      width: 80vw;
+    }
   }
   .header-container-thirdparty {
     margin-top: 20px;
     width: 400px;
     display: flex;
     align-items: center;
+
+    @include mobile {
+      width: 80vw;
+    }
   }
 }

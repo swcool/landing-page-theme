@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import '../../styles/variable.scss';
 
 .action-content-layer {
   padding: 1em 0.5em;
@@ -10,16 +11,19 @@
   border-right-width: 4px;
   border-bottom-width: 4px;
 
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-top: 30px;
+  margin: 16px;
 
-  width: 60vw;
+  // width: 60vw;
   min-height: 100px;
 
   display: flex;
   align-items: center;
+  width: 90%;
+
+  @include mobile {
+    // padding: 24px 16px;
+    padding-top: 24px;
+  }
 
   .action-content-content-font-layer {
     padding: 1em 0.5em;
@@ -30,6 +34,10 @@
     line-height: 23px;
 
     color: #333333;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   .action-content-title-layer {
@@ -57,6 +65,11 @@
       margin-left: 20px;
 
       color: #527cff;
+
+      @include mobile {
+        font-size: 16px;
+
+      }
     }
   }
 }

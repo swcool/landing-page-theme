@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .action-content-layer {
   padding: 1em 0.5em;
   position: relative;
@@ -7,14 +11,14 @@
   border-radius: 4px;
   border-right-width: 4px;
   border-bottom-width: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-top: 30px;
-  width: 60vw;
+  margin: 16px;
   min-height: 100px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 90%; }
+  @media screen and (max-width: 600px) {
+    .action-content-layer {
+      padding-top: 24px; } }
   .action-content-layer .action-content-content-font-layer {
     padding: 1em 0.5em;
     font-family: "Helvetica";
@@ -23,6 +27,9 @@
     font-size: 20px;
     line-height: 23px;
     color: #333333; }
+    @media screen and (max-width: 600px) {
+      .action-content-layer .action-content-content-font-layer {
+        font-size: 12px; } }
   .action-content-layer .action-content-title-layer {
     background: #ffffff;
     border: 2px solid #000000;
@@ -44,3 +51,6 @@
       line-height: 28px;
       margin-left: 20px;
       color: #527cff; }
+      @media screen and (max-width: 600px) {
+        .action-content-layer .action-content-title-layer .action-content-title-font-layer {
+          font-size: 16px; } }

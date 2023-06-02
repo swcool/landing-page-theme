@@ -20,7 +20,7 @@ export default class App extends PureComponent {
       <div>
         <Interduction onClick={() => this.scrollTo()}/>
         <AboutContainer />
-        <EarlyBirdContent  id="earlyBird" />
+        <EarlyBirdContent />
         <FAQContent />
       </div>
     );

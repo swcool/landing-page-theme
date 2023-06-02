@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap");
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .mailchimp-Content {
+  position: relative;
   width: 50vw;
-  height: 75px;
-  position: relative; }
+  height: 75px; }
+  @media screen and (max-width: 600px) {
+    .mailchimp-Content {
+      width: 80vw; } }
   .mailchimp-Content .mailchimp-Container-shadow {
     position: absolute;
     left: 4px;
@@ -13,6 +20,9 @@
     border: 4px solid #000000;
     border-radius: 8px;
     z-index: 0; }
+    @media screen and (max-width: 600px) {
+      .mailchimp-Content .mailchimp-Container-shadow {
+        width: 80vw; } }
 
 .mailchimp-Container {
   width: 100%;
@@ -37,6 +47,9 @@
       font-family: "Helvetica";
       font-size: x-large;
       font-weight: 600; }
+      @media screen and (max-width: 600px) {
+        .mailchimp-Container .mailchimp-input-Container .mailchimp-inputLayer-Container {
+          font-size: 20px; } }
   .mailchimp-Container .mailchimp-send-Container {
     width: 75px;
     height: 75px;

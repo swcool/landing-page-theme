@@ -1,6 +1,35 @@
+@import "../../styles/variable.scss";
+
 .introduction-content {
   display: flex;
   height: 100vh;
+  
+  @include mobile {
+    position: relative;
+  }
+  .introduction-mobile-content {
+    display: none;
+    @include mobile {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      bottom: 0;
+      background: linear-gradient(0deg, #D2E7F8 0%, #D2D0E8 100%);
+      clip-path: polygon(0 37%, 100% 0, 100% 100%, 0% 100%);
+      height: 50vh;
+      width: 100vw;
+    }
+
+    .introduction-mobile-image-contnet {
+      @include mobile {
+        width: 80%;
+        object-fit: contain;
+      }
+    }
+  }
+
+
 }
 
 .introduction-left-contnet {
@@ -11,6 +40,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  @include mobile {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   // margin-top: 160px;
   // margin-bottom: 160px;
@@ -37,8 +72,13 @@
   align-items: center;
   overflow: hidden;
 
+  @include mobile {
+    display:none;
+  }
+
   .introduction-right-image-contnet {
     width: 80%;
+    max-width: 20vw;
     object-fit: contain;
   }
 }

@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap");
+@import '../../styles/variable.scss';
 
 .mailchimp-Content {
+  position: relative;
   width: 50vw;
   height: 75px;
 
-  position: relative;
+  @include mobile {
+    width: 80vw;
+  }
+
   .mailchimp-Container-shadow {
     position: absolute;
     left: 4px;
     top: 4px;
     width: 50vw;
     height: 75px;
+
+    @include mobile {
+      width: 80vw;
+    }
+  
 
     background: #000000;
     border: 4px solid #000000;
@@ -48,6 +58,10 @@
       font-family: "Helvetica";
       font-size: x-large;
       font-weight: 600;
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 

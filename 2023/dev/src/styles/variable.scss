@@ -12,9 +12,16 @@ $color--bg: $color--white;
 
 /* Media queries
  * ======================================================================== */
-@mixin screen--sm {
+ @mixin mobile {
   // Small devices (landscape phones, 576px and up)
-  @media screen and (min-width: 576px) {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+ @mixin screen--sm {
+  // Small devices (landscape phones, 576px and up)
+  @media screen and (min-width: 600px) {
     @content;
   }
 }
