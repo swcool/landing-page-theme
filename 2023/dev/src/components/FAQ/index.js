@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import ActionContent from "../ActionContent";
+import Sponsors from "../Sponsor"
 import { data } from "./FAQ_list";
 import "./styles.css";
 
@@ -28,6 +29,7 @@ export default class FAQContent extends PureComponent {
             <div className="faq-list-container">{this.getList()}</div>
           </div>
         </div>
+        <Sponsors />
         <div className="footer-content-thirdparty">
           <a href="https://twitter.com/theiPlayground">
             <img src={require("../../images/twitter.png")} alt="twitter" />

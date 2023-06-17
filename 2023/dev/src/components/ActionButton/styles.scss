@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "../../styles/variable.scss";
+
 
 .action-button-container {
   position: absolute;
@@ -21,6 +23,9 @@
     /* identical to box height */
 
     color: #ffffff;
+    @include mobile {
+      font-size: 24px;
+    }
   }
 }
 

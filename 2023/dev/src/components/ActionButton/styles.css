@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
 .action-button-container {
   position: absolute;
   background: #f8ba00;
@@ -18,6 +22,9 @@
     line-height: 39px;
     /* identical to box height */
     color: #ffffff; }
+    @media screen and (max-width: 600px) {
+      .action-button-container .action-button-font-container {
+        font-size: 24px; } }
 
 .action-button-container-layer {
   position: absolute;

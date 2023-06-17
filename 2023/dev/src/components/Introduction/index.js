@@ -7,11 +7,7 @@ export default function Interduction({ onClick }) {
   return (
     <div className="introduction-content">
       <div className="introduction-mobile-content">
-        <img
-          className="introduction-mobile-image-contnet"
-          src={require("../../images/earth.png")}
-          alt="logo"
-        />
+        <div className="introduction-mobile-image-contnet"/>
       </div>
       <div className="introduction-left-contnet">
         <div className="introduction-logo-content">
@@ -22,12 +18,8 @@ export default function Interduction({ onClick }) {
         </div>
       </div>
       <div className="introduction-right-contnet">
-        <img
-          className="introduction-right-image-contnet"
-          src={require("../../images/earth.png")}
-          alt="logo"
-        />
+        <div className="introduction-right-image-contnet"/>
       </div>
     </div>
-  );
+  )
 }

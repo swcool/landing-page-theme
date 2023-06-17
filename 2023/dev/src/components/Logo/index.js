@@ -5,10 +5,8 @@ export default class LogoContent extends PureComponent {
   render() {
     return (
       <div className="logo-contnet">
-        <img
+        <div
           className="header-container-logo"
-          src={require("../../images/2023_logo_b.png")}
-          alt="logo"
         />
         <div className="header-container-thirdparty">
           <a href="https://twitter.com/theiPlayground">

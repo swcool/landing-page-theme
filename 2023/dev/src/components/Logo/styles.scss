@@ -10,8 +10,16 @@
 
   .header-container-logo {
     width: 400px;
+    height: 205px;
+    background-image: url("../../images/logo_web.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 
     @include mobile {
+      width: 319px;
+      height: 156px;
+      background-image: url("../../images/logo_mobile.png");
       width: 80vw;
     }
   }
