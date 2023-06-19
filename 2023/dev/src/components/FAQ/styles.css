@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* Color
  * ======================================================================== */
 /* Media queries
@@ -22,7 +23,7 @@
     min-height: 100px;
     width: 70vw;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     border: 2px solid #000000;
     border-radius: 16px;
     border-right-width: 4px;
@@ -42,6 +43,7 @@
       gap: 50px; }
       @media screen and (max-width: 600px) {
         .faq-container .faq-content .faq-list-container {
+          padding-top: 60px;
           gap: 10px; } }
     .faq-container .faq-content .faq-content-container {
       font-family: "Helvetica";
@@ -83,4 +85,10 @@
         line-height: 37px; }
         @media screen and (max-width: 600px) {
           .faq-container .faq-content .faq-title-container .faq-title-container-font {
-            font-size: 24px; } }
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            /* identical to box height */
+            color: #000000; } }

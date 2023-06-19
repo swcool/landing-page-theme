@@ -1,92 +1,104 @@
-@import '../../styles/variable.scss';
+@import "../../styles/variable.scss";
 
 .earlybird-container {
-    width: 100vw;
-    // height: 100px;
-    background:  linear-gradient(180deg, #D3F8D2 0%, #F7F8D2 100%);
+  width: 100vw;
+  // height: 100px;
+  background: linear-gradient(180deg, #d3f8d2 0%, #f7f8d2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .earlybird-mailchimp-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+  }
 
-    .earlybird-mailchimp-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 50px;
+  .earlybird-content {
+    position: relative;
+    min-height: 100px;
+    width: 70vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border: 2px solid #000000;
+    border-radius: 16px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    background-color: white;
+
+    @include mobile {
+      width: 90vw;
+      margin-bottom: 0px;
     }
 
-    .earlybird-content {
-      position: relative;
-      min-height: 100px;
-      width: 70vw;
-      margin-top: 100px;
-      margin-bottom: 100px;
-  
-      border: 2px solid #000000;
-      border-radius: 16px;
-      border-right-width: 4px;
-      border-bottom-width: 4px;
-      background-color: white;
+    .earlybird-content-container {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 37px;
+
+      color: #000000;
+
+      padding: 50px 70px 70px 70px;
 
       @include mobile {
-        width: 90vw;
-        margin-bottom: 0px;
-      }
-  
-  
-      .earlybird-content-container {
-        font-family: 'Helvetica';
+        padding: 50px 16px 24px 16px;
+        font-family: "Helvetica";
         font-style: normal;
         font-weight: 400;
-        font-size: 48px;
-        line-height: 45px;
-  
+        font-size: 20px;
+        line-height: 23px;
+
         color: #000000;
-  
-        padding: 50px 70px 70px 70px;
-
-        @include mobile {
-          font-size: 16px;
-          padding: 50px 16px 24px 16px;
-          line-height: 18px;
-        }
       }
-  
-      .earlybird-title-container {
-        position: absolute;
-        z-index: 100;
-        border: 2px solid #000000;
-        border-radius: 8px;
-        border-right-width: 4px;
-        border-bottom-width: 4px;
-        background-color: #F8BA00;
-        left: -25px;
-        top: -25px;
-        height: 50px;
-        width: 60vw;
-  
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
+    }
+
+    .earlybird-title-container {
+      position: absolute;
+      z-index: 100;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      border-right-width: 4px;
+      border-bottom-width: 4px;
+      background-color: #f8ba00;
+      left: -25px;
+      top: -25px;
+      height: 50px;
+      width: 60vw;
+
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      @include mobile {
+        left: -10px;
+        width: 80vw;
+      }
+
+      .earlybird-title-container-font {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+
+        color: #000000;
 
         @include mobile {
-          left: -10px;
-          width: 80vw;
-        }
-  
-        .earlybird-title-container-font {
           font-family: "Helvetica";
           font-style: normal;
           font-weight: 700;
-          font-size: 32px;
-          line-height: 37px;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
 
-          @include mobile {
-            font-size: 24px;
-  
-          }
+          color: #000000;
         }
       }
     }
   }
-  
+}

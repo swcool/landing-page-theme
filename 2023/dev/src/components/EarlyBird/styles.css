@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* Color
  * ======================================================================== */
 /* Media queries
  * ======================================================================== */
 .earlybird-container {
   width: 100vw;
-  background: linear-gradient(180deg, #D3F8D2 0%, #F7F8D2 100%);
+  background: linear-gradient(180deg, #d3f8d2 0%, #f7f8d2 100%);
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -29,18 +30,22 @@
         width: 90vw;
         margin-bottom: 0px; } }
     .earlybird-container .earlybird-content .earlybird-content-container {
-      font-family: 'Helvetica';
+      font-family: "Helvetica";
       font-style: normal;
       font-weight: 400;
-      font-size: 48px;
-      line-height: 45px;
+      font-size: 32px;
+      line-height: 37px;
       color: #000000;
       padding: 50px 70px 70px 70px; }
       @media screen and (max-width: 600px) {
         .earlybird-container .earlybird-content .earlybird-content-container {
-          font-size: 16px;
           padding: 50px 16px 24px 16px;
-          line-height: 18px; } }
+          font-family: "Helvetica";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          color: #000000; } }
     .earlybird-container .earlybird-content .earlybird-title-container {
       position: absolute;
       z-index: 100;
@@ -48,7 +53,7 @@
       border-radius: 8px;
       border-right-width: 4px;
       border-bottom-width: 4px;
-      background-color: #F8BA00;
+      background-color: #f8ba00;
       left: -25px;
       top: -25px;
       height: 50px;
@@ -65,7 +70,15 @@
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
-        line-height: 37px; }
+        line-height: 37px;
+        /* identical to box height */
+        color: #000000; }
         @media screen and (max-width: 600px) {
           .earlybird-container .earlybird-content .earlybird-title-container .earlybird-title-container-font {
-            font-size: 24px; } }
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            /* identical to box height */
+            color: #000000; } }

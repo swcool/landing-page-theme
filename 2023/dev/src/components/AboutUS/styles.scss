@@ -1,5 +1,4 @@
-@import '../../styles/variable.scss';
-
+@import "../../styles/variable.scss";
 
 .about-container {
   width: 100vw;
@@ -30,18 +29,24 @@
     .about-content-container {
       font-family: "Helvetica";
       font-style: normal;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 32px;
-      line-height: 45px;
+      line-height: 37px;
 
       color: #000000;
 
       padding: 50px 70px 70px 70px;
 
       @include mobile {
-        font-size: 16px;
         padding: 50px 16px 24px 16px;
-        line-height: 18px;
+
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #000000;
       }
     }
 
@@ -73,10 +78,19 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 37px;
+        /* identical to box height */
+
+        color: #000000;
 
         @include mobile {
+          font-family: "Helvetica";
+          font-style: normal;
+          font-weight: 700;
           font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
 
+          color: #000000;
         }
       }
     }

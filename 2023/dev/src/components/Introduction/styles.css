@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* Color
  * ======================================================================== */
 /* Media queries
@@ -24,7 +25,7 @@
     .introduction-content .introduction-mobile-content .introduction-mobile-image-contnet {
       width: 322px;
       height: 250px;
-      background-image: url("../../images/earth_mobile.png");
+      background-image: url("../../images/earth.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center center; }
@@ -63,7 +64,7 @@
   .introduction-right-contnet .introduction-right-image-contnet {
     width: 688px;
     height: 344px;
-    background-image: url("../../images/earth_web.png");
+    background-image: url("../../images/earth.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center; }

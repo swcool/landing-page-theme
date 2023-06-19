@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import '../../styles/variable.scss';
+@import "../../styles/variable.scss";
 
 .action-content-layer {
   padding: 1em 0.5em;
@@ -36,7 +35,13 @@
     color: #333333;
 
     @include mobile {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
       font-size: 12px;
+      line-height: 14px;
+
+      color: #333333;
     }
   }
 
@@ -57,18 +62,25 @@
     align-items: center;
 
     .action-content-title-font-layer {
+      padding-left: 12px;
+      margin-right: 10px;
       font-family: "Helvetica";
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
       line-height: 28px;
-      margin-left: 20px;
+      /* identical to box height */
 
       color: #527cff;
 
       @include mobile {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
         font-size: 16px;
+        line-height: 18px;
 
+        color: #527cff;
       }
     }
   }

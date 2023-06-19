@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* Color
  * ======================================================================== */
 /* Media queries
@@ -23,7 +24,7 @@
         width: 90vw;
         margin-bottom: 0px; } }
     .sponsors-container .sponsors-content .sponsors-content-container {
-      padding: 50px 70px 70px 70px; }
+      padding: 70px 70px 20px 70px; }
       .sponsors-container .sponsors-content .sponsors-content-container .sponsors-subcontent-container {
         font-family: "Helvetica";
         font-style: normal;

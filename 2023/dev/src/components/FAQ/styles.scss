@@ -1,7 +1,6 @@
-@import '../../styles/variable.scss';
+@import "../../styles/variable.scss";
 
 .faq-block-container {
-
   background: linear-gradient(180deg, #f7f8d2 0%, #f8e2d2 100%);
 }
 
@@ -22,13 +21,12 @@
   align-items: center;
   flex-direction: column;
 
-
   .faq-content {
     position: relative;
     min-height: 100px;
     width: 70vw;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
     border: 2px solid #000000;
     border-radius: 16px;
@@ -41,7 +39,6 @@
       margin-bottom: 50px;
     }
 
-
     .faq-list-container {
       padding-top: 100px;
       padding-bottom: 30px;
@@ -52,9 +49,9 @@
       gap: 50px;
 
       @include mobile {
+      padding-top: 60px;
         gap: 10px;
       }
-      
     }
 
     .faq-content-container {
@@ -72,7 +69,6 @@
         padding: 50px 16px 24px 16px;
         line-height: 18px;
       }
- 
     }
 
     .faq-title-container {
@@ -105,8 +101,14 @@
         line-height: 37px;
 
         @include mobile {
+          font-family: "Helvetica";
+          font-style: normal;
+          font-weight: 700;
           font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
 
+          color: #000000;
         }
       }
     }

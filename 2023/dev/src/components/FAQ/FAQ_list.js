@@ -28,7 +28,7 @@ export const data = [
   },
   {
     question: "Any accommodation recommendations?",
-    answer: ":We're currently negotiating accommodation offers for our attendees. Please stay tuned for updates.",
+    answer: "We're currently negotiating accommodation offers for our attendees. Please stay tuned for updates.",
     url: "",
   },
   {

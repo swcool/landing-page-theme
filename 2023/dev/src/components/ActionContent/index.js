@@ -25,9 +25,9 @@ export default class ActionContent extends PureComponent {
     }
     return (
       <div className="action-content-content-font-layer">
-        {content}[<a href={url}>{url}</a>]
+        The conference takes place on November 4th and 5th in the Boya Lecture Building of National Taiwan University. You can find the exact location on this <a href={url}>map</a>
       </div>
-    );
+    )
   }
 
   render() {
