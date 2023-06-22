@@ -12,7 +12,7 @@
   .logo-contnet .header-container-logo {
     width: 400px;
     height: 205px;
-    background-image: url("../../images/logo.png");
+    background-image: url("../../images/logo_web.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center; }
@@ -20,7 +20,7 @@
       .logo-contnet .header-container-logo {
         width: 319px;
         height: 156px;
-        background-image: url("../../images/logo.png");
+        background-image: url("../../images/logo_mobile.png");
         width: 80vw; } }
   .logo-contnet .header-container-thirdparty {
     margin-top: 20px;
