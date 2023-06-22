@@ -1,0 +1,36 @@
+@import "../../styles/variable.scss";
+
+.logo-contnet {
+  width: 100%;
+  // height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .header-container-logo {
+    width: 400px;
+    height: 205px;
+    background-image: url("../../images/logo_web.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    @include mobile {
+      width: 319px;
+      height: 156px;
+      background-image: url("../../images/logo_mobile.png");
+      width: 80vw;
+    }
+  }
+  .header-container-thirdparty {
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      width: 80vw;
+    }
+  }
+}

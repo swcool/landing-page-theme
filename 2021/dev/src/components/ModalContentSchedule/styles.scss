@@ -1,0 +1,81 @@
+@import "../../styles/variable.scss";
+
+.modal-content-schedule {
+  position: relative;
+  padding: 30px;
+  padding-top: 50px;
+  background-color: $color--bg;
+  border-radius: 16px;
+
+  .modal-content-schedule__topic {
+    margin: 0;
+    font-size: 1.5rem;
+    color: $color--secondary;
+  }
+
+  .modal-content-schedule__presenter {
+    color: #666666;
+  }
+
+  .modal-content-schedule__presenter-description {
+    color: $color--gray;
+    font-size: 0.8em;
+  }
+
+  .modal_tag {
+    vertical-align: middle;
+    margin: 4px 0;
+    color: #666666;
+  }
+  .modal_tag_image {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+
+  .modal-content-speakers__img {
+    width: 64px;
+    border-radius: 50%;
+  }
+  .modal-content-schedule_subtitle {
+    padding-top: 1em;
+    font-size: 1.2em;
+    color: $color--secondary;
+  }
+  .modal-content-speakers_sns {
+    margin-top: 1em;
+    color: $color--secondary
+  }
+
+  .modal-content-schedule__close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: #333;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import "../../styles/variable.scss";
+
+.faq-block-container {
+  background: linear-gradient(180deg, #f7f8d2 0%, #f8e2d2 100%);
+}
+
+.footer-content-thirdparty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 70px;
+
+  width: 100vw;
+}
+
+.faq-container {
+  width: 100vw;
+  // height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .faq-content {
+    position: relative;
+    min-height: 100px;
+    width: 70vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border: 2px solid #000000;
+    border-radius: 16px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    background-color: white;
+
+    @include mobile {
+      width: 90vw;
+      margin-bottom: 50px;
+    }
+
+    .faq-list-container {
+      padding-top: 100px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+
+      @include mobile {
+      padding-top: 60px;
+        gap: 10px;
+      }
+    }
+
+    .faq-content-container {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 55px;
+
+      color: #000000;
+
+      padding: 50px 70px 70px 70px;
+      @include mobile {
+        font-size: 16px;
+        padding: 50px 16px 24px 16px;
+        line-height: 18px;
+      }
+    }
+
+    .faq-title-container {
+      position: absolute;
+      z-index: 100;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      border-right-width: 4px;
+      border-bottom-width: 4px;
+      background-color: #ef5fa7;
+      left: -25px;
+      top: -25px;
+      height: 50px;
+      width: 60vw;
+
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      @include mobile {
+        left: -10px;
+        width: 80vw;
+      }
+
+      .faq-title-container-font {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+
+        @include mobile {
+          font-family: "Helvetica";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+.logo-contnet {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .logo-contnet .header-container-logo {
+    width: 400px;
+    height: 205px;
+    background-image: url("../../images/logo_web.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center; }
+    @media screen and (max-width: 600px) {
+      .logo-contnet .header-container-logo {
+        width: 319px;
+        height: 156px;
+        background-image: url("../../images/logo_mobile.png");
+        width: 80vw; } }
+  .logo-contnet .header-container-thirdparty {
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 600px) {
+      .logo-contnet .header-container-thirdparty {
+        width: 80vw; } }

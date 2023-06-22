@@ -1,0 +1,121 @@
+@import "../../styles/variable.scss";
+
+.sponsors-container {
+  width: 100vw;
+  // height: 100px;
+  // background: linear-gradient(180deg, #D2E7F8 0%, #D3F8D2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sponsors-content {
+    position: relative;
+    min-height: 100px;
+    width: 70vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    border: 2px solid #000000;
+    border-radius: 16px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    background-color: white;
+
+    @include mobile {
+      width: 90vw;
+      margin-bottom: 0px;
+    }
+
+    .sponsors-content-container {
+      padding: 70px 70px 20px 70px;
+
+      .sponsors-subcontent-container {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+
+        color: #000000;
+
+        padding: 50px 50px 50px 50px;
+
+        @include mobile {
+          font-size: 16px;
+          padding: 50px 16px 24px 16px;
+          line-height: 18px;
+        }
+      }
+
+      .sponsors-content-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 41px;
+
+        color: #333333;
+      }
+
+      .sponsors-content-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 40px;
+
+        .sponsors-image-logo {
+          width: calc(100vw - 100px);
+          max-width: 500px;
+          object-fit: contain;
+        }
+      }
+
+      @include mobile {
+        font-size: 16px;
+        padding: 50px 16px 24px 16px;
+        line-height: 18px;
+      }
+    }
+
+    .sponsors-title-container {
+      position: absolute;
+      z-index: 100;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      border-right-width: 4px;
+      border-bottom-width: 4px;
+      background-color: #517cff;
+      left: -25px;
+      top: -25px;
+      height: 50px;
+      width: 60vw;
+
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      @include mobile {
+        left: -10px;
+        width: 80vw;
+      }
+
+      .sponsors-title-container-font {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

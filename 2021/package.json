@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "i18n-js": "^3.7.1",
+    "react-native-localize": "^1.4.1"
+  }
+}

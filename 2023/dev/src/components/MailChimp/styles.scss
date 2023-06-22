@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap");
+@import '../../styles/variable.scss';
+
+.mailchimp-Content {
+  position: relative;
+  width: 50vw;
+  height: 75px;
+
+  @include mobile {
+    width: 80vw;
+  }
+
+  .mailchimp-Container-shadow {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 50vw;
+    height: 75px;
+
+    @include mobile {
+      width: 80vw;
+    }
+  
+
+    background: #000000;
+    border: 4px solid #000000;
+    border-radius: 8px;
+    z-index: 0;
+  }
+}
+
+.mailchimp-Container {
+  //   height: calc(width * 830 / 1440);
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 4px solid #000000;
+  border-radius: 8px;
+
+  position: relative;
+
+  z-index: 1;
+
+  .mailchimp-input-Container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    .mailchimp-inputLayer-Container {
+      width: 100%;
+      height: 70%;
+      outline: none;
+      border: none;
+      margin-left: 10px;
+      background-color: rgba(255, 255, 255, 1);
+      font-family: "Helvetica";
+      font-size: x-large;
+      font-weight: 600;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .mailchimp-send-Container {
+    width: 75px;
+    height: 75px;
+    background: #f8ba00;
+    border: 4px solid #000000;
+    border-radius: 8px;
+
+    position: absolute;
+    right: -4px;
+    top: -4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mailchimp-send-image-Container {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .mailchimp-main-container {
+    // background-color: #f5f5f5;
+    position: relative;
+    .mailchimp-main-container-triangle {
+      width: 0;
+      height: 0;
+      border: 100px solid;
+      border-color: transparent #f7b900 #f7b900 transparent;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.mailchimp-submit-container {
+  border-radius: 6px;
+  background-color: #f5f5f5;
+
+  .mailchimp-submit-container-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .mailchimp-submit-cell-header {
+      width: 409px;
+      height: 48px;
+
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+      /* identical to box height */
+
+      color: #000000;
+
+      /* Inside auto layout */
+
+      flex: none;
+      flex-grow: 0;
+    }
+
+    .mailchimp-submit-cell-title {
+      width: 763px;
+      height: 60px;
+
+      font-family: "Alice";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 25px;
+
+      color: #000000;
+
+      /* Inside auto layout */
+
+      flex: none;
+      flex-grow: 0;
+    }
+
+    .mailchimp-submit-cell-content {
+      box-sizing: border-box;
+      font-family: "Playfair Display";
+
+      /* Auto layout */
+
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 23px 28px;
+      gap: 10px;
+
+      width: 750px;
+      height: 70px;
+
+      background: #ffffff;
+      border: 2px solid #ececec;
+      border-radius: 10px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      flex-grow: 0;
+    }
+  }
+}
