@@ -1,19 +1,19 @@
-import React, { PureComponent } from "react";
-import "./styles.css";
+import React, { PureComponent } from "react"
+import "./styles.css"
+import twitter from "../../images/twitter.png"
+import mastodon from "../../images/mastodon.png"
 
 export default class LogoContent extends PureComponent {
   render() {
     return (
       <div className="logo-contnet">
-        <div
-          className="header-container-logo"
-        />
+        <div className="header-container-logo" />
         <div className="header-container-thirdparty">
           <a href="https://twitter.com/theiPlayground">
-            <img src={require("../../images/twitter.png")} alt="twitter" />
+            <img src={twitter} alt="twitter" />
           </a>
           <a href="https://iosdev.space/@iplayground">
-            <img src={require("../../images/mastodon.png")} alt="mastodon" />
+            <img src={mastodon} alt="mastodon" />
           </a>
         </div>
         {/* <div className="header-container">
@@ -38,6 +38,6 @@ export default class LogoContent extends PureComponent {
             <div className="time-content-font">Nov. 4th ~ 5th @ Taipei</div>
           </div> */}
       </div>
-    );
+    )
   }
 }

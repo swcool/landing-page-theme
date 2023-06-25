@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react"
 import "./styles.css"
+import revenuecat_logo from "../../images/revenuecat_logo.png"
 
 export default class Sponsors extends PureComponent {
   render() {
@@ -13,7 +14,7 @@ export default class Sponsors extends PureComponent {
             <div className="sponsors-content-title-container">Diamond</div>
             <div className="sponsors-content-image-container">
               <a href="https://www.revenuecat.com/">
-                <img className="sponsors-image-logo" src={require("../../images/revenuecat_logo.png")} alt="revenuecat" />
+                <img className="sponsors-image-logo" src={revenuecat_logo} alt="revenuecat" />
               </a>
             </div>
             <div className="sponsors-subcontent-container">
