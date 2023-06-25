@@ -17,6 +17,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "antd": "^5.6.2",
     "i18next": "^19.6.3",
     "i18next-browser-languagedetector": "^6.0.1",
     "lodash": "^4.17.20",
@@ -27,11 +28,23 @@
     "react-i18next": "^11.7.0",
     "react-mailchimp-subscribe": "2.0.2",
     "react-native-localize": "^1.4.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "4.0.0",
     "react-social-icons": "3.0.0",
     "start": "^5.1.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

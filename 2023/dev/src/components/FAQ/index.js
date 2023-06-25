@@ -1,21 +1,18 @@
-import React, { PureComponent } from "react";
-import ActionContent from "../ActionContent";
+import React, { PureComponent } from "react"
+import ActionContent from "../ActionContent"
 import Sponsors from "../Sponsor"
-import { data } from "./FAQ_list";
-import "./styles.css";
+import { data } from "./FAQ_list"
+import "./styles.css"
+import "./styles.css"
+import twitter from "../../images/twitter.png"
+import mastodon from "../../images/mastodon.png"
 
 export default class FAQContent extends PureComponent {
   getList() {
     const list = data.map(function (item) {
-      return (
-        <ActionContent
-          title={item.question}
-          content={item.answer}
-          url={item.url}
-        />
-      );
-    });
-    return list;
+      return <ActionContent title={item.question} content={item.answer} url={item.url} />
+    })
+    return list
   }
 
   render() {
@@ -32,13 +29,13 @@ export default class FAQContent extends PureComponent {
         <Sponsors />
         <div className="footer-content-thirdparty">
           <a href="https://twitter.com/theiPlayground">
-            <img src={require("../../images/twitter.png")} alt="twitter" />
+            <img src={twitter} alt="twitter" />
           </a>
           <a href="https://iosdev.space/@iplayground">
-            <img src={require("../../images/mastodon.png")} alt="mastodon" />
+            <img src={mastodon} alt="mastodon" />
           </a>
         </div>
       </div>
-    );
+    )
   }
 }
