@@ -1,0 +1,36 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+.speaker-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border: 4px solid #517CFF;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .speaker-feature {
+    width: 30%;
+    display: inline-block;
+  }
+}
+.speaker-feature-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #517CFF;
+}
+
+.speaker-feature-content {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin: 24px;
+}/*# sourceMappingURL=styles.css.map */

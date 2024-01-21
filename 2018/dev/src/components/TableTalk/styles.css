@@ -1,0 +1,15 @@
+/* Color
+ * ======================================================================== */
+/* Media queries
+ * ======================================================================== */
+.table-talk {
+  width: 45%;
+}
+.table-talk span {
+  display: block;
+}
+.table-talk .table-talk__topic {
+  color: dodgerblue;
+  font-weight: bold;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
